@@ -1,0 +1,245 @@
+2007-04-26	06:3	Takuro Ashie <ashie@homa.ne.jp>
+
+	Files:	AUTHORS (1.2) (+1 -0)
+		configure.ac (1.13) (+1 -1)
+		mkchlog (1.2) (+1 -0)
+
+	* Bump to 0.2.0.
+	* Add my name.
+
+2007-04-26	06:1	Takuro Ashie <ashie@homa.ne.jp>
+
+	Files:	data/scim-uim.png (1.3) (+6 -11)
+
+	Replace scim-uim's icon with uim's one.
+
+2007-04-10	05:4	Takuro Ashie <ashie@homa.ne.jp>
+
+	Files:	src/scim_uim_imengine.cpp (1.15) (+4 -14)
+
+	Don't show the uim's im-list button.
+
+2007-04-10	04:3	Takuro Ashie <ashie@homa.ne.jp>
+
+	Files:	configure.ac (1.12) (+3 -3)
+		src/scim_uim_imengine.cpp (1.14) (+25 -42)
+		src/scim_uim_imengine.h (1.7) (+1 -6)
+
+	* Now scim-uim requires uim-1.1.0 or later.
+	* Follow uim's new property mechanism (since uim-1.1.0).
+	* Remove surrounding text functions completely.
+
+2007-04-09	01:1	Takuro Ashie <ashie@homa.ne.jp>
+
+	Files:	configure.ac (1.11) (+1 -0)
+		src/scim_uim_imengine.cpp (1.13) (+3 -1)
+		src/scim_uim_imengine.h (1.6) (+3 -1)
+
+	Remove surrounding text functions to avoid compile error on latest uim.
+
+2005-08-08	03:4	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	ChangeLog (1.4) (+41 -2)
+
+	*** empty log message ***
+
+2005-08-08	03:2	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	THANKS (1.2) (+1 -1)
+		configure.ac (1.10) (+4 -4)
+
+	Bump to 0.1.4
+
+2005-08-08	03:0	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	src/scim_uim_imengine.cpp (1.12) (+101 -3)
+		src/scim_uim_imengine.h (1.5) (+5 -2)
+
+	* Support surrounding text feature, requires uim 0.4.8.
+	* Update to require scim 1.4.0
+
+2005-05-12	02:4	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	src/scim_uim_imengine.cpp (1.11) (+12 -14)
+		src/scim_uim_imengine.h (1.4) (+10 -12)
+
+	Update copyright header.
+
+2004-09-09	15:1	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	data/scim-uim.png (1.2) (+11 -2)
+
+	New icon made by Kitae.
+
+2004-08-22	13:1	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	configure.ac (1.9) (+1 -1)
+		src/Makefile.am (1.3) (+2 -2)
+
+	Fixed install dir issue.
+
+2004-08-22	13:0	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	ChangeLog (1.3) (+63 -3)
+
+	Updated ChangeLog.
+
+2004-08-22	07:0	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	configure.ac (1.8) (+2 -2)
+
+	Bump to 0.1.3
+
+2004-08-22	06:4	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	configure.ac (1.7) (+7 -1)
+		scim-uim.spec.in (1.3) (+2 -2)
+		src/Makefile.am (1.2) (+1 -1)
+
+	Fixed the install dir issue.
+
+2004-08-16	14:1	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	configure.ac (1.6) (+2 -2)
+
+	Bump to 0.1.2
+
+2004-07-03	13:2	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	src/scim_uim_imengine.cpp (1.10) (+13 -1)
+
+	Send generic on key event to uim in order to turn on input method by default.
+
+2004-06-21	07:2	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	configure.ac (1.5) (+2 -2)
+		src/scim_uim_imengine.cpp (1.9) (+10 -10)
+
+	Change __uuids to __uim_uuids and make it static (private).
+
+2004-06-20	07:5	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	configure.ac (1.4) (+3 -3)
+
+	bump version to 0.1.0.
+
+2004-06-19	13:4	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	configure.ac (1.3) (+2 -1)
+
+	Added AC_SUBST(UIM_VERSION)
+
+2004-06-19	13:3	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	ChangeLog (1.2) (+102 -0)
+
+	Updated ChangeLog.
+
+2004-06-19	13:3	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	scim-uim.spec.in (1.2) (+2 -0)
+
+	Remove *.{a,la}
+
+2004-06-19	11:4	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	src/scim_uim_imengine.cpp (1.8) (+1 -7)
+
+	Do not use uim_get_candidate_index.
+
+2004-06-19	10:3	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	configure.ac (1.2) (+0 -14)
+
+	Cleanup configure.ac
+
+2004-06-17	01:3	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	src/scim_uim_imengine.cpp (1.7) (+14 -5)
+		src/scim_uim_imengine.h (1.3) (+3 -1)
+
+	Show preedit string and lookup table when focus in, if necessary.
+	Do not hide preedit string in preedit_clear_cb.
+
+2004-06-15	14:0	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	src/scim_uim_imengine.cpp (1.6) (+2 -2)
+
+	Correct the separator behaviour.
+
+2004-06-15	04:2	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	Makefile.am (1.2) (+1 -1)
+		mkinstalldirs (1.1) ( )
+
+	Added mkinstalldirs
+
+2004-06-15	03:2	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	README (1.2) (+1 -0)
+		src/scim_uim_imengine.cpp (1.5) (+6 -21)
+
+	Update to use new LookupTable api.
+
+2004-06-13	13:5	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	src/scim_uim_imengine.cpp (1.4) (+50 -9)
+
+	Fixed a bug in uuid assigning code.
+
+2004-06-13	06:0	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	src/scim_uim_imengine.cpp (1.3) (+14 -10)
+
+	Fixed a deadlock in cand_select_cb.
+
+2004-06-13	03:3	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	src/scim_uim_imengine.cpp (1.2) (+79 -4)
+		src/scim_uim_imengine.h (1.2) (+3 -1)
+
+	Implemented Property code. UIM 0.3.8 has a bug in prop_list_update_cb and prop_label_update_cb code.
+
+2004-06-12	17:5	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	mkchlog (1.1) ( )
+
+	Added mkchlog script.
+
+2004-06-12	17:4	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	.cvsignore (1.1) ( )
+		AUTHORS (1.1) ( )
+		COPYING (1.1) ( )
+		ChangeLog (1.1) ( )
+		INSTALL (1.1) ( )
+		Makefile.am (1.1) ( )
+		NEWS (1.1) ( )
+		README (1.1) ( )
+		THANKS (1.1) ( )
+		bootstrap (1.1) ( )
+		configure.ac (1.1) ( )
+		scim-uim.spec.in (1.1) ( )
+		data/.cvsignore (1.1) ( )
+		data/Makefile.am (1.1) ( )
+		data/scim-uim.png (1.1) ( )
+		src/.cvsignore (1.1) ( )
+		src/Makefile.am (1.1) ( )
+		src/scim_uim_imengine.cpp (1.1) ( )
+		src/scim_uim_imengine.h (1.1) ( )
+
+	Initial revision
+
+2004-06-12	17:4	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	.cvsignore (1.1.1.1) (+0 -0)
+		COPYING (1.1.1.1) (+0 -0)
+		INSTALL (1.1.1.1) (+0 -0)
+		NEWS (1.1.1.1) (+0 -0)
+		bootstrap (1.1.1.1) (+0 -0)
+		data/.cvsignore (1.1.1.1) (+0 -0)
+		data/Makefile.am (1.1.1.1) (+0 -0)
+		src/.cvsignore (1.1.1.1) (+0 -0)
+
+	Initial import.
+
