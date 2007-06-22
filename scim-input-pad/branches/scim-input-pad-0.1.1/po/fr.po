@@ -1,0 +1,325 @@
+# translation of fr.po to French
+# translation of scim-input-pad.po to German
+# Copyright (C) 2005 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Damien Menanteau <damien.menanteau@cegetel.net>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: fr\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-12-06 09:40+0800\n"
+"PO-Revision-Date: 2005-06-04 20:26+0200\n"
+"Last-Translator: Damien Menanteau <damien.menanteau@cegetel.net>\n"
+"Language-Team: French\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.10.1\n"
+"Plural-Forms:  nplurals=2; plural=(n > 1);\n"
+
+#: ../src/scim_input_pad.cpp:119 ../src/scim_input_pad.cpp:1067
+msgid "Input Pad"
+msgstr "Pavé de Saisie"
+
+#: ../src/scim_input_pad.cpp:120
+msgid "An On Screen Input Pad to input some symbols easily."
+msgstr ""
+"Un pavé de saisie à l'écran simplifiant la saisie de certains symboles."
+
+#: ../src/scim_input_pad.cpp:619
+msgid "Recently Used"
+msgstr "Derniers utilisés"
+
+#: ../src/scim_input_pad.cpp:719 ../src/scim_input_pad.cpp:936
+msgid "Options"
+msgstr "Options"
+
+#. Show preview
+#: ../src/scim_input_pad.cpp:729
+msgid "_Show Preview"
+msgstr "Prévi_sualisation"
+
+#: ../src/scim_input_pad.cpp:733
+msgid ""
+"Whether to show preview of a character in a popup window with larger size.If "
+"it's enabled, then a preview window will be showed if mouse pointer is moved "
+"onto the button and stay for a short while."
+msgstr ""
+"Affichage de la prévisualisation d'un caractère dans une fenêtre séparée. "
+"Lorsque cette option est activée, la fenêtre de prévisualisation s'affiche "
+"quand le pointeur de souris est positionné sur le bouton pendant quelque "
+"temps."
+
+#: ../src/scim_input_pad.cpp:745
+msgid "_Preview Size (pt):"
+msgstr "Taille de _Prévisualisation (pt) :"
+
+#: ../src/scim_input_pad.cpp:759
+msgid "The size of preview, in points."
+msgstr "La taille utilisée pour la prévisualisation, en points."
+
+#: ../src/scim_input_pad.cpp:767
+msgid "Preview _Delay (ms):"
+msgstr "_Délai de prévisualisation (ms) :"
+
+#: ../src/scim_input_pad.cpp:781
+msgid ""
+"The delay between moving mouse pointer onto the button and showing preview. "
+"In milliseconds."
+msgstr ""
+"Le délai au bout duquel la prévisualisation s'affiche après le "
+"positionnement de la souris. En millisecondes."
+
+#. Enable repeat
+#: ../src/scim_input_pad.cpp:789
+msgid "_Enable Repeat"
+msgstr "Activation des _Répétitions"
+
+#: ../src/scim_input_pad.cpp:793
+msgid ""
+"Whether to enable repeatedly committing. If it's enabled, then the character "
+"or key event will be committed to client repeatedly if you hold the button "
+"pressed."
+msgstr ""
+"Activation du mode répétition. Lorsque cette option est activée, le "
+"caractère ou l'événement clavier sera envoyé au client de manière répétitive "
+"tant que la touche restera appuyée."
+
+#: ../src/scim_input_pad.cpp:804
+msgid "_Repeat Delay (ms):"
+msgstr "Délai de Répé_tition (ms) :"
+
+#: ../src/scim_input_pad.cpp:818
+msgid ""
+"The delay between pressing down the button and starting repeatedly "
+"committing.In milliseconds."
+msgstr ""
+"Le délai au bout duquel l'envoi à répétition démarre lorsque l'appui sur une "
+"touche est maintenu. En millisecondes."
+
+#: ../src/scim_input_pad.cpp:827
+msgid "Repeat _Frequency (times/sec):"
+msgstr "_Fréquence de Répétition (nombre / sec) :"
+
+#: ../src/scim_input_pad.cpp:841
+msgid "The frequency of repeatedly committing. In times/second."
+msgstr ""
+"La fréquence à laquelle les répétitions sont envoyées. En nombre de fois par "
+"seconde."
+
+#. Show preview
+#: ../src/scim_input_pad.cpp:848
+msgid "_Clear Recently Used history"
+msgstr "_Effacer Historique Derniers Utilisés"
+
+#: ../src/scim_input_pad.cpp:852
+msgid ""
+"If it's checked, then the history of recently used characters and key events "
+"will be cleared."
+msgstr ""
+"Lorsque cette option est activée, l'historique des derniers caractères "
+"utilisés est automatiquement effacé."
+
+#: ../src/scim_input_pad.cpp:940
+msgid "Open the options dialog."
+msgstr "Ouverture de la fenêtre d'options."
+
+#: ../src/scim_input_pad.cpp:1009
+msgid "Characters"
+msgstr "Caractères"
+
+#: ../src/scim_input_pad.cpp:1011
+msgid "KeyEvents"
+msgstr "Evénements Clavier"
+
+#: ../src/scim_input_pad.cpp:1067
+msgid "Show/Hide Input Pad."
+msgstr "Affichage/Masquage du Pavé de Saisie."
+
+#.
+#. vi:ts=4:nowrap:ai:expandtab
+#.
+#: ../data/base.pad.in.h:1
+msgid "Arrow"
+msgstr "Flèche"
+
+#: ../data/base.pad.in.h:2
+msgid "Block"
+msgstr "Bloc"
+
+#: ../data/base.pad.in.h:3
+msgid "Box drawing"
+msgstr "Dessin de Boite"
+
+#: ../data/base.pad.in.h:4
+msgid "Braille"
+msgstr "Braille"
+
+#: ../data/base.pad.in.h:5
+msgid "CJK"
+msgstr "CJK"
+
+#: ../data/base.pad.in.h:6
+msgid "CJK Compatibility"
+msgstr "Compatibilité CJK"
+
+#: ../data/base.pad.in.h:7
+msgid "Controls"
+msgstr "Contrôles"
+
+#: ../data/base.pad.in.h:8
+msgid "Currency"
+msgstr "Monnaies"
+
+#: ../data/base.pad.in.h:9
+msgid "Dingbats"
+msgstr "Signes Typographiques"
+
+#: ../data/base.pad.in.h:10 ../data/japanese.pad.in.h:2
+msgid "Enclosed"
+msgstr "Incorporés"
+
+#: ../data/base.pad.in.h:11
+msgid "Fraction"
+msgstr "Fractions"
+
+#: ../data/base.pad.in.h:12
+msgid "General"
+msgstr "Général"
+
+#: ../data/base.pad.in.h:13
+msgid "Geometric"
+msgstr "Géométrie"
+
+#: ../data/base.pad.in.h:14
+msgid "Graphics"
+msgstr "Graphiques"
+
+#: ../data/base.pad.in.h:15
+msgid "Latin"
+msgstr "Latin"
+
+#: ../data/base.pad.in.h:16
+msgid "Latin Extended-A"
+msgstr "Latin Etendu-A"
+
+#: ../data/base.pad.in.h:17
+msgid "Latin-1 Supplement"
+msgstr "Latin-1 Supplément"
+
+#: ../data/base.pad.in.h:18
+msgid "Letterlike"
+msgstr "Lettres"
+
+#: ../data/base.pad.in.h:19
+msgid "Mathematical"
+msgstr "Mathématiques"
+
+#: ../data/base.pad.in.h:20 ../data/japanese.pad.in.h:9
+msgid "Miscellaneous"
+msgstr "Divers"
+
+#: ../data/base.pad.in.h:21 ../data/chinese.pad.in.h:3
+msgid "Numbers"
+msgstr "Nombres"
+
+#: ../data/base.pad.in.h:22
+msgid "OCR"
+msgstr "OCR"
+
+#: ../data/base.pad.in.h:23 ../data/japanese.pad.in.h:10
+msgid "Punctuations"
+msgstr "Ponctuation"
+
+#: ../data/base.pad.in.h:24
+msgid "Roman"
+msgstr "Romain"
+
+#: ../data/base.pad.in.h:25
+msgid "Small Form"
+msgstr "Petites Formes"
+
+#: ../data/base.pad.in.h:26
+msgid "Subscripts"
+msgstr "Indices"
+
+#: ../data/base.pad.in.h:27
+msgid "Superscripts"
+msgstr "Exposants"
+
+#: ../data/base.pad.in.h:28
+msgid "Symbols"
+msgstr "Symboles"
+
+#: ../data/base.pad.in.h:29
+msgid "Technicals"
+msgstr "Symboles Techniques"
+
+#: ../data/base.pad.in.h:30
+msgid "Unit"
+msgstr "Unités"
+
+#: ../data/japanese.pad.in.h:1
+msgid "CJK Radicals Extension"
+msgstr "Radicaux CJK (extension)"
+
+#: ../data/japanese.pad.in.h:3
+msgid "Hiragana"
+msgstr "Hiragana"
+
+#: ../data/japanese.pad.in.h:4
+msgid "Ideographic Description Characters"
+msgstr "Caractères de Description Idéographiques"
+
+#: ../data/japanese.pad.in.h:5 ../data/keyboard.pad.in.h:4
+msgid "Japanese"
+msgstr "Japonais"
+
+#: ../data/japanese.pad.in.h:6
+msgid "Kanbun"
+msgstr "Kanbun"
+
+#: ../data/japanese.pad.in.h:7
+msgid "KangXi Radicals"
+msgstr "Radicaux KangXi"
+
+#: ../data/japanese.pad.in.h:8 ../data/keyboard.pad.in.h:5
+msgid "Katakana"
+msgstr "Katakana"
+
+#: ../data/japanese.pad.in.h:11
+msgid "Radicals (UniHan Ideographs)"
+msgstr "Radicaux (Idéogrammes Unihan)"
+
+#: ../data/chinese.pad.in.h:1
+msgid "Bopomofo"
+msgstr "Bopomofo"
+
+#: ../data/chinese.pad.in.h:2
+msgid "Chinese"
+msgstr "Chinois"
+
+#: ../data/chinese.pad.in.h:4
+msgid "Radicals"
+msgstr "Radicaux"
+
+#: ../data/keyboard.pad.in.h:1
+msgid "Compose Keys"
+msgstr "Touches Composées"
+
+#: ../data/keyboard.pad.in.h:2
+msgid "Function Keys"
+msgstr "Touches de Fonction"
+
+#: ../data/keyboard.pad.in.h:3
+msgid "Hangul Chars"
+msgstr "Caractères Hangul"
+
+#: ../data/keyboard.pad.in.h:6
+msgid "Korean"
+msgstr "Coréen"
+
+#: ../data/keyboard.pad.in.h:7
+msgid "Virtual Keyboard"
+msgstr "Clavier Virtuel"

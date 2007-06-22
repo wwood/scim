@@ -1,0 +1,310 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-12-06 09:40+0800\n"
+"PO-Revision-Date: 2005-03-05 12:16+0800\n"
+"Last-Translator: James Su<suzhe@tsinghua.org.cn>\n"
+"Language-Team: Simplified Chinese <zh@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/scim_input_pad.cpp:119 ../src/scim_input_pad.cpp:1067
+msgid "Input Pad"
+msgstr "输入板"
+
+#: ../src/scim_input_pad.cpp:120
+msgid "An On Screen Input Pad to input some symbols easily."
+msgstr "一个屏幕上的输入板，可以用来很方便的输入一些符号."
+
+#: ../src/scim_input_pad.cpp:619
+msgid "Recently Used"
+msgstr "最近使用过的"
+
+#: ../src/scim_input_pad.cpp:719 ../src/scim_input_pad.cpp:936
+msgid "Options"
+msgstr "选项"
+
+#. Show preview
+#: ../src/scim_input_pad.cpp:729
+msgid "_Show Preview"
+msgstr "显示预览(_S)"
+
+#: ../src/scim_input_pad.cpp:733
+msgid ""
+"Whether to show preview of a character in a popup window with larger size.If "
+"it's enabled, then a preview window will be showed if mouse pointer is moved "
+"onto the button and stay for a short while."
+msgstr ""
+"是否在一个弹出式窗口中显示字符的大尺寸预览. 如果打开这个选项, 则预览窗口会在"
+"把鼠标光标移动到按钮上并停留一段时间后显示出来."
+
+#: ../src/scim_input_pad.cpp:745
+msgid "_Preview Size (pt):"
+msgstr "预览尺寸(pt)(_P):"
+
+#: ../src/scim_input_pad.cpp:759
+msgid "The size of preview, in points."
+msgstr "预览的尺寸, 以1/72英寸为单位."
+
+#: ../src/scim_input_pad.cpp:767
+msgid "Preview _Delay (ms):"
+msgstr "预览延时(毫秒)(_D):"
+
+#: ../src/scim_input_pad.cpp:781
+msgid ""
+"The delay between moving mouse pointer onto the button and showing preview. "
+"In milliseconds."
+msgstr "在把鼠标光标移动到按钮上和显示预览之间的延时, 以毫秒为单位."
+
+#. Enable repeat
+#: ../src/scim_input_pad.cpp:789
+msgid "_Enable Repeat"
+msgstr "允许重复发送(_E)"
+
+#: ../src/scim_input_pad.cpp:793
+msgid ""
+"Whether to enable repeatedly committing. If it's enabled, then the character "
+"or key event will be committed to client repeatedly if you hold the button "
+"pressed."
+msgstr ""
+"是否允许重复发送. 如果打开这个选项, 则当按住按钮不放时, 所选字符或按键事件会"
+"被不断的重复发送给客户程序."
+
+#: ../src/scim_input_pad.cpp:804
+msgid "_Repeat Delay (ms):"
+msgstr "重复发送延时(毫秒)(_R):"
+
+#: ../src/scim_input_pad.cpp:818
+msgid ""
+"The delay between pressing down the button and starting repeatedly "
+"committing.In milliseconds."
+msgstr "当按下按钮到开始重复发送之间的延时. 以毫秒为单位."
+
+#: ../src/scim_input_pad.cpp:827
+msgid "Repeat _Frequency (times/sec):"
+msgstr "重复发送频率(次/每秒)(_F):"
+
+#: ../src/scim_input_pad.cpp:841
+msgid "The frequency of repeatedly committing. In times/second."
+msgstr "重复发送的频率, 以 次/每秒 为单位."
+
+#. Show preview
+#: ../src/scim_input_pad.cpp:848
+msgid "_Clear Recently Used history"
+msgstr "清除最近使用的历史记录(_C)"
+
+#: ../src/scim_input_pad.cpp:852
+msgid ""
+"If it's checked, then the history of recently used characters and key events "
+"will be cleared."
+msgstr "如果选中这个选项, 则最近使用过的字符和按键事件历史将被清除."
+
+#: ../src/scim_input_pad.cpp:940
+msgid "Open the options dialog."
+msgstr "打开选项对话窗."
+
+#: ../src/scim_input_pad.cpp:1009
+msgid "Characters"
+msgstr "字符"
+
+#: ../src/scim_input_pad.cpp:1011
+msgid "KeyEvents"
+msgstr "按键事件"
+
+#: ../src/scim_input_pad.cpp:1067
+msgid "Show/Hide Input Pad."
+msgstr "显示/隐藏输入板."
+
+#.
+#. vi:ts=4:nowrap:ai:expandtab
+#.
+#: ../data/base.pad.in.h:1
+msgid "Arrow"
+msgstr "箭头"
+
+#: ../data/base.pad.in.h:2
+msgid "Block"
+msgstr "块状图案"
+
+#: ../data/base.pad.in.h:3
+msgid "Box drawing"
+msgstr "制表符"
+
+#: ../data/base.pad.in.h:4
+msgid "Braille"
+msgstr "盲文"
+
+#: ../data/base.pad.in.h:5
+msgid "CJK"
+msgstr "中日韩"
+
+#: ../data/base.pad.in.h:6
+msgid "CJK Compatibility"
+msgstr "中日韩兼容"
+
+#: ../data/base.pad.in.h:7
+msgid "Controls"
+msgstr "控制符"
+
+#: ../data/base.pad.in.h:8
+msgid "Currency"
+msgstr "货币"
+
+#: ../data/base.pad.in.h:9
+msgid "Dingbats"
+msgstr ""
+
+#: ../data/base.pad.in.h:10 ../data/japanese.pad.in.h:2
+msgid "Enclosed"
+msgstr "打圈的数字"
+
+#: ../data/base.pad.in.h:11
+msgid "Fraction"
+msgstr "分数"
+
+#: ../data/base.pad.in.h:12
+msgid "General"
+msgstr "通用"
+
+#: ../data/base.pad.in.h:13
+msgid "Geometric"
+msgstr "几何符号"
+
+#: ../data/base.pad.in.h:14
+msgid "Graphics"
+msgstr "图形符号"
+
+#: ../data/base.pad.in.h:15
+msgid "Latin"
+msgstr "拉丁文"
+
+#: ../data/base.pad.in.h:16
+msgid "Latin Extended-A"
+msgstr "拉丁文扩展-A"
+
+#: ../data/base.pad.in.h:17
+msgid "Latin-1 Supplement"
+msgstr "拉丁文-1 补充"
+
+#: ../data/base.pad.in.h:18
+msgid "Letterlike"
+msgstr "文字形符号"
+
+#: ../data/base.pad.in.h:19
+msgid "Mathematical"
+msgstr "数学符号"
+
+#: ../data/base.pad.in.h:20 ../data/japanese.pad.in.h:9
+msgid "Miscellaneous"
+msgstr "附加符号"
+
+#: ../data/base.pad.in.h:21 ../data/chinese.pad.in.h:3
+msgid "Numbers"
+msgstr "数字"
+
+#: ../data/base.pad.in.h:22
+msgid "OCR"
+msgstr ""
+
+#: ../data/base.pad.in.h:23 ../data/japanese.pad.in.h:10
+msgid "Punctuations"
+msgstr "标点符号"
+
+#: ../data/base.pad.in.h:24
+msgid "Roman"
+msgstr "罗马"
+
+#: ../data/base.pad.in.h:25
+msgid "Small Form"
+msgstr "小尺寸"
+
+#: ../data/base.pad.in.h:26
+msgid "Subscripts"
+msgstr "下标"
+
+#: ../data/base.pad.in.h:27
+msgid "Superscripts"
+msgstr "上标"
+
+#: ../data/base.pad.in.h:28
+msgid "Symbols"
+msgstr "符号"
+
+#: ../data/base.pad.in.h:29
+msgid "Technicals"
+msgstr "技术符号"
+
+#: ../data/base.pad.in.h:30
+msgid "Unit"
+msgstr "单位"
+
+#: ../data/japanese.pad.in.h:1
+msgid "CJK Radicals Extension"
+msgstr "CJK偏旁部首扩展"
+
+#: ../data/japanese.pad.in.h:3
+msgid "Hiragana"
+msgstr "平假名"
+
+#: ../data/japanese.pad.in.h:4
+msgid "Ideographic Description Characters"
+msgstr "表意描述字符"
+
+#: ../data/japanese.pad.in.h:5 ../data/keyboard.pad.in.h:4
+msgid "Japanese"
+msgstr "日语"
+
+#: ../data/japanese.pad.in.h:6
+msgid "Kanbun"
+msgstr ""
+
+#: ../data/japanese.pad.in.h:7
+msgid "KangXi Radicals"
+msgstr "康熙偏旁部首"
+
+#: ../data/japanese.pad.in.h:8 ../data/keyboard.pad.in.h:5
+msgid "Katakana"
+msgstr "片假名"
+
+#: ../data/japanese.pad.in.h:11
+msgid "Radicals (UniHan Ideographs)"
+msgstr "偏旁部首(统一汉字表意字符)"
+
+#: ../data/chinese.pad.in.h:1
+msgid "Bopomofo"
+msgstr "注音符号"
+
+#: ../data/chinese.pad.in.h:2
+msgid "Chinese"
+msgstr "中文"
+
+#: ../data/chinese.pad.in.h:4
+msgid "Radicals"
+msgstr "偏旁部首"
+
+#: ../data/keyboard.pad.in.h:1
+msgid "Compose Keys"
+msgstr "组合键"
+
+#: ../data/keyboard.pad.in.h:2
+msgid "Function Keys"
+msgstr "功能键"
+
+#: ../data/keyboard.pad.in.h:3
+msgid "Hangul Chars"
+msgstr "韩文字符"
+
+#: ../data/keyboard.pad.in.h:6
+msgid "Korean"
+msgstr "韩语"
+
+#: ../data/keyboard.pad.in.h:7
+msgid "Virtual Keyboard"
+msgstr "虚拟键盘"

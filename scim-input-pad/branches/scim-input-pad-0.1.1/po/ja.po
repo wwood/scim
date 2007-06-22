@@ -1,0 +1,314 @@
+# translation of scim-input-pad.po to Japanese
+# Copyright (C) 2005 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Yukiko BANDO <ybando@k6.dion.ne.jp>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: translation of scim-input-pad.po\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-12-06 09:40+0800\n"
+"PO-Revision-Date: 2005-03-19 07:00+0900\n"
+"Last-Translator: Yukiko BANDO <ybando@k6.dion.ne.jp>\n"
+"Language-Team: Japanese <ja@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/scim_input_pad.cpp:119 ../src/scim_input_pad.cpp:1067
+msgid "Input Pad"
+msgstr "入力パッド"
+
+#: ../src/scim_input_pad.cpp:120
+msgid "An On Screen Input Pad to input some symbols easily."
+msgstr "記号などを簡単に入力するためのオンスクリーン入力パッド"
+
+#: ../src/scim_input_pad.cpp:619
+msgid "Recently Used"
+msgstr "使用履歴"
+
+#: ../src/scim_input_pad.cpp:719 ../src/scim_input_pad.cpp:936
+msgid "Options"
+msgstr "オプション"
+
+#. Show preview
+#: ../src/scim_input_pad.cpp:729
+msgid "_Show Preview"
+msgstr "プレビューを表示(_S)"
+
+#: ../src/scim_input_pad.cpp:733
+msgid ""
+"Whether to show preview of a character in a popup window with larger size.If "
+"it's enabled, then a preview window will be showed if mouse pointer is moved "
+"onto the button and stay for a short while."
+msgstr ""
+"このオプションを有効にすると、記号・文字などのボタンの上にマウスポインタを移"
+"動した時にポップアップにプレビューが大きなサイズで表示されます。"
+
+#: ../src/scim_input_pad.cpp:745
+msgid "_Preview Size (pt):"
+msgstr "プレビューのサイズ(ポイント)(_P):"
+
+#: ../src/scim_input_pad.cpp:759
+msgid "The size of preview, in points."
+msgstr "プレビューを表示するサイズ(ポイント)"
+
+#: ../src/scim_input_pad.cpp:767
+msgid "Preview _Delay (ms):"
+msgstr "プレビューの遅延(ミリ秒)(_D):"
+
+#: ../src/scim_input_pad.cpp:781
+msgid ""
+"The delay between moving mouse pointer onto the button and showing preview. "
+"In milliseconds."
+msgstr ""
+"記号・文字などのボタンの上にマウスポインタを移動してからプレビューを表示する"
+"までの遅延時間(ミリ秒)"
+
+#. Enable repeat
+#: ../src/scim_input_pad.cpp:789
+msgid "_Enable Repeat"
+msgstr "リピートを有効にする(_E)"
+
+#: ../src/scim_input_pad.cpp:793
+msgid ""
+"Whether to enable repeatedly committing. If it's enabled, then the character "
+"or key event will be committed to client repeatedly if you hold the button "
+"pressed."
+msgstr ""
+"このオプションを有効にすると、ボタンを押し続けることによって記号・文字または"
+"キーイベントを繰り返しクライアントにコミットすることができます。"
+
+#: ../src/scim_input_pad.cpp:804
+msgid "_Repeat Delay (ms):"
+msgstr "リピートの遅延(ミリ秒)(_R):"
+
+#: ../src/scim_input_pad.cpp:818
+msgid ""
+"The delay between pressing down the button and starting repeatedly "
+"committing.In milliseconds."
+msgstr "ボタンを押してからリピートを開始するまでの遅延時間(ミリ秒)"
+
+#: ../src/scim_input_pad.cpp:827
+msgid "Repeat _Frequency (times/sec):"
+msgstr "リピート頻度(回/秒)(_F):"
+
+#: ../src/scim_input_pad.cpp:841
+msgid "The frequency of repeatedly committing. In times/second."
+msgstr "リピートを実行する頻度(回/秒)"
+
+#. Show preview
+#: ../src/scim_input_pad.cpp:848
+msgid "_Clear Recently Used history"
+msgstr "使用履歴をクリア(_C)"
+
+#: ../src/scim_input_pad.cpp:852
+msgid ""
+"If it's checked, then the history of recently used characters and key events "
+"will be cleared."
+msgstr ""
+"チェックを入れてOKを押すと最近使用した文字とキーイベントが使用履歴から削除さ"
+"れます。"
+
+#: ../src/scim_input_pad.cpp:940
+msgid "Open the options dialog."
+msgstr "オプションダイアログを開く"
+
+#: ../src/scim_input_pad.cpp:1009
+msgid "Characters"
+msgstr "文字・記号"
+
+#: ../src/scim_input_pad.cpp:1011
+msgid "KeyEvents"
+msgstr "キーイベント"
+
+#: ../src/scim_input_pad.cpp:1067
+msgid "Show/Hide Input Pad."
+msgstr "入力パッドを表示/非表示"
+
+#.
+#. vi:ts=4:nowrap:ai:expandtab
+#.
+#: ../data/base.pad.in.h:1
+msgid "Arrow"
+msgstr "矢印"
+
+#: ../data/base.pad.in.h:2
+msgid "Block"
+msgstr "ブロック"
+
+#: ../data/base.pad.in.h:3
+msgid "Box drawing"
+msgstr "罫線"
+
+#: ../data/base.pad.in.h:4
+msgid "Braille"
+msgstr "点字"
+
+#: ../data/base.pad.in.h:5
+msgid "CJK"
+msgstr "CJK"
+
+#: ../data/base.pad.in.h:6
+msgid "CJK Compatibility"
+msgstr "CJK互換文字"
+
+#: ../data/base.pad.in.h:7
+msgid "Controls"
+msgstr "制御機能用記号"
+
+#: ../data/base.pad.in.h:8
+msgid "Currency"
+msgstr "通貨記号"
+
+#: ../data/base.pad.in.h:9
+msgid "Dingbats"
+msgstr "Dingbats"
+
+#: ../data/base.pad.in.h:10 ../data/japanese.pad.in.h:2
+msgid "Enclosed"
+msgstr "囲み文字"
+
+#: ../data/base.pad.in.h:11
+msgid "Fraction"
+msgstr "分数"
+
+#: ../data/base.pad.in.h:12
+msgid "General"
+msgstr "一般"
+
+#: ../data/base.pad.in.h:13
+msgid "Geometric"
+msgstr "幾何学模様"
+
+#: ../data/base.pad.in.h:14
+msgid "Graphics"
+msgstr "図形"
+
+#: ../data/base.pad.in.h:15
+msgid "Latin"
+msgstr "ラテン文字"
+
+#: ../data/base.pad.in.h:16
+msgid "Latin Extended-A"
+msgstr "ラテン文字拡張Ａ"
+
+#: ../data/base.pad.in.h:17
+msgid "Latin-1 Supplement"
+msgstr "ラテン-1 補助"
+
+#: ../data/base.pad.in.h:18
+msgid "Letterlike"
+msgstr "文字様記号"
+
+#: ../data/base.pad.in.h:19
+msgid "Mathematical"
+msgstr "数学記号"
+
+#: ../data/base.pad.in.h:20 ../data/japanese.pad.in.h:9
+msgid "Miscellaneous"
+msgstr "その他"
+
+#: ../data/base.pad.in.h:21 ../data/chinese.pad.in.h:3
+msgid "Numbers"
+msgstr "数字"
+
+#: ../data/base.pad.in.h:22
+msgid "OCR"
+msgstr "OCR"
+
+#: ../data/base.pad.in.h:23 ../data/japanese.pad.in.h:10
+msgid "Punctuations"
+msgstr "句読点"
+
+#: ../data/base.pad.in.h:24
+msgid "Roman"
+msgstr "ローマ数字"
+
+#: ../data/base.pad.in.h:25
+msgid "Small Form"
+msgstr "小字形"
+
+#: ../data/base.pad.in.h:26
+msgid "Subscripts"
+msgstr "下付き文字"
+
+#: ../data/base.pad.in.h:27
+msgid "Superscripts"
+msgstr "上付き文字"
+
+#: ../data/base.pad.in.h:28
+msgid "Symbols"
+msgstr "記号"
+
+#: ../data/base.pad.in.h:29
+msgid "Technicals"
+msgstr "専門的記号"
+
+#: ../data/base.pad.in.h:30
+msgid "Unit"
+msgstr "単位"
+
+#: ../data/japanese.pad.in.h:1
+msgid "CJK Radicals Extension"
+msgstr "CJK 部首 (拡張)"
+
+#: ../data/japanese.pad.in.h:3
+msgid "Hiragana"
+msgstr "ひらがな"
+
+#: ../data/japanese.pad.in.h:4
+msgid "Ideographic Description Characters"
+msgstr "漢字構成記述文字"
+
+#: ../data/japanese.pad.in.h:5 ../data/keyboard.pad.in.h:4
+msgid "Japanese"
+msgstr "日本語"
+
+#: ../data/japanese.pad.in.h:6
+msgid "Kanbun"
+msgstr "漢文"
+
+#: ../data/japanese.pad.in.h:7
+msgid "KangXi Radicals"
+msgstr "KangXi 部首"
+
+#: ../data/japanese.pad.in.h:8 ../data/keyboard.pad.in.h:5
+msgid "Katakana"
+msgstr "カタカナ"
+
+#: ../data/japanese.pad.in.h:11
+msgid "Radicals (UniHan Ideographs)"
+msgstr "部首 (UniHan)"
+
+#: ../data/chinese.pad.in.h:1
+msgid "Bopomofo"
+msgstr "Bopomofo"
+
+#: ../data/chinese.pad.in.h:2
+msgid "Chinese"
+msgstr "中国語"
+
+#: ../data/chinese.pad.in.h:4
+msgid "Radicals"
+msgstr "部首"
+
+#: ../data/keyboard.pad.in.h:1
+msgid "Compose Keys"
+msgstr "コンポーズキー"
+
+#: ../data/keyboard.pad.in.h:2
+msgid "Function Keys"
+msgstr "ファンクションキー"
+
+#: ../data/keyboard.pad.in.h:3
+msgid "Hangul Chars"
+msgstr "ハングル文字"
+
+#: ../data/keyboard.pad.in.h:6
+msgid "Korean"
+msgstr "ハングル"
+
+#: ../data/keyboard.pad.in.h:7
+msgid "Virtual Keyboard"
+msgstr "仮想キーボード"
