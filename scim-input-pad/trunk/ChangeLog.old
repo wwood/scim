@@ -1,0 +1,387 @@
+2005-03-18	14:1	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	data/base.pad.in (1.5) (+47 -0)
+		po/ja.po (1.8) (+65 -31)
+		po/scim-input-pad.pot (1.7) (+65 -30)
+		po/zh_CN.po (1.8) (+65 -31)
+		po/zh_TW.po (1.5) (+66 -31)
+		src/scim_input_group.cpp (1.3) (+64 -4)
+		src/scim_input_group.h (1.2) (+36 -3)
+		src/scim_input_pad.cpp (1.8) (+206 -8)
+
+	Added Recently Used history feature.
+
+2005-03-13	14:0	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	data/base.pad.in (1.4) (+1 -0)
+
+	0x00A9 0x00AE were added into base.pad
+
+2005-03-11	04:5	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	po/.cvsignore (1.2) (+1 -0)
+
+	*** empty log message ***
+
+2005-03-11	04:4	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	data/base.pad.in (1.3) (+5 -9)
+		data/japanese.pad.in (1.3) (+63 -39)
+		po/ja.po (1.7) (+7 -14)
+		po/scim-input-pad.pot (1.6) (+6 -14)
+		po/zh_CN.po (1.7) (+7 -14)
+		po/zh_TW.po (1.4) (+7 -14)
+
+	Updated data files and po files.
+
+2005-03-10	08:0	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	ChangeLog (1.2) (+348 -0)
+
+	Updated ChangeLog.
+
+2005-03-10	07:3	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	configure.ac (1.4) (+1 -1)
+
+	Bump version to 0.0.3
+
+2005-03-10	07:2	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	configure.ac (1.3) (+1 -1)
+		data/base.pad.in (1.2) (+5 -5)
+		po/ja.po (1.5) (+20 -14)
+		po/scim-input-pad.pot (1.4) (+2 -2)
+		po/zh_CN.po (1.5) (+17 -13)
+		po/zh_TW.po (1.2) (+22 -18)
+		src/scim_input_pad.cpp (1.6) (+2 -2)
+
+	Updated ja.po zh_TW.po and base.pad.in
+
+2005-03-10	07:2	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	po/ja.po (1.6) (+2 -6)
+		po/scim-input-pad.pot (1.5) (+2 -6)
+		po/zh_CN.po (1.6) (+2 -6)
+		po/zh_TW.po (1.3) (+2 -6)
+		src/scim_input_pad.cpp (1.7) (+2 -2)
+
+	*** empty log message ***
+
+2005-03-09	13:5	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	po/zh_TW.po (1.1) ( )
+
+	Added zh_TW.po
+
+2005-03-09	13:5	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	po/ja.po (1.4) (+73 -5)
+		po/scim-input-pad.pot (1.3) (+73 -5)
+		po/zh_CN.po (1.4) (+73 -5)
+
+	*** empty log message ***
+
+2005-03-09	13:4	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	src/scim_input_pad.cpp (1.5) (+296 -26)
+
+	Remember the main window position.
+	Added an options dialog to change the options.
+	Added tooltips for options.
+	Added repeatedly committing ability.
+
+2005-03-08	08:1	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	data/.cvsignore (1.2) (+4 -0)
+		po/ja.po (1.3) (+18 -19)
+
+	Updated ja.po
+
+2005-03-07	23:4	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	data/japanese.pad.in (1.2) (+67 -25)
+		po/ja.po (1.2) (+12 -4)
+		po/scim-input-pad.pot (1.2) (+169 -6)
+		po/zh_CN.po (1.3) (+12 -4)
+
+	Update japanese.pad
+
+2005-03-07	15:3	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	intltool-extract.in (1.1) ( )
+		intltool-merge.in (1.1) ( )
+		intltool-update.in (1.1) ( )
+
+	Added intltool scripts.
+
+2005-03-07	15:2	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	.cvsignore (1.2) (+3 -0)
+		Makefile.am (1.2) (+15 -2)
+		README (1.2) (+14 -8)
+		configure.ac (1.2) (+5 -2)
+		scim-input-pad.spec.in (1.2) (+4 -3)
+		data/Makefile.am (1.2) (+14 -4)
+		data/base.pad.in (1.1) ( )
+		data/chinese.pad.in (1.1) ( )
+		data/japanese.pad.in (1.1) ( )
+		data/keyboard.pad.in (1.1) ( )
+		m4/Makefile.am (1.2) (+1 -1)
+		m4/intltool.m4 (1.1) ( )
+		po/Makefile.in.in (1.2) (+161 -273)
+		po/Makevars (1.2) (+2 -2)
+		po/POTFILES.in (1.2) (+4 -0)
+		po/ja.po (1.1) ( )
+		po/zh_CN.po (1.2) (+160 -5)
+		src/scim_input_group.cpp (1.2) (+5 -5)
+		src/scim_input_pad.cpp (1.4) (+8 -5)
+
+	Make the window scrollable.
+	Use intltool to localize the group/table names.
+	Add keyboard.pad
+
+2005-03-07	02:3	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	src/scim_input_pad.cpp (1.3) (+87 -18)
+
+	Added scrollbar.
+	Remember last viewed group and table.
+	Added Japanese translation group/table names.
+
+2005-03-06	12:1	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	src/scim_input_pad.cpp (1.2) (+2 -1)
+
+	Connect trigger_property signal.
+
+2005-03-06	10:0	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	.cvsignore (1.1) ( )
+		ABOUT-NLS (1.1) ( )
+		AUTHORS (1.1) ( )
+		COPYING (1.1) ( )
+		ChangeLog (1.1) ( )
+		INSTALL (1.1) ( )
+		Makefile.am (1.1) ( )
+		NEWS (1.1) ( )
+		README (1.1) ( )
+		bootstrap (1.1) ( )
+		config.rpath (1.1) ( )
+		configure.ac (1.1) ( )
+		mkchlog (1.1) ( )
+		mkinstalldirs (1.1) ( )
+		scim-input-pad.spec.in (1.1) ( )
+		data/.cvsignore (1.1) ( )
+		data/Makefile.am (1.1) ( )
+		data/input-pad.png (1.1) ( )
+		data/scim-input-pad.in (1.1) ( )
+		intl/.cvsignore (1.1) ( )
+		intl/ChangeLog (1.1) ( )
+		intl/Makefile.in (1.1) ( )
+		intl/VERSION (1.1) ( )
+		intl/bindtextdom.c (1.1) ( )
+		intl/config.charset (1.1) ( )
+		intl/dcgettext.c (1.1) ( )
+		intl/dcigettext.c (1.1) ( )
+		intl/dcngettext.c (1.1) ( )
+		intl/dgettext.c (1.1) ( )
+		intl/dngettext.c (1.1) ( )
+		intl/eval-plural.h (1.1) ( )
+		intl/explodename.c (1.1) ( )
+		intl/finddomain.c (1.1) ( )
+		intl/gettext.c (1.1) ( )
+		intl/gettextP.h (1.1) ( )
+		intl/gmo.h (1.1) ( )
+		intl/hash-string.h (1.1) ( )
+		intl/intl-compat.c (1.1) ( )
+		intl/l10nflist.c (1.1) ( )
+		intl/libgnuintl.h.in (1.1) ( )
+		intl/loadinfo.h (1.1) ( )
+		intl/loadmsgcat.c (1.1) ( )
+		intl/localcharset.c (1.1) ( )
+		intl/localcharset.h (1.1) ( )
+		intl/locale.alias (1.1) ( )
+		intl/localealias.c (1.1) ( )
+		intl/localename.c (1.1) ( )
+		intl/log.c (1.1) ( )
+		intl/ngettext.c (1.1) ( )
+		intl/os2compat.c (1.1) ( )
+		intl/os2compat.h (1.1) ( )
+		intl/osdep.c (1.1) ( )
+		intl/plural-exp.c (1.1) ( )
+		intl/plural-exp.h (1.1) ( )
+		intl/plural.c (1.1) ( )
+		intl/plural.y (1.1) ( )
+		intl/printf-args.c (1.1) ( )
+		intl/printf-args.h (1.1) ( )
+		intl/printf-parse.c (1.1) ( )
+		intl/printf-parse.h (1.1) ( )
+		intl/printf.c (1.1) ( )
+		intl/ref-add.sin (1.1) ( )
+		intl/ref-del.sin (1.1) ( )
+		intl/relocatable.c (1.1) ( )
+		intl/relocatable.h (1.1) ( )
+		intl/textdomain.c (1.1) ( )
+		intl/vasnprintf.c (1.1) ( )
+		intl/vasnprintf.h (1.1) ( )
+		intl/vasnwprintf.h (1.1) ( )
+		intl/wprintf-parse.h (1.1) ( )
+		intl/xsize.h (1.1) ( )
+		m4/.cvsignore (1.1) ( )
+		m4/Makefile.am (1.1) ( )
+		m4/codeset.m4 (1.1) ( )
+		m4/gettext.m4 (1.1) ( )
+		m4/glibc21.m4 (1.1) ( )
+		m4/iconv.m4 (1.1) ( )
+		m4/intdiv0.m4 (1.1) ( )
+		m4/intmax.m4 (1.1) ( )
+		m4/inttypes-pri.m4 (1.1) ( )
+		m4/inttypes.m4 (1.1) ( )
+		m4/inttypes_h.m4 (1.1) ( )
+		m4/isc-posix.m4 (1.1) ( )
+		m4/lcmessage.m4 (1.1) ( )
+		m4/lib-ld.m4 (1.1) ( )
+		m4/lib-link.m4 (1.1) ( )
+		m4/lib-prefix.m4 (1.1) ( )
+		m4/longdouble.m4 (1.1) ( )
+		m4/longlong.m4 (1.1) ( )
+		m4/nls.m4 (1.1) ( )
+		m4/po.m4 (1.1) ( )
+		m4/printf-posix.m4 (1.1) ( )
+		m4/progtest.m4 (1.1) ( )
+		m4/signed.m4 (1.1) ( )
+		m4/size_max.m4 (1.1) ( )
+		m4/stdint_h.m4 (1.1) ( )
+		m4/uintmax_t.m4 (1.1) ( )
+		m4/ulonglong.m4 (1.1) ( )
+		m4/wchar_t.m4 (1.1) ( )
+		m4/wint_t.m4 (1.1) ( )
+		m4/xsize.m4 (1.1) ( )
+		po/.cvsignore (1.1) ( )
+		po/Makefile.in.in (1.1) ( )
+		po/Makevars (1.1) ( )
+		po/POTFILES.in (1.1) ( )
+		po/Rules-quot (1.1) ( )
+		po/boldquot.sed (1.1) ( )
+		po/en@boldquot.header (1.1) ( )
+		po/en@quot.header (1.1) ( )
+		po/insert-header.sin (1.1) ( )
+		po/quot.sed (1.1) ( )
+		po/remove-potcdate.sin (1.1) ( )
+		po/scim-input-pad.pot (1.1) ( )
+		po/zh_CN.po (1.1) ( )
+		src/.cvsignore (1.1) ( )
+		src/Makefile.am (1.1) ( )
+		src/scim_input_group.cpp (1.1) ( )
+		src/scim_input_group.h (1.1) ( )
+		src/scim_input_pad.cpp (1.1) ( )
+
+	Initial revision
+
+2005-03-06	10:0	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	ABOUT-NLS (1.1.1.1) (+0 -0)
+		AUTHORS (1.1.1.1) (+0 -0)
+		COPYING (1.1.1.1) (+0 -0)
+		INSTALL (1.1.1.1) (+0 -0)
+		NEWS (1.1.1.1) (+0 -0)
+		bootstrap (1.1.1.1) (+0 -0)
+		config.rpath (1.1.1.1) (+0 -0)
+		mkchlog (1.1.1.1) (+0 -0)
+		mkinstalldirs (1.1.1.1) (+0 -0)
+		data/input-pad.png (1.1.1.1) (+0 -0)
+		data/scim-input-pad.in (1.1.1.1) (+0 -0)
+		intl/.cvsignore (1.1.1.1) (+0 -0)
+		intl/ChangeLog (1.1.1.1) (+0 -0)
+		intl/Makefile.in (1.1.1.1) (+0 -0)
+		intl/VERSION (1.1.1.1) (+0 -0)
+		intl/bindtextdom.c (1.1.1.1) (+0 -0)
+		intl/config.charset (1.1.1.1) (+0 -0)
+		intl/dcgettext.c (1.1.1.1) (+0 -0)
+		intl/dcigettext.c (1.1.1.1) (+0 -0)
+		intl/dcngettext.c (1.1.1.1) (+0 -0)
+		intl/dgettext.c (1.1.1.1) (+0 -0)
+		intl/dngettext.c (1.1.1.1) (+0 -0)
+		intl/eval-plural.h (1.1.1.1) (+0 -0)
+		intl/explodename.c (1.1.1.1) (+0 -0)
+		intl/finddomain.c (1.1.1.1) (+0 -0)
+		intl/gettext.c (1.1.1.1) (+0 -0)
+		intl/gettextP.h (1.1.1.1) (+0 -0)
+		intl/gmo.h (1.1.1.1) (+0 -0)
+		intl/hash-string.h (1.1.1.1) (+0 -0)
+		intl/intl-compat.c (1.1.1.1) (+0 -0)
+		intl/l10nflist.c (1.1.1.1) (+0 -0)
+		intl/libgnuintl.h.in (1.1.1.1) (+0 -0)
+		intl/loadinfo.h (1.1.1.1) (+0 -0)
+		intl/loadmsgcat.c (1.1.1.1) (+0 -0)
+		intl/localcharset.c (1.1.1.1) (+0 -0)
+		intl/localcharset.h (1.1.1.1) (+0 -0)
+		intl/locale.alias (1.1.1.1) (+0 -0)
+		intl/localealias.c (1.1.1.1) (+0 -0)
+		intl/localename.c (1.1.1.1) (+0 -0)
+		intl/log.c (1.1.1.1) (+0 -0)
+		intl/ngettext.c (1.1.1.1) (+0 -0)
+		intl/os2compat.c (1.1.1.1) (+0 -0)
+		intl/os2compat.h (1.1.1.1) (+0 -0)
+		intl/osdep.c (1.1.1.1) (+0 -0)
+		intl/plural-exp.c (1.1.1.1) (+0 -0)
+		intl/plural-exp.h (1.1.1.1) (+0 -0)
+		intl/plural.c (1.1.1.1) (+0 -0)
+		intl/plural.y (1.1.1.1) (+0 -0)
+		intl/printf-args.c (1.1.1.1) (+0 -0)
+		intl/printf-args.h (1.1.1.1) (+0 -0)
+		intl/printf-parse.c (1.1.1.1) (+0 -0)
+		intl/printf-parse.h (1.1.1.1) (+0 -0)
+		intl/printf.c (1.1.1.1) (+0 -0)
+		intl/ref-add.sin (1.1.1.1) (+0 -0)
+		intl/ref-del.sin (1.1.1.1) (+0 -0)
+		intl/relocatable.c (1.1.1.1) (+0 -0)
+		intl/relocatable.h (1.1.1.1) (+0 -0)
+		intl/textdomain.c (1.1.1.1) (+0 -0)
+		intl/vasnprintf.c (1.1.1.1) (+0 -0)
+		intl/vasnprintf.h (1.1.1.1) (+0 -0)
+		intl/vasnwprintf.h (1.1.1.1) (+0 -0)
+		intl/wprintf-parse.h (1.1.1.1) (+0 -0)
+		intl/xsize.h (1.1.1.1) (+0 -0)
+		m4/.cvsignore (1.1.1.1) (+0 -0)
+		m4/codeset.m4 (1.1.1.1) (+0 -0)
+		m4/gettext.m4 (1.1.1.1) (+0 -0)
+		m4/glibc21.m4 (1.1.1.1) (+0 -0)
+		m4/iconv.m4 (1.1.1.1) (+0 -0)
+		m4/intdiv0.m4 (1.1.1.1) (+0 -0)
+		m4/intmax.m4 (1.1.1.1) (+0 -0)
+		m4/inttypes-pri.m4 (1.1.1.1) (+0 -0)
+		m4/inttypes.m4 (1.1.1.1) (+0 -0)
+		m4/inttypes_h.m4 (1.1.1.1) (+0 -0)
+		m4/isc-posix.m4 (1.1.1.1) (+0 -0)
+		m4/lcmessage.m4 (1.1.1.1) (+0 -0)
+		m4/lib-ld.m4 (1.1.1.1) (+0 -0)
+		m4/lib-link.m4 (1.1.1.1) (+0 -0)
+		m4/lib-prefix.m4 (1.1.1.1) (+0 -0)
+		m4/longdouble.m4 (1.1.1.1) (+0 -0)
+		m4/longlong.m4 (1.1.1.1) (+0 -0)
+		m4/nls.m4 (1.1.1.1) (+0 -0)
+		m4/po.m4 (1.1.1.1) (+0 -0)
+		m4/printf-posix.m4 (1.1.1.1) (+0 -0)
+		m4/progtest.m4 (1.1.1.1) (+0 -0)
+		m4/signed.m4 (1.1.1.1) (+0 -0)
+		m4/size_max.m4 (1.1.1.1) (+0 -0)
+		m4/stdint_h.m4 (1.1.1.1) (+0 -0)
+		m4/uintmax_t.m4 (1.1.1.1) (+0 -0)
+		m4/ulonglong.m4 (1.1.1.1) (+0 -0)
+		m4/wchar_t.m4 (1.1.1.1) (+0 -0)
+		m4/wint_t.m4 (1.1.1.1) (+0 -0)
+		m4/xsize.m4 (1.1.1.1) (+0 -0)
+		po/Rules-quot (1.1.1.1) (+0 -0)
+		po/boldquot.sed (1.1.1.1) (+0 -0)
+		po/en@boldquot.header (1.1.1.1) (+0 -0)
+		po/en@quot.header (1.1.1.1) (+0 -0)
+		po/insert-header.sin (1.1.1.1) (+0 -0)
+		po/quot.sed (1.1.1.1) (+0 -0)
+		po/remove-potcdate.sin (1.1.1.1) (+0 -0)
+		src/.cvsignore (1.1.1.1) (+0 -0)
+		src/Makefile.am (1.1.1.1) (+0 -0)
+
+	Initial import.
+

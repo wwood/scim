@@ -1,0 +1,6 @@
+src/scim_input_group.cpp
+src/scim_input_pad.cpp
+data/base.pad.in
+data/japanese.pad.in
+data/chinese.pad.in
+data/keyboard.pad.in

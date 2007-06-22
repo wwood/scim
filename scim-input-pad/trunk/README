@@ -1,0 +1,68 @@
+SCIM Input Pad
+==============
+
+It's an onscreen input pad used to input some symbols very easily.
+
+All symbols are stored into pure text files. Several predefined files
+are shipped within this package. They are:
+
+data/base.pad        includes some common symbols,
+                     eg. Technical Symbols, Punctuations etc.
+data/japanese.pad    includes Japanese Katakana and Hiragana symbols.
+data/chinese.pad     includes Chinese numbers, radicals etc.
+data/keyboard.pad    includes some special keyboard events,
+                     like dead keys, composing keys etc.
+
+
+The format of the file is:
+
+
+SCIM_Input_Pad
+VERSION_1_0
+
+BEGIN_GROUP
+NAME=...
+
+BEGIN_TABLE
+NAME=...
+COLUMNS=...
+
+(Put Symbols here)
+
+END_TABLE
+
+END_GROUP
+
+
+There can be several groups in a file, and several tables in a group.
+The name of group and table can have language suffix, like:
+NAME[zh_CN]=...
+
+Multiple names for different languages are allowed.
+
+Now the translation of group/table name are done by intltool.
+All localized strings will be stored in po files. So do not edit the data
+files directly to add localized names. Add po file for your language instead.
+
+Each table can have one COLUMNS parameter to set the number of columns
+this table should be shown.
+
+The format of the symbols can be:
+
+1. UTF-8 encoded strings, separated by space or return. Like:
+一 二 三
+四 五 六
+
+2. Hex number of the unicode codes, separated by space or return. Like;
+0x3001 0x3002 0x3003
+
+3. A '*' followed by KeyEvent name, separated by space or return. Like:
+*Return *Tab *Hangul_Hanja
+
+4. A single '*' indicates an empty space when displaying.
+
+
+
+You are always welcome to contribute us new symbol files, suggestions and bug reports.
+
+Visit http://www.scim-im.org for details.
