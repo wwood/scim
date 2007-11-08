@@ -33,6 +33,7 @@
   #include <config.h>
 #endif
 
+#include <string.h>
 #include <scim.h>
 #include "scim_m17n_imengine.h"
 
