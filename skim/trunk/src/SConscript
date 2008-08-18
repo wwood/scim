@@ -1,0 +1,50 @@
+#! /usr/bin/env python
+
+Import( 'env' )
+
+srcenv=env.Copy()
+srcenv.Add_define('VERSION')
+srcenv.Add_define('PACKAGE')
+srcenv.Add_define('SCIM_VERSION')
+srcenv.AppendUnique(CCFLAGS = env['SCIM_CFLAGS'] )
+srcenv.AppendUnique(LINKFLAGS = env['SCIM_LIBS'])
+srcenv.AppendUnique(LINKFLAGS = env['SCIM_X11_LIBS'])
+srcenv.KDEaddlibs( "qt-mt kdecore kdeui kutils" )
+
+libskim=srcenv.Copy()
+libskim_sources='socketserverthread.cpp skimpluginmanager.cpp scimhelpdialog.cpp skimglobalactions.cpp skimplugin.cpp skimkeygrabber.cpp'
+
+#libskim.AppendUnique(LINKFLAGS = env['SCIM_LIBS']+env['SCIM_X11_LIBS'] ) ## add two lists - better do that in two steps
+#libskim.AppendUnique(LINKFLAGS = env['SCIM_LIBS'])
+#libskim.AppendUnique(LINKFLAGS = env['SCIM_X11_LIBS'])
+
+#libskim.SharedLibrary( 'libskim', libskim_sources )
+libskim.KDEaddpaths_includes( "#/ #/src" )
+#libskim.KDEaddlibs( "qt-mt kdecore kdeui kutils" )
+libskim.Add_define('SCIM_BINARY_VERSION')
+libskim.Add_define('SCIM_LIBDIR')
+libskim.KDEshlib( 'libskim', libskim_sources, kdelib=1, vnum=libskim.libskim_version())
+
+## IMPORTANT: this shows how to link against shared libraries
+skim=srcenv.Copy()
+skim_localshlibs='#src/libskim.so #utils/libscim-kdeutils.so'
+skim_sources = 'main.cpp'
+skim_globallibs = ''
+skim_includes = '#/ #/src'
+skim.KDEprogram(
+		target      = 'skim',
+		source      = skim_sources,
+		localshlibs = skim_localshlibs,
+		globallibs  = skim_globallibs,
+		includes    = skim_includes)
+
+skim.bksys_install( skim['PREFIX'] + '/share/autostart', 'skim.desktop')
+
+skim.KDEinstall( 'KDEMENU', 'Utilities', 'skim.desktop')
+skim.KDEinstall( 'KDESERVTYPES', '', "skimplugin.desktop skimui.desktop skimkcmplugin.desktop skimsetupcategory.desktop".split())
+
+skim.Command('scim-panel-kde', 'scim-panel-kde.in', env.generate_configed_file)
+skim.KDEinstall( 'KDEBIN', '', 'scim-panel-kde')
+skim.bksys_install( skim['PREFIX']+'/include/skim', "socketserverthread.h skimpluginmanager.h skimglobalactions.h skimplugin.h skimkeygrabber.h extra_utils.h")
+
+skim.KDEicon('skim')

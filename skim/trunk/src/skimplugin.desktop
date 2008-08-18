@@ -1,0 +1,23 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=ServiceType
+X-KDE-ServiceType=Skim/Plugin
+X-KDE-Derived=KPluginInfo
+Comment=A Skim Plugin
+Comment[de]=Eine Komponente für skim
+Comment[fr]=Un Composant pour Skim
+Comment[it]=Un plugin di Skim
+Comment[ja]=skimプラグイン
+Comment[ko]=스킴 플로그인
+Comment[pa]=ਇੱਕ ਸਕਿੱਪ ਪਲੱਗਿੰਨ
+Comment[zh_CN]=Skim 插件
+Comment[zh_TW]=Skim Plugin
+
+[PropertyDef::X-KDE-PluginInfo-HasActions]
+Type=bool
+
+[PropertyDef::X-KDE-PluginInfo-OnDemand]
+Type=bool
+
+[PropertyDef::X-KDE-SKIM-Overload-SCIM-Modules]
+Type=QStringList

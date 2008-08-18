@@ -1,0 +1,190 @@
+# translation of desktop.po to Japanese
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: desktop files\n"
+"POT-Creation-Date: 2005-06-09 00:08+0000\n"
+"PO-Revision-Date: 2005-05-28 10:30+0900\n"
+"Last-Translator: Yukiko Bando <ybando@k6.dion.ne.jp>\n"
+"Language-Team: Japanese <ja@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/skim.desktop:1
+msgid "Name=skim"
+msgstr "Name=skim"
+
+#: src/skim.desktop:2
+msgid "Comment=Input method platform"
+msgstr "Comment=インプットメソッドプラットフォーム"
+
+#: src/skimplugin.desktop:2
+msgid "Comment=A Skim Plugin"
+msgstr "Comment=skimプラグイン"
+
+#: src/skimui.desktop:2
+msgid "Comment=A Skim UI Plugin"
+msgstr "Comment=skim UIプラグイン"
+
+#: src/skimkcmplugin.desktop:2
+msgid "Comment=A Config Plugin for Skim"
+msgstr "Comment=skim設定プラグイン"
+
+#: src/skimsetupcategory.desktop:2
+msgid "Comment=A definition of one Skim Setup Category"
+msgstr "Comment=skim設定カテゴリーの定義"
+
+#: plugins/mainwindow/skimplugin_mainwindow_config.desktop:1
+msgid "Name=Main Toolbar"
+msgstr "Name=メインツールバー"
+
+#: plugins/mainwindow/skimplugin_mainwindow_config.desktop:2
+msgid "Comment=Main Toolbar Configuration"
+msgstr "Comment=メインツールバーの設定"
+
+#: plugins/mainwindow/skimplugin_mainwindow.desktop:1
+msgid "Name=Toggle Docking"
+msgstr "Name=ドッキングをトグル"
+
+#: plugins/mainwindow/skimplugin_mainwindow.desktop:2
+msgid "Comment=Main Window"
+msgstr "Comment=メインウィンドウ"
+
+#: plugins/scimlauncher/skimplugin_scim.desktop:1
+msgid "Name=SCIM Server"
+msgstr "Name=SCIMサーバ"
+
+#: plugins/scimlauncher/skimplugin_scim.desktop:2
+msgid "Comment=init scim-lib as backend server"
+msgstr "Comment=scim-libをバックエンドサーバとして起動"
+
+#: plugins/kdetraystatus/skimplugin_systemtray_config.desktop:1
+msgid "Name=System Tray Icon"
+msgstr "Name=トレイアイコン"
+
+#: plugins/kdetraystatus/skimplugin_systemtray_config.desktop:2
+msgid "Comment=Configure plugin for System Tray Indicator"
+msgstr "Comment=システムトレイ・インジケイターの設定"
+
+#: plugins/kdetraystatus/skimplugin_systemtray.desktop:2
+msgid "Comment=System Tray Indicator"
+msgstr "Comment=システムトレイ・インジケイター"
+
+#: plugins/setupwindow/kcm_skimplugin_configplugin_config.desktop:1
+msgid "Name=Skim Plugins"
+msgstr "Name=skimプラグイン"
+
+#: plugins/setupwindow/kcm_skimplugin_configplugin_config.desktop:2
+msgid "Comment=Enable/disable Skim Plugins"
+msgstr "Comment=skimのプラグインの有効/無効を設定"
+
+#: plugins/setupwindow/skimplugin_scim_global_config.desktop:1
+msgid "Name=General SCIM"
+msgstr "Name=SCIM全般"
+
+#: plugins/setupwindow/skimplugin_scim_global_config.desktop:2
+msgid "Comment=Configure for SCIM global settings"
+msgstr "Comment=SCIMの全体設定"
+
+#: plugins/setupwindow/skimplugin_setupwindow.desktop:1
+msgid "Name=Global Settings"
+msgstr "Name=全体設定"
+
+#: plugins/setupwindow/skimplugin_setupwindow.desktop:1
+msgid "Name=Configure"
+msgstr "Name=設定"
+
+#: plugins/setupwindow/skimplugin_setupwindow.desktop:2
+msgid "Comment=Global Configuration Dialog"
+msgstr "Comment=全体設定ダイアログ"
+
+#: plugins/setupwindow/skimplugin_scim_x_config.desktop:1
+msgid "Name=X Window"
+msgstr "Name=Xウィンドウ"
+
+#: plugins/setupwindow/skimplugin_scim_x_config.desktop:2
+msgid "Comment=Configure for X Window FrontEnd of SCIM"
+msgstr "Comment=SCIM Xフロントエンドの設定"
+
+#: plugins/setupwindow/skimplugin_scim_imengines_config.desktop:1
+msgid "Name=Global Setup"
+msgstr "Name=全体設定"
+
+#: plugins/setupwindow/skimsetupdir_frontend.desktop:1
+msgid "Name=Frontend"
+msgstr "Name=フロントエンド"
+
+#: plugins/setupwindow/skimsetupdir_imengines.desktop:1
+msgid "Name=IMEngines"
+msgstr "Name=IMエンジン"
+
+#: plugins/setupwindow/skimsetupdir_panel.desktop:1
+msgid "Name=Panel"
+msgstr "Name=パネル"
+
+#: plugins/inputwindow/skimplugin_inputwindow.desktop:1
+msgid "Name=Input Window"
+msgstr "Name=入力ウィンドウ"
+
+#: plugins/inputwindow/skimplugin_inputwindow.desktop:1
+msgid "Name=Stick"
+msgstr "Name=固定"
+
+#: plugins/inputwindow/skimplugin_inputwindow.desktop:2
+msgid ""
+"Comment=When typing CJK characters you are interacting with this Input Window"
+msgstr "Comment=CJK文字を入力する際に使用するウィンドウ"
+
+#: plugins/inputwindow/skimplugin_inputwindow_config.desktop:2
+msgid "Comment=Configure for Input Window"
+msgstr "Comment=入力ウィンドウの設定"
+
+#: plugins/compmgrclient/skimplugin_compmgrclient_config.desktop:1
+msgid "Name=Composite"
+msgstr "Name=Composite"
+
+#: plugins/compmgrclient/skimplugin_compmgrclient_config.desktop:2
+msgid "Comment=Configuration of the composite features in skim"
+msgstr "Comment=skimで使用するComposite機能の設定"
+
+#: plugins/compmgrclient/skimplugin_compmgrclient.desktop:1
+msgid "Name=Composite Management"
+msgstr "Name=Compositeの管理"
+
+#: plugins/compmgrclient/skimplugin_compmgrclient.desktop:2
+msgid "Comment=Manage the composite features in skim"
+msgstr "Comment=skimで使用するComposite機能を管理"
+
+#: ../scim-pinyin/skim/setupui/skimplugin_scim_smartpinyin_config.desktop:1
+msgid "Name=Smart Pinyin"
+msgstr "Name=智能ピンイン"
+
+#: ../scim-pinyin/skim/setupui/skimplugin_scim_smartpinyin_config.desktop:2
+msgid "Comment=Configure plugin for Smart Pinyin IMEngine"
+msgstr "Comment=智能ピンインIMエンジンの設定"
+
+#: ../scim-tables/skim/setupui/skimplugin_scim_table_config.desktop:1
+msgid "Name=Generic Tables"
+msgstr "Name=一般テーブル"
+
+#: ../scim-tables/skim/setupui/skimplugin_scim_table_config.desktop:2
+msgid "Comment=Configuration of Generic Tables IMEngine"
+msgstr "Comment=一般テーブルIMエンジンの設定"
+
+#: ../scim-hangul/skim/setupui/skimplugin_scim_hangul_config.desktop:1
+msgid "Name=Hangul"
+msgstr "Name=ハングル"
+
+#: ../scim-hangul/skim/setupui/skimplugin_scim_hangul_config.desktop:2
+msgid "Comment=Configure for scim-hangul IMEngine"
+msgstr "Comment=scim-hangul IMエンジンの設定"
+
+#~ msgid "Name=Qt Immodule"
+#~ msgstr "Name=Qt-Immodule"
+
+#~ msgid "Comment=Configure for Qt Immodule support of SCIM"
+#~ msgstr "Comment=SCIMのQt-Immoduleサポートの設定"
+
+#~ msgid "Comment=Configure plugin for IM Engines"
+#~ msgstr "Comment=IMエンジンプラグインの設定"

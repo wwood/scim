@@ -1,0 +1,12 @@
+.deps
+.libs
+Makefile
+Makefile.in
+*.lo
+*.moc
+compositemanagerbase.cpp
+compositemanagerbase.h
+*.la
+compmgrclient.kidl
+compmgrclient_skel.cpp
+*.os

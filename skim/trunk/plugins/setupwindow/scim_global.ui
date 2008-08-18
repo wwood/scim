@@ -1,0 +1,944 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>ScimGlobalSettingUI</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>ScimGlobalSettingUI</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>408</width>
+            <height>561</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>SCIM Global Settings</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>0</number>
+        </property>
+        <property name="spacing">
+            <number>0</number>
+        </property>
+        <widget class="QTabWidget">
+            <property name="name">
+                <cstring>tabWidget2</cstring>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab</cstring>
+                </property>
+                <attribute name="title">
+                    <string>&amp;General</string>
+                </attribute>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLayoutWidget">
+                        <property name="name">
+                            <cstring>layout16</cstring>
+                        </property>
+                        <hbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>textLabel1</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>&amp;Keyboard Layout:</string>
+                                </property>
+                                <property name="buddy" stdset="0">
+                                    <cstring>KeyboardLayoutcomboBox</cstring>
+                                </property>
+                            </widget>
+                            <widget class="QComboBox">
+                                <property name="name">
+                                    <cstring>KeyboardLayoutcomboBox</cstring>
+                                </property>
+                                <property name="sizePolicy">
+                                    <sizepolicy>
+                                        <hsizetype>7</hsizetype>
+                                        <vsizetype>0</vsizetype>
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="duplicatesEnabled">
+                                    <bool>false</bool>
+                                </property>
+                            </widget>
+                        </hbox>
+                    </widget>
+                    <widget class="QCheckBox">
+                        <property name="name">
+                            <cstring>kcfg__FrontEnd_OnTheSpot</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Embed Preedit String into Client &amp;Window (OnTheSpot Style)</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox">
+                        <property name="name">
+                            <cstring>kcfg__FrontEnd_SharedInputMethod</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Sha&amp;re input method among all applications</string>
+                        </property>
+                    </widget>
+                    <widget class="QGroupBox">
+                        <property name="name">
+                            <cstring>groupBox4</cstring>
+                        </property>
+                        <property name="title">
+                            <string>Keyboard Shortcuts</string>
+                        </property>
+                        <vbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLayoutWidget">
+                                <property name="name">
+                                    <cstring>layout7_2</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLabel">
+                                        <property name="name">
+                                            <cstring>textLabel2_3</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>&amp;Toggle On/Off:</string>
+                                        </property>
+                                        <property name="alignment">
+                                            <set>AlignVCenter</set>
+                                        </property>
+                                        <property name="buddy" stdset="0">
+                                            <cstring>kcfg__Hotkeys_FrontEnd_Trigger</cstring>
+                                        </property>
+                                    </widget>
+                                    <widget class="KLineEdit">
+                                        <property name="name">
+                                            <cstring>kcfg__Hotkeys_FrontEnd_Trigger</cstring>
+                                        </property>
+                                    </widget>
+                                    <widget class="SkimEditShortcutButton">
+                                        <property name="name">
+                                            <cstring>Trigger_Button</cstring>
+                                        </property>
+                                    </widget>
+                                </hbox>
+                            </widget>
+                            <widget class="QLayoutWidget">
+                                <property name="name">
+                                    <cstring>layout7_2_2</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLabel">
+                                        <property name="name">
+                                            <cstring>textLabel2_3_3</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>T&amp;urn On:</string>
+                                        </property>
+                                        <property name="alignment">
+                                            <set>AlignVCenter</set>
+                                        </property>
+                                        <property name="buddy" stdset="0">
+                                            <cstring>kcfg__Hotkeys_FrontEnd_On</cstring>
+                                        </property>
+                                    </widget>
+                                    <widget class="KLineEdit">
+                                        <property name="name">
+                                            <cstring>kcfg__Hotkeys_FrontEnd_On</cstring>
+                                        </property>
+                                    </widget>
+                                    <widget class="SkimEditShortcutButton">
+                                        <property name="name">
+                                            <cstring>On_Button</cstring>
+                                        </property>
+                                    </widget>
+                                </hbox>
+                            </widget>
+                            <widget class="QLayoutWidget">
+                                <property name="name">
+                                    <cstring>layout7_2_3</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLabel">
+                                        <property name="name">
+                                            <cstring>textLabel2_3_4</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Turn O&amp;ff:</string>
+                                        </property>
+                                        <property name="alignment">
+                                            <set>AlignVCenter</set>
+                                        </property>
+                                        <property name="buddy" stdset="0">
+                                            <cstring>kcfg__Hotkeys_FrontEnd_Off</cstring>
+                                        </property>
+                                    </widget>
+                                    <widget class="KLineEdit">
+                                        <property name="name">
+                                            <cstring>kcfg__Hotkeys_FrontEnd_Off</cstring>
+                                        </property>
+                                    </widget>
+                                    <widget class="SkimEditShortcutButton">
+                                        <property name="name">
+                                            <cstring>Off_Button</cstring>
+                                        </property>
+                                    </widget>
+                                </hbox>
+                            </widget>
+                            <widget class="QLayoutWidget">
+                                <property name="name">
+                                    <cstring>layout8</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLabel">
+                                        <property name="name">
+                                            <cstring>textLabel2_2_2</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>&amp;Next Input Method:</string>
+                                        </property>
+                                        <property name="alignment">
+                                            <set>AlignVCenter</set>
+                                        </property>
+                                        <property name="buddy" stdset="0">
+                                            <cstring>kcfg__Hotkeys_FrontEnd_NextFactory</cstring>
+                                        </property>
+                                    </widget>
+                                    <widget class="KLineEdit">
+                                        <property name="name">
+                                            <cstring>kcfg__Hotkeys_FrontEnd_NextFactory</cstring>
+                                        </property>
+                                    </widget>
+                                    <widget class="SkimEditShortcutButton">
+                                        <property name="name">
+                                            <cstring>NextFactory_Button</cstring>
+                                        </property>
+                                    </widget>
+                                </hbox>
+                            </widget>
+                            <widget class="QLayoutWidget">
+                                <property name="name">
+                                    <cstring>layout10</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLabel">
+                                        <property name="name">
+                                            <cstring>textLabel2_3_2</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>&amp;Previous Input Method:</string>
+                                        </property>
+                                        <property name="alignment">
+                                            <set>AlignVCenter</set>
+                                        </property>
+                                        <property name="buddy" stdset="0">
+                                            <cstring>kcfg__Hotkeys_FrontEnd_PreviousFactory</cstring>
+                                        </property>
+                                    </widget>
+                                    <widget class="KLineEdit">
+                                        <property name="name">
+                                            <cstring>kcfg__Hotkeys_FrontEnd_PreviousFactory</cstring>
+                                        </property>
+                                    </widget>
+                                    <widget class="SkimEditShortcutButton">
+                                        <property name="name">
+                                            <cstring>PreviousFactory_Button</cstring>
+                                        </property>
+                                    </widget>
+                                </hbox>
+                            </widget>
+                            <widget class="QLayoutWidget">
+                                <property name="name">
+                                    <cstring>layout4</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLabel">
+                                        <property name="name">
+                                            <cstring>textLabel2_3_2_2</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>&amp;Show input method menu:</string>
+                                        </property>
+                                        <property name="alignment">
+                                            <set>AlignVCenter</set>
+                                        </property>
+                                        <property name="buddy" stdset="0">
+                                            <cstring>kcfg__Hotkeys_FrontEnd_ShowFactoryMenu</cstring>
+                                        </property>
+                                    </widget>
+                                    <widget class="KLineEdit">
+                                        <property name="name">
+                                            <cstring>kcfg__Hotkeys_FrontEnd_ShowFactoryMenu</cstring>
+                                        </property>
+                                    </widget>
+                                    <widget class="SkimEditShortcutButton">
+                                        <property name="name">
+                                            <cstring>ShowFactoryMenuButton</cstring>
+                                        </property>
+                                    </widget>
+                                </hbox>
+                            </widget>
+                        </vbox>
+                    </widget>
+                    <widget class="QGroupBox">
+                        <property name="name">
+                            <cstring>groupBox4_2</cstring>
+                        </property>
+                        <property name="title">
+                            <string>Enabled &amp;Modifiers</string>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QCheckBox" row="0" column="0">
+                                <property name="name">
+                                    <cstring>controlBox</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Cont&amp;rol</string>
+                                </property>
+                            </widget>
+                            <widget class="QCheckBox" row="0" column="1">
+                                <property name="name">
+                                    <cstring>shiftBox</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Sh&amp;ift</string>
+                                </property>
+                            </widget>
+                            <widget class="QCheckBox" row="0" column="2">
+                                <property name="name">
+                                    <cstring>altBox</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>&amp;Alt</string>
+                                </property>
+                            </widget>
+                            <widget class="QCheckBox" row="0" column="3">
+                                <property name="name">
+                                    <cstring>metaBox</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>M&amp;eta</string>
+                                </property>
+                            </widget>
+                            <widget class="QCheckBox" row="1" column="0">
+                                <property name="name">
+                                    <cstring>superBox</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>S&amp;uper</string>
+                                </property>
+                            </widget>
+                            <widget class="QCheckBox" row="1" column="1">
+                                <property name="name">
+                                    <cstring>hyperBox</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>H&amp;yper</string>
+                                </property>
+                            </widget>
+                            <widget class="QCheckBox" row="1" column="2" rowspan="1" colspan="2">
+                                <property name="name">
+                                    <cstring>capslockBox</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Caps &amp;Lock</string>
+                                </property>
+                            </widget>
+                        </grid>
+                    </widget>
+                    <spacer>
+                        <property name="name">
+                            <cstring>spacer17</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Vertical</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>21</width>
+                                <height>20</height>
+                            </size>
+                        </property>
+                    </spacer>
+                </vbox>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Oth&amp;er</string>
+                </attribute>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLayoutWidget">
+                        <property name="name">
+                            <cstring>layout5</cstring>
+                        </property>
+                        <hbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>textLabel1_2</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>&amp;Panel Program</string>
+                                </property>
+                                <property name="buddy" stdset="0">
+                                    <cstring>programCombo</cstring>
+                                </property>
+                            </widget>
+                            <widget class="QComboBox">
+                                <item>
+                                    <property name="text">
+                                        <string>scim-panel-kde</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>scim-panel-gtk</string>
+                                    </property>
+                                </item>
+                                <property name="name">
+                                    <cstring>programCombo</cstring>
+                                </property>
+                            </widget>
+                            <spacer>
+                                <property name="name">
+                                    <cstring>spacer2_2</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>41</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                        </hbox>
+                    </widget>
+                    <widget class="QLayoutWidget">
+                        <property name="name">
+                            <cstring>layout7</cstring>
+                        </property>
+                        <hbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>textLabel2_2</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Config &amp;Module</string>
+                                </property>
+                                <property name="buddy" stdset="0">
+                                    <cstring>ConfigCombo</cstring>
+                                </property>
+                            </widget>
+                            <widget class="QComboBox">
+                                <property name="name">
+                                    <cstring>ConfigCombo</cstring>
+                                </property>
+                            </widget>
+                            <spacer>
+                                <property name="name">
+                                    <cstring>spacer3_2</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>61</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                        </hbox>
+                    </widget>
+                    <widget class="QLayoutWidget">
+                        <property name="name">
+                            <cstring>layout18</cstring>
+                        </property>
+                        <hbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <spacer>
+                                <property name="name">
+                                    <cstring>spacer6_2</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>161</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                            <widget class="QCheckBox">
+                                <property name="name">
+                                    <cstring>advancedCBox</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Ad&amp;vanced</string>
+                                </property>
+                            </widget>
+                        </hbox>
+                    </widget>
+                    <widget class="QGroupBox">
+                        <property name="name">
+                            <cstring>advSettings</cstring>
+                        </property>
+                        <property name="title">
+                            <string>Advanced Settings</string>
+                        </property>
+                        <vbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLayoutWidget">
+                                <property name="name">
+                                    <cstring>layout6_2</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLabel">
+                                        <property name="name">
+                                            <cstring>textLabel3_2</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>&amp;Supported Unicode Locales</string>
+                                        </property>
+                                        <property name="buddy" stdset="0">
+                                            <cstring>unicodeLocaleCombo</cstring>
+                                        </property>
+                                    </widget>
+                                    <widget class="QComboBox">
+                                        <property name="name">
+                                            <cstring>unicodeLocaleCombo</cstring>
+                                        </property>
+                                        <property name="editable">
+                                            <bool>false</bool>
+                                        </property>
+                                        <property name="autoCompletion">
+                                            <bool>false</bool>
+                                        </property>
+                                        <property name="duplicatesEnabled">
+                                            <bool>false</bool>
+                                        </property>
+                                    </widget>
+                                    <widget class="QPushButton">
+                                        <property name="name">
+                                            <cstring>localesEditButton</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>&amp;Edit</string>
+                                        </property>
+                                    </widget>
+                                </hbox>
+                            </widget>
+                            <widget class="QLayoutWidget">
+                                <property name="name">
+                                    <cstring>layout14_2</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLayoutWidget">
+                                        <property name="name">
+                                            <cstring>layout11_2</cstring>
+                                        </property>
+                                        <vbox>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <widget class="QLabel">
+                                                <property name="name">
+                                                    <cstring>textLabel4_2</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>&amp;FrontEnd Socket Address</string>
+                                                </property>
+                                                <property name="buddy" stdset="0">
+                                                    <cstring>frontendAddressEdit</cstring>
+                                                </property>
+                                            </widget>
+                                            <widget class="QLabel">
+                                                <property name="name">
+                                                    <cstring>textLabel5_2</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>&amp;IMEngine Socket Address</string>
+                                                </property>
+                                                <property name="buddy" stdset="0">
+                                                    <cstring>iMEngineAddressEdit</cstring>
+                                                </property>
+                                            </widget>
+                                            <widget class="QLabel">
+                                                <property name="name">
+                                                    <cstring>textLabel6_2</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>C&amp;onfig Socket Address</string>
+                                                </property>
+                                                <property name="buddy" stdset="0">
+                                                    <cstring>configAddressEdit</cstring>
+                                                </property>
+                                            </widget>
+                                            <widget class="QLabel">
+                                                <property name="name">
+                                                    <cstring>textLabel7_2</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>P&amp;anel Socket Address</string>
+                                                </property>
+                                                <property name="buddy" stdset="0">
+                                                    <cstring>panelAddressEdit</cstring>
+                                                </property>
+                                            </widget>
+                                            <widget class="QLabel">
+                                                <property name="name">
+                                                    <cstring>textLabel8_2</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>Socket Timeo&amp;ut</string>
+                                                </property>
+                                                <property name="buddy" stdset="0">
+                                                    <cstring>socketTimeoutSpinBox</cstring>
+                                                </property>
+                                            </widget>
+                                        </vbox>
+                                    </widget>
+                                    <widget class="QLayoutWidget">
+                                        <property name="name">
+                                            <cstring>layout13_2</cstring>
+                                        </property>
+                                        <vbox>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <widget class="QLineEdit">
+                                                <property name="name">
+                                                    <cstring>frontendAddressEdit</cstring>
+                                                </property>
+                                            </widget>
+                                            <widget class="QLineEdit">
+                                                <property name="name">
+                                                    <cstring>iMEngineAddressEdit</cstring>
+                                                </property>
+                                            </widget>
+                                            <widget class="QLineEdit">
+                                                <property name="name">
+                                                    <cstring>configAddressEdit</cstring>
+                                                </property>
+                                            </widget>
+                                            <widget class="QLineEdit">
+                                                <property name="name">
+                                                    <cstring>panelAddressEdit</cstring>
+                                                </property>
+                                            </widget>
+                                            <widget class="QLayoutWidget">
+                                                <property name="name">
+                                                    <cstring>layout12_2</cstring>
+                                                </property>
+                                                <hbox>
+                                                    <property name="name">
+                                                        <cstring>unnamed</cstring>
+                                                    </property>
+                                                    <spacer>
+                                                        <property name="name">
+                                                            <cstring>spacer5_2</cstring>
+                                                        </property>
+                                                        <property name="orientation">
+                                                            <enum>Horizontal</enum>
+                                                        </property>
+                                                        <property name="sizeType">
+                                                            <enum>Expanding</enum>
+                                                        </property>
+                                                        <property name="sizeHint">
+                                                            <size>
+                                                                <width>274</width>
+                                                                <height>20</height>
+                                                            </size>
+                                                        </property>
+                                                    </spacer>
+                                                    <widget class="QSpinBox">
+                                                        <property name="name">
+                                                            <cstring>socketTimeoutSpinBox</cstring>
+                                                        </property>
+                                                        <property name="maxValue">
+                                                            <number>100000</number>
+                                                        </property>
+                                                        <property name="minValue">
+                                                            <number>1000</number>
+                                                        </property>
+                                                        <property name="lineStep">
+                                                            <number>1000</number>
+                                                        </property>
+                                                        <property name="value">
+                                                            <number>5000</number>
+                                                        </property>
+                                                    </widget>
+                                                </hbox>
+                                            </widget>
+                                        </vbox>
+                                    </widget>
+                                </hbox>
+                            </widget>
+                        </vbox>
+                    </widget>
+                    <spacer>
+                        <property name="name">
+                            <cstring>spacer1</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Vertical</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>20</width>
+                                <height>65</height>
+                            </size>
+                        </property>
+                    </spacer>
+                </vbox>
+            </widget>
+        </widget>
+    </vbox>
+</widget>
+<customwidgets>
+    <customwidget>
+        <class>SkimEditShortcutButton</class>
+        <header location="local">skimkeygrabber.h</header>
+        <sizehint>
+            <width>24</width>
+            <height>24</height>
+        </sizehint>
+        <container>0</container>
+        <sizepolicy>
+            <hordata>1</hordata>
+            <verdata>1</verdata>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+        <pixmap>image0</pixmap>
+        <signal>setEditorText(const QString &amp;)</signal>
+        <slot access="public" specifier="">slot()</slot>
+        <slot access="public" specifier="">setShortcuts(const QString &amp;)</slot>
+    </customwidget>
+</customwidgets>
+<images>
+    <image name="image0">
+        <data format="PNG" length="864">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000032749444154388db59531681b6714c77f3237bc031bbe030d3a4841821aa4a1830a5d9c7ab0a18b68060532b425433b74319d0a5932354da790b1ed60e812a20e49e960500717398ba4a1c512a4700515e441701f58701f34706f384887cfb2a2d63685a60f0eeedebdf77bffefddfbbe2bf5077d16767debfa4b5e83f507fd526901ee1e745f36eb4dacb36436237d91fe2b88738ee964caf0d721144b7fb050faf4f153e2588936212f1c4d80420945c851c2401014022153ff9ca38408c904d81786cf74150c60e796a806d3f90f64d91450a20d25cb053b13b2b902425486c6a682f83c2dc04410c5ab2b390767f38cbc70e89f53c0116d08c723c3f0c0311a3b60a146a8d685d62dc3dbdb6002f5f0f54bc0a94b69a2e48587f60ea1f3adf5a875a156374800e94c39f95df9e64b4beb03c3871f0b463cfc427018845028d1061c8fe40caaecbc5fa1d516e218345028627a07399d7d4bf77b4bf55a95dd7684046e05bcb6b8c98b9c5020cb85a31fdd39f4a34f85f80d87060e3d15ba4f326ede0af9e4b30a20741e39d42d1b75a1e21cc55921f9cd618ca1d516449c4f7a61f8fa81928c1dd929ecdd89181efad8d173839155f0aae20052ab801257cf967f067d78cf918c1da62c6c6d0bace7349a9e969e285ac8c5e030081140021f60c4f7544f0d0fef29c9d8171481f85a48b40e040b982057292680d0f8c064a65044f47ec62b3542a562b033c7fdbb29c7bf44a413dfd9b81a5e3d15992a8d4da5faa670f287d23bc8b9793b223b55767784a81272ff2ed813c7577b53541553169acd9cccae7ebe7ff4188156db00d0d9b7f47ecad8bb13d1d886c63b199f7f51c3540cce39b45076db156a75ae569c17beead60e386be83cb27cf7c0323c149a6f091a403a49d1b99e671e1f39921b31468457876eb9f3e62961e02b8b28addb8294ab749ff86948c64b35a62cb4da5506470ea70a05d8f96a2bcec1d3c994640212bd026f0bbbefd5183dcfc866de5fab46349a19b53aecde889142505292d12ab8d41ff4fd011f40f35d3fbb22f8b335f097047e52963200140904e7201929a9559cbd4031058c9e29232eb3bf6fdacb7cded62e7df31f6d0dfc3fea7f01bf6e787fd02ffd05b06880ea04f5ee750000000049454e44ae426082</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>advancedCBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>advSettings</receiver>
+        <slot>setShown(bool)</slot>
+    </connection>
+    <connection>
+        <sender>Trigger_Button</sender>
+        <signal>setEditorText(const QString&amp;)</signal>
+        <receiver>kcfg__Hotkeys_FrontEnd_Trigger</receiver>
+        <slot>setText(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>kcfg__Hotkeys_FrontEnd_Trigger</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>Trigger_Button</receiver>
+        <slot>setShortcuts(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>NextFactory_Button</sender>
+        <signal>setEditorText(const QString&amp;)</signal>
+        <receiver>kcfg__Hotkeys_FrontEnd_NextFactory</receiver>
+        <slot>setText(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>kcfg__Hotkeys_FrontEnd_NextFactory</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>NextFactory_Button</receiver>
+        <slot>setShortcuts(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>kcfg__Hotkeys_FrontEnd_PreviousFactory</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>PreviousFactory_Button</receiver>
+        <slot>setShortcuts(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>ShowFactoryMenuButton</sender>
+        <signal>setEditorText(const QString&amp;)</signal>
+        <receiver>kcfg__Hotkeys_FrontEnd_ShowFactoryMenu</receiver>
+        <slot>setText(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>kcfg__Hotkeys_FrontEnd_ShowFactoryMenu</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>ShowFactoryMenuButton</receiver>
+        <slot>setShortcuts(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>PreviousFactory_Button</sender>
+        <signal>setEditorText(const QString&amp;)</signal>
+        <receiver>kcfg__Hotkeys_FrontEnd_PreviousFactory</receiver>
+        <slot>setText(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>Trigger_Button</sender>
+        <signal>setEditorText(const QString&amp;)</signal>
+        <receiver>kcfg__Hotkeys_FrontEnd_Trigger</receiver>
+        <slot>setFocus()</slot>
+    </connection>
+    <connection>
+        <sender>NextFactory_Button</sender>
+        <signal>setEditorText(const QString&amp;)</signal>
+        <receiver>kcfg__Hotkeys_FrontEnd_NextFactory</receiver>
+        <slot>setFocus()</slot>
+    </connection>
+    <connection>
+        <sender>PreviousFactory_Button</sender>
+        <signal>setEditorText(const QString&amp;)</signal>
+        <receiver>kcfg__Hotkeys_FrontEnd_PreviousFactory</receiver>
+        <slot>setFocus()</slot>
+    </connection>
+    <connection>
+        <sender>ShowFactoryMenuButton</sender>
+        <signal>setEditorText(const QString&amp;)</signal>
+        <receiver>kcfg__Hotkeys_FrontEnd_ShowFactoryMenu</receiver>
+        <slot>setFocus()</slot>
+    </connection>
+    <connection>
+        <sender>kcfg__Hotkeys_FrontEnd_On</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>On_Button</receiver>
+        <slot>setShortcuts(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>Off_Button</sender>
+        <signal>setEditorText(const QString&amp;)</signal>
+        <receiver>kcfg__Hotkeys_FrontEnd_Off</receiver>
+        <slot>setText(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>kcfg__Hotkeys_FrontEnd_Off</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>Off_Button</receiver>
+        <slot>setShortcuts(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>Off_Button</sender>
+        <signal>setEditorText(const QString&amp;)</signal>
+        <receiver>kcfg__Hotkeys_FrontEnd_Off</receiver>
+        <slot>setFocus()</slot>
+    </connection>
+    <connection>
+        <sender>On_Button</sender>
+        <signal>setEditorText(const QString&amp;)</signal>
+        <receiver>kcfg__Hotkeys_FrontEnd_On</receiver>
+        <slot>setText(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>On_Button</sender>
+        <signal>setEditorText(const QString&amp;)</signal>
+        <receiver>kcfg__Hotkeys_FrontEnd_On</receiver>
+        <slot>setFocus()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>tabWidget2</tabstop>
+    <tabstop>KeyboardLayoutcomboBox</tabstop>
+    <tabstop>kcfg__FrontEnd_OnTheSpot</tabstop>
+    <tabstop>kcfg__Hotkeys_FrontEnd_Trigger</tabstop>
+    <tabstop>kcfg__Hotkeys_FrontEnd_On</tabstop>
+    <tabstop>kcfg__Hotkeys_FrontEnd_Off</tabstop>
+    <tabstop>kcfg__Hotkeys_FrontEnd_NextFactory</tabstop>
+    <tabstop>kcfg__Hotkeys_FrontEnd_PreviousFactory</tabstop>
+    <tabstop>kcfg__Hotkeys_FrontEnd_ShowFactoryMenu</tabstop>
+    <tabstop>controlBox</tabstop>
+    <tabstop>shiftBox</tabstop>
+    <tabstop>altBox</tabstop>
+    <tabstop>metaBox</tabstop>
+    <tabstop>superBox</tabstop>
+    <tabstop>hyperBox</tabstop>
+    <tabstop>capslockBox</tabstop>
+    <tabstop>programCombo</tabstop>
+    <tabstop>ConfigCombo</tabstop>
+    <tabstop>advancedCBox</tabstop>
+    <tabstop>unicodeLocaleCombo</tabstop>
+    <tabstop>localesEditButton</tabstop>
+    <tabstop>frontendAddressEdit</tabstop>
+    <tabstop>iMEngineAddressEdit</tabstop>
+    <tabstop>configAddressEdit</tabstop>
+    <tabstop>panelAddressEdit</tabstop>
+    <tabstop>socketTimeoutSpinBox</tabstop>
+</tabstops>
+<slots>
+    <slot>socketTimeoutSpinBox_valueChanged( int )</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

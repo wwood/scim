@@ -1,0 +1,85 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>XWindowSettings</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>XWindowSettings</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>407</width>
+            <height>167</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>X Window (XIM)</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>0</number>
+        </property>
+        <property name="spacing">
+            <number>0</number>
+        </property>
+        <widget class="QCheckBox">
+            <property name="name">
+                <cstring>kcfg_AutoStart</cstring>
+            </property>
+            <property name="text">
+                <string>S&amp;tart skim automatically when KDE starts</string>
+            </property>
+        </widget>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>groupBox3</cstring>
+            </property>
+            <property name="title">
+                <string>XIM Settings</string>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QCheckBox">
+                    <property name="name">
+                         <cstring>kcfg__FrontEnd_X11_OnTheSpot</cstring>
+                     </property>
+                     <property name="text">
+                         <string>&amp;On the Spot</string>
+                     </property>
+                 </widget>
+                 <widget class="QCheckBox">
+                     <property name="name">
+                        <cstring>kcfg__FrontEnd_X11_Dynamic</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Dynamic Event Flow</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <spacer>
+            <property name="name">
+                <cstring>spacer10</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Vertical</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>21</width>
+                    <height>130</height>
+                </size>
+            </property>
+        </spacer>
+    </vbox>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

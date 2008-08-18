@@ -1,0 +1,14 @@
+#! /usr/bin/env python
+
+Import( 'env' )
+
+inputwindow_sources='inputwindow.cpp scimlistbox.cpp scimlineedit.cpp scimstringlistitem.cpp scimlookuptable.cpp scimstringrender.cpp'
+
+plugin_desktop_file='skimplugin_inputwindow.desktop'
+
+env.SKIMPLUGIN('skimplugin_inputwindow', inputwindow_sources, plugin_desktop_file)
+
+kcm_inputwindow_sources='inputwindow_settings.ui configinputwindow.cpp'
+
+plugin_kcm_desktop_file='skimplugin_inputwindow_config.desktop'
+env.SKIMKCMPLUGIN('kcm_skimplugin_inputwindow', kcm_inputwindow_sources, plugin_kcm_desktop_file)

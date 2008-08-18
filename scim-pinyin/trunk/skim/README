@@ -1,0 +1,9 @@
+If you checkout the CVS version, then you must also checkout an admin dir for this skim support to work:
+
+$cvs -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/scim login
+(just press enter)
+
+then under this dir (where this README resides)
+$cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/scim co -P -d admin skim/admin
+
+the bootstrap script always trys to do this for you.

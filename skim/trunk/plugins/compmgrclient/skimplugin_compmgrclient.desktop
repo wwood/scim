@@ -1,0 +1,31 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Composite Management
+Name[de]=Composite-Verwaltung
+Name[fr]=Gestion Modes Composites
+Name[it]=Gestione di Composite
+Name[ja]=Compositeの管理
+Name[ko]=투명화 지원 설정
+Name[pa]=ਗੁੰਝਲਦਾਰ ਪਰਬੰਧਨ
+Name[zh_CN]=Composite 管理器
+Comment=Manage the composite features in skim
+Comment[de]=Die Composite-Eigenschaften von skim verwalten
+Comment[fr]=Gestion des fonctions composites dans skim
+Comment[it]=Gestisci le funzionalità di Composite di Skim
+Comment[ja]=skimで使用するComposite機能を管理
+Comment[ko]=skim 에 투명화 지원 부분 설정 
+Comment[pa]=ਸਕਿਮ ਵਿੱਚ ਗੁੰਝਲਦਾਰ ਫੀਚਰ ਪਰਬੰਧਨ
+Comment[zh_CN]=管理 skim Composite 特性支持
+
+ServiceTypes=Skim/Plugin
+Type=Service
+Icon=ksplash
+X-KDE-PluginInfo-Author=liucougar
+X-KDE-PluginInfo-Email=liuspider@users.sourceforge.net
+X-KDE-PluginInfo-Name=skimplugin_compmgrclient
+X-KDE-PluginInfo-Version=0.8.0
+X-KDE-PluginInfo-Category=UI
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PluginInfo-HasActions=false
+X-KDE-Library=skimplugin_compmgrclient

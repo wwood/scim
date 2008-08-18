@@ -1,0 +1,32 @@
+[Desktop Entry]
+Encoding=UTF-8
+ServiceTypes=Skim/UI
+Type=Service
+Icon=messagebox_info
+X-KDE-PluginInfo-Author=liucougar
+X-KDE-PluginInfo-Email=liuspider@users.sourceforge.net
+X-KDE-PluginInfo-Name=skimplugin_systemtray
+X-KDE-PluginInfo-Version=0.8.0
+X-KDE-PluginInfo-Category=UI
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PluginInfo-HasActions=false
+X-KDE-Library=skimplugin_systemtray
+
+Name=System Tray Icon
+Name[de]=Kontrolleistensymbol
+Name[fr]=Icône de la Barre des Tâches
+Name[it]=Icona del vassoio di sistema
+Name[ja]=トレイアイコン
+Name[ko]=시스템 트레이 아이콘
+Name[pa]=ਸਿਸਟਮ ਟਰੇ ਆਈਕਾਨ
+Name[zh_CN]=系统托盘指示器
+Name[zh_TW]=System Tray 圖示
+Comment=System Tray Indicator
+Comment[de]=Anzeige im Systemabschnitt der Kontrolleiste
+Comment[fr]=Indicateur de la Barre des Tâches
+Comment[it]=Indicatore del vassoio di sistema
+Comment[ja]=システムトレイ・インジケイター
+Comment[ko]=시스템 트레이 표시자
+Comment[pa]=ਸਿਸਟਮ ਟਰੇ ਸੂਚਕ
+Comment[zh_CN]=系统托盘指示器

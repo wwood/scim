@@ -1,0 +1,12 @@
+Requires Qt >= 4.0.0
+
+if you want skim support, requires >= skim 1.2.0
+
+By default, the scim qt-immodule plugin will be installed into
+$QTLIBPATH/plugins/inputmethods
+
+Use this to specify the qt4 lib:
+QTDIR=/usr scons debug=1 qtlibs=/usr/lib/qt4/ qtincludes=/usr/include/qt4
+(if you do not have scons installed, replace scons with ./configure, after ./configure, use ./scons to compile and ./scons install to install)
+
+the translation file will be installed under "$datadir"/locale

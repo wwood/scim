@@ -1,0 +1,20 @@
+[Desktop Entry]
+Encoding=UTF-8
+Icon=kcmdf
+DocPath=skim/index.html
+Type=Service
+ServiceTypes=Skim/KCModule
+
+X-KDE-ModuleType=Library
+X-KDE-Library=skimplugin_scim_imengines
+X-KDE-ParentApp=skimplugin_scim
+X-KDE-ParentComponents=skimplugin_scim
+X-KDE-PluginInfo-DisplayParent=skimsetupdir_imengines
+Name=Global Setup
+Name[de]=Globale Einrichtung
+Name[fr]=Configuration Globale
+Name[it]=Configurazione globale
+Name[ja]=全体設定
+Name[ko]=주 설정
+Name[pa]=ਗਲੋਬਲ ਸੈਟਅੱਪ
+Name[zh_CN]=全局配置

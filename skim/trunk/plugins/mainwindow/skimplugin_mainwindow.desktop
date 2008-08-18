@@ -1,0 +1,48 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Main Toolbar
+Name[de]=Hauptwerkzeugleiste
+Name[fr]=Barre d'Outils Principale
+Name[it]=Barra degli strumenti principale
+Name[ja]=メインツールバー
+Name[ko]=주 도구창
+Name[pa]=ਮੁੱਖ ਸੰਦ-ਪੱਟੀ
+Name[zh_CN]=主工具条
+Name[zh_TW]=主工具列
+Comment=Main Window
+Comment[de]=Hauptfenster
+Comment[fr]=Fenêtre Principale
+Comment[it]=Finestra principale
+Comment[ja]=メインウィンドウ
+Comment[ko]=중심 창
+Comment[pa]=ਮੁੱਖ ਝਰੋਖਾ
+Comment[zh_CN]=主窗口
+Comment[zh_TW]=主視窗
+
+ServiceTypes=Skim/UI
+Type=Service
+Icon=panel
+X-KDE-PluginInfo-Author=liucougar
+X-KDE-PluginInfo-Email=liuspider@users.sourceforge.net
+X-KDE-PluginInfo-Name=skimplugin_mainwindow
+X-KDE-PluginInfo-Version=0.8.0
+X-KDE-PluginInfo-Category=UI
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PluginInfo-HasActions=true
+X-KDE-Library=skimplugin_mainwindow
+
+Actions=ToggleEmbedded;
+
+[Desktop Action ToggleEmbedded]
+Type=Toggle
+Name=Toggle Docking
+Name[de]=Andocken ein/ausschalten
+Name[fr]=Activation Amarrage
+Name[it]=Commuta l'agganciamento
+Name[ja]=ドッキングをトグル
+Name[ko]=삽입 전환
+Name[pa]=ਡੋਕ ਤਬਦੀਲ
+Name[zh_CN]=切换模式
+InternalName=toggledocking_mainwindow
+Slot=toggleDocking

@@ -1,0 +1,14 @@
+*.in
+ltmain.sh
+config.status
+install-sh
+aclocal.m4
+config.sub
+Makefile
+missing
+config.guess
+configure
+stamp-h1
+config.h
+*.cache
+depcomp

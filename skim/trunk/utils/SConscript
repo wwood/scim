@@ -1,0 +1,14 @@
+#! /usr/bin/env python
+
+Import( 'env' )
+
+utils=env.Copy()
+utils_sources='scimkdesettings.kcfgc scimmovehandle.cpp scimdragableframe.cpp scimxmlguibuilder.cpp scimactions.cpp scimtoolbar.cpp kautocmodule.cpp skimplugininfo.cpp'
+utils.KDEshlib( 'libscim-kdeutils', utils_sources, kdelib=1, vnum=utils.libskim_version() )
+utils.KDEaddpaths_includes( "#/ #/src" )
+utils.KDEaddlibs( "qt-mt kdecore kdeui" )
+
+utils.KDEinstall( 'KDEKCFG', '', 'scimkdeconfig.kcfg' )
+utils.bksys_install( utils['PREFIX']+'/include/skim/utils', 'scimmovehandle.h scimdragableframe.h scimxmlguibuilder.h scimactions.h scimtoolbar.h kautocmodule.h')
+#do not use KDEINCLUDE, kde-config >= 3.4.0 does not support this
+#utils.KDEinstall( 'KDEINCLUDE', 'skim/utils', 'scimmovehandle.h scimdragableframe.h scimxmlguibuilder.h scimactions.h scimtoolbar.h kautocmodule.h')

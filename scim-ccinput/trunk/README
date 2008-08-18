@@ -1,0 +1,27 @@
+This is CCInput, the GPLed chinese input method, based on SCIM now.
+
+1. Introduction of CCInput
+==========================
+
+The CCInput project began from Sept. 2003. Using it, one could input
+chinese words and phrases conveniently with Pinyin.
+
+The latest version of CCInput is 0.1.1.
+
+Please refer to the site:
+http://www.opendesktop.net/modules/project/index.php?project_id=8
+
+2. Introduction of SCIM
+=======================
+
+Smart Common Input Method platform, in short SCIM, is a development
+platform to make Input Method developers live easier.
+Please refer to the site:
+http://www.scim-im.org
+
+3. Documents
+============
+
+INSTALL: CCInput install instructions.
+COPYING: GNU General Public License.
+HACKING: Information about hacking on CCInput.

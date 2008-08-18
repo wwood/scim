@@ -1,0 +1,58 @@
+2005-08-16 cougar <liuspider@users.sourceforge.net>
+    0.9.4 released: requires scim >= 1.4.2
+        Only use ComposeKeyFactory as fallback when ComposeKey input method is enabled.
+	Fixed a bug of focus ic handling.
+
+2005-07-23 cougar <liuspider@users.sourceforge.net>
+    0.9.3 released: scim 1.4.0 compatible version
+        fixed: forward keys issues
+	fixed: crash in precompiled apps with incompatible gcc version
+
+2005-07-07 cougar <liuspider@users.sourceforge.net>
+    0.9.2 released: scim 1.3.3 compatible version
+        new: added share input method support
+
+2005-06-18 cougar <liuspider@users.sourceforge.net>
+    0.9.1 released:
+        fixed: potential conflict when working with skim
+        fixed: added French and Italian translation
+        fixed: fixed infinite loop issue when slot_forward_key_event is used
+
+2005-05-28 cougar <liuspider@users.sourceforge.net>
+    0.9.0 released: this is the scim 1.3.0 compatible version
+
+2005-05-28 cougar <liuspider@users.sourceforge.net>
+    0.8.95 released:
+        fixed: all known issue with Japanese input method (patch from TAM-san)
+        fixed: filter mask using valid_key_mask
+
+2005-04-26 cougar <liuspider@users.sourceforge.net>
+    0.8.9 released:
+        updated help script to fix compile issue
+        scim-qtimm will reload scim if it is reselected in the right click context menu in Qt apps
+        fixed potential issues with some clients
+        fixed the implementation of slot_forward_key_event
+
+2005-02-28 cougar <liuspider@users.sourceforge.net>
+    0.8.5 released
+        configure dialog of skim is shipped from within this package
+        translations for the skim config dialog is also included
+
+2005-02-06 cougar <liuspider@users.sourceforge.net>
+    0.8.0 released
+        Updated to be compatible with scim 1.1.x (requires scim >= 1.1.3);
+        Retrieving language info from current using IMEngine;
+        Merged left/right modifier keys.
+
+2004-09-17 cougar <liuspider@users.sourceforge.net>
+    0.7.5 released (first public version)
+        fixed a crash bug;
+        updated according to latest qt immodule patch (0910);
+        new German translation;
+        other minor improvement.
+
+2004-09-04 cougar <liuspider@users.sourceforge.net>
+    0.7 released (first public version)
+
+2004-07-05 cougar <liuspider@users.sourceforge.net>
+    init import into SVN

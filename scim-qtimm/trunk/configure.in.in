@@ -1,0 +1,150 @@
+dnl Process this file with autoconf to produce a configure script.
+
+AC_INIT(acinclude.m4) dnl a source file from your sub dir
+
+dnl This is so we can use kde-common
+AC_CONFIG_AUX_DIR(admin)
+
+dnl This ksh/zsh feature conflicts with `cd blah ; pwd`
+unset CDPATH
+
+dnl Checking host/target/build systems, for make, install etc.
+AC_CANONICAL_SYSTEM
+dnl Perform program name transformation
+AC_ARG_PROGRAM
+
+dnl Automake doc recommends to do this only here. (Janos)
+AM_INIT_AUTOMAKE(@MODULENAME@, @VERSION@) dnl searches for some needed programs
+
+dnl KDE_SET_PREFIX
+dnl as we disabled the above line, we have to call the K_PATH_X to set
+dnl variable include_x
+K_PATH_X
+KDE_CHECK_THREADING
+
+dnl generate the config header
+AM_CONFIG_HEADER(config.h) dnl at the distribution this done
+
+dnl Checks for programs.
+AC_CHECK_COMPILERS
+AC_ENABLE_SHARED(yes)
+AC_ENABLE_STATIC(no)
+KDE_PROG_LIBTOOL
+
+dnl for NLS support. Call them in this order!
+dnl WITH_NLS is for the po files
+AM_KDE_WITH_NLS
+
+KDE_USE_QT(3.2.0)
+
+dnl #MIN_CONFIG(3.2.0)
+AM_INIT_AUTOMAKE(scim-qtimm, 0.9.4)
+
+REQUIRED_SCIM_VERSION=1.4.2
+
+PKG_CHECK_MODULES(SCIM, [scim >= $REQUIRED_SCIM_VERSION],
+                        [HAS_SCIM=yes],
+                        [HAS_SCIM=no])
+
+PKG_CHECK_MODULES(SCIM_X11, [scim-x11utils], [HAS_SCIM_X11=yes], [HAS_SCIM_X11=no])
+
+if test "$HAS_SCIM" = "yes"; then
+  SCIM_VERSION=`$PKG_CONFIG --modversion scim`
+  AC_DEFINE_UNQUOTED(SCIM_VERSION, "$SCIM_VERSION", [The version of SCIM library.])
+  SCIM_BINARY_VERSION=`$PKG_CONFIG --variable=scim_binary_version scim`
+  AC_DEFINE_UNQUOTED(SCIM_BINARY_VERSION, "$SCIM_BINARY_VERSION", [The binary version of SCIM library.])
+  SCIM_LIBDIR=`$PKG_CONFIG --variable=libdir scim`
+  SCIM_ICONDIR=`$PKG_CONFIG --variable=datadir scim`/scim/icons
+  AC_SUBST(SCIM_LIBDIR)
+  AC_DEFINE_UNQUOTED(SCIM_ICONDIR, "$SCIM_ICONDIR", [The icondir of SCIM library.])
+else
+  AC_MSG_ERROR([SCIM library is not available or the version is too old!])
+fi
+
+all_libraries="$all_libraries"
+all_includes="$all_includes"
+AC_SUBST(all_includes)
+AC_SUBST(all_libraries)
+
+AC_C_BIGENDIAN
+AC_CHECK_KDEMAXPATHLEN
+
+##AM_INIT_AUTOMAKE(gettext, 0.12.1)
+AM_GNU_GETTEXT([external])
+
+GETTEXT_PACKAGE=scim-qtimm
+AC_SUBST(GETTEXT_PACKAGE)
+
+kde_locale="$datadir"/locale
+AC_SUBST(kde_locale)
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [The gettext domain])
+
+AC_ARG_ENABLE(scim-debug,
+              [  --enable-scim-debug            Turn on debugging],
+              scim_debug=yes,
+              scim_debug=no)
+
+AC_ARG_ENABLE(tests,
+              [  --enable-tests            Build tests/*],
+              enable_tests=yes,
+              enable_tests=no)
+
+AC_ARG_ENABLE(skim-support,
+              [  --disable-skim-support  Enable skim Setup UI],
+              skim_support=no,
+              skim_support=yes)
+
+AM_CONDITIONAL(SCIM_BUILD_SKIM_SETUP, [test "$skim_support" = "yes"])
+
+if test "$scim_debug" = "yes"; then
+  AC_DEFINE(ENABLE_DEBUG,1,[Define this to enable the debug facility in scim-panel-lib])
+  AC_DEFINE(QT_DEBUG,,[Enable QT debug output])
+  CFLAGS="$CFLAGS -g"
+  CXXFLAGS="$CXXFLAGS -g"
+else
+  AC_DEFINE(ENABLE_DEBUG,0)
+fi
+
+if test "$enable_tests" = "yes"; then
+  SCIM_BUILD_TESTS=1
+else
+  SCIM_BUILD_TESTS=0
+  enable_tests=no
+fi
+
+AM_CONDITIONAL(SCIM_BUILD_TESTS,
+                [test "$enable_tests" = "yes"])
+
+	include_ARTS=0
+	AC_SUBST(include_ARTS)
+	AM_CONDITIONAL(include_ARTS, test "$build_arts" == "yes")
+	SCIM_QTIMM_ENABLE_SKIM_SUPPORT=0
+	KDE_CHECK_PERL
+	AC_PATH_QT
+
+if test "${with_qt_dir+set}" = set; then
+  QTDIR_LOCAL="$with_qt_dir"
+else
+  QTDIR_LOCAL=$QTDIR
+fi
+INPUTMETHODSDIR=$QTDIR_LOCAL/plugins/inputmethods
+AC_SUBST(INPUTMETHODSDIR)
+
+if test "$kde_qtver" = "3"; then
+if test ! -e $qt_incdir/qinputcontext.h -o ! -e $qt_incdir/qinputcontextplugin.h; then
+  AC_MSG_ERROR([
+    The Qt library was not compiled with the qt-immodule patch
+    applied please download it from
+    http://immodule-qt.freedesktop.org/Software/ImmoduleQtDownload and recompile Qt.])
+fi
+fi
+
+AC_MSG_RESULT([
+Build options:
+  Version                $VERSION
+  Version of libscim     $SCIM_VERSION
+  Install plugin to      $INPUTMETHODSDIR
+  Enable debug           $scim_debug
+  Build tests/*          $enable_tests
+  
+])

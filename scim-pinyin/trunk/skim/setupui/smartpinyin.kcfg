@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE kcfg SYSTEM "http://www.kde.org/standards/kcfg/1.0/kcfg.dtd">
+<kcfg>
+  <kcfgfile name="skimrc"/>
+  <group name="SCIM">
+    <entry name="_IMEngine_Pinyin_AlwaysShowLookup" key="/IMEngine/Pinyin/AlwaysShowLookup" type="Bool">
+      <label>Lookup table should always be shown</label>
+      <default>false</default>
+    </entry>
+
+    <entry name="_IMEngine_Pinyin_Ambiguities" key="/IMEngine/Pinyin/Ambiguity/Any" type="Bool">
+      <label>Whether to enable ambiguities pinyin</label>
+      <default>false</default>
+    </entry>
+    <entry name="_IMEngine_Pinyin_Ambiguity_AnAng" key="/IMEngine/Pinyin/Ambiguity/AnAng" type="Bool">
+      <label>Ambiguity of An and Ang</label>
+      <default>false</default>
+    </entry>
+    <entry name="_IMEngine_Pinyin_Ambiguity_EnEng" key="/IMEngine/Pinyin/Ambiguity/EnEng" type="Bool">
+      <label>Ambiguity of En and Eng</label>
+      <default>false</default>
+    </entry>
+    <entry name="_IMEngine_Pinyin_Ambiguity_InIng" key="/IMEngine/Pinyin/Ambiguity/InIng" type="Bool">
+      <label>Ambiguity of In and Ing</label>
+      <default>false</default>
+    </entry>
+    <entry name="_IMEngine_Pinyin_Ambiguity_ZhiZi" key="/IMEngine/Pinyin/Ambiguity/ZhiZi" type="Bool">
+      <label>Ambiguity of Zh and Z</label>
+      <default>false</default>
+    </entry>
+    <entry name="_IMEngine_Pinyin_Ambiguity_ChiCi" key="/IMEngine/Pinyin/Ambiguity/ChiCi" type="Bool">
+      <label>Ambiguity of Ch and C</label>
+      <default>false</default>
+    </entry>
+    <entry name="_IMEngine_Pinyin_Ambiguity_ShiSi" key="/IMEngine/Pinyin/Ambiguity/ShiSi" type="Bool">
+      <label>Ambiguity of Sh and S</label>
+      <default>false</default>
+    </entry>
+    <entry name="_IMEngine_Pinyin_Ambiguity_FoHe" key="/IMEngine/Pinyin/Ambiguity/FoHe" type="Bool">
+      <label>Ambiguity of Fo and He</label>
+      <default>false</default>
+    </entry>
+    <entry name="_IMEngine_Pinyin_Ambiguity_LeRi" key="/IMEngine/Pinyin/Ambiguity/LeRi" type="Bool">
+      <label>Ambiguity of Le and Ri</label>
+      <default>false</default>
+    </entry>
+    <entry name="_IMEngine_Pinyin_Ambiguity_NeLe" key="/IMEngine/Pinyin/Ambiguity/NeLe" type="Bool">
+      <label>Ambiguity of Ne and Le</label>
+      <default>false</default>
+    </entry>
+    <entry name="_IMEngine_Pinyin_Ambiguity_Any" key="/IMEngine/Pinyin/Ambiguity/Any" type="Bool">
+      <label>What's this???</label>
+      <default>false</default>
+    </entry>
+    
+    
+    <entry name="_IMEngine_Pinyin_AutoCombinePhrase" key="/IMEngine/Pinyin/AutoCombinePhrase" type="Bool">
+      <label>Auto combine inputed character to phrase</label>
+      <default>false</default>
+    </entry>
+    <entry name="_IMEngine_Pinyin_AutoFillPreedit" key="/IMEngine/Pinyin/AutoFillPreedit" type="Bool">
+      <label>Auto fill preedit area</label>
+      <default>false</default>
+    </entry>
+    <entry name="_IMEngine_Pinyin_BurstStackSize" key="/IMEngine/Pinyin/BurstStackSize" type="Int">
+      <label>no idea</label>
+      <default>128</default>
+    </entry>
+    <entry name="_IMEngine_Pinyin_ChineseSwitchKey" key="/IMEngine/Pinyin/ChineseSwitchKey" type="String">
+      <label>Chinese mode switch shortcut</label>
+      <default>Control+slash</default>
+    </entry>
+    <entry name="_IMEngine_Pinyin_DisablePhraseKey" key="/IMEngine/Pinyin/DisablePhraseKey" type="String">
+      <label>Disable phrase</label>
+      <default>Control+d</default>
+    </entry>
+    <entry name="_IMEngine_Pinyin_DynamicAdjust" key="/IMEngine/Pinyin/DynamicAdjust" type="Bool">
+      <label>Enable dynamic adjust the frequences of phrases</label>
+      <default>false</default>
+    </entry>
+    <entry name="_IMEngine_Pinyin_DynamicSensitivity" key="/IMEngine/Pinyin/DynamicSensitivity" type="Int">
+      <label>This value will be added to a phrase just inputed</label>
+      <default>6</default>
+    </entry>
+    <entry name="_IMEngine_Pinyin_FullWidthLetterKey" key="/IMEngine/Pinyin/FullWidthLetterKey" type="String">
+      <label>Toggle full/half letter width shortcut</label>
+      <default>Shift+space</default>
+    </entry>
+    <entry name="_IMEngine_Pinyin_FullWidthPunctKey" key="/IMEngine/Pinyin/FullWidthPunctKey" type="String">
+      <label>Toggle full/half punctuation width shortcut</label>
+      <default>Control+period</default>
+    </entry>
+    <entry name="_IMEngine_Pinyin_Incomplete" key="/IMEngine/Pinyin/Incomplete" type="Bool">
+      <label>Enable incomplete pinyin</label>
+      <default>false</default>
+    </entry>
+    <entry name="_IMEngine_Pinyin_MatchLongerPhrase" key="/IMEngine/Pinyin/MatchLongerPhrase" type="Bool">
+      <label>Match longer phrase first</label>
+      <default>false</default>
+    </entry>
+    <entry name="_IMEngine_Pinyin_MaxPreeditLength" key="/IMEngine/Pinyin/MaxPreeditLength" type="Int">
+      <label>Max preedit string length</label>
+      <default>32</default>
+    </entry>
+    <entry name="_IMEngine_Pinyin_MaxUserPhraseLength" key="/IMEngine/Pinyin/MaxUserPhraseLength" type="Int">
+      <label>The maximum characters of user defined phrase</label>
+      <default>8</default>
+    </entry>
+    <entry name="_IMEngine_Pinyin_ModeSwitchKey" key="/IMEngine/Pinyin/ModeSwitchKey" type="String">
+      <label>Pinyin mode switch shortcuts</label>
+      <default>Alt+Shift_L+KeyRelease,Alt+Shift_R+KeyRelease,Shift+Shift_L+KeyRelease,Shift+Shift_R+KeyRelease</default>
+    </entry>
+    <entry name="_IMEngine_Pinyin_PageDownKey" key="/IMEngine/Pinyin/PageDownKey" type="String">
+      <label>Page down shortcut</label>
+      <default>period,equal,bracketright,Page_Down</default>
+    </entry>
+    <entry name="_IMEngine_Pinyin_PageUpKey" key="/IMEngine/Pinyin/PageUpKey" type="String">
+      <label>Page up shortcut</label>
+      <default>comma,minus,bracketleft,Page_Up</default>
+    </entry>
+    <entry name="_IMEngine_Pinyin_SavePeriod" key="/IMEngine/Pinyin/SavePeriod" type="Int">
+      <label>The time interval of saving user usage info</label>
+      <default>300</default>
+    </entry>
+    <entry name="_IMEngine_Pinyin_ShowAllKeys" key="/IMEngine/Pinyin/ShowAllKeys" type="Bool">
+      <label>Show all keys</label>
+      <default>false</default>
+    </entry>
+    <entry name="_IMEngine_Pinyin_SmartMatchLevel" key="/IMEngine/Pinyin/SmartMatchLevel" type="Int">
+      <label>no idea</label>
+      <default>20</default>
+    </entry>
+    <entry name="_IMEngine_Pinyin_Tone" key="/IMEngine/Pinyin/Tone" type="Bool">
+      <label>Use tone</label>
+      <default>false</default>
+    </entry>
+    <entry name="_IMEngine_Pinyin_User_DataBinary" key="/IMEngine/Pinyin/User/DataBinary" type="Bool">
+      <label>Save user data file in binary format</label>
+      <default>false</default>
+    </entry>
+  </group>
+</kcfg>

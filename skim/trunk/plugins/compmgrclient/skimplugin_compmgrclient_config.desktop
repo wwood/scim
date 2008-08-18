@@ -1,0 +1,26 @@
+[Desktop Entry]
+Encoding=UTF-8
+Icon=ksplash
+DocPath=skim/index.html
+Type=Service
+ServiceTypes=Skim/KCModule
+X-KDE-Weight=100
+X-KDE-ModuleType=Library
+X-KDE-Library=skimplugin_compmgrclient
+#X-KDE-FactoryName=KCMLoader
+X-KDE-ParentApp=skimplugin_compmgrclient
+X-KDE-ParentComponents=skimplugin_compmgrclient
+X-KDE-PluginInfo-DisplayParent=skimsetupdir_panel
+Name=Composite
+Name[fr]=Mode Composite
+Name[ko]=투명설정
+Name[pa]=ਗੁੰਝਲਦਾਰ
+Name[zh_CN]=Composite 配置
+Comment=Configuration of the composite features in skim
+Comment[de]=Composite-Eigenschaften von skim einrichten
+Comment[fr]=Configuration des fonctions composites dans skim
+Comment[it]=Configurazione delle funzionalità di Composite di Skim
+Comment[ja]=skimで使用するComposite機能の設定
+Comment[ko]=skim 에서 투명화 지원 부분 설정
+Comment[pa]=ਸਕਿਮ ਵਿੱਚ ਗੁੰਝਲਦਾਰ ਫੀਚਰ ਦੀ ਸੰਰਚਨਾ
+Comment[zh_CN]=Composite 管理器配置界面

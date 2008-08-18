@@ -1,0 +1,14 @@
+#! /usr/bin/env python
+
+Import( 'env' )
+
+mainwinenv=env.Copy()
+mainwin_sources='mainwindow.cpp mainwindow.skel'
+plugin_desktop_file='skimplugin_mainwindow.desktop'
+mainwinenv.SKIMPLUGIN('skimplugin_mainwindow', mainwin_sources, plugin_desktop_file)
+
+kcm_mainwin_sources='mainwindow_settings.ui configmainwindow.cpp'
+plugin_kcm_desktop_file='skimplugin_mainwindow_config.desktop'
+mainwinenv.SKIMKCMPLUGIN('kcm_skimplugin_mainwindow', kcm_mainwin_sources, plugin_kcm_desktop_file)
+
+mainwinenv.KDEinstall('KDEDATA', env['PACKAGE'], 'mainwindowui.rc')

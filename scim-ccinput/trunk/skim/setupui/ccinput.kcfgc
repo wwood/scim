@@ -1,0 +1,4 @@
+File=ccinput.kcfg
+ClassName=CCInputConfig
+Singleton=true
+Mutators=false

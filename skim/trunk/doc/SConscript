@@ -1,0 +1,12 @@
+#! /usr/bin/env python
+
+Import( 'env' )
+
+docenv=env.Copy()
+docenv.docfolder('en/', 'en', env['PACKAGE'])
+docenv.docfolder('de/', 'de', env['PACKAGE'])
+docenv.docfolder('nl/', 'nl', env['PACKAGE'])
+
+#in SuSE spec file, this is removed before install,
+#so do not install it either
+#docenv.KDEinstall('KDEDOC', env['PACKAGE'], 'kdex.dtd')

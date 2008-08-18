@@ -1,0 +1,23 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Frontend
+Name[de]=Benutzeroberfläche
+Name[fr]=Fenêtre de Saisie
+Name[it]=Interfaccia
+Name[ja]=フロントエンド
+Name[ko]=프론트엔드
+Name[pa]=ਮੁੱਖ-ਭੂਮੀ
+Name[zh_CN]=前端
+Icon=kthememgr
+ServiceTypes=Skim/SetupDir
+Type=Service
+X-KDE-PluginInfo-Author=liucougar
+X-KDE-PluginInfo-Email=liuspider@users.sourceforge.net
+X-KDE-PluginInfo-Name=skimsetupdir_frontend
+X-KDE-PluginInfo-Version=1.0.0
+X-KDE-PluginInfo-Category=Root
+X-KDE-PluginInfo-License=GPL
+#X-KDE-PluginInfo-EnabledByDefault=true
+#X-KDE-PluginInfo-HasActions=true
+#X-KDE-Library=skimplugin_inputwindow
+

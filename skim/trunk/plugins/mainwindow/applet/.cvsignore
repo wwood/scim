@@ -1,0 +1,10 @@
+.deps
+.libs
+Makefile
+Makefile.in
+*.la
+*.kidl
+*.lo
+skimapplet.moc
+skimapplet_skel.cpp
+*.os

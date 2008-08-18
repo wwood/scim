@@ -1,0 +1,51 @@
+# translation of fr.po to French
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Damien Menanteau <damien.menanteau@cegetel.net>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: fr\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-02-27 17:59+0000\n"
+"PO-Revision-Date: 2005-06-04 21:01+0200\n"
+"Last-Translator: Damien Menanteau <damien.menanteau@cegetel.net>\n"
+"Language-Team: French\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.10.1\n"
+"Plural-Forms:  nplurals=2; plural=(n > 1);\n"
+
+#: ../src/plugin.cpp:38
+msgid "Qt immodule plugin for SCIM"
+msgstr "Composant Qt immodule pour SCIM"
+
+#: ../src/qsciminputcontext.cpp:1112
+msgid "Smart Common Input Method platform "
+msgstr "Plateforme SCIM (Smart Common Input Method) "
+
+#: ../src/qsciminputcontext.cpp:1114
+msgid ""
+"\n"
+"(C) 2002-2005 James Su <suzhe@tsinghua.org.cn>\n"
+"     2003-2005 LiuCougar <liuspider@users.sourceforge.net>\n"
+"\n"
+msgstr ""
+"\n"
+"(C) 2002-2005 James Su <suzhe@tsinghua.org.cn>\n"
+"     2003-2005 LiuCougar <liuspider@users.sourceforge.net>\n"
+"\n"
+
+#: ../src/qsciminputcontext.cpp:1119
+msgid ""
+":\n"
+"\n"
+msgstr ""
+":\n"
+"\n"
+
+#: ../src/qsciminputcontext.cpp:1176
+msgid "Keyboard"
+msgstr "Clavier"
+

@@ -1,0 +1,6 @@
+File=scimkdeconfig.kcfg
+ClassName=ScimKdeSettings
+Singleton=true 
+Mutators=true
+ItemAccessors=true
+SetUserTexts=true

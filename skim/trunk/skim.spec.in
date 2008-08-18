@@ -1,0 +1,140 @@
+Summary: SCIM input method platform for KDE
+Name: skim
+Version: @VERSION@
+Release: 1
+License: GPL
+URL: http://www.scim-im.org/
+Group: System Environment/Libraries
+
+Requires:  scim >= @REQUIRED_SCIM_VERSION@
+BuildRequires:  scim-devel >= @REQUIRED_SCIM_VERSION@
+BuildRequires:  kdelibs-devel >= @REQUIRED_KDE_VERSION@
+BuildRequires:  pkgconfig >= 0.12
+Source0: %{name}-%{version}.tar.bz2
+#Source1: xinput-skim
+BuildRoot: %{_tmppath}/%{name}-%{version}
+
+%description
+skim is an input method platform based SCIM optimized for KDE.
+It provides a GUI panel (named scim-panel-kde), a KConfig config module and
+SetupUIs for itself and SCIM.  It also has its own plugin system
+which supports on-demand loadable actions.
+
+
+%package devel
+Summary:    Skim development files
+Group:      Development/Libraries
+Requires:   %{name} = %{version}-%{release}
+
+%description devel
+This package includes development files skim.
+Install skim-devel if you want to develop programs which use skim.
+
+
+%%prep
+rm -rf $RPM_BUILD_ROOT
+%setup -q
+
+%build
+./configure prefix=%{_prefix} libdir=%{_libdir}
+./scons
+
+%install
+./scons install DESTDIR=${RPM_BUILD_ROOT}
+
+# install xinput config file.
+#install -D %SOURCE1 ${RPM_BUILD_ROOT}/%{_sysconfdir}/X11/xinit/xinput.d/skim
+
+%clean
+[ -n "$RPM_BUILD_ROOT" -a "$RPM_BUILD_ROOT" != / ] && rm -rf $RPM_BUILD_ROOT
+
+%post
+/sbin/ldconfig
+
+#for llcc in ja_JP ko_KR zh_CN zh_TW
+#do
+#       alternatives --install /etc/X11/xinit/xinput.d/$llcc xinput-$llcc
+#/etc/X11/xinit/xinput.d/skim 70
+#done
+
+%postun
+/sbin/ldconfig
+
+if [ "$1" = 0 ]
+then
+#  for llcc in ja_JP ko_KR zh_CN zh_TW
+#       do
+#               alternatives --remove xinput-$llcc /etc/X11/xinit/xinput.d/skim
+#               if [ `readlink /etc/alternatives/xinput-$llcc` = "/etc/X11/xinit/xinput.d/skim" ]
+#               then
+#                       alternatives --auto xinput-$llcc
+#               fi
+#       done
+fi
+
+%files
+%defattr(-,root,root,-)
+%doc AUTHORS COPYING NEWS README ChangeLog TODO
+%{_bindir}/scim-panel-kde
+%{_bindir}/skim
+%{_libdir}/kde3/*.so
+%{_libdir}/libscim-kdeutils.so.*
+%{_libdir}/libskim.so.*
+%{_libdir}/scim-1.0/*/Config/kconfig.so
+%{_datadir}/applnk/Utilities/skim.desktop
+%{_datadir}/apps/kicker
+%{_datadir}/apps/skim
+%{_datadir}/autostart/skim.desktop
+%{_datadir}/config.kcfg/*.kcfg
+%dir %{_datadir}/doc/HTML/de/skim
+%{_datadir}/doc/HTML/de/skim/index.cache.bz2
+%doc %{_datadir}/doc/HTML/de/skim/index.docbook
+%dir %{_datadir}/doc/HTML/en/skim
+%{_datadir}/doc/HTML/en/skim/index.cache.bz2
+%doc %{_datadir}/doc/HTML/en/skim/index.docbook
+%{_datadir}/icons/crystalsvg/32x32/apps/skim.png
+%{_datadir}/icons/crystalsvg/scalable/apps/skim.svgz
+%{_datadir}/locale/*/LC_MESSAGES/skim.mo
+%{_datadir}/services
+%{_datadir}/servicetypes
+#%{_sysconfdir}/X11/xinit/xinput.d/skim
+
+%files devel
+%{_libdir}/kde3/*.la
+%{_libdir}/*.la
+%{_libdir}/*.so
+%{_libdir}/scim-1.0/*/Config/kconfig.la
+%{_includedir}/kde/skim
+%{_includedir}/skim
+%{_libdir}/pkgconfig/scim_kdeutils.pc
+%{_libdir}/pkgconfig/skim.pc
+
+%changelog
+* Tue Jul 12 2005 Jens Petersen <petersen@redhat.com>
+- update to 1.3.3
+ - use scons
+ - update filelists
+
+* Sat Feb 5 2005 15:36 Ryo Dairiki <ryo-dairiki@users.sourceforge.jp> -
+- Makeup the rpm for FC3.
+
+* Sat Sep 25 2004 20:50 Jan Hefti <j.hefti@chinaboard.de> -
+- bug fixes for Fedora Core 2
+
+* Sat Aug 23 2004 03:43 LiuCougar <liuspider@users.sourceforge.net> -
+- merged bug fix from Jan's spec file
+
+* Sat Aug 22 2004 00:10 LiuCougar <liuspider@users.sourceforge.net> -
+- cleanup.
+
+* Sat Aug 21 2004 23:00 Jan Hefti <j.hefti@chinaboard.de> -
+- Ensure empty directories will be removed.
+
+* Sat Aug 21 2004 22:10 Jan Hefti <j.hefti@chinaboard.de> -
+- testing only
+
+* Sat Aug 21 2004 15:30 Jan Hefti <j.hefti@chinaboard.de> -
+- Recompile using scim-libs 0.99.7.
+
+* Sat Aug 21 2004 11:40 Jan Hefti <j.hefti@chinaboard.de> -
+- Initial build.

@@ -1,0 +1,178 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>CompositeManagerWidgetBase</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>CompositeManagerWidgetBase</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>466</width>
+            <height>419</height>
+        </rect>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>0</number>
+        </property>
+        <widget class="QCheckBox">
+            <property name="name">
+                <cstring>kcfg_Enable_Composite</cstring>
+            </property>
+            <property name="text">
+                <string>Enable &amp;Composite Support</string>
+            </property>
+        </widget>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>mainGroupBox</cstring>
+            </property>
+            <property name="title">
+                <string>Composite Settings</string>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>kcfg_Use_Kompmgr</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Use KDE built-in Composite Manager (kompmgr)</string>
+                    </property>
+                </widget>
+                <widget class="QListView">
+                    <column>
+                        <property name="text">
+                            <string>Window Name</string>
+                        </property>
+                        <property name="clickable">
+                            <bool>true</bool>
+                        </property>
+                        <property name="resizable">
+                            <bool>true</bool>
+                        </property>
+                    </column>
+                    <column>
+                        <property name="text">
+                            <string>Translucency</string>
+                        </property>
+                        <property name="clickable">
+                            <bool>true</bool>
+                        </property>
+                        <property name="resizable">
+                            <bool>true</bool>
+                        </property>
+                    </column>
+                    <property name="name">
+                        <cstring>TopWindowlistView</cstring>
+                    </property>
+                </widget>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>translucencyGroupBox</cstring>
+                    </property>
+                    <property name="title">
+                        <string>Translucency</string>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget">
+                            <property name="name">
+                                <cstring>layout2</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QCheckBox">
+                                    <property name="name">
+                                        <cstring>activeWindowTranslucencyBox</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>&amp;Active Window:</string>
+                                    </property>
+                                </widget>
+                                <widget class="QSlider">
+                                    <property name="name">
+                                        <cstring>ActiveSlider</cstring>
+                                    </property>
+                                    <property name="maxValue">
+                                        <number>100</number>
+                                    </property>
+                                    <property name="lineStep">
+                                        <number>10</number>
+                                    </property>
+                                    <property name="pageStep">
+                                        <number>5</number>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="tickmarks">
+                                        <enum>Below</enum>
+                                    </property>
+                                </widget>
+                                <widget class="QSpinBox">
+                                    <property name="name">
+                                        <cstring>ActiveSpinBox</cstring>
+                                    </property>
+                                    <property name="suffix">
+                                        <string>%</string>
+                                    </property>
+                                    <property name="maxValue">
+                                        <number>100</number>
+                                    </property>
+                                    <property name="lineStep">
+                                        <number>5</number>
+                                    </property>
+                                </widget>
+                            </hbox>
+                        </widget>
+                    </vbox>
+                </widget>
+            </vbox>
+        </widget>
+    </vbox>
+</widget>
+<connections>
+    <connection>
+        <sender>kcfg_Enable_Composite</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>mainGroupBox</receiver>
+        <slot>setEnabled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>ActiveSlider</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>ActiveSpinBox</receiver>
+        <slot>setValue(int)</slot>
+    </connection>
+    <connection>
+        <sender>ActiveSpinBox</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>ActiveSlider</receiver>
+        <slot>setValue(int)</slot>
+    </connection>
+    <connection>
+        <sender>activeWindowTranslucencyBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>ActiveSlider</receiver>
+        <slot>setEnabled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>activeWindowTranslucencyBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>ActiveSpinBox</receiver>
+        <slot>setEnabled(bool)</slot>
+    </connection>
+</connections>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

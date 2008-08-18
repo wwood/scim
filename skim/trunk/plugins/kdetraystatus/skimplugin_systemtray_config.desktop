@@ -1,0 +1,32 @@
+[Desktop Entry]
+Encoding=UTF-8
+Icon=messagebox_info
+DocPath=skim/index.html
+Type=Service
+ServiceTypes=Skim/KCModule
+
+X-KDE-ModuleType=Library
+X-KDE-Library=skimplugin_systemtray
+#X-KDE-FactoryName=KCMLoader
+X-KDE-ParentApp=skimplugin_systemtray
+X-KDE-ParentComponents=skimplugin_systemtray
+X-KDE-PluginInfo-DisplayParent=skimsetupdir_panel
+Name=System Tray Icon
+Name[de]=Kontrolleistensymbol
+Name[fr]=Icône de la Barre des Tâches
+Name[it]=Icona del vassoio di sistema
+Name[ja]=トレイアイコン
+Name[ko]=시스템 트레이 아이콘
+Name[pa]=ਸਿਸਟਮ ਟਰੇ ਆਈਕਾਨ
+Name[zh_CN]=系统托盘指示器
+Name[zh_TW]=System Tray 圖示
+Comment=Configure plugin for System Tray Indicator
+Comment[de]=Komponente für die Anzeige im Systemabschnitt der Kontrolleiste einrichten
+Comment[fr]=Configuration Indicateur de la Barre des Tâches
+Comment[it]=Plugin di configurazione per l'indicatore del vassoio di sistema
+Comment[ja]=システムトレイ・インジケイターの設定
+Comment[ko]=시스템 트레이 표시자 설정 플러그인
+Comment[pa]=ਸਿਸਟਮ ਟਰੇ ਸੂਚਕ ਲਈ ਪਲੱਗਿੰਨ ਸੰਰਚਨਾ
+Comment[zh_CN]=系统托盘指示器配置界面
+Comment[zh_TW]=System Tray Indicator 的設定 plugin
+

@@ -1,0 +1,18 @@
+Hacking on CCInput
+-------------------
+
+The CCInput source tree is available from opendesktop cvs (refer to:
+http://www.opendesktop.net).
+
+If you want to contribute your patches, please send mail to the support
+mail address: <imsupport@ccoss.com.cn>.
+
+You can also advance the bug in our bug tools (better logging in) as follow:
+http://www.opendesktop.net/modules/bugs/main_page.php, project
+"chinese_input_method".
+
+Patches should conform to CCInput coding style. You may use "indent" tool
+to your codes with the following options:
+-bad -bap -bbb -bbo -nbc -bl -bli0 -bls -c33 -cd33 -ncdb -ncdw -nce -cli0
+-cp33 -cs -d0 -nbfda -di2 -nfc1 -nfca -hnl -ip5 -l78 -lp -pcs -nprs -psl
+-saf -sai -saw -nsc -nsob -nss -i4 -ts4 -ut

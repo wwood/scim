@@ -1,0 +1,12 @@
+scim-panel-kde
+.deps
+.libs
+Makefile
+Makefile.in
+*.moc.cpp
+*.moc
+skim
+*.lo
+*.la
+*.os
+*.so.*

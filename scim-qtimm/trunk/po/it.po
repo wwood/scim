@@ -1,0 +1,50 @@
+# translation of scim-qtimm.po to Italian
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Federico Zenith <zenith@chemeng.ntnu.no>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: scim-qtimm\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-05-25 02:56+0000\n"
+"PO-Revision-Date: 2005-06-03 08:18+0200\n"
+"Last-Translator: Federico Zenith <zenith@chemeng.ntnu.no>\n"
+"Language-Team: Italian <kde-i18n-it@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9.1\n"
+
+#: ../src/plugin.cpp:38
+msgid "Qt immodule plugin for SCIM"
+msgstr "Plugin per il modulo di inserimento Qt per Scim"
+
+#: ../src/qsciminputcontext.cpp:1191
+msgid "Smart Common Input Method platform "
+msgstr "Piattaforma comune intelligente per i metodi di inserimento (Scim)"
+
+#: ../src/qsciminputcontext.cpp:1193
+msgid ""
+"\n"
+"(C) 2002-2005 James Su <suzhe@tsinghua.org.cn>\n"
+"     2003-2005 LiuCougar <liuspider@users.sourceforge.net>\n"
+"\n"
+msgstr ""
+"\n"
+"(C) 2002-2005 James Su <suzhe@tsinghua.org.cn>\n"
+"     2003-2005 LiuCougar <liuspider@users.sourceforge.net>\n"
+"\n"
+
+#: ../src/qsciminputcontext.cpp:1198
+msgid ""
+":\n"
+"\n"
+msgstr ""
+":\n"
+"\n"
+
+#: ../src/qsciminputcontext.cpp:1246
+msgid "English/Keyboard"
+msgstr "Inglese/tastiera"
+

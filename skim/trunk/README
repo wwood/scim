@@ -1,0 +1,25 @@
+Begining with 1.3.2, skim migrated to a more advanced build system bksys (http://freehackers.org/~tnagy/bksys.html) 
+
+Install is simple, just
+./configure
+./scons
+./scons install
+
+A prefix can be passed to configure as follows:
+./configure prefix=/usr
+
+DESTDIR is also supported in the install process 
+./scons install DESTDIR=/tmp/blah
+
+use ./configure --help to have a list of available options
+
+Uninstall:
+./scons -c install
+
+Notice:
+ * When you want to recompile your skim, please make sure to do this first to clean the source tree and caches
+   ./scons -c && rm cache -fr
+ * If you have scons install already, you still have to use the bundled scons: it is a patched version to support soft links
+ * Please delete the file ~/.kde/share/apps/skim/mainwindowui.rc if you upgrade from skim <= 1.3.0
+
+More details: http://scim.sf.net or http://www.scim-im.org

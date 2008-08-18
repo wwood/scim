@@ -1,0 +1,6 @@
+#! /usr/bin/env python
+
+Import( 'env' )
+
+icons = env.Copy()
+icons.KDEinstall( 'KDEDATA', 'skim/pics', 'skim_restore.png pin_down.png scim_help.png scim.png pin_up.png scim_keyboard.png scim_setup.png skim_minimize.png'.split())

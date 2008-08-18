@@ -1,0 +1,22 @@
+use session management to save date in correct time
+
+Qt4 porting:
+QString::fromUtf8(scim::utf8_wcstombs (factory->get_name ()).c_str())) -> QString::fromStdWString(factory->get_name ())
+remove composite manager: qt 4 proivdes the support
+
+1.5.0 (after Qt4)
+full dcop support
+enhanced systray icon: Mac OS X like drop down menu support
+
+KDE4:
+when european keyboard is activated, a message should be given to the user (especially useful for first time users) (using new KNoficiation)
+
+Future:
+more doc and detailed docPath in desktop files
+advanced IMEngine configure feature: a button in global setup should bring up the corresponding setup ui
+an auto-test/config plugin (?)
+kiosk support?
+
+after Qt4
+full setup ui for generic table IMEngine
+maintoolbar rewrite: implement a new class based on ktoolbar to customize the layout of buttons and the extension handlers

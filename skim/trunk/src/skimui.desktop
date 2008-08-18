@@ -1,0 +1,14 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=ServiceType
+X-KDE-ServiceType=Skim/UI
+X-KDE-Derived=Skim/Plugin
+Comment=A Skim UI Plugin
+Comment[de]=Eine Komponente für die Benutzeroberfläche von skim
+Comment[fr]=Un Composant interface utilisateur pour Skim
+Comment[it]=Un plugin per l'interfaccia di Skim
+Comment[ja]=skim UIプラグイン
+Comment[ko]=스킴 사용자환경 플러그인
+Comment[pa]=ਇੱਕ ਸਕਿੱਪ UI ਪਲੱਗਿੰਨ
+Comment[zh_CN]=Skim 用户界面插件
+Comment[zh_TW]=Skim 使用者介面 Plugin

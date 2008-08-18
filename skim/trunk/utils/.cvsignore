@@ -1,0 +1,12 @@
+.deps
+.libs
+Makefile
+Makefile.in
+*.moc.cpp
+*.moc
+*.lo
+*.la
+*.os
+scimkdesettings.cpp
+scimkdesettings.h
+*.so.*

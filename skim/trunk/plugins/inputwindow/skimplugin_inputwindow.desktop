@@ -1,0 +1,48 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Input Window
+Name[de]=Eingabefenster
+Name[fr]=Fenêtre de Saisie
+Name[it]=Finestra di inserimento
+Name[ja]=入力ウィンドウ
+Name[ko]=입력창
+Name[pa]=ਇੰਪੁੱਟ ਝਰੋਖਾ
+Name[zh_CN]=输入窗口
+Name[zh_TW]=輸入法視窗
+Comment=When typing CJK characters you are interacting with this Input Window
+Comment[de]=Wenn Sie CJK-Zeichen eingeben, verwenden Sie das Eingabefenster
+Comment[fr]=Lors de la saisie de caractères CJK, vous interragissez avec cette Fenêtre de Saisie
+Comment[it]=Quando scrivi dei caratteri CJK, interagisci con questa finestra di inserimento
+Comment[ja]=CJK文字を入力する際に使用するウィンドウ
+Comment[ko]=CJK(중국어,일본어,한국어) 문자 입력시 이 입력창을 이용하게 됩니다.
+Comment[pa]=ਜਦੋਂ CJK ਅੱਖਰ ਲਿਖੇ ਜਾਣ ਤਾਂ ਤੁਸੀਂ ਇਹ ਇੰਪੁੱਟ ਝਰੋਖੇ ਨਾਲ ਤਾਲਮੇਲ ਰੱਖੋ
+Comment[zh_CN]=当您输入时将和此窗口交互
+Comment[zh_TW]=當輸入 CJK 字元時，你正與輸入法視窗交談
+ServiceTypes=Skim/UI
+Type=Service
+Icon=editclear
+X-KDE-PluginInfo-Author=liucougar
+X-KDE-PluginInfo-Email=liuspider@users.sourceforge.net
+X-KDE-PluginInfo-Name=skimplugin_inputwindow
+X-KDE-PluginInfo-Version=0.8.0
+X-KDE-PluginInfo-Category=UI
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PluginInfo-HasActions=true
+X-KDE-Library=skimplugin_inputwindow
+
+Actions=Stick;
+
+[Desktop Action Stick]
+Type=Toggle
+Name=Stick
+Name[de]=Fixieren
+Name[fr]=Epingler
+Name[it]=Asta
+Name[ja]=固定
+Name[ko]=고정
+Name[pa]=ਸਟਿੱਕੀ
+Name[zh_CN]=粘滞
+Icon=
+InternalName=stick_inputwindow
+Slot=toggleStick

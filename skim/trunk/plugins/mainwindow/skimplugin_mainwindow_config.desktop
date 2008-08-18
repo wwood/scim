@@ -1,0 +1,31 @@
+[Desktop Entry]
+Encoding=UTF-8
+Icon=panel
+DocPath=skim/index.html
+Type=Service
+ServiceTypes=Skim/KCModule
+Name=Main Toolbar
+Name[de]=Hauptwerkzeugleiste
+Name[fr]=Barre d'Outils Principale
+Name[it]=Barra degli strumenti principale
+Name[ja]=メインツールバー
+Name[ko]=주 도구창
+Name[pa]=ਮੁੱਖ ਸੰਦ-ਪੱਟੀ
+Name[zh_CN]=主工具条
+Name[zh_TW]=主工具列
+Comment=Main Toolbar Configuration
+Comment[de]=Einrichtung der Hauptwerkzeugleiste
+Comment[fr]=Configuration de la Barre d'Outils Principale
+Comment[it]=Configurazione della barra degli strumenti principale
+Comment[ja]=メインツールバーの設定
+Comment[ko]=주 도구창 설정
+Comment[pa]=ਮੁੱਖ ਸੰਦ-ਪੱਟੀ ਸੰਰਚਨਾ
+Comment[zh_CN]=主工具条配置界面
+Comment[zh_TW]=主工具列設定介面
+
+X-KDE-ModuleType=Library
+X-KDE-Library=skimplugin_mainwindow
+#X-KDE-FactoryName=KCMLoader
+X-KDE-ParentApp=skimplugin_mainwindow
+X-KDE-ParentComponents=skimplugin_mainwindow
+X-KDE-PluginInfo-DisplayParent=skimsetupdir_panel

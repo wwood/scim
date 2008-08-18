@@ -1,0 +1,11 @@
+#! /usr/bin/env python
+
+Import( 'env' )
+
+compmgr_sources='compmgrclient.cpp compmgrclient.skel'
+plugin_desktop_file='skimplugin_compmgrclient.desktop'
+env.SKIMPLUGIN('skimplugin_compmgrclient', compmgr_sources, plugin_desktop_file)
+
+kcm_compmgr_sources='compositemanagerbase.ui compositemanagerconfig.cpp'
+plugin_kcm_desktop_file='skimplugin_compmgrclient_config.desktop'
+env.SKIMKCMPLUGIN('kcm_skimplugin_compmgrclient', kcm_compmgr_sources, plugin_kcm_desktop_file)

@@ -1,0 +1,32 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=SCIM Server
+Name[fr]=Serveur SCIM
+Name[it]=Server SCIM
+Name[ja]=SCIMサーバ
+Name[ko]=SCIM 서버
+Name[pa]=SCIM ਸਰਵਰ
+Name[zh_CN]=SCIM 服务
+Name[zh_TW]=SCIM 伺服器
+Comment=init scim-lib as backend server
+Comment[de]=scim-lib als Server initialisieren
+Comment[fr]=initialisation de scim-lib en tant que serveur en base arrière
+Comment[it]=Inizializza scim-lib come server di interfaccia
+Comment[ja]=scim-libをバックエンドサーバとして起動
+Comment[ko]=기반 서버로 scim-lib 구동
+Comment[pa]=init scim-lib ਬੈਕਐਂਡ ਸਰਵਰ ਵਾਂਗ
+Comment[zh_CN]=启动 scim-lib 后端服务
+Comment[zh_TW]=初始化 scim-lib 作為後端伺服器
+
+ServiceTypes=Skim/Plugin
+Type=Service
+Icon=gear
+X-KDE-PluginInfo-Author=liucougar
+X-KDE-PluginInfo-Email=liuspider@users.sourceforge.net
+X-KDE-PluginInfo-Name=skimplugin_scim
+X-KDE-PluginInfo-Version=0.8.0
+X-KDE-PluginInfo-Category=UI
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PluginInfo-HasActions=false
+X-KDE-Library=skimplugin_scim

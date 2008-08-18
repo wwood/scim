@@ -1,0 +1,960 @@
+# translation of nl.po to Nederlands
+# Ronald Stroethoff <stroet43@zonnet.nl>, 2007, 2008.
+# Copyright (C) 2007 Ronald Stroethoff <stroet43@zonnet.nl>
+# This file is distributed under the same license as the SKIM package.
+msgid ""
+msgstr ""
+"Project-Id-Version: nl\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-04-29 21:38+0100\n"
+"PO-Revision-Date: 2008-06-23 15:03+1000\n"
+"Last-Translator: Ronald Stroethoff <stroet43@zonnet.nl>\n"
+"Language-Team: Nederlands\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: rc.cpp:3 ../plugins/mainwindow/mainwindow.cpp:64
+#, no-c-format
+msgid "Main Toolbar"
+msgstr "Hoofd werkbalk "
+
+#: ../src/skimglobalactions.cpp:32
+msgid "SCIM Help"
+msgstr "SCIM Help"
+
+#: ../src/skimglobalactions.cpp:34
+msgid "SCIM Setup"
+msgstr "SCIM configuratie"
+
+#: ../src/skimglobalactions.cpp:42
+msgid "Reload all modules"
+msgstr "Alle modules herladen"
+
+#: ../src/skimglobalactions.cpp:50
+msgid "Input Method"
+msgstr "Invoer methode"
+
+#: ../src/skimglobalactions.cpp:166
+msgid "Keyboard"
+msgstr "Toetsenbord"
+
+#: ../src/main.cpp:24
+msgid "KDE Frontend for SCIM Input Method Platform"
+msgstr "KDE frontend voor SCIM Invoer Methode"
+
+#: ../src/main.cpp:28
+msgid "Start as daemon."
+msgstr "Start als een daemon"
+
+#: ../src/main.cpp:29
+msgid "List all availabe skim plugins."
+msgstr "Toon alle beschikbare Skim plugins."
+
+#: ../src/main.cpp:30
+msgid "Uses specified Config module."
+msgstr "Opgegeven configuratie module gebruiken."
+
+#: ../src/main.cpp:31
+msgid ""
+"A comma separated list of plugin names. All of these plugins will be loaded "
+"no matter whether they are enabled in the setting file."
+msgstr "Een door komma's gescheiden lijst van plugin-namen. Al deze plugins zullen worden geladen, onafhankelijk of ze geselecteerd zijn in het configuratie bestand"
+
+#: ../src/main.cpp:32
+msgid ""
+"A comma separated list of plugin names. All of these plugins will be "
+"disabled no matter whether they are disabled in the setting file."
+msgstr "Een door komma's gescheiden lijst van plugin-namen. Al deze plugins zullen worden uitgeschakeld, onafhankelijk of ze uit uitgeschakeld zijn in het configuratie bestand"
+
+#: ../src/main.cpp:33
+msgid "Quit if no connected client."
+msgstr "Afsluiten als er geen client is verbonden."
+
+#: ../src/main.cpp:34
+msgid " Enable debug info, to specific LEVEL.."
+msgstr "Debug informatie inschakelen, tot opgegeven NIVO..."
+
+#: ../src/main.cpp:35
+msgid "Current version of skim"
+msgstr "Huidige versie van skim"
+
+#: ../src/main.cpp:36
+msgid "Output debug file.(No effort, always use none)"
+msgstr "Debug uitvoer bestand.(Geen moeite, gebruik altijd none)"
+
+#: ../src/main.cpp:37
+msgid "Force start even if scim panel socket can not be established."
+msgstr "Forceer het starten, zelfs als scim paneel socket niet kan worden gestart."
+
+#: ../src/main.cpp:58
+msgid ""
+"IRC:\n"
+"server: irc.freenode.net / channel: #scim\n"
+"\n"
+"Feedback:\n"
+"scim-user@lists.sourceforge.net"
+msgstr ""
+"IRC:\n"
+"server: irc.freenode.net / channel: #scim\n"
+"\n"
+"Feedback:\n"
+"scim-user@lists.sourceforge.net"
+
+#: ../src/main.cpp:60
+msgid "Core Developer"
+msgstr "Hoofd ontwikkelaar"
+
+#: ../src/main.cpp:62
+msgid "SCIM Core Author"
+msgstr "SCIM hoofd auteur"
+
+#: ../src/main.cpp:63
+msgid "Doc writer and German translator"
+msgstr "Document auteur en vertaler Duits"
+
+#: ../src/main.cpp:65
+msgid "Art designer and Korean translator"
+msgstr "Art ontwerper en vertaler Koreaans"
+
+#: ../src/main.cpp:67
+msgid "Japanese translator"
+msgstr "Japanse vertaler"
+
+#: ../src/main.cpp:69
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr ""
+"_:namen van vertalers\n"
+"Ronald Stroethoff"
+
+#: ../src/main.cpp:70
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr ""
+"_:e-mailadres van vertaler\n"
+"stroet43@zonnet.nl"
+
+#: ../src/main.cpp:114
+msgid "Installed skim Plugins:"
+msgstr "Geïnstalleerde skim plugins:"
+
+#: ../src/main.cpp:114 ../plugins/setupwindow/scimimenginesettingsui.cpp:34
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:75
+#: ../plugins/setupwindow/configskimplugins.cpp:95
+msgid "Name"
+msgstr "Naam"
+
+#: ../src/main.cpp:114 ../plugins/setupwindow/configskimplugins.cpp:96
+msgid "Comment"
+msgstr "commentaar"
+
+#: ../src/main.cpp:118
+msgid " (Hidden)"
+msgstr " (Verborgen)"
+
+#: ../src/main.cpp:121
+msgid "Note: Hidden plugins can not be disabled."
+msgstr "Letop: verborgen plugins kunnen niet worden gedeselecteerd."
+
+#: ../src/socketserverthread.cpp:342
+msgid "SKIM: KDE frontend for SCIM %1\n"
+msgstr "SKIM: KDE frontend voor SCIM %1\n"
+
+#: ../src/socketserverthread.cpp:343
+msgid "(C) 2003-2006 LiuCougar <liuspider@users.sourceforge.net>"
+msgstr "(C) 2003-2006 LiuCougar <liuspider@users.sourceforge.net>"
+
+#: ../src/scimhelpdialog.cpp:16 ../plugins/setupwindow/scim_global.cpp:397
+msgid "&General"
+msgstr "&Algemeen"
+
+#: ../src/skimkeygrabber.cpp:63
+msgid "Grab Key"
+msgstr "kopieer toets"
+
+#: ../src/skimkeygrabber.cpp:69
+msgid ""
+"<center>Please press shortcut...</center><p>When you release a key this "
+"dialog will be closed automatically.</p>"
+msgstr "<center>Gebruik sneltoets...</center><p>Dit venster sluit automatisch wanneer een toets wordt losgelaten.</p>"
+
+#: ../src/skimkeygrabber.cpp:75
+msgid "Control"
+msgstr "Control"
+
+#: ../src/skimkeygrabber.cpp:77
+msgid "Alt"
+msgstr "ALT"
+
+#: ../src/skimkeygrabber.cpp:79
+msgid "Shift"
+msgstr "Shift"
+
+#: ../src/skimkeygrabber.cpp:81
+msgid "Release"
+msgstr "Vrijgeven"
+
+#: ../src/skimkeygrabber.cpp:97
+msgid "CapsLock"
+msgstr "Capslock"
+
+#: ../src/skimkeygrabber.cpp:99
+msgid "Meta"
+msgstr "Meta"
+
+#: ../src/skimkeygrabber.cpp:101
+msgid "Hyper"
+msgstr "Hypertekst"
+
+#: ../src/skimkeygrabber.cpp:103
+msgid "Super"
+msgstr "Super"
+
+#: ../src/skimkeygrabber.cpp:291
+msgid "Edit Shortcut List"
+msgstr "Sneltoetsen lijst aanpassen"
+
+#: ../src/skimkeygrabber.cpp:296
+msgid "Edit Shortcuts"
+msgstr "Sneltoetsen aanpassen"
+
+#: ../src/skimkeygrabber.cpp:322
+msgid "Warning"
+msgstr "Waarschuwing"
+
+#: ../src/skimkeygrabber.cpp:322
+msgid "\"%1\" is not a valid shortcut!"
+msgstr "\"%1\" is geen geldige shortcut"
+
+#: ../utils/scimkdesettings.cpp:30
+msgid "Auto Start"
+msgstr "Zelf startend"
+
+#: ../utils/scimkdesettings.cpp:31
+msgid "Whether to start skim automatically when KDE starts."
+msgstr "Of start skim automatisch wanneer KDE start."
+
+#: ../utils/scimkdesettings.cpp:37
+msgid "Enable Composite"
+msgstr "Composite gebruiken"
+
+#: ../utils/scimkdesettings.cpp:38
+msgid "Whether to enable Composite support which is essential for transparent."
+msgstr "Of gebruik de Composite ondersteuning (die essentieel is voor doorzichtigheid)."
+
+#: ../utils/scimkdesettings.cpp:41
+msgid "Use Kompmgr Composite Manager"
+msgstr "Gebruik de Kompmgr Composite manager"
+
+#: ../utils/scimkdesettings.cpp:42
+msgid "Whether to use KDE built-in composite manager."
+msgstr "Of gebruik de in KDE ingebouwde composite manager."
+
+#: ../utils/scimkdesettings.cpp:48
+msgid "Use GTK IMModule support"
+msgstr "Gebruik GTK IM-module ondersteuning"
+
+#: ../utils/scimkdesettings.cpp:49
+msgid "Whether to start scim to support gtk2 immodule."
+msgstr "Of start scim voor ondersteuning van de gtk2 module."
+
+#: ../utils/scimkdesettings.cpp:55
+msgid "Show Quit option in context menu"
+msgstr "Afsluiten optie in context menu tonen"
+
+#: ../utils/scimkdesettings.cpp:56
+msgid "Whether to show the quit entry in right click menu."
+msgstr "Of toon het afsluit-venster in het rechts klik menu."
+
+#: ../utils/scimkdesettings.cpp:62
+msgid "Font Setting for Input Window"
+msgstr "Lettertype instelling voor invoer venster"
+
+#: ../utils/scimkdesettings.cpp:63
+msgid "Use this font in Input Window"
+msgstr "Dit lettertype voor invoer venster gebruiken"
+
+#: ../utils/scimkdesettings.cpp:66
+msgid "Use Vertical Lookup Table"
+msgstr "Vertikale opzoek-tabel gebruiken"
+
+#: ../utils/scimkdesettings.cpp:67
+msgid "Whether the candidates in Lookup Table are aligned vertically."
+msgstr "Of de kandidaten in de opzoek-tabel onder elkaar getoond moeten worden."
+
+#: ../utils/scimkdesettings.cpp:70
+msgid "Minimize the width of Lookup Table"
+msgstr "De breedte van de opzoek-tabel minimaliseren"
+
+#: ../utils/scimkdesettings.cpp:71
+msgid ""
+"If unchecked, the minimum width of Lookup Table will be set to 100, "
+"otherwise 0."
+msgstr "Indien niet aangevinkt, zal de minimum breedte van de opzoek-tabel zal worden ingesteld op 100, anders op 0."
+
+#: ../utils/scimkdesettings.cpp:74
+msgid "Fix the position of the Input Window"
+msgstr "Herstel de positie van het invoer venster"
+
+#: ../utils/scimkdesettings.cpp:75
+msgid "If enabled, Input Window does not follow the cursor."
+msgstr "Indien ingeschakelt, volgt het invoer venster niet de cursor."
+
+#: ../utils/scimkdesettings.cpp:78
+msgid "Use embedded lookup table"
+msgstr "Gebruik de interne opzoek-tabel"
+
+#: ../utils/scimkdesettings.cpp:79
+msgid "If you prefer standalone lookup table, please uncheck this option."
+msgstr "Indien de \"standalone\" opzoek-tabel de voorkeur heeft, vink deze optie niet aan."
+
+#: ../utils/scimkdesettings.cpp:85
+msgid "Always show Main Window"
+msgstr "Altijd het hoofdvenster tonen"
+
+#: ../utils/scimkdesettings.cpp:86
+msgid ""
+"Show Main Window all the time. When checked, even if no input method is "
+"selected, the Main Window remains on the screen."
+msgstr "Hoofdvenster altijd laten zien, zelfs als er geen invoer methode gekozen is, blijft het hoofdvenster op het scherm."
+
+#: ../utils/scimkdesettings.cpp:89
+msgid "Always show the move handle"
+msgstr "Altijd het verplaats-handvat tonen"
+
+#: ../utils/scimkdesettings.cpp:90
+msgid ""
+"whether the handle in the panel applet should be shown all the time. This is "
+"only effective in Panel Embedded mode."
+msgstr "Of het handvat in het paneel applet altijd getoond moet worden. Dit werkt alleen in het interne paneel mode."
+
+#: ../utils/scimkdesettings.cpp:93
+msgid "Always show extension handle"
+msgstr "Altijd het extensie-handvat tonen"
+
+#: ../utils/scimkdesettings.cpp:94
+msgid ""
+"Whether the extension handle in the panel applet should be shown all the "
+"time.This is only effective in Panel Embedded mode."
+msgstr "Of het extensie-handvat in het paneel applet altijd getoond moet worden. Dit werkt alleen in het ingebedde paneel mode."
+
+#: ../utils/scimkdesettings.cpp:97
+msgid "Docking Main Window to the panel"
+msgstr "Hoofdvenster aan het paneel vastklikken"
+
+#: ../utils/scimkdesettings.cpp:98
+msgid ""
+"Dock the main toolbar into the KDE panel (kicker): if selected, Panel "
+"Embedded mode is activated."
+msgstr "Hoofd werkbalk vastklikken in het KDE paneel (kicker). indien ingeschakeld, is ingebedde mode aktief."
+
+#: ../utils/scimkdesettings.cpp:101
+msgid "Snap to screen borders automatically"
+msgstr "Automatisch aan scherm-randen vastklikken"
+
+#: ../utils/scimkdesettings.cpp:102
+msgid ""
+"When enabled, the Main Window will always besides the border of left or "
+"right of the screen."
+msgstr "Wanneer ingeschakeld, raakt het hoofdvenster altijd de linker of rechter schermrand."
+
+#: ../utils/scimkdesettings.cpp:105
+msgid "Timeout for always show option"
+msgstr "Tijdslimiet voor de optie \"altijd tonen\""
+
+#: ../utils/scimkdesettings.cpp:106
+msgid ""
+"After this timeout (in second) eclapse, Main Window will be hidden. This "
+"option is only valid when \"Always Show\" is enabled. It is equal to disable "
+"\"Always Show\" option if this value is set to 0."
+msgstr "Na afloop van de ingestelde tijd (in seconde) wordt het hoofdvenster verborgen. Dit is alleen mogelijk wanneer \"Altijd tonen\" is ingeschakeld. Het is gelijk aan \"Altijd tonen\" uitschakelen wanneer het is ingesteld op 0 seconde."
+
+#: ../utils/scimkdesettings.cpp:109
+msgid "Display the name of current input method"
+msgstr "Toon de naam van huidig invoer methode"
+
+#: ../utils/scimkdesettings.cpp:110
+msgid ""
+"Whether show the text of current IM factory: if disabled, only the icon will "
+"be shown"
+msgstr "Of toon de naam van de huidige invoer-methode, indien uitgeschakeld, wordt alleen het icoon getoond."
+
+#: ../utils/scimkdesettings.cpp:116
+msgid "From left to right"
+msgstr "Van links naar rechts"
+
+#: ../utils/scimkdesettings.cpp:122
+msgid "From right to left"
+msgstr "Van rechts naar links"
+
+#: ../utils/scimkdesettings.cpp:128
+msgid "From top to bottom (Down)"
+msgstr "Van boven naar beneden (omlaag)"
+
+#: ../utils/scimkdesettings.cpp:134
+msgid "From bottom to top (up)"
+msgstr "Van beneden naar boven (omhoog)"
+
+#: ../utils/scimkdesettings.cpp:138
+msgid "Direction of Main Window"
+msgstr "Richting van hoofd venster"
+
+#: ../utils/scimkdesettings.cpp:139
+msgid ""
+"Determine the layout of widgets in the main window. This setting is always "
+"honored in standalone mode. The layout can honor the kicker's direction in "
+"docking mode, please take a look at the \"Use 'From Left to Right' Direction"
+"\" option."
+msgstr ""
+"Bepaalt de opmaak van de onderdelen van het hoofdvenster. "
+"Deze instelling wordt altijd gevolgd in de \"standalone\" modus."
+"In ingebedde modus wordt altijd de instelling.van de kicker gevolgt, lees ook \"Gebruik links naar rechts\" optie."
+
+#: ../utils/scimkdesettings.cpp:142
+msgid "Auto Adjust Direction"
+msgstr "Automatische richting aanpassing"
+
+#: ../utils/scimkdesettings.cpp:143
+msgid ""
+"With this option enabled, if more than half of the main window is invisible "
+"due to user movement, the direction will be changed automatically. This "
+"option only takes effect in standalone mode."
+msgstr "Wanneer deze optie is ingeschakeld, zal de richting automatisch worden omgedraaid als meer dan de helft van het hoofdvenster onzichtbaar is. Dit gebeurt alleen in de standalone modus."
+
+#: ../utils/scimkdesettings.cpp:146
+msgid "Use left to right mode when in docking mode"
+msgstr "Gebruik links naar rechts modus wanneer in vastklik modus"
+
+#: ../utils/scimkdesettings.cpp:147
+msgid ""
+"If this option is enabled, in docking mode the layout is always \"from left "
+"to right\" direction. This option only takes effect in docking mode."
+msgstr "Wanneer deze optie is ingeschakeld, is de layout in de interne mode altijd \"van links naar rechts\". Dit werkt alleen in de vastklik-mode."
+
+#: ../utils/scimkdesettings.cpp:150
+msgid "Main Window Position"
+msgstr "Hoofd venster positie"
+
+#: ../utils/scimkdesettings.cpp:156
+msgid "These plugins will be loaded at startup"
+msgstr "Deze plugins worden geladen bij het starten"
+
+#: ../utils/scimkdesettings.cpp:162
+msgid "Share the same input method among all applications"
+msgstr "Alle programma's gebruiken dezelfde invoer methode"
+
+#: ../utils/scimkdesettings.cpp:163
+msgid "If enabled, all the applications always use the same input method."
+msgstr "Indien ingeschakelt, gebruiken alle programma's dezelfde invoer methode."
+
+#: ../utils/scimkdesettings.cpp:166
+msgid "On the spot input style"
+msgstr "\"On the spot\" invoer modus"
+
+#: ../utils/scimkdesettings.cpp:169
+msgid "Use on the spot input style in XIM clients"
+msgstr "\"On the spot\"  invoermodus in XIM-cliënten toepassen"
+
+#: ../utils/scimkdesettings.cpp:170
+msgid "This option will only take effect in clients using XIM protocol."
+msgstr "Alleen cliënten die het XIM-protocol gebruiken, gebruiken deze optie."
+
+#: ../utils/scimkdesettings.cpp:173
+msgid ""
+"Use Dynamic Event Flow. This can speed up the key event response, especially "
+"in remote X11 environment. But skim may become unstable."
+msgstr "Gebruik de dynamische gebeurtenis volgorde. Dit kan reaktietijd van het toetsenbord verminderen, met name bij tele-X11-omgevingen. Maar skim kan instabiel worden."
+
+#: ../utils/scimkdesettings.cpp:174
+msgid ""
+"This can speed up the key event response, especially in remote X11 enviro\n"
+"      nment. But skim may become unstable."
+msgstr "Dit kan de reaktietijd van het toetsenbord verminderen, speciaal bij tele-X11-omgevingen. Maar skim kan instabiel worden."
+
+#: ../utils/scimkdesettings.cpp:178
+msgid "whether locale encoding should be used instead of UTF8"
+msgstr "In plaats van UTF8 zal de lokale taaldefinitie gebruikt worden."
+
+#: ../utils/scimkdesettings.cpp:179
+msgid "Using locale encoding rather than UTF8."
+msgstr "Gebruik lokale taal-definitie in plaats van UTF8."
+
+#: ../utils/scimkdesettings.cpp:182
+msgid "frontend socket address"
+msgstr "frontend socket adres"
+
+#: ../utils/scimkdesettings.cpp:185
+msgid "frontend socket connection timeout"
+msgstr "frontend socket verbinding tijdslimiet"
+
+#: ../utils/scimkdesettings.cpp:188
+msgid "frontend socket connection max clients"
+msgstr "frontend socket verbinding max aantal clienten"
+
+#: ../utils/scimkdesettings.cpp:191
+msgid "frontend socket config is readonly"
+msgstr "frontend socket configuratie is alleen-lezen"
+
+#: ../utils/scimkdesettings.cpp:194
+msgid "all valid key mask"
+msgstr "toets-mask altijd geldig"
+
+#: ../utils/scimkdesettings.cpp:197
+msgid "IM Trigger Keys"
+msgstr "Toets voor inschakelen van invoer methode"
+
+#: ../utils/scimkdesettings.cpp:198
+msgid "Toggle Input Method On/Off."
+msgstr "Invoer methode IN/UIT schakelen."
+
+#: ../utils/scimkdesettings.cpp:201
+msgid "Turn IM On Keys"
+msgstr "IM inschakel-toetsen"
+
+#: ../utils/scimkdesettings.cpp:202
+msgid "Turn On Input Method Keys."
+msgstr "Toetsen om de invoer methode IN te schakelen."
+
+#: ../utils/scimkdesettings.cpp:205
+msgid "Turn IM Off Keys"
+msgstr "Toetsen om de invoer methode UIT te schakelen"
+
+#: ../utils/scimkdesettings.cpp:206
+msgid "Turn Off Input Method Keys."
+msgstr "Toetsen om de invoer methode UIT te schakelen."
+
+#: ../utils/scimkdesettings.cpp:209
+msgid "Next IM Keys"
+msgstr "Volgende IM toetsen"
+
+#: ../utils/scimkdesettings.cpp:210
+msgid "Changing to next Input method keys."
+msgstr "Volgende invoer-methode toets."
+
+#: ../utils/scimkdesettings.cpp:213
+msgid "Previous IM Keys"
+msgstr "Vorige IM toetsen"
+
+#: ../utils/scimkdesettings.cpp:214
+msgid "Changing to previous Input method keys."
+msgstr "Vorige invoer-methode toets."
+
+#: ../utils/scimkdesettings.cpp:217
+msgid "Keys for showing input method menu"
+msgstr "Menutoetsen voor het tonen van invoermethodes"
+
+#: ../utils/scimkdesettings.cpp:218
+msgid "Show the input method menu where you can select one."
+msgstr "Toon het invoer-venster, wanneer mogelijk"
+
+#: ../utils/scimkdesettings.cpp:221
+msgid "Supported Unicode Locales scim supports"
+msgstr "Ondersteunde Regionale Unicode-instellingen"
+
+#: ../utils/scimkdesettings.cpp:222
+msgid "Supported Unicode locales under which scim can work."
+msgstr "Ondersteunde Unicode locales die scim kunnen gebruiken"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:159
+msgid "Main &Toolbar Display Mode"
+msgstr "(&T) Hoofd scherm"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:161
+msgid "Stand Alone"
+msgstr "Zelfstandig"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:162
+msgid "Embedded"
+msgstr "Intern"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:163
+msgid "&Docking into KDE Panel (kicker)"
+msgstr "&Vastklikken in KDE-paneel (kicker)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:164
+msgid "A&uto Snap"
+msgstr "A&utomatisch vastklikken"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:165
+msgid "&Show input method name"
+msgstr "Toon naam invoermethode"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:166
+msgid "A&lways Show"
+msgstr "A&ltijd tonen"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:167
+msgid "Auto Ad&just Direction"
+msgstr "Automatisch richting bepalen"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:168
+msgid "Always Show the Elements Selected below"
+msgstr "Volgende geselecteerde Elementen altijd tonen"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:169
+msgid "&Move Handle"
+msgstr "Verplaats handvat"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:170
+msgid "&Extension Button"
+msgstr "&Extentie knop"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:171
+msgid "&Use \"From Left To Right\" Direction"
+msgstr "Gebr&uik \"van Links naar Rechts\" richting"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:172
+msgid "&Layout Direction"
+msgstr "Knoppenvo&lgorde"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:174
+msgid "From Left to Right"
+msgstr "Van Links naar Rechts"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:175
+msgid "From Right to Left"
+msgstr "Van Rechts naar Links"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:176
+msgid "From Top to Bottom"
+msgstr "Van Boven naar Beneden"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:177
+msgid "From Bottom to Top"
+msgstr "Van Beneden naar Boven"
+
+#: ../plugins/mainwindow/mainwindow.cpp:101
+msgid "Reload"
+msgstr "Opnieuw laden"
+
+#: ../plugins/kdetraystatus/kdetraystatus_config.cpp:54
+msgid "Enable Quit Action in Right Click Menu"
+msgstr "Afsluiten mogelijk maken in Rechts Klik Menu"
+
+#: ../plugins/kdetraystatus/kdetraystatus.cpp:26
+msgid "Skim - SCIM KDE Frontend"
+msgstr "Skim - SCIM KDE frontend"
+
+#: ../plugins/setupwindow/scim_global.cpp:378
+msgid "SCIM Global Settings"
+msgstr "SCIM algemene instellingen"
+
+#: ../plugins/setupwindow/scim_global.cpp:379
+msgid "&Keyboard Layout:"
+msgstr "&Toetsenbord layout:"
+
+#: ../plugins/setupwindow/scim_global.cpp:380
+msgid "Embed Preedit String into Client &Window (OnTheSpot Style)"
+msgstr "Ruwe invoer in het &Cliënt-venster tonen (on the spot)"
+
+#: ../plugins/setupwindow/scim_global.cpp:381
+msgid "Sha&re input method among all applications"
+msgstr "Invoer methode in alle programma's inschakelen"
+
+#: ../plugins/setupwindow/scim_global.cpp:382
+msgid "Keyboard Shortcuts"
+msgstr "Toetsenbord sneltoetsen"
+
+#: ../plugins/setupwindow/scim_global.cpp:383
+msgid "&Toggle On/Off:"
+msgstr "Schakelaar AAN/UI&T:"
+
+#: ../plugins/setupwindow/scim_global.cpp:384
+msgid "T&urn On:"
+msgstr "&Inschakelen"
+
+#: ../plugins/setupwindow/scim_global.cpp:385
+msgid "Turn O&ff:"
+msgstr "&Uitschakelen"
+
+#: ../plugins/setupwindow/scim_global.cpp:386
+msgid "&Next Input Method:"
+msgstr "(&N) Volgende invoer methode:"
+
+#: ../plugins/setupwindow/scim_global.cpp:387
+msgid "&Previous Input Method:"
+msgstr "(&P) Vorige invoer methode:"
+
+#: ../plugins/setupwindow/scim_global.cpp:388
+msgid "&Show input method menu:"
+msgstr "(&S) Toon invoer methode menu:"
+
+#: ../plugins/setupwindow/scim_global.cpp:389
+msgid "Enabled &Modifiers"
+msgstr "&Modifiers inschakelen"
+
+#: ../plugins/setupwindow/scim_global.cpp:390
+msgid "Cont&rol"
+msgstr "Cont&rol"
+
+#: ../plugins/setupwindow/scim_global.cpp:391
+msgid "Sh&ift"
+msgstr "Sh&ift"
+
+#: ../plugins/setupwindow/scim_global.cpp:392
+msgid "&Alt"
+msgstr "&Alt"
+
+#: ../plugins/setupwindow/scim_global.cpp:393
+msgid "M&eta"
+msgstr "M&eta"
+
+#: ../plugins/setupwindow/scim_global.cpp:394
+msgid "S&uper"
+msgstr "S&uper"
+
+#: ../plugins/setupwindow/scim_global.cpp:395
+msgid "H&yper"
+msgstr "H&yper"
+
+#: ../plugins/setupwindow/scim_global.cpp:396
+msgid "Caps &Lock"
+msgstr "Caps &Lock"
+
+#: ../plugins/setupwindow/scim_global.cpp:398
+msgid "&Panel Program"
+msgstr "&Paneel Program"
+
+#: ../plugins/setupwindow/scim_global.cpp:400
+msgid "scim-panel-kde"
+msgstr "scim-paneel-kde"
+
+#: ../plugins/setupwindow/scim_global.cpp:401
+msgid "scim-panel-gtk"
+msgstr "scim-paneel-gtk"
+
+#: ../plugins/setupwindow/scim_global.cpp:402
+msgid "Config &Module"
+msgstr "Configuratie &Module"
+
+#: ../plugins/setupwindow/scim_global.cpp:403
+msgid "Ad&vanced"
+msgstr "Gead&vanceerd"
+
+#: ../plugins/setupwindow/scim_global.cpp:404
+msgid "Advanced Settings"
+msgstr "Geadvanceerde instellingen"
+
+#: ../plugins/setupwindow/scim_global.cpp:405
+msgid "&Supported Unicode Locales"
+msgstr "Onder&steunde Unicode regio's"
+
+#: ../plugins/setupwindow/scim_global.cpp:406
+msgid "&Edit"
+msgstr "Be&werken"
+
+#: ../plugins/setupwindow/scim_global.cpp:407
+msgid "&FrontEnd Socket Address"
+msgstr "&FrontEnd Socket adres"
+
+#: ../plugins/setupwindow/scim_global.cpp:408
+msgid "&IMEngine Socket Address"
+msgstr "Socket-adres voor de invoer&methode"
+
+#: ../plugins/setupwindow/scim_global.cpp:409
+msgid "C&onfig Socket Address"
+msgstr "S&ocket Adres instellen"
+
+#: ../plugins/setupwindow/scim_global.cpp:410
+msgid "P&anel Socket Address"
+msgstr "P&aneel Socket adres"
+
+#: ../plugins/setupwindow/scim_global.cpp:411
+msgid "Socket Timeo&ut"
+msgstr "Socket tijd verstreken"
+
+#: ../plugins/setupwindow/scim_global.cpp:412
+msgid "Oth&er"
+msgstr "And&ere"
+
+#: ../plugins/setupwindow/scimattachfilter.cpp:51
+msgid "Filter %1"
+msgstr "Filter %1"
+
+#: ../plugins/setupwindow/scimattachfilter.cpp:140
+msgid "Edit Filters for %1"
+msgstr "Filters instellen voor %1"
+
+#: ../plugins/setupwindow/scimattachfilter.cpp:141
+msgid "&Installed Filters for %1"
+msgstr "&Geïnstalleerde filters voor %1"
+
+#: ../plugins/setupwindow/scim_x.cpp:69
+msgid "X Window (XIM)"
+msgstr "X venster (XIM)"
+
+#: ../plugins/setupwindow/scim_x.cpp:70
+msgid "S&tart skim automatically when KDE starts"
+msgstr "Skim automatisch s&tarten wanneer KDE start"
+
+#: ../plugins/setupwindow/scim_x.cpp:71
+msgid "XIM Settings"
+msgstr "XIM Instellingen"
+
+#: ../plugins/setupwindow/scim_x.cpp:72
+msgid "&On the Spot"
+msgstr "&On the Spot"
+
+#: ../plugins/setupwindow/scim_x.cpp:73
+msgid "&Dynamic Event Flow"
+msgstr "&Dynamische gebeurtenissen"
+
+#: ../plugins/setupwindow/filterinfodlgbase.cpp:97
+msgid "<b>Name:</b>"
+msgstr "<b>Naam:</b>"
+
+#: ../plugins/setupwindow/filterinfodlgbase.cpp:99
+msgid "<b>Description:</b>"
+msgstr "Omschrijving"
+
+#: ../plugins/setupwindow/filterinfodlgbase.cpp:101
+msgid "<b>Supported Languages:</b>"
+msgstr "<b>Ondersteunde Talen:</b>"
+
+#: ../plugins/setupwindow/filterinfodlgbase.cpp:103
+#: ../plugins/setupwindow/attachfilteruibase.cpp:130
+msgid "&Ok"
+msgstr "&Ok"
+
+#: ../plugins/setupwindow/scimsetupwindow.cpp:53
+msgid "Configure skim"
+msgstr "Skim instellen"
+
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:35
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:76
+msgid "Hotkeys"
+msgstr "Sneltoetsen"
+
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:36
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:77
+msgid "Installed Filter"
+msgstr "Geïnstalleerde Filter"
+
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:78
+msgid "&Enable All"
+msgstr "Alle inschakelen"
+
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:79
+msgid "D&isable All"
+msgstr "Alle uitschakelen"
+
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:80
+msgid "Edi&t Hotkeys"
+msgstr "Sneltoetsen be&werken"
+
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:81
+msgid "Edit &Filters"
+msgstr "&Filters bewerken"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:122
+msgid "Available &Filters"
+msgstr "Beschikbare &Filters"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:124
+msgid "&Remove Filter"
+msgstr "&Verwijder filter"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:125
+msgid "Move &Up"
+msgstr "Verplaats omhoog"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:126
+msgid "Move &Down"
+msgstr "Verplaats omlaag"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:127
+msgid "&Add Filter"
+msgstr "Filter instellen"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:128
+msgid "&More Info"
+msgstr "&Meer informatie"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:129
+msgid "&Installed Filters for this Input Method"
+msgstr "&Geinstalleerde filters voor deze invoer methode"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:131
+msgid "Canc&el"
+msgstr "Annul&eren"
+
+#: ../plugins/setupwindow/scimglobalconfigplugin.cpp:120
+msgid "Edit Supported Locales"
+msgstr "Ondersteunde Locales instellen"
+
+#: ../plugins/setupwindow/scimglobalconfigplugin.cpp:266
+msgid ""
+"If you want to use skim (scim-panel-kde) or scim-qtimm (Qt immodule support "
+"for SCIM), please select kconfig as the config module."
+msgstr "Indien skim (scim-panel-kde) of scim-qtimm (Qt invoer methode ondersteuning voor SCIM) wordt gebruikt, selecteer kconfig als configuratie module."
+
+#: ../plugins/setupwindow/scimimenginesettings.cpp:313
+msgid "Specify Hotkeys for IME \"%1\""
+msgstr "Sneltoetsen instellen voor IME\"%1\""
+
+#: ../plugins/inputwindow/inputwindow.cpp:39
+msgid "Input Window"
+msgstr "Invoer venster"
+
+#: ../plugins/inputwindow/inputwindow.cpp:63
+msgid "Candidates Window (Lookup Table)"
+msgstr "Voorstel-venster (opzoek-tabel)"
+
+#: ../plugins/inputwindow/inputwindow_settings.cpp:88
+msgid "Input Window Settings"
+msgstr "Invoer venster instellingen"
+
+#: ../plugins/inputwindow/inputwindow_settings.cpp:89
+msgid "&Sticky Window"
+msgstr "&Sticky venster"
+
+#: ../plugins/inputwindow/inputwindow_settings.cpp:90
+msgid "Use &Vertical Lookup Table"
+msgstr "Gebruik &Vertikale opzoek-tabel"
+
+#: ../plugins/inputwindow/inputwindow_settings.cpp:91
+msgid "&Embedded Lookup Table"
+msgstr "&interne opzoek-tabel"
+
+#: ../plugins/inputwindow/inputwindow_settings.cpp:92
+msgid "&Minimize the width of Lookup Table"
+msgstr "&Minimaliseer de breedte van de opzoek-tabel"
+
+#: ../plugins/inputwindow/inputwindow_settings.cpp:93
+msgid "&Font"
+msgstr "(&F) Lettertype"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:51
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:111
+msgid "Window Name"
+msgstr "Venster naam"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:52
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:112
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:113
+msgid "Translucency"
+msgstr "Doorzichtigheid"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:108
+msgid "Enable &Composite Support"
+msgstr "&Composite-ondersteuning inschakelen"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:109
+msgid "Composite Settings"
+msgstr "Composite instellingen"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:110
+msgid "&Use KDE built-in Composite Manager (kompmgr)"
+msgstr "(&U) KDE ingebouwde Composite Manager (kompmgr) gebruiken"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:114
+msgid "&Active Window:"
+msgstr "&Actieve venster"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:115
+msgid "%"
+msgstr "%"

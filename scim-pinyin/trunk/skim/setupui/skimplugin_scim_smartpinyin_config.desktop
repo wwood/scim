@@ -1,0 +1,28 @@
+[Desktop Entry]
+Encoding=UTF-8
+Icon=smart-pinyin
+Type=Service
+ServiceTypes=Skim/KCModule
+
+X-KDE-ModuleType=Library
+X-KDE-Library=skimplugin_scim_smartpinyin
+X-KDE-ParentApp=skimplugin_scim
+X-KDE-ParentComponents=skimplugin_scim
+X-KDE-PluginInfo-DisplayParent=skimsetupdir_imengines
+Name=Smart Pinyin
+Name[de]=Intelligentes Pinyin
+Name[it]=Pinyin intelligente
+Name[ja]=智能ピンイン
+Name[ko]=똑똑한 평음
+Name[pa]=ਚੁਸਤ Pinyin
+Name[zh_CN]=智能拼音
+Name[zh_TW]=智能拼音
+Comment=Configure plugin for Smart Pinyin IMEngine
+Comment[de]=Komponente für die Eingabemethode "Intelligentes Pinyin" einrichten
+Comment[fr]=Configuration du Moteur de Saisie Smart Pinyin
+Comment[it]=Plugin di configurazione per il motore di inserimento Pinyin intelligente
+Comment[ja]=智能ピンインIMエンジンの設定
+Comment[ko]=똑똑한 평음 IM엔진 설정 플러그인
+Comment[pa]=ਸਮਾਟ Pinyin IMEngine ਲਈ ਸੰਰਚਨਾ ਪਲੱਗਿੰਨ
+Comment[zh_CN]=智能拼音输入法引擎配置界面
+Comment[zh_TW]=智能拼音輸入法引擎設定介面

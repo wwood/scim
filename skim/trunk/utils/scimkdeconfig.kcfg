@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE kcfg SYSTEM "http://www.kde.org/standards/kcfg/1.0/kcfg.dtd">
+<kcfg>
+  <kcfgfile name="skimrc"/>
+  <group name="General">
+    <entry name="AutoStart" key="Autostart" type="Bool">
+        <label>Auto Start</label>
+        <whatsthis>Whether to start skim automatically when KDE starts.</whatsthis>
+        <default>true</default>
+    </entry>
+  </group>
+  <group name="Composite">
+      <entry name="Enable_Composite" key="/Panel/KDE/Composite/Enabled" type="Bool">
+          <label>Enable Composite</label>
+          <whatsthis>Whether to enable Composite support which is essential for transparent.</whatsthis>
+          <default>false</default>
+      </entry>
+      <entry name="Use_Kompmgr" key="/Panel/KDE/Composite/UseKompmgr" type="Bool">
+          <label>Use Kompmgr Composite Manager</label>
+          <whatsthis>Whether to use KDE built-in composite manager.</whatsthis>
+          <default>true</default>
+      </entry>
+  </group>
+  <group name="SCIMLauncher">
+    <entry name="Use_Immodule" key="/Panel/KDE/SCIMLauncher/Gtk2_Immodule" type="Bool">
+        <label>Use GTK IMModule support</label>
+        <whatsthis>Whether to start scim to support gtk2 immodule.</whatsthis>
+        <default>true</default>
+    </entry>
+  </group>
+  <group name="KDESystemTray">
+    <entry name="show_Quit" key="/Panel/KDE/KDESystemTray/ShowQuit" type="Bool">
+        <label>Show Quit option in context menu</label>
+        <whatsthis>Whether to show the quit entry in right click menu.</whatsthis>
+        <default>false</default>
+    </entry>
+  </group>
+  <group name="InputWindow">
+    <entry name="IW_Font" key="/Panel/KDE/InputWindow/Font" type="String">
+        <label>Font Setting for Input Window</label>
+        <whatsthis>Use this font in Input Window</whatsthis>
+    </entry>
+    <entry name="LookupTable_IsVertical" key="/Panel/KDE/InputWindow/LookupTableVertical" type="Bool">
+        <label>Use Vertical Lookup Table</label>
+        <whatsthis>Whether the candidates in Lookup Table are aligned vertically.</whatsthis>
+        <default>false</default>
+    </entry>
+    <entry name="LookupTable_MinimumWidth" key="/Panel/KDE/InputWindow/LookupTableMinimumWidth" type="Bool">
+        <label>Minimize the width of Lookup Table</label>
+        <whatsthis>If unchecked, the minimum width of Lookup Table will be set to 100, otherwise 0.</whatsthis>
+        <default>true</default>
+    </entry>
+    <entry name="Is_Sticky" key="/Panel/KDE/InputWindow/Stick" type="Bool">
+        <label>Fix the position of the Input Window</label>
+        <whatsthis>If enabled, Input Window does not follow the cursor.</whatsthis>
+        <default>false</default>
+    </entry>
+    <entry name="embedded_Lookup_Table" key="/Panel/KDE/InputWindow/EmbeddedLookupTable" type="Bool">
+        <label>Use embedded lookup table</label>
+        <whatsthis>If you prefer standalone lookup table, please uncheck this option.</whatsthis>
+        <default>true</default>
+    </entry>
+  </group>
+  <group name="MainWindow">
+    <entry name="Always_Show" key="/Panel/KDE/MainWindow/AlwaysShow" type="Bool">
+        <label>Always show Main Window</label>
+        <whatsthis>Show Main Window all the time. When checked, even if no input method is selected, the Main Window remains on the screen.</whatsthis>
+        <default>false</default>
+    </entry>
+    <entry name="AlwaysShowHandle" key="/Panel/KDE/MainWindow/AlwaysShowHandle" type="Bool">
+        <label>Always show the move handle</label>
+        <whatsthis>whether the handle in the panel applet should be shown all the time. This is only effective in Panel Embedded mode.</whatsthis>
+        <default>false</default>
+    </entry>
+    <entry name="AlwaysShowExtensionHandle" key="/Panel/KDE/MainWindow/AlwaysShowExtensionHandle" type="Bool">
+        <label>Always show extension handle</label>
+        <whatsthis>Whether the extension handle in the panel applet should be shown all the time.This is only effective in Panel Embedded mode.</whatsthis>
+        <default>false</default>
+    </entry>
+    <entry name="DockingToPanelApplet" key="/Panel/KDE/MainWindow/DockingToPanelApplet" type="Bool">
+        <label>Docking Main Window to the panel</label>
+        <whatsthis>Dock the main toolbar into the KDE panel (kicker): if selected, Panel Embedded mode is activated.</whatsthis>
+        <default>false</default>
+    </entry>
+    <entry name="Auto_Snap" key="/Panel/KDE/MainWindow/AutoSnap" type="Bool">
+        <label>Snap to screen borders automatically</label>
+        <whatsthis>When enabled, the Main Window will always besides the border of left or right of the screen.</whatsthis>
+        <default>true</default>
+    </entry>
+    <entry name="Hide_Timeout" key="/Panel/KDE/MainWindow/HideTimeout" type="Int">
+        <label>Timeout for always show option</label>
+        <whatsthis>After this timeout (in second) eclapse, Main Window will be hidden. This option is only valid when "Always Show" is enabled. It is equal to disable "Always Show" option if this value is set to 0.</whatsthis>
+        <default>3</default>
+    </entry>
+    <entry name="Show_Factory_Text" key="/Panel/KDE/MainWindow/Show_Factory_Text" type="Bool">
+        <label>Display the name of current input method</label>
+        <whatsthis>Whether show the text of current IM factory: if disabled, only the icon will be shown</whatsthis>
+        <default>true</default>
+    </entry>
+    <entry name="MainWindow_Direction" key="/Panel/KDE/MainWindow/Direction" type="Enum">
+        <label>Direction of Main Window</label>
+        <whatsthis>Determine the layout of widgets in the main window. This setting is always honored in standalone mode. The layout can honor the kicker's direction in docking mode, please take a look at the "Use 'From Left to Right' Direction" option.</whatsthis>
+        <choices>
+            <choice name="LeftToRight">
+                <label>From left to right</label>
+            </choice>
+            <choice name="RightToLeft">
+                <label>From right to left</label>
+            </choice>
+            <choice name="TopToBottom">
+                <label>From top to bottom (Down)</label>
+            </choice>
+            <choice name="BottomToTop">
+                <label>From bottom to top (up)</label>
+            </choice>
+        </choices>
+        <default>LeftToRight</default>
+    </entry>
+    <entry name="Auto_Adjust_Direction" key="/Panel/KDE/MainWindow/Auto_Adjust_Direction" type="Bool">
+        <label>Auto Adjust Direction</label>
+        <whatsthis>With this option enabled, if more than half of the main window is invisible due to user movement, the direction will be changed automatically. This option only takes effect in standalone mode.</whatsthis>
+        <default>true</default>
+    </entry>
+    <entry name="Force_LeftToRight_In_Kicker" key="/Panel/KDE/MainWindow/Force_LeftToRight_in_Kicker" type="Bool">
+        <label>Use left to right mode when in docking mode</label>
+        <whatsthis>If this option is enabled, in docking mode the layout is always "from left to right" direction. This option only takes effect in docking mode.</whatsthis>
+        <default>true</default>
+    </entry>
+    <!-- start Hiddien options: should not be set in SetupUI -->
+    <entry name="MainWindow_Position" key="/Panel/KDE/MainWindow/Position" type="Point">
+        <label>Main Window Position</label>
+        <default>QPoint(500,500)</default>
+    </entry>
+    <!-- end Hiddien options: should not be set in SetupUI -->
+  </group>
+  <group name="Plugins">
+    <entry name="EnabledPlugins" key="/Panel/KDE/Plugins/EnabledList" type="StringList">
+        <label>These plugins will be loaded at startup</label>
+    </entry>
+  </group>
+  <group name="SCIM">
+    <entry name="_FrontEnd_SharedInputMethod" key="/FrontEnd/SharedInputMethod" type="Bool">
+      <label>Share the same input method among all applications</label>
+      <whatsthis>If enabled, all the applications always use the same input method.</whatsthis>
+      <default>false</default>
+    </entry>
+    <entry name="_FrontEnd_OnTheSpot" key="/FrontEnd/OnTheSpot" type="Bool">
+      <label>On the spot input style</label>
+      <default>true</default>
+    </entry>
+    <entry name="_FrontEnd_X11_OnTheSpot" key="/FrontEnd/X11/OnTheSpot" type="Bool">
+      <label>Use on the spot input style in XIM clients</label>
+      <whatsthis>This option will only take effect in clients using XIM protocol.</whatsthis>
+      <default>true</default>
+    </entry>
+    <entry name="_FrontEnd_X11_Dynamic" key="/FrontEnd/X11/Dynamic" type="Bool">
+      <label>Use Dynamic Event Flow. This can speed up the key event response, especially in remote X11 environment. But skim may become unstable.</label>
+      <whatsthis>This can speed up the key event response, especially in remote X11 enviro
+      nment. But skim may become unstable.</whatsthis>
+      <default>true</default>
+    </entry>
+    <entry name="_FrontEnd_X11_BrokenWchar" key="/FrontEnd/X11/BrokenWchar" type="Bool">
+        <label>whether locale encoding should be used instead of UTF8</label>
+	<whatsthis>Using locale encoding rather than UTF8.</whatsthis>
+        <default>true</default>
+    </entry>
+
+    <entry name="_FrontEnd_Socket_Address" key="/FrontEnd/Socket/Address" type="String">
+      <label>frontend socket address</label>
+      <default>local:/tmp/scim-socket-frontend</default>
+    </entry>
+    <entry name="_FrontEnd_Socket_Timeout" key="/FrontEnd/Socket/Timeout" type="Int">
+      <label>frontend socket connection timeout</label>
+      <default>1000</default>
+    </entry>
+    <entry name="_FrontEnd_Socket_MaxClients" key="/FrontEnd/Socket/MaxClients" type="Int">
+      <label>frontend socket connection max clients</label>
+      <default>128</default>
+    </entry>
+    <entry name="_FrontEnd_Socket_ConfigReadOnly" key="/FrontEnd/Socket/ConfigReadOnly" type="Bool">
+      <label>frontend socket config is readonly</label>
+      <default>false</default>
+    </entry>
+    <entry name="_Hotkeys_FrontEnd_ValidKeyMask" key="/Hotkeys/FrontEnd/ValidKeyMask" type="String">
+      <label>all valid key mask</label>
+      <default>Shift+Control+Alt+CapsLock+Meta</default>
+    </entry>
+    <entry name="_Hotkeys_FrontEnd_Trigger" key="/Hotkeys/FrontEnd/Trigger" type="String">
+      <label>IM Trigger Keys</label>
+      <whatsthis>Toggle Input Method On/Off.</whatsthis>
+      <default>Control+space</default>
+    </entry>
+    <entry name="_Hotkeys_FrontEnd_On" key="/Hotkeys/FrontEnd/On" type="String">
+        <label>Turn IM On Keys</label>
+	<whatsthis>Turn On Input Method Keys.</whatsthis>
+    </entry>
+    <entry name="_Hotkeys_FrontEnd_Off" key="/Hotkeys/FrontEnd/Off" type="String">
+        <label>Turn IM Off Keys</label>
+	<whatsthis>Turn Off Input Method Keys.</whatsthis>
+    </entry>
+    <entry name="_Hotkeys_FrontEnd_NextFactory" key="/Hotkeys/FrontEnd/NextFactory" type="String">
+      <label>Next IM Keys</label>
+      <whatsthis>Changing to next Input method keys.</whatsthis>
+      <default>Control+Alt+Down,Shift+Control+KeyRelease+Shift_L,Shift+Control+KeyRelease+Shift_R</default>
+    </entry>
+    <entry name="_Hotkeys_FrontEnd_PreviousFactory" key="/Hotkeys/FrontEnd/PreviousFactory" type="String">
+      <label>Previous IM Keys</label>
+      <whatsthis>Changing to previous Input method keys.</whatsthis>
+      <default>Control+Alt+Up,Shift+Control+KeyRelease+Control_L,Shift+Control+KeyRelease+Control_R</default>
+    </entry>
+    <entry name="_Hotkeys_FrontEnd_ShowFactoryMenu" key="/Hotkeys/FrontEnd/ShowFactoryMenu" type="String">
+      <label>Keys for showing input method menu</label>
+      <whatsthis>Show the input method menu where you can select one.</whatsthis>
+      <default>Control+Alt+Right</default>
+    </entry>
+
+    <entry name="_SupportedUnicodeLocales" key="/SupportedUnicodeLocales" type="String">
+      <label>Supported Unicode Locales scim supports</label>
+      <whatsthis>Supported Unicode locales under which scim can work.</whatsthis>
+      <default>en_US.UTF-8</default>
+    </entry>
+  </group>
+</kcfg>

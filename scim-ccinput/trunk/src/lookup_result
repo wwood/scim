@@ -1,0 +1,24 @@
+scim_dd_server.cpp:   cout << "two_num" << im_context->lookup_result->lookup_two_word_num << endl; 
+scim_dd_server.cpp://ZXJ     if( index < im_context->lookup_result->lookup_two_word_num)
+scim_dd_server.cpp:       two_word_node_ptr = im_context->lookup_result->lookup_two_word_list;
+scim_dd_server.cpp:	        two_word_node_ptr = im_context->lookup_result->lookup_two_word_list->next;
+scim_dd_server.cpp:    im_context->current_total_pinyin_length = parse_string.length();  
+scim_dd_server.cpp:    if (im_context->current_total_pinyin_length >= MAX_CHAR_IN_ORIGIN_PINYIN_STRING)
+scim_dd_server.cpp:    strncpy ( (char *)(im_context->origin_pinyin_buffer), parse_string.c_str (), im_context->current_total_pinyin_length);
+scim_dd_server.cpp:    pinyin_parse_number = dd_parse_pinyin((char *)im_context->origin_pinyin_buffer, im_context->current_total_pinyin_length, im_context->pinyin_syllable_buffer,tmp);
+scim_dd_server.cpp:        printf ("%d.%s ", i, im_context->pinyin_syllable_buffer[pinyin_parse_number-i]);
+scim_dd_server.cpp:        String str = (const char*) (im_context->pinyin_syllable_buffer[pinyin_parse_number-i]);
+scim_dd_server.cpp:    printf ("pre----Result phrase total : %d\n", im_context->lookup_result->lookup_total);
+scim_dd_server.cpp:    dd_find_matching (im_context->pinyin_syllable_buffer, pinyin_parse_number, im_context->lookup_result,tmp);
+scim_dd_server.cpp:    printf ("Result phrase total : %d\n", im_context->lookup_result->lookup_total);
+scim_dd_server.cpp:        printf ("\t phrase long : %d\n", im_context->lookup_result->lookup_above_four_num);
+scim_dd_server.cpp:        for (list = im_context->lookup_result->lookup_above_four_list; list!=NULL; list=list->next)
+scim_dd_server.cpp:        for (list4 = im_context->lookup_result->lookup_four_word_list; list4!=NULL; list4=list4->next)
+scim_dd_server.cpp:        for (list = im_context->lookup_result->lookup_three_word_list; list!=NULL; list=list->next)
+scim_dd_server.cpp://        printf ("\t phrase 2-word : %d\n", im_context->lookup_result->lookup_two_word_num);
+scim_dd_server.cpp:        for (list = im_context->lookup_result->lookup_two_word_list; list!=NULL; list=list->next)
+scim_dd_server.cpp:            cout << "num: " <<  im_context->lookup_result->lookup_two_word_num << endl;
+scim_dd_server.cpp://        printf ("\t word gb : %d\n", im_context->lookup_result->lookup_word_gb_num);
+scim_dd_server.cpp:        for (list = im_context->lookup_result->lookup_word_gb_list; list!=NULL; list=list->next)
+scim_dd_server.cpp://        printf ("\t word gbk : %d\n", im_context->lookup_result->lookup_word_gbk_num);
+scim_dd_server.cpp:        for (list = im_context->lookup_result->lookup_word_gbk_list; list!=NULL; list=list->next)

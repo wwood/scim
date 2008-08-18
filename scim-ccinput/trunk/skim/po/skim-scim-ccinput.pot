@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-06-02 01:16+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../setupui/ccinputui.cpp:181
+msgid "CC Input"
+msgstr ""
+
+#: ../setupui/ccinputui.cpp:182
+msgid "Pinyin Setup"
+msgstr ""
+
+#: ../setupui/ccinputui.cpp:183
+msgid "QuanPin"
+msgstr ""
+
+#: ../setupui/ccinputui.cpp:184
+msgid "ShuangPin"
+msgstr ""
+
+#: ../setupui/ccinputui.cpp:186
+msgid "ChineseStar"
+msgstr ""
+
+#: ../setupui/ccinputui.cpp:187
+msgid "Nature"
+msgstr ""
+
+#: ../setupui/ccinputui.cpp:188
+msgid "Microsoft"
+msgstr ""
+
+#: ../setupui/ccinputui.cpp:189
+msgid "ZiGuang"
+msgstr ""
+
+#: ../setupui/ccinputui.cpp:190
+msgid "ABC"
+msgstr ""
+
+#: ../setupui/ccinputui.cpp:191
+msgid "Liu"
+msgstr ""
+
+#: ../setupui/ccinputui.cpp:192
+msgid "D&etails"
+msgstr ""
+
+#: ../setupui/ccinputui.cpp:193
+msgid "Use GBK"
+msgstr ""
+
+#: ../setupui/ccinputui.cpp:194
+msgid "Regular"
+msgstr ""
+
+#: ../setupui/ccinputui.cpp:195
+msgid "Fuzzy Initial"
+msgstr ""
+
+#: ../setupui/ccinputui.cpp:196
+msgid "&C and Ch"
+msgstr ""
+
+#: ../setupui/ccinputui.cpp:197
+msgid "&S and Sh"
+msgstr ""
+
+#: ../setupui/ccinputui.cpp:198
+msgid "&Z and Zh"
+msgstr ""
+
+#: ../setupui/ccinputui.cpp:199
+msgid "&F and  H"
+msgstr ""
+
+#: ../setupui/ccinputui.cpp:200
+msgid "&L and N"
+msgstr ""
+
+#: ../setupui/ccinputui.cpp:201
+msgid "&K and G"
+msgstr ""
+
+#: ../setupui/ccinputui.cpp:202
+msgid "&R and L"
+msgstr ""
+
+#: ../setupui/ccinputui.cpp:203
+msgid "Fuzzy Final"
+msgstr ""
+
+#: ../setupui/ccinputui.cpp:204
+msgid "&An and Ang"
+msgstr ""
+
+#: ../setupui/ccinputui.cpp:205
+msgid "&En and Eng"
+msgstr ""
+
+#: ../setupui/ccinputui.cpp:206
+msgid "&In and Ing"
+msgstr ""
+
+#: ../setupui/ccinputui.cpp:207
+msgid "Other"
+msgstr ""
+
+#: ../setupui/ccinputui.cpp:208
+msgid "&Wang and Huang"
+msgstr ""
+
+#: ../setupui/ccinputui.cpp:209
+msgid "Fuzzy Pinyin"
+msgstr ""

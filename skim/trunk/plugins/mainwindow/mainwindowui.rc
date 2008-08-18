@@ -1,0 +1,10 @@
+<!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
+<kpartgui name="skim" version="1.0.1">
+ <ToolBar name="MainToolBar">
+  <text>Main Toolbar</text>
+  <Action name="change_server" />
+  <ActionList name="Frontend Properties" />
+  <ActionList name="GUI Properties" />
+  <Action name="configure" />
+ </ToolBar>
+</kpartgui>

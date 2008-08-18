@@ -1,0 +1,27 @@
+[Desktop Entry]
+Encoding=UTF-8
+Icon=kcmx
+DocPath=skim/index.html
+Type=Service
+ServiceTypes=Skim/KCModule
+X-KDE-Weight=100
+X-KDE-ModuleType=Library
+X-KDE-Library=skimplugin_scim_x
+#X-KDE-ParentApp=skimplugin_setupwindow
+X-KDE-ParentComponents=skimplugin_scim
+X-KDE-PluginInfo-DisplayParent=skimsetupdir_frontend
+Name=X Window
+Name[de]=X Windows
+Name[ja]=Xウィンドウ
+Name[ko]=X 윈도우
+Name[pa]=X ਝਰੋਖਾ
+Name[zh_CN]=X 窗口
+Comment=Configure for X Window FrontEnd of SCIM
+Comment[de]=Die Benutzeroberfläche von SCIM für X Windows einrichten
+Comment[fr]=Configuration de X Window pour SCIM
+Comment[it]=Configurazione per l'interfaccia a X Window di SCIM
+Comment[ja]=SCIM Xフロントエンドの設定
+Comment[ko]=SCIM 연결에 대한 X Window 설정
+Comment[pa]=SCIM ਦੀ X ਝਰੋਖਾ ਮੁੱਖ-ਭੂਮੀ ਸੰਰਚਨਾ
+Comment[zh_CN]=X 窗口系统配置界面
+Comment[zh_TW]=SCIM 的 X Window FrontEnd 設定介面

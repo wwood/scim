@@ -1,0 +1,473 @@
+--- inject.c.orig	2005-05-09 22:24:10.000000000 +0900
++++ inject.c	2007-01-15 08:00:50.000000000 +0900
+@@ -20,8 +20,10 @@
+ 
+ 
+ #include "rote.h"
++#include "utf8.h"
+ #include "roteprivate.h"
+ #include "inject_csi.h"
++#include <assert.h>
+ #include <string.h>
+ 
+ static void cursor_line_down(RoteTerm *rt) {
+@@ -43,6 +45,9 @@
+ 
+    /* clear last row of the scrolling region */
+    for (i = 0; i < rt->cols; i++) {
++      rt->cells[rt->pd->scrollbottom][i].empty = true;
++      rt->cells[rt->pd->scrollbottom][i].fcount = 1;
++      rt->cells[rt->pd->scrollbottom][i].findex = 0;
+       rt->cells[rt->pd->scrollbottom][i].ch = 0x20;
+       rt->cells[rt->pd->scrollbottom][i].attr = 0x70;
+    }
+@@ -68,37 +73,64 @@
+ 
+    /* clear first row of the scrolling region */
+    for (i = 0; i < rt->cols; i++) {
++      rt->cells[rt->pd->scrolltop][i].empty = true;
++      rt->cells[rt->pd->scrolltop][i].fcount = 1;
++      rt->cells[rt->pd->scrolltop][i].findex = 0;
+       rt->cells[rt->pd->scrolltop][i].ch = 0x20;
+       rt->cells[rt->pd->scrolltop][i].attr = 0x70;
+    }
+ 
+ }
+ 
+-static inline void put_normal_char(RoteTerm *rt, char c) {
+-   if (rt->ccol >= rt->cols) {
++static inline void put_normal_char(RoteTerm *rt, wchar_t c) {
++   const ssize_t width = wcwidth (c);
++   if (width < 0) return;
++   if (rt->ccol + width > rt->cols) {
+       rt->ccol = 0;
+       cursor_line_down(rt);
+    }
+ 
+-   rt->cells[rt->crow][rt->ccol].ch = c;
+-   rt->cells[rt->crow][rt->ccol].attr = rt->curattr;
+-   rt->ccol++;
++   rote_utf8_erase_character(rt, rt->crow, rt->ccol);
++   if (width > 1) rote_utf8_erase_character(rt, rt->crow + width - 1, rt->ccol);
++
++   int i;
++   for (i = 0; i < width; ++i) {
++      rt->cells[rt->crow][rt->ccol + i].fcount = width;
++      rt->cells[rt->crow][rt->ccol + i].empty = false;
++      rt->cells[rt->crow][rt->ccol + i].findex = i;
++      if (i == 0) {
++         rt->cells[rt->crow][rt->ccol + i].ch = c;
++      } else {
++         rt->cells[rt->crow][rt->ccol + i].ch = 0x20;
++      }
++      rt->cells[rt->crow][rt->ccol + i].attr = rt->curattr;
++   }
++   rt->ccol += width;
+ 
+    rt->line_dirty[rt->crow] = true;
+    rt->curpos_dirty = true;
+ }
+ 
+-static inline void put_graphmode_char(RoteTerm *rt, char c) {
+-   char nc;
++static inline void put_graphmode_char(RoteTerm *rt, wchar_t c) {
++   wchar_t nc;
+    /* do some very pitiful translation to regular ascii chars */
+    switch (c) {
+-      case 'j': case 'k': case 'l': case 'm': case 'n': case 't': 
+-                                    case 'u': case 'v': case 'w':
+-         nc = '+'; break;
+-      case 'x':
+-         nc = '|'; break;
++      case L'j':
++      case L'k':
++      case L'l':
++      case L'm':
++      case L'n':
++      case L't': 
++      case L'u':
++      case L'v':
++      case L'w':
++         nc = L'+';
++         break;
++      case L'x':
++         nc = L'|';
++         break;
+       default:
+-         nc = '%';
++         nc = L'%';
+    }
+ 
+    put_normal_char(rt, nc);
+@@ -116,37 +148,37 @@
+    rt->pd->esbuf[0] = '\0';
+ }
+ 
+-static void handle_control_char(RoteTerm *rt, char c) {
++static void handle_control_char(RoteTerm *rt, wchar_t c) {
+    switch (c) {
+-      case '\r': rt->ccol = 0; break; /* carriage return */
+-      case '\n':  /* line feed */
++      case L'\r': rt->ccol = 0; break; /* carriage return */
++      case L'\n':  /* line feed */
+          rt->ccol = 0; cursor_line_down(rt);
+          rt->curpos_dirty = true;
+          break;
+-      case '\b': /* backspace */
++      case L'\b': /* backspace */
+          if (rt->ccol > 0) rt->ccol--;
+          rt->curpos_dirty = true;
+          break;
+-      case '\t': /* tab */
++      case L'\t': /* tab */
+          while (rt->ccol % 8) put_normal_char(rt, ' ');
+          break;
+-      case '\x1B': /* begin escape sequence (aborting previous one if any) */
++      case L'\x1B': /* begin escape sequence (aborting previous one if any) */
+          new_escape_sequence(rt);
+          break;
+-      case '\x0E': /* enter graphical character mode */
++      case L'\x0E': /* enter graphical character mode */
+          rt->pd->graphmode = true;
+          break;
+-      case '\x0F': /* exit graphical character mode */
++      case L'\x0F': /* exit graphical character mode */
+          rt->pd->graphmode = false;
+          break;
+-      case '\x9B': /* CSI character. Equivalent to ESC [ */
++      case L'\x9B': /* CSI character. Equivalent to ESC [ */
+          new_escape_sequence(rt);
+          rt->pd->esbuf[rt->pd->esbuf_len++] = '[';
+          break;
+-      case '\x18': case '\x1A': /* these interrupt escape sequences */
++      case L'\x18': case L'\x1A': /* these interrupt escape sequences */
+          cancel_escape_sequence(rt);
+          break;
+-      case '\a': /* bell */
++      case L'\a': /* bell */
+          /* do nothing for now... maybe a visual bell would be nice? */
+          break;
+       #ifdef DEBUG
+@@ -244,23 +276,94 @@
+ void rote_vt_inject(RoteTerm *rt, const char *data, int len) {
+    int i;
+    for (i = 0; i < len; i++, data++) {
+-      if (*data == 0) continue;  /* completely ignore NUL */
+-      if (*data >= 1 && *data <= 31) {
+-         handle_control_char(rt, *data);
+-         continue;
++      wchar_t wc;
++	    unsigned char mbc[6];
++      size_t mbc_length = 0;
++
++      if (rt->pd->utf8_index > 0) {
++         rt->pd->utf8_buffer[rt->pd->utf8_index] = ((unsigned char) *data) & 0x3f;
++         ++rt->pd->utf8_index;
++         if (rt->pd->utf8_index >= 6) {
++            memcpy (mbc, rt->pd->utf8_buffer, sizeof (char) * 6);
++            mbc_length = rt->pd->utf8_length;
++            wc = /*(rt->pd->utf8_buffer[0] << 30) | (rt->pd->utf8_buffer[1] << 24) | */
++                  (rt->pd->utf8_buffer[2] << 18) | (rt->pd->utf8_buffer[3] << 12) | 
++                  (rt->pd->utf8_buffer[4] << 6) | (rt->pd->utf8_buffer[5] << 0);
++            rt->pd->utf8_index = 0;
++            rt->pd->utf8_buffer[0] = 0;
++            rt->pd->utf8_buffer[1] = 0;
++            rt->pd->utf8_buffer[2] = 0;
++            rt->pd->utf8_buffer[3] = 0;
++            rt->pd->utf8_buffer[4] = 0;
++            rt->pd->utf8_buffer[5] = 0;
++         } else {
++            continue;
++         }
++      } else {
++         const unsigned char c = *data;
++         if (c < 0x80) {
++            rt->pd->utf8_index = 0;
++            rt->pd->utf8_length = 1;
++            mbc[0] = c;
++            mbc_length = 1;
++            wc = c;
++         } else if (0xc0 <= c && c < 0xe0) {
++            rt->pd->utf8_buffer[4] = c & 0x1f;
++            rt->pd->utf8_index = 5;
++            rt->pd->utf8_length = 2;
++            continue;
++         } else if (0xe0 <= c && c < 0xf0) {
++            rt->pd->utf8_buffer[3] = c & 0x0f;
++            rt->pd->utf8_index = 4;
++            rt->pd->utf8_length = 3;
++            continue;
++         } else if (0xf0 <= c && c < 0xf8) {
++            rt->pd->utf8_buffer[2] = c & 0x07;
++            rt->pd->utf8_index = 3;
++            rt->pd->utf8_length = 4;
++            continue;
++         } else if (0xf8 <= c && c < 0xfc) {
++            rt->pd->utf8_buffer[1] = c & 0x03;
++            rt->pd->utf8_index = 2;
++            rt->pd->utf8_length = 5;
++            continue;
++         } else if (0xfc <= c && c < 0xfe) {
++            rt->pd->utf8_buffer[0] = c & 0x01;
++            rt->pd->utf8_index = 1;
++            rt->pd->utf8_length = 6;
++            continue;
++         } else {
++            // Invalid utf8 sequence, how should I do?
++            rt->pd->utf8_index = 0;
++            rt->pd->utf8_length = 1;
++            mbc[0] = c;
++            mbc_length = 1;
++            wc = c;
++            //assert (0);
++         }
+       }
+ 
+-      if (rt->pd->escaped && rt->pd->esbuf_len < ESEQ_BUF_SIZE) {
+-         /* append character to ongoing escape sequence */
+-         rt->pd->esbuf[rt->pd->esbuf_len] = *data;
+-         rt->pd->esbuf[++rt->pd->esbuf_len] = 0;
++      if (wc == 0) continue;  /* completely ignore NUL */
+ 
+-         try_interpret_escape_seq(rt);
++      if (wc >= 1 && wc <= 31) {
++         handle_control_char(rt, wc);
++         continue;
+       }
+-      else if (rt->pd->graphmode)
+-         put_graphmode_char(rt, *data);
++
++      if (rt->pd->escaped) {
++         if (rt->pd->esbuf_len + mbc_length < ESEQ_BUF_SIZE) {
++            memcpy(&rt->pd->esbuf[rt->pd->esbuf_len], mbc, sizeof (char) * mbc_length);
++            rt->pd->esbuf[rt->pd->esbuf_len + mbc_length] = 0;
++            rt->pd->esbuf_len += mbc_length;
++            try_interpret_escape_seq(rt);
++         } else {
++            cancel_escape_sequence(rt);
++            break;
++         }
++      } else if (rt->pd->graphmode)
++         put_graphmode_char(rt, wc);
+       else
+-         put_normal_char(rt, *data);
++         put_normal_char(rt, wc);
+    }
+ }
+ 
+--- inject_csi.c.orig	2007-01-15 01:43:50.000000000 +0900
++++ inject_csi.c	2007-01-15 01:48:33.000000000 +0900
+@@ -18,7 +18,7 @@
+ Copyright (c) 2004 Bruno T. C. de Oliveira
+ */
+ 
+-
++#include "utf8.h"
+ #include "inject_csi.h"
+ #include "roteprivate.h"
+ #include <stdlib.h>
+--- rote.c.orig	2005-07-08 10:16:51.000000000 +0900
++++ rote.c	2007-01-15 08:03:19.000000000 +0900
+@@ -21,6 +21,7 @@
+ 
+ #include "rote.h"
+ #include "roteprivate.h"
++#include <assert.h>
+ #include <stdlib.h>
+ #include <pty.h>
+ #include <stdio.h>
+@@ -49,6 +50,9 @@
+ 
+       /* fill row with spaces */
+       for (j = 0; j < rt->cols; j++) {
++         rt->cells[i][j].empty = true;    /* emtpy column */
++         rt->cells[i][j].fcount = 1;
++         rt->cells[i][j].findex = 0;
+          rt->cells[i][j].ch = 0x20;    /* a space */
+          rt->cells[i][j].attr = 0x70;  /* white text, black background */
+       }
+@@ -106,13 +110,21 @@
+ 
+    int i, j;
+    rote_vt_update(rt);
++
++   wchar_t wstr[2];
++   wstr[1] = '\0';
+    
+    if (!cur_set_attr) cur_set_attr = default_cur_set_attr;
+    for (i = 0; i < rt->rows; i++) {
+       wmove(win, srow + i, scol);
+-      for (j = 0; j < rt->cols; j++) {
++      for (j = 0; j < rt->cols; j += rt->cells[i][j].fcount) {
+          (*cur_set_attr)(win, rt->cells[i][j].attr);
+-         waddch(win, ensure_printable(rt->cells[i][j].ch));
++         if (!rt->cells[i][j].empty) {
++            wstr[0] = rt->cells[i][j].ch;
++            waddwstr(win, wstr);
++         } else {
++            waddch(win, ' ');
++         }
+       }
+    }
+ 
+--- rote.h.orig	2005-07-08 10:18:10.000000000 +0900
++++ rote.h	2007-01-15 08:04:18.000000000 +0900
+@@ -29,7 +29,10 @@
+ #ifndef btco_ROTE_rote_h
+ #define btco_ROTE_rote_h
+ 
+-#include <ncurses.h>
++#define _GNU_SOURCE
++#include <wchar.h>
++
++#include <ncursesw/ncurses.h>
+ #include <sys/types.h>
+ #include <unistd.h>
+ #include <stdlib.h>
+@@ -88,8 +91,14 @@
+ 
+ /* Represents each of the text cells in the terminal screen */
+ typedef struct RoteCell_ {
+-   unsigned char ch;    /* >= 32, that is, control characters are not
++   wchar_t ch;    /* >= 32, that is, control characters are not
+                          * allowed to be on the virtual screen */
++                         
++   bool empty; /* if this column is empty or not. */
++
++   size_t fcount; /* the number of the columns consumed by this unicode character */
++   
++   size_t findex; /* the fragment number for this column. */
+ 
+    unsigned char attr;  /* a color attribute, as described previously */
+ } RoteCell;
+--- rote_keymap.c.orig	2007-01-15 01:38:45.000000000 +0900
++++ rote_keymap.c	2007-01-15 01:48:33.000000000 +0900
+@@ -21,7 +21,7 @@
+ 
+ #include "rote.h"
+ 
+-#include <ncurses.h>
++#include <ncursesw/ncurses.h>
+ #include <stdlib.h>
+ #include <string.h>
+ 
+--- roteprivate.h.orig	2004-10-06 21:18:49.000000000 +0900
++++ roteprivate.h	2007-01-15 01:48:33.000000000 +0900
+@@ -35,6 +35,10 @@
+ 
+    int scrolltop, scrollbottom;  /* current scrolling region of terminal */
+    int saved_x, saved_y;         /* saved cursor position */
++   
++   unsigned char utf8_buffer[6]; /* the buffer for the utf8 sequence */
++   size_t utf8_index; /* the byte index of the utf8 buffer */
++   size_t utf8_length; /* the byte length of the utf8 buffer */
+ 
+    char esbuf[ESEQ_BUF_SIZE]; /* 0-terminated string. Does NOT include
+                                * the initial escape (\x1B) character. */
+--- utf8.h.orig	2007-01-15 08:49:29.000000000 +0900
++++ utf8.h	2007-01-15 07:54:40.000000000 +0900
+@@ -0,0 +1,29 @@
++/*
++LICENSE INFORMATION:
++This program is free software; you can redistribute it and/or
++modify it under the terms of the GNU Lesser General Public
++License (LGPL) as published by the Free Software Foundation.
++
++Please refer to the COPYING file for more information.
++
++This program is distributed in the hope that it will be useful,
++but WITHOUT ANY WARRANTY; without even the implied warranty of
++MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
++General Public License for more details.
++
++You should have received a copy of the GNU Lesser General Public
++License along with this program; if not, write to the Free Software
++Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
++
++Copyright (c) 2007 Ryo Dairiki
++*/
++
++#ifndef UTF8_H_
++#define UTF8_H_
++
++#include "rote.h"
++
++/* Erase a wide character and fill empty strings there */
++void rote_utf8_erase_character(RoteTerm *rt, size_t row, size_t col);
++
++#endif
+--- utf8.c.orig	2007-01-15 08:49:32.000000000 +0900
++++ utf8.c	2007-01-15 07:54:27.000000000 +0900
+@@ -0,0 +1,40 @@
++/*
++LICENSE INFORMATION:
++This program is free software; you can redistribute it and/or
++modify it under the terms of the GNU Lesser General Public
++License (LGPL) as published by the Free Software Foundation.
++
++Please refer to the COPYING file for more information.
++
++This program is distributed in the hope that it will be useful,
++but WITHOUT ANY WARRANTY; without even the implied warranty of
++MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
++General Public License for more details.
++
++You should have received a copy of the GNU Lesser General Public
++License along with this program; if not, write to the Free Software
++Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
++
++Copyright (c) 2007 Ryo Dairiki
++*/
++
++#include "utf8.h"
++#include "rote.h"
++#include "roteprivate.h"
++
++void rote_utf8_erase_character(RoteTerm *rt, size_t row, size_t col) {
++   if (row < rt->rows || col < rt->cols) return;
++
++   const size_t fcount = rt->cells[row][col].fcount;   
++   const size_t findex = rt->cells[row][col].findex;
++
++   int i;
++   for (i = rt->ccol - findex; i < rt->cols && i < rt->ccol + fcount - findex; ++i) {
++      rt->cells[row][i].empty = true;
++      rt->cells[row][i].fcount = 1;
++      rt->cells[row][i].findex = 0;
++      rt->cells[row][i].ch = 0x20;
++      rt->cells[row][i].attr = rt->curattr;
++   }
++}
++   
+--- configure.ac.orig	2005-07-08 10:28:05.000000000 +0900
++++ configure.ac	2007-01-15 08:04:54.000000000 +0900
+@@ -16,7 +16,7 @@
+ AC_CHECK_HEADERS([sys/types.h unistd.h stdlib.h string.h])
+ 
+ dnl Check for libraries
+-AC_CHECK_LIB([ncurses], [initscr], [],
++AC_CHECK_LIB([ncursesw], [initscr], [],
+                 AC_MSG_ERROR([Need ncurses to compile librote.]))
+ AC_CHECK_LIB([util], [forkpty], [],
+       AC_MSG_ERROR([Need util library (forkpty function) to compile librote.]))
+--- demo/boxshell.c.orig	2004-10-06 21:14:07.000000000 +0900
++++ demo/boxshell.c	2007-01-15 08:58:50.000000000 +0900
+@@ -5,7 +5,8 @@
+  *    gcc -o boxshell boxshell.c $(rote-config --cflags --libs)
+  */
+ 
+-#include <ncurses.h>
++#include <locale.h>
++#include <ncursesw/ncurses.h>
+ #include <stdio.h>
+ #include <rote/rote.h>
+ #include <signal.h>
+@@ -18,6 +19,8 @@
+ WINDOW *term_win;
+ 
+ int main() {
++   setlocale (LC_ALL, "");
++   
+    RoteTerm *rt;
+    int i, j, ch;
+ 

@@ -1,0 +1,24 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=skim
+Name[ko]=스킴
+Name[pa]=ਸਕਿਮ
+Exec=skim
+Icon=skim
+Type=Application
+DocPath=skim/index.html
+Comment=Input method platform
+Comment[de]=Plattform für Eingabemethoden
+Comment[fr]=Plateforme méthode de saisie
+Comment[it]=Piattaforma per metodi di inserimento
+Comment[ja]=インプットメソッドプラットフォーム
+Comment[ko]=입력방식
+Comment[pa]=ਇਪੁੱਟ ਢੰਗ ਪਲੇਟਫਾਰਮ
+Comment[zh_CN]=输入法平台
+Comment[zh_TW]=輸入法平台
+
+X-DCOP-ServiceType=Unique
+X-KDE-StartupNotify=false
+X-KDE-autostart-condition=skimrc:General:Autostart:true
+X-KDE-autostart-after=panel
+Categories=Qt;KDE;Utility;

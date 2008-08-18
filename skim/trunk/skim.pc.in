@@ -1,0 +1,14 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+localedir=@datadir@/locale
+datadir=@datadir@
+sysconfdir=@sysconfdir@
+
+Name: SKIM
+Description: Smart Common Input Method (SCIM) optimized for KDE
+Version: @VERSION@
+Requires: scim
+Libs: -L${libdir} -lskim
+Cflags: -I${includedir}/skim

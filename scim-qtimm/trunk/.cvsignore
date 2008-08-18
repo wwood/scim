@@ -1,0 +1,16 @@
+ Makefile.in
+ aclocal.m4
+ config.h
+ config.h.in
+ config.log
+ config.status
+ libtool
+ stamp-h.in
+ stamp-h1
+ autom4te.cache
+ configure.in
+ acinclude.m4
+ .sconf_temp
+ bksys
+ bksys.local
+ cache

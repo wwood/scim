@@ -1,0 +1,9 @@
+ Makefile
+ Makefile.in
+ *.lo
+ *.la
+ .deps
+ .libs
+ make-phrase
+ make-pinyin
+ make-pinyin-phrase

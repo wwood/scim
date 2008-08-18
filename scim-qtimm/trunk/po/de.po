@@ -1,0 +1,52 @@
+# translation of de.po to German
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Mike FABIAN <mfabian@suse.de>, 2004.
+# Jan Hefti <j.hefti@chinaboard.de>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: de\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-05-25 02:56+0000\n"
+"PO-Revision-Date: 2005-06-25 14:33+0200\n"
+"Last-Translator: Jan Hefti <j.hefti@chinaboard.de>\n"
+"Language-Team: German <scim-devel@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.10.1\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#: ../src/plugin.cpp:38
+msgid "Qt immodule plugin for SCIM"
+msgstr "Qt-Eingabemodul für SCIM"
+
+#: ../src/qsciminputcontext.cpp:1191
+msgid "Smart Common Input Method platform "
+msgstr "SCIM (Smart Common Input Method platform) "
+
+#: ../src/qsciminputcontext.cpp:1193
+msgid ""
+"\n"
+"(C) 2002-2005 James Su <suzhe@tsinghua.org.cn>\n"
+"     2003-2005 LiuCougar <liuspider@users.sourceforge.net>\n"
+"\n"
+msgstr ""
+"\n"
+"(c) 2002-2005 James Su <suzhe@tsinghua.org.cn>\n"
+"     2003-2005 LiuCougar <liuspider@users.sourceforge.net>\n"
+"\n"
+
+#: ../src/qsciminputcontext.cpp:1198
+msgid ""
+":\n"
+"\n"
+msgstr ""
+":\n"
+"\n"
+
+#: ../src/qsciminputcontext.cpp:1246
+msgid "English/Keyboard"
+msgstr "Deutsch/Tastatur"
+

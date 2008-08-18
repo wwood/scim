@@ -1,0 +1,10 @@
+#! /usr/bin/env python
+
+Import( 'env' )
+
+appletenv=env.Copy()
+applet_sources='skimapplet.skel skimapplet.cpp'
+appletenv.KDEaddlibs( "qt-mt kdecore kdeui kio" )
+appletenv.KDEshlib('skim_panelapplet', applet_sources, 0, '')
+
+appletenv.KDEinstall('KDEDATA', 'kicker/applets', 'skimapplet.desktop')

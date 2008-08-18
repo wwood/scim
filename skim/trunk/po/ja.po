@@ -1,0 +1,1004 @@
+# translation of skim to Japanese
+# This file is distributed under the same license as the skim package.
+# Copyright (C) 2004 LiuCougar <liuspider@users.sourceforge.net>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ja\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-04-29 21:36+0100\n"
+"PO-Revision-Date: 2006-06-07 21:00+0900\n"
+"Last-Translator: Yukiko Bando <ybando@k6.dion.ne.jp>\n"
+"Language-Team: Japanese <ja@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: rc.cpp:3 ../plugins/mainwindow/mainwindow.cpp:64
+#, no-c-format
+msgid "Main Toolbar"
+msgstr "メインツールバー"
+
+#: ../src/skimglobalactions.cpp:32
+msgid "SCIM Help"
+msgstr "SCIMヘルプ"
+
+#: ../src/skimglobalactions.cpp:34
+msgid "SCIM Setup"
+msgstr "SCIMの設定"
+
+#: ../src/skimglobalactions.cpp:42
+msgid "Reload all modules"
+msgstr "全てのモジュールをリロード"
+
+#: ../src/skimglobalactions.cpp:50
+msgid "Input Method"
+msgstr "入力メソッド"
+
+#: ../src/skimglobalactions.cpp:166
+msgid "Keyboard"
+msgstr "キーボード"
+
+#: ../src/main.cpp:24
+msgid "KDE Frontend for SCIM Input Method Platform"
+msgstr "SCIM IMプラットフォームのKDEフロントエンド"
+
+#: ../src/main.cpp:28
+msgid "Start as daemon."
+msgstr "デーモンとして起動"
+
+#: ../src/main.cpp:29
+msgid "List all availabe skim plugins."
+msgstr "使用可能なプラグインを全て表示"
+
+#: ../src/main.cpp:30
+msgid "Uses specified Config module."
+msgstr "指定した設定モジュールを使用"
+
+#: ../src/main.cpp:31
+msgid ""
+"A comma separated list of plugin names. All of these plugins will be loaded "
+"no matter whether they are enabled in the setting file."
+msgstr ""
+"カンマで区切ったプラグイン名のリスト。これらのプラグインは設定ファイルの内容"
+"にかかわらず全てロードされます。"
+
+#: ../src/main.cpp:32
+msgid ""
+"A comma separated list of plugin names. All of these plugins will be "
+"disabled no matter whether they are disabled in the setting file."
+msgstr ""
+"カンマで区切ったプラグイン名のリスト。これらのプラグインは設定ファイルの内容"
+"にかかわらず全て無効になります。"
+
+#: ../src/main.cpp:33
+msgid "Quit if no connected client."
+msgstr "クライアントの接続がなければ終了する"
+
+#: ../src/main.cpp:34
+msgid " Enable debug info, to specific LEVEL.."
+msgstr "デバッグ情報を特定のLEVELで有効にする"
+
+#: ../src/main.cpp:35
+msgid "Current version of skim"
+msgstr "現在のバージョン"
+
+#: ../src/main.cpp:36
+msgid "Output debug file.(No effort, always use none)"
+msgstr "デバッグ出力ファイル(使用不可/標準出力になります)"
+
+#: ../src/main.cpp:37
+msgid "Force start even if scim panel socket can not be established."
+msgstr "パネルソケットが確立されなくても強制的に起動する"
+
+#: ../src/main.cpp:58
+msgid ""
+"IRC:\n"
+"server: irc.freenode.net / channel: #scim\n"
+"\n"
+"Feedback:\n"
+"scim-user@lists.sourceforge.net"
+msgstr ""
+"IRCチャンネル:\n"
+"server: irc.freenode.net / channel: #scim\n"
+"\n"
+"ご意見・ご要望:\n"
+"scim-user@lists.sourceforge.net"
+
+#: ../src/main.cpp:60
+msgid "Core Developer"
+msgstr "主要開発者"
+
+#: ../src/main.cpp:62
+msgid "SCIM Core Author"
+msgstr "SCIMの主な作者"
+
+#: ../src/main.cpp:63
+msgid "Doc writer and German translator"
+msgstr "ドキュメントライタ/ドイツ語翻訳者"
+
+#: ../src/main.cpp:65
+msgid "Art designer and Korean translator"
+msgstr "アートデザイナー/ハングル翻訳者"
+
+#: ../src/main.cpp:67
+msgid "Japanese translator"
+msgstr "日本語翻訳者"
+
+#: ../src/main.cpp:69
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Yukiko Bando"
+
+#: ../src/main.cpp:70
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "ybando@k6.dion.ne.jp"
+
+#: ../src/main.cpp:114
+msgid "Installed skim Plugins:"
+msgstr "インストール済のskimプラグイン:"
+
+#: ../src/main.cpp:114 ../plugins/setupwindow/scimimenginesettingsui.cpp:34
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:75
+#: ../plugins/setupwindow/configskimplugins.cpp:95
+msgid "Name"
+msgstr "名称"
+
+#: ../src/main.cpp:114 ../plugins/setupwindow/configskimplugins.cpp:96
+msgid "Comment"
+msgstr "説明"
+
+#: ../src/main.cpp:118
+msgid " (Hidden)"
+msgstr " (非表示)"
+
+#: ../src/main.cpp:121
+msgid "Note: Hidden plugins can not be disabled."
+msgstr "注意: 非表示プラグインは無効にできません。"
+
+#: ../src/socketserverthread.cpp:342
+msgid "SKIM: KDE frontend for SCIM %1\n"
+msgstr "SKIM: SCIM %1 のためのKDEフロントエンド\n"
+
+#: ../src/socketserverthread.cpp:343
+msgid "(C) 2003-2006 LiuCougar <liuspider@users.sourceforge.net>"
+msgstr "(C) 2003-2006 LiuCougar <liuspider@users.sourceforge.net>"
+
+#: ../src/scimhelpdialog.cpp:16 ../plugins/setupwindow/scim_global.cpp:397
+msgid "&General"
+msgstr "全般(&G)"
+
+#: ../src/skimkeygrabber.cpp:63
+msgid "Grab Key"
+msgstr "キー選択"
+
+#: ../src/skimkeygrabber.cpp:69
+msgid ""
+"<center>Please press shortcut...</center><p>When you release a key this "
+"dialog will be closed automatically.</p>"
+msgstr ""
+"<center>ショートカットキーを押して下さい...</center><p>キーをリリースするとこ"
+"のダイアログは自動的に閉じます。"
+
+#: ../src/skimkeygrabber.cpp:75
+msgid "Control"
+msgstr "Ctrl"
+
+#: ../src/skimkeygrabber.cpp:77
+msgid "Alt"
+msgstr "Alt"
+
+#: ../src/skimkeygrabber.cpp:79
+msgid "Shift"
+msgstr "Shift"
+
+#: ../src/skimkeygrabber.cpp:81
+msgid "Release"
+msgstr "リリース"
+
+#: ../src/skimkeygrabber.cpp:97
+msgid "CapsLock"
+msgstr "CapsLock"
+
+#: ../src/skimkeygrabber.cpp:99
+msgid "Meta"
+msgstr "Meta"
+
+#: ../src/skimkeygrabber.cpp:101
+msgid "Hyper"
+msgstr "Hyper"
+
+#: ../src/skimkeygrabber.cpp:103
+msgid "Super"
+msgstr "Super"
+
+#: ../src/skimkeygrabber.cpp:291
+msgid "Edit Shortcut List"
+msgstr "ショートカットを編集"
+
+#: ../src/skimkeygrabber.cpp:296
+msgid "Edit Shortcuts"
+msgstr "ショートカットを編集"
+
+#: ../src/skimkeygrabber.cpp:322
+msgid "Warning"
+msgstr "警告"
+
+#: ../src/skimkeygrabber.cpp:322
+msgid "\"%1\" is not a valid shortcut!"
+msgstr "\"%1\" は有効なショートカットではありません"
+
+#: ../utils/scimkdesettings.cpp:30
+msgid "Auto Start"
+msgstr "自動スタート"
+
+#: ../utils/scimkdesettings.cpp:31
+msgid "Whether to start skim automatically when KDE starts."
+msgstr ""
+"KDEの起動時に自動的にskimを開始\n"
+"するかどうか。"
+
+#: ../utils/scimkdesettings.cpp:37
+msgid "Enable Composite"
+msgstr "Compositeを有効にする"
+
+#: ../utils/scimkdesettings.cpp:38
+msgid "Whether to enable Composite support which is essential for transparent."
+msgstr ""
+"Compositeサポートを有効にするかどうか。\n"
+"(透明効果に必要)"
+
+#: ../utils/scimkdesettings.cpp:41
+msgid "Use Kompmgr Composite Manager"
+msgstr "Kompmgr(Compositeマネージャ)を使用"
+
+#: ../utils/scimkdesettings.cpp:42
+msgid "Whether to use KDE built-in composite manager."
+msgstr ""
+"KDEビルトインCompositeマネージャを\n"
+"使用するかどうか。"
+
+#: ../utils/scimkdesettings.cpp:48
+msgid "Use GTK IMModule support"
+msgstr "GTK-immoduleサポートを使用"
+
+#: ../utils/scimkdesettings.cpp:49
+msgid "Whether to start scim to support gtk2 immodule."
+msgstr "GTK-immoduleをサポートするためにscimを起動するかどうか。"
+
+#: ../utils/scimkdesettings.cpp:55
+msgid "Show Quit option in context menu"
+msgstr "終了オプションをメニューに表示"
+
+#: ../utils/scimkdesettings.cpp:56
+msgid "Whether to show the quit entry in right click menu."
+msgstr ""
+"右クリックメニューに終了オプションを\n"
+"表示するかどうか。"
+
+#: ../utils/scimkdesettings.cpp:62
+msgid "Font Setting for Input Window"
+msgstr "入力ウィンドウのフォント設定"
+
+#: ../utils/scimkdesettings.cpp:63
+msgid "Use this font in Input Window"
+msgstr "このフォントを入力ウィンドウで使用"
+
+#: ../utils/scimkdesettings.cpp:66
+msgid "Use Vertical Lookup Table"
+msgstr "候補ウィンドウを縦に表示"
+
+#: ../utils/scimkdesettings.cpp:67
+msgid "Whether the candidates in Lookup Table are aligned vertically."
+msgstr ""
+"候補を候補ウィンドウで垂直方向に\n"
+"表示するかどうか。"
+
+#: ../utils/scimkdesettings.cpp:70
+msgid "Minimize the width of Lookup Table"
+msgstr "候補ウィンドウの幅を最小化"
+
+#: ../utils/scimkdesettings.cpp:71
+msgid ""
+"If unchecked, the minimum width of Lookup Table will be set to 100, "
+"otherwise 0."
+msgstr ""
+"のオプションを無効にすると、候補ウィンドウの最小幅が100に設定されます。有効に"
+"しておくと0に設定されます。"
+
+#: ../utils/scimkdesettings.cpp:74
+msgid "Fix the position of the Input Window"
+msgstr "入力ウィンドウの位置を固定"
+
+#: ../utils/scimkdesettings.cpp:75
+msgid "If enabled, Input Window does not follow the cursor."
+msgstr ""
+"有効にすると入力ウィンドウはカーソル\n"
+"位置へ移動しません。"
+
+#: ../utils/scimkdesettings.cpp:78
+msgid "Use embedded lookup table"
+msgstr "埋め込み候補ウィンドウを使用"
+
+#: ../utils/scimkdesettings.cpp:79
+msgid "If you prefer standalone lookup table, please uncheck this option."
+msgstr ""
+"独立型候補ウィンドウを使用する場合は\n"
+"このオプションを無効にしてください。"
+
+#: ../utils/scimkdesettings.cpp:85
+msgid "Always show Main Window"
+msgstr "ツールバーを常に表示"
+
+#: ../utils/scimkdesettings.cpp:86
+msgid ""
+"Show Main Window all the time. When checked, even if no input method is "
+"selected, the Main Window remains on the screen."
+msgstr ""
+"有効にすると入力メソッドがアクティブ\n"
+"でない時もツールバーをスクリーンに\n"
+"表示します。"
+
+#: ../utils/scimkdesettings.cpp:89
+msgid "Always show the move handle"
+msgstr "移動ハンドルを常に表示"
+
+#: ../utils/scimkdesettings.cpp:90
+msgid ""
+"whether the handle in the panel applet should be shown all the time. This is "
+"only effective in Panel Embedded mode."
+msgstr ""
+"移動ハンドルを常にパネルアプレットに表示するかどうか。このオプションは埋め込"
+"みモードでのみ有効になります。"
+
+#: ../utils/scimkdesettings.cpp:93
+msgid "Always show extension handle"
+msgstr "エクステンションハンドルを常に表示"
+
+#: ../utils/scimkdesettings.cpp:94
+msgid ""
+"Whether the extension handle in the panel applet should be shown all the "
+"time.This is only effective in Panel Embedded mode."
+msgstr ""
+"エクステンションハンドルを常にパネルアプレットに表示するかどうか。このオプ"
+"ションは埋め込みモードでのみ有効になります。"
+
+#: ../utils/scimkdesettings.cpp:97
+msgid "Docking Main Window to the panel"
+msgstr "ツールバーをパネルにドッキング"
+
+#: ../utils/scimkdesettings.cpp:98
+msgid ""
+"Dock the main toolbar into the KDE panel (kicker): if selected, Panel "
+"Embedded mode is activated."
+msgstr ""
+"ツールバーをKDEパネル(kicker)にドッキングします。このオプションを選択すると埋"
+"め込みモードが有効になります。"
+
+#: ../utils/scimkdesettings.cpp:101
+msgid "Snap to screen borders automatically"
+msgstr "自動的にスクリーンの端へ移動"
+
+#: ../utils/scimkdesettings.cpp:102
+msgid ""
+"When enabled, the Main Window will always besides the border of left or "
+"right of the screen."
+msgstr "有効にすると、ツールバーは常にスクリーンの右端か左端に表示されます。"
+
+#: ../utils/scimkdesettings.cpp:105
+msgid "Timeout for always show option"
+msgstr "常に表示オプションのタイムアウト"
+
+#: ../utils/scimkdesettings.cpp:106
+msgid ""
+"After this timeout (in second) eclapse, Main Window will be hidden. This "
+"option is only valid when \"Always Show\" is enabled. It is equal to disable "
+"\"Always Show\" option if this value is set to 0."
+msgstr ""
+"ここで指定した時間(秒)が経過するとツールバーが非表示になります。このオプショ"
+"ンは「常に表示」が選択されている時にのみ有効です。値を 0 に設定すると「常に表"
+"示」を無効にすることになります。"
+
+#: ../utils/scimkdesettings.cpp:109
+msgid "Display the name of current input method"
+msgstr "現在の入力メソッドの名称を表示"
+
+#: ../utils/scimkdesettings.cpp:110
+msgid ""
+"Whether show the text of current IM factory: if disabled, only the icon will "
+"be shown"
+msgstr ""
+"現在の入力メソッドの名称をテキストで表示するかどうか。無効にすると入力メソッ"
+"ドのアイコンのみが表示されます。"
+
+#: ../utils/scimkdesettings.cpp:116
+msgid "From left to right"
+msgstr "左から右へ"
+
+#: ../utils/scimkdesettings.cpp:122
+msgid "From right to left"
+msgstr "右から左へ"
+
+#: ../utils/scimkdesettings.cpp:128
+msgid "From top to bottom (Down)"
+msgstr "上から下へ (ダウン)"
+
+#: ../utils/scimkdesettings.cpp:134
+msgid "From bottom to top (up)"
+msgstr "下から上へ (アップ)"
+
+#: ../utils/scimkdesettings.cpp:138
+msgid "Direction of Main Window"
+msgstr "ツールバーの方向"
+
+#: ../utils/scimkdesettings.cpp:139
+msgid ""
+"Determine the layout of widgets in the main window. This setting is always "
+"honored in standalone mode. The layout can honor the kicker's direction in "
+"docking mode, please take a look at the \"Use 'From Left to Right' Direction"
+"\" option."
+msgstr ""
+"ツールバー上のウィジェットのレイアウトを決定します。この設定は独立型モードで"
+"は常に有効になります。埋め込みモードではKDEパネル(kicker)の方向に一致させるこ"
+"とができます。「左から右へのレイアウトを使用」の設定を確認してください。"
+
+#: ../utils/scimkdesettings.cpp:142
+msgid "Auto Adjust Direction"
+msgstr "方向自動調整"
+
+#: ../utils/scimkdesettings.cpp:143
+msgid ""
+"With this option enabled, if more than half of the main window is invisible "
+"due to user movement, the direction will be changed automatically. This "
+"option only takes effect in standalone mode."
+msgstr ""
+"有効にすると、ユーザがツールバーを移動してその半分以上が見えなくなった場合"
+"に、自動的にツールバーの表示方向が変わります。このオプションは独立型モードで"
+"のみ有効です。"
+
+#: ../utils/scimkdesettings.cpp:146
+msgid "Use left to right mode when in docking mode"
+msgstr "ドッキングモードで「左から右へ」を使用"
+
+#: ../utils/scimkdesettings.cpp:147
+msgid ""
+"If this option is enabled, in docking mode the layout is always \"from left "
+"to right\" direction. This option only takes effect in docking mode."
+msgstr ""
+"有効にするとドッキングモードでは常に「左から右へ」のレイアウトを使用します。"
+"このオプションはドッキングモードでのみ有効です。"
+
+#: ../utils/scimkdesettings.cpp:150
+msgid "Main Window Position"
+msgstr "ツールバーの位置"
+
+#: ../utils/scimkdesettings.cpp:156
+msgid "These plugins will be loaded at startup"
+msgstr "これらのプラグインは起動時にロードされます"
+
+#: ../utils/scimkdesettings.cpp:162
+msgid "Share the same input method among all applications"
+msgstr "全てのアプリケーションで同じ入力メソッドを使用"
+
+#: ../utils/scimkdesettings.cpp:163
+msgid "If enabled, all the applications always use the same input method."
+msgstr ""
+"有効にすると、全てのアプリケーションで常に同じ入力メソッドを使用できます。"
+
+#: ../utils/scimkdesettings.cpp:166
+msgid "On the spot input style"
+msgstr "On The Spot 入力スタイル"
+
+#: ../utils/scimkdesettings.cpp:169
+msgid "Use on the spot input style in XIM clients"
+msgstr "XIMクライアントで On The Spot 入力スタイルを使用"
+
+#: ../utils/scimkdesettings.cpp:170
+msgid "This option will only take effect in clients using XIM protocol."
+msgstr "このオプションはXIMプロトコルを使うクライアントでのみ有効になります。"
+
+#: ../utils/scimkdesettings.cpp:173
+msgid ""
+"Use Dynamic Event Flow. This can speed up the key event response, especially "
+"in remote X11 environment. But skim may become unstable."
+msgstr ""
+"Dynami Event Flow を使用。このオプションを有効にすると、特にリモートX11環境に"
+"おいてキーイベントのレスポンスを向上させることができます。但し、SKIMが不安定"
+"になる場合があります。"
+
+#: ../utils/scimkdesettings.cpp:174
+msgid ""
+"This can speed up the key event response, especially in remote X11 enviro\n"
+"      nment. But skim may become unstable."
+msgstr ""
+"このオプションを有効にすると、特にリモートX11環境においてキーイベントのレスポ"
+"ンスを向上させることができます。但し、SKIMが不安定になる場合があります。"
+
+#: ../utils/scimkdesettings.cpp:178
+msgid "whether locale encoding should be used instead of UTF8"
+msgstr "UTF-8の代りにロケールのエンコードを使用するかどうか。"
+
+#: ../utils/scimkdesettings.cpp:179
+msgid "Using locale encoding rather than UTF8."
+msgstr "UTF-8ではなくロケールのエンコードを使用"
+
+#: ../utils/scimkdesettings.cpp:182
+msgid "frontend socket address"
+msgstr "フロントエンドソケットアドレス"
+
+#: ../utils/scimkdesettings.cpp:185
+msgid "frontend socket connection timeout"
+msgstr "フロントエンドソケットの接続タイムアウト"
+
+#: ../utils/scimkdesettings.cpp:188
+msgid "frontend socket connection max clients"
+msgstr "フロントエンドソケットの最大接続クライアント数"
+
+#: ../utils/scimkdesettings.cpp:191
+msgid "frontend socket config is readonly"
+msgstr "フロントエンドソケットの設定ファイルは読み取り専用です"
+
+#: ../utils/scimkdesettings.cpp:194
+msgid "all valid key mask"
+msgstr "有効なキーマスク"
+
+#: ../utils/scimkdesettings.cpp:197
+msgid "IM Trigger Keys"
+msgstr "入力メソッド開始/終了キー"
+
+#: ../utils/scimkdesettings.cpp:198
+msgid "Toggle Input Method On/Off."
+msgstr "入力メソッドのオン/オフを切り替え"
+
+#: ../utils/scimkdesettings.cpp:201
+msgid "Turn IM On Keys"
+msgstr "入力メソッド開始キー"
+
+#: ../utils/scimkdesettings.cpp:202
+msgid "Turn On Input Method Keys."
+msgstr "入力メソッドを開始するキー"
+
+#: ../utils/scimkdesettings.cpp:205
+msgid "Turn IM Off Keys"
+msgstr "入力メソッド終了キー"
+
+#: ../utils/scimkdesettings.cpp:206
+msgid "Turn Off Input Method Keys."
+msgstr "入力メソッドを終了するキー"
+
+#: ../utils/scimkdesettings.cpp:209
+msgid "Next IM Keys"
+msgstr "次の入力メソッドキー"
+
+#: ../utils/scimkdesettings.cpp:210
+msgid "Changing to next Input method keys."
+msgstr "次の入力メソッドに切り替えるキー"
+
+#: ../utils/scimkdesettings.cpp:213
+msgid "Previous IM Keys"
+msgstr "前の入力メソッドキー"
+
+#: ../utils/scimkdesettings.cpp:214
+msgid "Changing to previous Input method keys."
+msgstr "前の入力メソッドに切り替えるキー"
+
+#: ../utils/scimkdesettings.cpp:217
+msgid "Keys for showing input method menu"
+msgstr "入力メソッドメニュー表示キー"
+
+#: ../utils/scimkdesettings.cpp:218
+msgid "Show the input method menu where you can select one."
+msgstr "入力メソッドを選択するメニューを表示します"
+
+#: ../utils/scimkdesettings.cpp:221
+msgid "Supported Unicode Locales scim supports"
+msgstr "SCIMがサポートするユニコードロケール"
+
+#: ../utils/scimkdesettings.cpp:222
+msgid "Supported Unicode locales under which scim can work."
+msgstr "SCIMがサポートするユニコードロケール"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:159
+msgid "Main &Toolbar Display Mode"
+msgstr "メインツールバーの表示モード(&T)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:161
+msgid "Stand Alone"
+msgstr "独立型"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:162
+msgid "Embedded"
+msgstr "埋め込み型"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:163
+msgid "&Docking into KDE Panel (kicker)"
+msgstr "KDEパネル(kicker)にドッキング(&D)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:164
+msgid "A&uto Snap"
+msgstr "オートスナップ(&U)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:165
+msgid "&Show input method name"
+msgstr "入力メソッドの名称を表示(&S)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:166
+msgid "A&lways Show"
+msgstr "常に表示(&L)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:167
+msgid "Auto Ad&just Direction"
+msgstr "方向自動調整(&J)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:168
+msgid "Always Show the Elements Selected below"
+msgstr "下で選択したエレメントを常に表示"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:169
+msgid "&Move Handle"
+msgstr "移動ハンドル(&M)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:170
+msgid "&Extension Button"
+msgstr "エクステンションボタン(&E)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:171
+msgid "&Use \"From Left To Right\" Direction"
+msgstr "「左から右へ」のレイアウトを使用(&U)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:172
+msgid "&Layout Direction"
+msgstr "レイアウトの方向(&L)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:174
+msgid "From Left to Right"
+msgstr "左から右へ"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:175
+msgid "From Right to Left"
+msgstr "右から左へ"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:176
+msgid "From Top to Bottom"
+msgstr "上から下へ"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:177
+msgid "From Bottom to Top"
+msgstr "下から上へ"
+
+#: ../plugins/mainwindow/mainwindow.cpp:101
+msgid "Reload"
+msgstr "リロード"
+
+#: ../plugins/kdetraystatus/kdetraystatus_config.cpp:54
+msgid "Enable Quit Action in Right Click Menu"
+msgstr "右クリックメニューの「終了」を有効にする"
+
+#: ../plugins/kdetraystatus/kdetraystatus.cpp:26
+msgid "Skim - SCIM KDE Frontend"
+msgstr "Skim - SCIM KDEフロントエンド"
+
+#: ../plugins/setupwindow/scim_global.cpp:378
+msgid "SCIM Global Settings"
+msgstr "SCIM全体設定"
+
+#: ../plugins/setupwindow/scim_global.cpp:379
+msgid "&Keyboard Layout:"
+msgstr "キーボード配列(&K)"
+
+#: ../plugins/setupwindow/scim_global.cpp:380
+msgid "Embed Preedit String into Client &Window (OnTheSpot Style)"
+msgstr "未確定文字列をクライアントのウィンドウに表示(OnTheSpot)(&W)"
+
+#: ../plugins/setupwindow/scim_global.cpp:381
+msgid "Sha&re input method among all applications"
+msgstr "全てのアプリケーションで入力メソッドを共有(&R)"
+
+#: ../plugins/setupwindow/scim_global.cpp:382
+msgid "Keyboard Shortcuts"
+msgstr "キーボードショートカット"
+
+#: ../plugins/setupwindow/scim_global.cpp:383
+msgid "&Toggle On/Off:"
+msgstr "開始/終了(&T):"
+
+#: ../plugins/setupwindow/scim_global.cpp:384
+msgid "T&urn On:"
+msgstr "開始(&U):"
+
+#: ../plugins/setupwindow/scim_global.cpp:385
+msgid "Turn O&ff:"
+msgstr "終了(&F):"
+
+#: ../plugins/setupwindow/scim_global.cpp:386
+msgid "&Next Input Method:"
+msgstr "次の入力メソッド(&N):"
+
+#: ../plugins/setupwindow/scim_global.cpp:387
+msgid "&Previous Input Method:"
+msgstr "前の入力メソッド(&P):"
+
+#: ../plugins/setupwindow/scim_global.cpp:388
+msgid "&Show input method menu:"
+msgstr "入力メソッドメニューを表示(&S):"
+
+#: ../plugins/setupwindow/scim_global.cpp:389
+msgid "Enabled &Modifiers"
+msgstr "有効にするモディファイア(&M)"
+
+#: ../plugins/setupwindow/scim_global.cpp:390
+msgid "Cont&rol"
+msgstr "Ct&rl"
+
+#: ../plugins/setupwindow/scim_global.cpp:391
+msgid "Sh&ift"
+msgstr "Sh&ift"
+
+#: ../plugins/setupwindow/scim_global.cpp:392
+msgid "&Alt"
+msgstr "&Alt"
+
+#: ../plugins/setupwindow/scim_global.cpp:393
+msgid "M&eta"
+msgstr "M&eta"
+
+#: ../plugins/setupwindow/scim_global.cpp:394
+msgid "S&uper"
+msgstr "S&uper"
+
+#: ../plugins/setupwindow/scim_global.cpp:395
+msgid "H&yper"
+msgstr "H&yper"
+
+#: ../plugins/setupwindow/scim_global.cpp:396
+msgid "Caps &Lock"
+msgstr "Caps &Lock"
+
+#: ../plugins/setupwindow/scim_global.cpp:398
+msgid "&Panel Program"
+msgstr "パネルプログラム(&P)"
+
+#: ../plugins/setupwindow/scim_global.cpp:400
+msgid "scim-panel-kde"
+msgstr "scim-panel-kde"
+
+#: ../plugins/setupwindow/scim_global.cpp:401
+msgid "scim-panel-gtk"
+msgstr "scim-panel-gtk"
+
+#: ../plugins/setupwindow/scim_global.cpp:402
+msgid "Config &Module"
+msgstr "設定モジュール(&M)"
+
+#: ../plugins/setupwindow/scim_global.cpp:403
+msgid "Ad&vanced"
+msgstr "詳細(&V)"
+
+#: ../plugins/setupwindow/scim_global.cpp:404
+msgid "Advanced Settings"
+msgstr "詳細設定"
+
+#: ../plugins/setupwindow/scim_global.cpp:405
+msgid "&Supported Unicode Locales"
+msgstr "サポートするユニコードロケール(&S)"
+
+#: ../plugins/setupwindow/scim_global.cpp:406
+msgid "&Edit"
+msgstr "編集(&E)"
+
+#: ../plugins/setupwindow/scim_global.cpp:407
+msgid "&FrontEnd Socket Address"
+msgstr "フロントエンドソケットアドレス(&F)"
+
+#: ../plugins/setupwindow/scim_global.cpp:408
+msgid "&IMEngine Socket Address"
+msgstr "IMエンジンソケットアドレス(&I)"
+
+#: ../plugins/setupwindow/scim_global.cpp:409
+msgid "C&onfig Socket Address"
+msgstr "コンフィグソケットアドレス(&O)"
+
+#: ../plugins/setupwindow/scim_global.cpp:410
+msgid "P&anel Socket Address"
+msgstr "パネルソケットアドレス(&A)"
+
+#: ../plugins/setupwindow/scim_global.cpp:411
+msgid "Socket Timeo&ut"
+msgstr "ソケットタイムアウト(&U)"
+
+#: ../plugins/setupwindow/scim_global.cpp:412
+msgid "Oth&er"
+msgstr "その他(&E)"
+
+#: ../plugins/setupwindow/scimattachfilter.cpp:51
+msgid "Filter %1"
+msgstr "フィルタ %1"
+
+#: ../plugins/setupwindow/scimattachfilter.cpp:140
+msgid "Edit Filters for %1"
+msgstr "%1 のフィルターを編集"
+
+#: ../plugins/setupwindow/scimattachfilter.cpp:141
+msgid "&Installed Filters for %1"
+msgstr "%1 用のインストール済みフィルタ(&I)"
+
+#: ../plugins/setupwindow/scim_x.cpp:69
+msgid "X Window (XIM)"
+msgstr "Xウィンドウ(XIM)"
+
+#: ../plugins/setupwindow/scim_x.cpp:70
+msgid "S&tart skim automatically when KDE starts"
+msgstr "KDEの起動時にskimを開始する(&T)"
+
+#: ../plugins/setupwindow/scim_x.cpp:71
+msgid "XIM Settings"
+msgstr "XIMの設定"
+
+#: ../plugins/setupwindow/scim_x.cpp:72
+msgid "&On the Spot"
+msgstr "&On the Spot"
+
+#: ../plugins/setupwindow/scim_x.cpp:73
+msgid "&Dynamic Event Flow"
+msgstr "&Dynamic Event Flow"
+
+#: ../plugins/setupwindow/filterinfodlgbase.cpp:97
+msgid "<b>Name:</b>"
+msgstr "<b>名称:</b>"
+
+#: ../plugins/setupwindow/filterinfodlgbase.cpp:99
+msgid "<b>Description:</b>"
+msgstr "<b>説明:</b>"
+
+#: ../plugins/setupwindow/filterinfodlgbase.cpp:101
+msgid "<b>Supported Languages:</b>"
+msgstr "<b>サポートする言語:</b>"
+
+#: ../plugins/setupwindow/filterinfodlgbase.cpp:103
+#: ../plugins/setupwindow/attachfilteruibase.cpp:130
+msgid "&Ok"
+msgstr "&OK"
+
+#: ../plugins/setupwindow/scimsetupwindow.cpp:53
+msgid "Configure skim"
+msgstr "skimを設定"
+
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:35
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:76
+msgid "Hotkeys"
+msgstr "ホットキー"
+
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:36
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:77
+msgid "Installed Filter"
+msgstr "インストール済みのフィルター"
+
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:78
+msgid "&Enable All"
+msgstr "全て有効(&E)"
+
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:79
+msgid "D&isable All"
+msgstr "全て無効(&I)"
+
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:80
+msgid "Edi&t Hotkeys"
+msgstr "ホットキー(&T)"
+
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:81
+msgid "Edit &Filters"
+msgstr "フィルター(&F)"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:122
+msgid "Available &Filters"
+msgstr "利用可能なフィルター(&F)"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:124
+msgid "&Remove Filter"
+msgstr "フィルターを削除(&R)"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:125
+msgid "Move &Up"
+msgstr "上に移動(&U)"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:126
+msgid "Move &Down"
+msgstr "下に移動(&D)"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:127
+msgid "&Add Filter"
+msgstr "フィルターを追加(&A)"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:128
+msgid "&More Info"
+msgstr "詳細情報(&M)"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:129
+msgid "&Installed Filters for this Input Method"
+msgstr "この入力メソッドのインストール済みのフィルタ(&I)"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:131
+msgid "Canc&el"
+msgstr "キャンセル(&E)"
+
+#: ../plugins/setupwindow/scimglobalconfigplugin.cpp:120
+msgid "Edit Supported Locales"
+msgstr "サポートするロケールを編集"
+
+#: ../plugins/setupwindow/scimglobalconfigplugin.cpp:266
+msgid ""
+"If you want to use skim (scim-panel-kde) or scim-qtimm (Qt immodule support "
+"for SCIM), please select kconfig as the config module."
+msgstr ""
+"skim(scim-panel-kde)またはscim-qtimm(SCIMのQt immoduleサポート)を使用する場合"
+"は、設定モジュールをkconfigに指定して下さい。"
+
+#: ../plugins/setupwindow/scimimenginesettings.cpp:313
+msgid "Specify Hotkeys for IME \"%1\""
+msgstr "IME \"%1\" のホットキーを指定"
+
+#: ../plugins/inputwindow/inputwindow.cpp:39
+msgid "Input Window"
+msgstr "入力ウィンドウ"
+
+#: ../plugins/inputwindow/inputwindow.cpp:63
+msgid "Candidates Window (Lookup Table)"
+msgstr "候補ウィンドウ"
+
+#: ../plugins/inputwindow/inputwindow_settings.cpp:88
+msgid "Input Window Settings"
+msgstr "入力ウィンドウの設定"
+
+#: ../plugins/inputwindow/inputwindow_settings.cpp:89
+msgid "&Sticky Window"
+msgstr "固定ウィンドウ(&S)"
+
+#: ../plugins/inputwindow/inputwindow_settings.cpp:90
+msgid "Use &Vertical Lookup Table"
+msgstr "縦型候補ウィンドウを使用(&V)"
+
+#: ../plugins/inputwindow/inputwindow_settings.cpp:91
+msgid "&Embedded Lookup Table"
+msgstr "埋め込み候補ウィンドウ(&E)"
+
+#: ../plugins/inputwindow/inputwindow_settings.cpp:92
+msgid "&Minimize the width of Lookup Table"
+msgstr "候補ウィンドウの幅を最小化(&M)"
+
+#: ../plugins/inputwindow/inputwindow_settings.cpp:93
+msgid "&Font"
+msgstr "フォント(&F)"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:51
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:111
+msgid "Window Name"
+msgstr "ウィンドウ名"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:52
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:112
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:113
+msgid "Translucency"
+msgstr "半透明"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:108
+msgid "Enable &Composite Support"
+msgstr "Compositeサポートを有効にする(&C)"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:109
+msgid "Composite Settings"
+msgstr "Compositeの設定"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:110
+msgid "&Use KDE built-in Composite Manager (kompmgr)"
+msgstr "KDEビルトインCompositeマネージャ(kompmgr)を使用(&U)"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:114
+msgid "&Active Window:"
+msgstr "アクティブウィンドウ(&A):"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:115
+msgid "%"
+msgstr "%"

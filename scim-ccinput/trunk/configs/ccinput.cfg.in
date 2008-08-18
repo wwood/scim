@@ -1,0 +1,104 @@
+# File header must not be modified
+# This file must be encoded into UTF-8.
+# This file comes from xcin.
+SCIM_Generic_Table_Phrase_Library_TEXT
+VERSION_0_5
+
+# Begin Table definition.
+BEGIN_DEFINITION
+
+# An unique id to distinguish this table among others.
+# Use uuidgen to generate this kind of id.
+UUID = 11cb2711-6225-49ca-bde4-472d2ca8aaee
+
+ICON = @SCIM_ICONDIR@/ccinput.png
+
+# An unique number indicates the version of this file.
+# For example the last modified date of this file.
+# This number must be less than 2^32.
+SERIAL_NUMBER = 20030801
+
+# The default name of this table
+NAME = ccinput
+
+# The locale specific names of this table 
+NAME.zh_CN = 共创
+NAME.zh_TW = 共创
+NAME.zh_HK = 共创
+
+# Supported locales of this table
+LOCALES = zh_CN.UTF-8,zh_CN.GB18030,zh_CN.GBK,zh_CN.GB2312,zh_TW.UTF-8,zh_TW.Big5,zh_TW,zh_HK.UTF-8,zh_HK.Big5-HKSCS,zh_HK
+
+# Prompt string to be displayed in the status area.
+STATUS_PROMPT = 中
+
+# If phrase will be selected automatically during inputing.
+AUTO_SELECT = FALSE
+
+# If add multi wildcard at the end of inputed key automatically.
+AUTO_WILDCARD = FALSE
+
+# Need dynamic adjust the phrases' frequencies?
+# TRUE or FALSE
+DYNAMIC_ADJUST = FALSE
+
+# Valid input chars.
+VALID_INPUT_CHARS = abcdefghijklmnopqrstuvwxyz
+
+# Single wildcard char, can have multiple chars.
+SINGLE_WILDCARD_CHAR = ?
+
+# Multi wildcard char.
+MULTI_WILDCARD_CHAR = *
+
+# Select keys
+SELECT_KEYS = 1234567890
+
+# Chars to split two keys.
+SPLIT_CHARS = '
+
+# The maxmium length of a key.
+MAX_KEY_LENGTH = 5
+
+# The key strokes to page up.
+PAGE_UP_KEYS = Control+Page_Up,comma,minus
+
+# The key strokes to page down.
+PAGE_DOWN_KEYS = Control+Page_Down,period,equal
+
+# The definition of char prompts.
+BEGIN_CHAR_PROMPTS_DEFINITION
+a 日
+b 月
+c 金
+d 木
+e 水
+f 火
+g 土
+h 竹
+i 戈
+j 十
+k 大
+l 中
+m 一
+n 弓
+o 人
+p 心
+q 手
+r 口
+s 尸
+t 廿
+u 山
+v 女
+w 田
+x 難
+y 卜
+z 重
+END_CHAR_PROMPTS_DEFINITION
+END_DEFINITION
+
+# Begin Table data.
+BEGIN_TABLE
+
+yyyhv	迈	0
+END_TABLE

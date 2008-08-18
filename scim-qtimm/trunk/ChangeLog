@@ -1,0 +1,809 @@
+2005-08-16	07:4	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	configure.in.in (1.20) (+2 -2)
+		scim-qtimm.spec (1.3) (+1 -1)
+
+	Bump to 0.9.4
+
+2005-08-16	07:3	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	src/qsciminputcontext.cpp (1.50) (+3 -0)
+
+	Only use ComposeKeyFactory as fallback when ComposeKey input method is enabled.
+
+2005-08-15	14:0	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	scim-qtimm.spec (1.2) (+7 -8)
+		src/qsciminputcontext.cpp (1.49) (+1 -0)
+
+	Fixed a bug of focus ic handling.
+
+2005-07-23	22:1	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	ChangeLog (1.8) (+23 -36)
+		NEWS (1.9) (+5 -0)
+		configure.in.in (1.19) (+1 -1)
+
+	0.9.3 is ready
+
+2005-07-13	18:0	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	src/Makefile.am (1.3) (+1 -1)
+		src/keyserver_x11.h (1.3) (+74 -79)
+		src/qsciminputcontext.cpp (1.48) (+14 -10)
+		src/qsciminputcontext.h (1.12) (+2 -0)
+
+	fixed: forward keys issues
+
+2005-07-12	02:5	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	src/qsciminputcontext.cpp (1.47) (+109 -100)
+
+	Use *panel_client again.
+
+2005-07-07	01:1	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	ChangeLog (1.7) (+82 -0)
+		NEWS (1.8) (+4 -0)
+		configure.in.in (1.18) (+1 -1)
+
+	pumped to 0.9.2
+
+2005-07-06	08:2	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	src/qsciminputcontext.cpp (1.46) (+28 -23)
+
+	Fixed crashing issue when panel exit
+
+2005-07-05	21:0	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	src/qsciminputcontext.cpp (1.45) (+99 -107)
+
+	reverted to revision 1.42: libscim PanelClient is a plain object now
+
+2005-07-04	02:4	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	src/qsciminputcontext.cpp (1.44) (+9 -9)
+
+	Construct and destruct panel_client at a better position.
+
+2005-07-03	23:4	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	src/qsciminputcontext.cpp (1.43) (+107 -99)
+
+	do not init panelclient to prevent crash in precompiled qt app using incompatible version of gcc
+
+2005-07-03	05:4	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	src/qsciminputcontext.cpp (1.42) (+1121 -982)
+		src/qsciminputcontext.h (1.11) (+120 -106)
+
+	Updated scim-qtimm to support scim 1.3.2
+
+2005-06-28	23:4	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	src/plugin.cpp (1.3) (+1 -1)
+		src/qsciminputcontext.cpp (1.41) (+182 -59)
+		src/qsciminputcontext.h (1.10) (+2 -2)
+
+	added share input method support
+
+2005-06-25	18:2	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	po/de.po (1.4) (+20 -16)
+
+	updated de
+
+2005-06-25	18:2	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	bootstrap (1.3) (+1 -1)
+
+	.svn->CVS
+
+2005-06-22	13:1	
+
+	Files:	po/de.po (1.3) (+2 -45)
+
+	update German translation.
+
+2005-06-17	23:0	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	AUTHORS (1.2) (+1 -1)
+
+	my name alias
+
+2005-06-17	23:0	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	ChangeLog (1.6) (+57 -0)
+		NEWS (1.7) (+6 -0)
+
+	0.9.1 is ready
+
+2005-06-12	16:1	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	src/qsciminputcontext.cpp (1.40) (+27 -7)
+
+	use a standalone mutex not the qapp global one
+
+2005-06-08	23:1	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	configure.in.in (1.17) (+1 -1)
+
+	pumped to 0.9.1
+
+2005-06-08	22:0	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	src/qsciminputcontext.cpp (1.39) (+1 -0)
+
+	fixed infinite loop issue when slot_forward_key_event is used
+
+2005-06-07	20:5	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	src/qsciminputcontext.cpp (1.38) (+6 -6)
+
+	fixed crash when exit skim
+
+2005-06-07	17:1	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	bootstrap (1.2) (+12 -0)
+		configure.in.in (1.16) (+40 -1)
+
+	use skim/admin instead
+
+2005-06-06	22:3	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	src/qsciminputcontext.cpp (1.37) (+108 -99)
+
+	do not init PanelClient when global object is created
+
+2005-06-05	15:2	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	po/fr.po (1.1) ( )
+		po/it.po (1.1) ( )
+
+	added fr and it
+
+2005-05-31	00:0	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	src/qsciminputcontext.cpp (1.36) (+24 -6)
+
+	lazy init connection with panel: so that when KDE starts with scim-qtimm enabled, no more skim instances would be started any more. This fixed the hang up issue of skim when scim-qtimm is enabled, start skim with KDE, docking main toolbar.
+
+2005-05-28	21:1	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	NEWS (1.6) (+3 -0)
+
+	updated doc NEWS
+
+2005-05-28	21:1	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	ChangeLog (1.5) (+57 -0)
+		NEWS (1.5) (+12 -7)
+
+	0.9.0 is ready
+
+2005-05-28	19:3	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	src/qsciminputcontext.cpp (1.35) (+18 -19)
+
+	fixed: extra spaces after backspace and then committing if do not use qt built-in preedit area
+
+2005-05-28	00:3	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	src/qsciminputcontext.cpp (1.13.2.7) (+3 -5)
+
+	Fixed finalize code.
+
+2005-05-24	19:5	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	src/qsciminputcontext.cpp (1.13.2.6) (+9 -5)
+
+	start IM event when composing even if OnTheSpot is off
+
+2005-05-20	22:0	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	src/qsciminputcontext.cpp (1.13.2.5) (+16 -12)
+
+	Japanese input methods compatibility improvement (patch from TAM-san)
+
+2005-05-15	20:5	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	src/qsciminputcontext.cpp (1.13.2.4) (+5 -5)
+
+	do not commit preedit string when deactivated
+
+2005-05-15	19:5	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	src/qsciminputcontext.cpp (1.13.2.3) (+1 -2)
+
+	when deactivated, unsetFocus() should not be called
+
+2005-05-13	16:4	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	src/qsciminputcontext.cpp (1.13.2.2) (+2 -0)
+
+	fixed: filter mask using valid_key_mask
+
+2005-04-26	00:3	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	configure.in.in (1.7.2.1) (+3 -1)
+		admin/Makefile.common (1.1.1.1.4.1) (+1 -1)
+		admin/acinclude.m4.in (1.2.2.1) (+472 -210)
+		admin/am_edit (1.2.2.1) (+25 -12)
+		admin/conf.change.pl (1.1.1.1.4.1) (+1 -1)
+		admin/config.guess (1.1.1.1.4.1) (+211 -125)
+		admin/config.sub (1.1.1.1.4.1) (+127 -45)
+		admin/configure.in.bot.end (1.1.1.1.4.1) (+19 -1)
+		admin/configure.in.min (1.2.2.1) (+5 -1)
+		admin/cvs.sh (1.2.2.1) (+76 -65)
+		admin/detect-autoconf.sh (1.1.1.1.4.1) (+22 -22)
+		admin/libtool.m4.in (1.2.2.1) (+128 -103)
+		admin/ltmain.sh (1.2.2.1) (+65 -7)
+		src/keyserver_x11.h (1.1.1.1.4.1) (+27 -0)
+		src/qsciminputcontext.cpp (1.13.2.1) (+198 -64)
+
+	merged updates from HEAD branch
+	0.8.9 is ready
+
+2005-04-26	00:2	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	configure.in.in (1.9) (+3 -2)
+
+	bump version to 0.9.0; fixed: if KDE is not install, the tests can not be compiled due to lack of perl checking
+
+2005-04-24	20:2	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	skim/Makefile.am (1.3) (+1 -1)
+		skim/skimplugin_scim_qtimm_config.desktop (1.3) (+1 -1)
+		skim/icons/Makefile.am (1.1) ( )
+		skim/icons/scim-qtimm.png (1.1) ( )
+
+	added a new icon
+
+2005-04-24	17:4	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	src/qsciminputcontext.cpp (1.17) (+2 -2)
+
+	cleanup
+
+2005-04-21	01:1	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	skim/skimplugin_scim_qtimm_config.desktop (1.2) (+1 -1)
+
+	change X-KDE-PluginInfo-DisplayParent according to skim
+
+2005-04-17	21:2	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	src/keyserver_x11.h (1.2) (+27 -0)
+		src/qsciminputcontext.cpp (1.16) (+59 -28)
+
+	none X11 implementation updated
+
+2005-04-17	05:3	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	src/qsciminputcontext.cpp (1.15) (+56 -27)
+
+	correct the implementation of slot_forward_key_event
+
+2005-04-16	20:5	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	configure.in.in (1.8) (+1 -0)
+		admin/configure.in.min (1.4) (+1 -0)
+
+	fixed: threading support is not set correctly by the configure script
+
+2005-04-16	20:5	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	src/qsciminputcontext.cpp (1.14) (+99 -12)
+
+	Fixed Modifier Keys issue; Call update_client_capabilities().
+
+2005-04-16	19:5	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	admin/Doxyfile.global (1.2) (+29 -8)
+		admin/Makefile.common (1.2) (+1 -1)
+		admin/acinclude.m4.in (1.3) (+472 -210)
+		admin/am_edit (1.3) (+25 -12)
+		admin/conf.change.pl (1.2) (+1 -1)
+		admin/config.guess (1.2) (+211 -125)
+		admin/config.sub (1.2) (+127 -45)
+		admin/configure.in.bot.end (1.2) (+19 -1)
+		admin/configure.in.min (1.3) (+4 -1)
+		admin/cvs.sh (1.3) (+76 -65)
+		admin/detect-autoconf.sh (1.2) (+22 -22)
+		admin/libtool.m4.in (1.3) (+128 -103)
+		admin/ltmain.sh (1.3) (+65 -7)
+
+	updated admin to skim's
+
+2005-04-01	03:2	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	src/qsciminputcontext.cpp (1.13) (+1 -1)
+
+	Fixed a minor typo.
+
+2005-04-01	02:3	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	src/qsciminputcontext.cpp (1.12) (+33 -24)
+
+	Fixed nested transaction sending issue
+
+2005-03-17	20:3	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	scim_qt_immodule.kdevelop.pcs (1.4) (+33 -31)
+		scim_qt_immodule.kdevses (1.4) (+7 -4)
+		src/qsciminputcontext.cpp (1.11) (+12 -2)
+
+	Added Keyboard Layout mapping functions.
+
+2005-03-17	02:1	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	src/qsciminputcontext.cpp (1.10) (+1 -1)
+
+	Fixed numlock issue.
+
+2005-03-03	23:1	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	TODO (1.2) (+0 -1)
+		src/plugin.cpp (1.2) (+1 -2)
+		src/qsciminputcontext.cpp (1.9) (+23 -20)
+		src/qsciminputcontext.h (1.7) (+1 -1)
+
+	scim-qtimm will reload scim if it is reselected in the right click context menu
+
+2005-03-03	21:2	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	configure.in.in (1.7) (+1 -0)
+
+	KDEDIR will be not available in some distros (such as gentoo), so we use kde-config to retrieve useful information
+
+2005-02-28	22:1	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	src/qsciminputcontext.cpp (1.8) (+95 -46)
+		src/qsciminputcontext.h (1.6) (+1 -0)
+
+	beep support
+	SCIM_TRANS_CMD_EXIT support: now scim-qtimm can exit cleanly (somewhat)
+
+2005-02-28	16:3	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	ChangeLog (1.3) (+96 -0)
+
+	updated helper doc
+
+2005-02-28	01:1	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	README (1.4) (+2 -1)
+		configure.in.in (1.6) (+2 -2)
+		scim_qt_immodule.kdevelop.pcs (1.3) (+27 -26)
+		scim_qt_immodule.kdevses (1.3) (+5 -8)
+
+	0.8.5 is ready
+
+2005-02-27	18:5	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	po/Makefile.am (1.2) (+1 -1)
+		po/de.po (1.2) (+54 -51)
+		po/scim-qtimm.pot (1.2) (+10 -37)
+		po/zh_CN.po (1.2) (+53 -52)
+		skim/Makefile.am (1.2) (+1 -0)
+		skim/scimqtimmsettingplugin.cpp (1.2) (+6 -0)
+		skim/scimqtimmsettingplugin.h (1.2) (+1 -0)
+		skim/po/.cvsignore (1.1) ( )
+		skim/po/Makefile.am (1.1) ( )
+		skim/po/de.po (1.1) ( )
+		skim/po/fr.po (1.1) ( )
+		skim/po/it.po (1.1) ( )
+		skim/po/ja.po (1.1) ( )
+		skim/po/ko.po (1.1) ( )
+		skim/po/skim_scim-qtimm.pot (1.1) ( )
+		skim/po/zh_CN.po (1.1) ( )
+		skim/po/zh_TW.po (1.1) ( )
+
+	added translation for m support
+
+2005-02-25	19:3	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	configure.in.in (1.5) (+6 -0)
+
+	fixed QT dir detection issue caused by updated admin scripts
+
+2005-02-22	22:1	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	Makefile.am (1.2) (+1 -1)
+		README (1.3) (+2 -0)
+		config.h.in (1.2) (+3 -0)
+		configure.in.in (1.4) (+27 -1)
+		scim_qt_immodule.kdevelop (1.2) (+1 -4)
+		scim_qt_immodule.kdevelop.pcs (1.2) (+32 -29)
+		scim_qt_immodule.kdevses (1.2) (+4 -7)
+		subdirs (1.2) (+1 -0)
+		admin/ChangeLog (1.2) (+2 -761)
+		admin/acinclude.m4.in (1.2) (+101 -61)
+		admin/am_edit (1.2) (+123 -24)
+		admin/configure.in.min (1.2) (+2 -3)
+		admin/cvs.sh (1.2) (+112 -52)
+		admin/debianrules (1.2) (+21 -97)
+		admin/libtool.m4.in (1.2) (+13 -1)
+		admin/ltmain.sh (1.2) (+1 -1)
+		skim/Makefile.am (1.1) ( )
+		skim/qtimm.kcfg (1.1) ( )
+		skim/qtimm.kcfgc (1.1) ( )
+		skim/qtimmui.ui (1.1) ( )
+		skim/scimqtimmsettingplugin.cpp (1.1) ( )
+		skim/scimqtimmsettingplugin.h (1.1) ( )
+		skim/skimplugin_scim_qtimm_config.desktop (1.1) ( )
+
+	added skim config module
+
+2005-02-12	20:3	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	tests/main.cpp (1.2) (+5 -1)
+
+	honor QT_IM_MODULE
+
+2005-02-04	16:0	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	ChangeLog (1.2) (+191 -0)
+
+	updated Changelog
+
+2005-02-04	16:0	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	src/qsciminputcontext.cpp (1.7) (+2 -1)
+
+	retrieve language info from current using IMEngine
+
+2005-02-04	13:3	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	src/qsciminputcontext.cpp (1.6) (+12 -12)
+
+	left/right modifier keys merged
+
+2005-02-03	02:5	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	configure.in.in (1.2) (+2 -2)
+
+	version 0.8.0
+
+2005-01-30	13:2	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	src/qsciminputcontext.cpp (1.5) (+39 -66)
+		src/qsciminputcontext.h (1.5) (+0 -1)
+
+	Modified to support latest scim cvs head.
+
+2005-01-14	16:0	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	src/qsciminputcontext.cpp (1.4) (+79 -0)
+		src/qsciminputcontext.h (1.4) (+12 -0)
+
+	Update to support the latest SCIM CVS Head.
+
+2005-01-10	07:2	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	src/qsciminputcontext.cpp (1.3) (+52 -52)
+		src/qsciminputcontext.h (1.3) (+1 -0)
+
+	Use HotkeyMatcher.
+
+2004-12-30	06:3	James Su <suzhe@tsinghua.org.cn>
+
+	Files:	src/qsciminputcontext.cpp (1.2) (+73 -67)
+		src/qsciminputcontext.h (1.2) (+3 -3)
+
+	Updated to support the latest scim cvs head.
+
+2004-12-28	23:0	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	ABOUT-NLS (1.1) ( )
+		AUTHORS (1.1) ( )
+		COPYING (1.1) ( )
+		ChangeLog (1.1) ( )
+		Doxyfile (1.1) ( )
+		INSTALL (1.1) ( )
+		Makefile.am (1.1) ( )
+		Makefile.cvs (1.1) ( )
+		NEWS (1.1) ( )
+		README (1.1) ( )
+		THANKS (1.1) ( )
+		TODO (1.1) ( )
+		acinclude.m4 (1.1) ( )
+		bootstrap (1.1) ( )
+		config.h.in (1.1) ( )
+		configure.files (1.1) ( )
+		configure.in.in (1.1) ( )
+		log (1.1) ( )
+		scim-qtimm.spec (1.1) ( )
+		scim_qt_immodule.kdevelop (1.1) ( )
+		scim_qt_immodule.kdevelop.pcs (1.1) ( )
+		scim_qt_immodule.kdevses (1.1) ( )
+		subdirs (1.1) ( )
+		admin/ChangeLog (1.1) ( )
+		admin/Doxyfile.am (1.1) ( )
+		admin/Doxyfile.global (1.1) ( )
+		admin/Makefile.common (1.1) ( )
+		admin/acinclude.m4.in (1.1) ( )
+		admin/am_edit (1.1) ( )
+		admin/bcheck.pl (1.1) ( )
+		admin/compile (1.1) ( )
+		admin/conf.change.pl (1.1) ( )
+		admin/config.guess (1.1) ( )
+		admin/config.pl (1.1) ( )
+		admin/config.rpath (1.1) ( )
+		admin/config.sub (1.1) ( )
+		admin/configure.in.bot.end (1.1) ( )
+		admin/configure.in.min (1.1) ( )
+		admin/cvs-clean.pl (1.1) ( )
+		admin/cvs.sh (1.1) ( )
+		admin/debianrules (1.1) ( )
+		admin/depcomp (1.1) ( )
+		admin/detect-autoconf.sh (1.1) ( )
+		admin/install-sh (1.1) ( )
+		admin/libtool.m4.in (1.1) ( )
+		admin/ltmain.sh (1.1) ( )
+		admin/missing (1.1) ( )
+		admin/mkinstalldirs (1.1) ( )
+		admin/nmcheck (1.1) ( )
+		admin/ylwrap (1.1) ( )
+		po/Makefile.am (1.1) ( )
+		po/de.po (1.1) ( )
+		po/scim-qtimm.pot (1.1) ( )
+		po/zh_CN.po (1.1) ( )
+		src/Makefile.am (1.1) ( )
+		src/keyserver_x11.h (1.1) ( )
+		src/keysymdef.h (1.1) ( )
+		src/libqsciminputcontextplugin.la (1.1) ( )
+		src/plugin.cpp (1.1) ( )
+		src/qsciminputcontext.cpp (1.1) ( )
+		src/qsciminputcontext.h (1.1) ( )
+		tests/Makefile.am (1.1) ( )
+		tests/main.cpp (1.1) ( )
+		tests/testinputwidgets.ui (1.1) ( )
+
+	Initial revision
+
+2004-12-28	23:0	LiuCougar <liuspider@users.sourceforge.net>
+
+	Files:	ABOUT-NLS (1.1.1.1) (+0 -0)
+		AUTHORS (1.1.1.1) (+0 -0)
+		COPYING (1.1.1.1) (+0 -0)
+		ChangeLog (1.1.1.1) (+0 -0)
+		Doxyfile (1.1.1.1) (+0 -0)
+		INSTALL (1.1.1.1) (+0 -0)
+		Makefile.am (1.1.1.1) (+0 -0)
+		Makefile.cvs (1.1.1.1) (+0 -0)
+		NEWS (1.1.1.1) (+0 -0)
+		README (1.1.1.1) (+0 -0)
+		THANKS (1.1.1.1) (+0 -0)
+		TODO (1.1.1.1) (+0 -0)
+		acinclude.m4 (1.1.1.1) (+0 -0)
+		bootstrap (1.1.1.1) (+0 -0)
+		config.h.in (1.1.1.1) (+0 -0)
+		configure.files (1.1.1.1) (+0 -0)
+		log (1.1.1.1) (+0 -0)
+		scim-qtimm.spec (1.1.1.1) (+0 -0)
+		scim_qt_immodule.kdevelop (1.1.1.1) (+0 -0)
+		scim_qt_immodule.kdevelop.pcs (1.1.1.1) (+0 -0)
+		scim_qt_immodule.kdevses (1.1.1.1) (+0 -0)
+		subdirs (1.1.1.1) (+0 -0)
+		admin/ChangeLog (1.1.1.1) (+0 -0)
+		admin/Doxyfile.am (1.1.1.1) (+0 -0)
+		admin/Doxyfile.global (1.1.1.1) (+0 -0)
+		admin/Makefile.common (1.1.1.1) (+0 -0)
+		admin/acinclude.m4.in (1.1.1.1) (+0 -0)
+		admin/am_edit (1.1.1.1) (+0 -0)
+		admin/bcheck.pl (1.1.1.1) (+0 -0)
+		admin/compile (1.1.1.1) (+0 -0)
+		admin/conf.change.pl (1.1.1.1) (+0 -0)
+		admin/config.guess (1.1.1.1) (+0 -0)
+		admin/config.pl (1.1.1.1) (+0 -0)
+		admin/config.rpath (1.1.1.1) (+0 -0)
+		admin/config.sub (1.1.1.1) (+0 -0)
+		admin/configure.in.bot.end (1.1.1.1) (+0 -0)
+		admin/configure.in.min (1.1.1.1) (+0 -0)
+		admin/cvs-clean.pl (1.1.1.1) (+0 -0)
+		admin/cvs.sh (1.1.1.1) (+0 -0)
+		admin/debianrules (1.1.1.1) (+0 -0)
+		admin/depcomp (1.1.1.1) (+0 -0)
+		admin/detect-autoconf.sh (1.1.1.1) (+0 -0)
+		admin/install-sh (1.1.1.1) (+0 -0)
+		admin/libtool.m4.in (1.1.1.1) (+0 -0)
+		admin/ltmain.sh (1.1.1.1) (+0 -0)
+		admin/missing (1.1.1.1) (+0 -0)
+		admin/mkinstalldirs (1.1.1.1) (+0 -0)
+		admin/nmcheck (1.1.1.1) (+0 -0)
+		admin/ylwrap (1.1.1.1) (+0 -0)
+		po/Makefile.am (1.1.1.1) (+0 -0)
+		po/de.po (1.1.1.1) (+0 -0)
+		po/scim-qtimm.pot (1.1.1.1) (+0 -0)
+		po/zh_CN.po (1.1.1.1) (+0 -0)
+		src/Makefile.am (1.1.1.1) (+0 -0)
+		src/keyserver_x11.h (1.1.1.1) (+0 -0)
+		src/keysymdef.h (1.1.1.1) (+0 -0)
+		src/libqsciminputcontextplugin.la (1.1.1.1) (+0 -0)
+		src/plugin.cpp (1.1.1.1) (+0 -0)
+		tests/main.cpp (1.1.1.1) (+0 -0)
+		tests/testinputwidgets.ui (1.1.1.1) (+0 -0)
+
+	Initial import to CVS in sf.net
+
+------------------------------------------------------------------------
+r85 | cougar | 2004-09-17 01:19:22 +0000 (Fri, 17 Sep 2004) | 1 line
+
+fixed crash bug when change from XIM to scim immodule in the 'select input method' menu
+------------------------------------------------------------------------
+r83 | suzhe | 2004-09-15 15:28:04 +0000 (Wed, 15 Sep 2004) | 1 line
+
+Updated to support unified qt immodule patch 0910.
+------------------------------------------------------------------------
+r81 | suzhe | 2004-09-09 01:49:26 +0000 (Thu, 09 Sep 2004) | 1 line
+
+
+------------------------------------------------------------------------
+r80 | suzhe | 2004-09-08 17:04:15 +0000 (Wed, 08 Sep 2004) | 1 line
+
+Re-show preedit string after commit string.
+------------------------------------------------------------------------
+r79 | suzhe | 2004-09-07 02:33:11 +0000 (Tue, 07 Sep 2004) | 1 line
+
+Added de.po
+------------------------------------------------------------------------
+r78 | suzhe | 2004-09-07 02:28:08 +0000 (Tue, 07 Sep 2004) | 1 line
+
+Added automake 1.9 support.
+------------------------------------------------------------------------
+r77 | suzhe | 2004-09-06 15:53:23 +0000 (Mon, 06 Sep 2004) | 1 line
+
+Get rid off the version suffix and rename the plugin to libqscim.
+------------------------------------------------------------------------
+r76 | suzhe | 2004-09-04 15:19:22 +0000 (Sat, 04 Sep 2004) | 1 line
+
+Update factory info when turn off the input method.
+------------------------------------------------------------------------
+r75 | cougar | 2004-09-04 01:43:21 +0000 (Sat, 04 Sep 2004) | 1 line
+
+
+------------------------------------------------------------------------
+r74 | cougar | 2004-09-04 01:40:30 +0000 (Sat, 04 Sep 2004) | 1 line
+
+
+------------------------------------------------------------------------
+r73 | cougar | 2004-09-04 01:40:10 +0000 (Sat, 04 Sep 2004) | 3 lines
+
+check qt-immodule patch in configure script
+first public release 0.7
+
+------------------------------------------------------------------------
+r72 | cougar | 2004-08-30 03:17:50 +0000 (Mon, 30 Aug 2004) | 1 line
+
+fixed: missing reading settings and panel_req_show_factory_menu issue
+------------------------------------------------------------------------
+r69 | suzhe | 2004-08-29 12:47:38 +0000 (Sun, 29 Aug 2004) | 1 line
+
+Fixed focus in/focus out issue.
+------------------------------------------------------------------------
+r68 | cougar | 2004-08-29 02:04:38 +0000 (Sun, 29 Aug 2004) | 1 line
+
+Try to fix the start failure issue.
+------------------------------------------------------------------------
+r66 | suzhe | 2004-08-26 13:06:31 +0000 (Thu, 26 Aug 2004) | 1 line
+
+Make the timeout of waiting socket FrontEnd process to start longer.
+------------------------------------------------------------------------
+r64 | cougar | 2004-08-26 01:51:56 +0000 (Thu, 26 Aug 2004) | 3 lines
+
+Don't set default trigger/previous_factory/next_factory keys.
+cleanup
+
+------------------------------------------------------------------------
+r61 | cougar | 2004-08-24 17:26:22 +0000 (Tue, 24 Aug 2004) | 3 lines
+
+Added hotkeys to show input method menu.
+require scim-lib >= 0.99.9
+
+------------------------------------------------------------------------
+r55 | cougar | 2004-08-19 18:03:15 +0000 (Thu, 19 Aug 2004) | 1 line
+
+add the patch from "Dawit A." <adawit@kde.org>
+------------------------------------------------------------------------
+r54 | cougar | 2004-08-17 23:41:00 +0000 (Tue, 17 Aug 2004) | 1 line
+
+updated according to qtimm r99
+------------------------------------------------------------------------
+r37 | cougar | 2004-08-12 22:11:45 +0000 (Thu, 12 Aug 2004) | 1 line
+
+fixed a typo and add zh_HK to languages
+------------------------------------------------------------------------
+r36 | cougar | 2004-08-12 19:38:34 +0000 (Thu, 12 Aug 2004) | 1 line
+
+updated according to latest bc qtimm patch
+------------------------------------------------------------------------
+r35 | cougar | 2004-08-10 18:20:36 +0000 (Tue, 10 Aug 2004) | 1 line
+
+multi-screen support & cleanup
+------------------------------------------------------------------------
+r32 | cougar | 2004-08-03 04:26:27 +0000 (Tue, 03 Aug 2004) | 4 lines
+
+fixed modifier key issues when compiled in none-X environment
+added header file keysymdef.h: now keyQtToSym() does not depend on X
+cleanup
+
+------------------------------------------------------------------------
+r28 | cougar | 2004-08-03 02:19:56 +0000 (Tue, 03 Aug 2004) | 1 line
+
+version 0.6
+------------------------------------------------------------------------
+r18 | cougar | 2004-08-02 03:52:52 +0000 (Mon, 02 Aug 2004) | 1 line
+
+get rid of two warnings
+------------------------------------------------------------------------
+r17 | cougar | 2004-08-02 03:51:45 +0000 (Mon, 02 Aug 2004) | 1 line
+
+cleanup
+------------------------------------------------------------------------
+r16 | cougar | 2004-07-31 03:46:13 +0000 (Sat, 31 Jul 2004) | 1 line
+
+change plugin name to lower case
+------------------------------------------------------------------------
+r15 | cougar | 2004-07-31 03:26:26 +0000 (Sat, 31 Jul 2004) | 1 line
+
+updated according to latest qt-immodule implementation
+------------------------------------------------------------------------
+r14 | suzhe | 2004-07-24 02:12:59 +0000 (Sat, 24 Jul 2004) | 2 lines
+
+Follow the change of scim-lib cvs head.
+Implement transparent compose key support.
+------------------------------------------------------------------------
+r13 | cougar | 2004-07-19 00:09:31 +0000 (Mon, 19 Jul 2004) | 1 line
+
+do not highlight anything if the hightlight area does not begin at the caret position when Qt-built-in preedit area is used
+------------------------------------------------------------------------
+r12 | cougar | 2004-07-18 16:49:14 +0000 (Sun, 18 Jul 2004) | 1 line
+
+reconstructure of sciminputcontext to fix the misorder destroy issue
+------------------------------------------------------------------------
+r11 | cougar | 2004-07-17 00:41:30 +0000 (Sat, 17 Jul 2004) | 1 line
+
+RPM spec file
+------------------------------------------------------------------------
+r10 | cougar | 2004-07-17 00:38:28 +0000 (Sat, 17 Jul 2004) | 1 line
+
+use X11 eventfilter to process key events
+------------------------------------------------------------------------
+r9 | cougar | 2004-07-15 18:38:20 +0000 (Thu, 15 Jul 2004) | 1 line
+
+fixed one real memory leak and another pseudo-one to make valgrind happy
+------------------------------------------------------------------------
+r8 | cougar | 2004-07-15 01:51:32 +0000 (Thu, 15 Jul 2004) | 1 line
+
+updated ignore rule
+------------------------------------------------------------------------
+r7 | cougar | 2004-07-15 01:40:33 +0000 (Thu, 15 Jul 2004) | 1 line
+
+ignore rules and delete a generatable file
+------------------------------------------------------------------------
+r6 | cougar | 2004-07-15 01:39:18 +0000 (Thu, 15 Jul 2004) | 1 line
+
+lazily connect to panel
+------------------------------------------------------------------------
+r5 | cougar | 2004-07-15 00:04:42 +0000 (Thu, 15 Jul 2004) | 1 line
+
+replace get_ascii_code with get_unicode_code
+------------------------------------------------------------------------
+r4 | cougar | 2004-07-11 03:56:43 +0000 (Sun, 11 Jul 2004) | 1 line
+
+use global settings for default imengine factory
+------------------------------------------------------------------------
+r3 | cougar | 2004-07-05 14:59:57 +0000 (Mon, 05 Jul 2004) | 1 line
+
+delete other two unneeded files
+------------------------------------------------------------------------
+r2 | cougar | 2004-07-05 14:47:19 +0000 (Mon, 05 Jul 2004) | 1 line
+
+delete a useless bin file
+------------------------------------------------------------------------
+r1 | cougar | 2004-07-05 14:44:05 +0000 (Mon, 05 Jul 2004) | 1 line
+
+Initial repository layout and qtimm trunk
+------------------------------------------------------------------------

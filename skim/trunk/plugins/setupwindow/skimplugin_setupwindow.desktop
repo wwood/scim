@@ -1,0 +1,51 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Global Settings
+Name[de]=Globale Einstellungen
+Name[fr]=Configuration Globale
+Name[it]=Impostazioni globali
+Name[ja]=全体設定
+Name[ko]=주요 설정
+Name[pa]=ਗਲੋਬਲ ਸੈਟਿੰਗ
+Name[zh_CN]=全局配置
+Name[zh_TW]=全域設定
+Comment=Global Configuration Dialog
+Comment[de]=Dialog für die globale Einrichtung
+Comment[fr]=Dialogue de Configuration Globale
+Comment[it]=Finestra di configurazione globale
+Comment[ja]=全体設定ダイアログ
+Comment[ko]=전체 설정 대화창
+Comment[pa]=ਗਲੋਬਲ ਸੰਰਚਨਾ ਵਾਰਤਾਲਾਪ
+Comment[zh_CN]=全局配置界面
+Comment[zh_TW]=全局設定介面
+ServiceTypes=Skim/Plugin
+Type=Service
+Icon=configure
+NoDisplay=true
+X-KDE-PluginInfo-Author=liucougar
+X-KDE-PluginInfo-Email=liuspider@users.sourceforge.net
+X-KDE-PluginInfo-Name=skimplugin_setupwindow
+X-KDE-PluginInfo-Version=0.8.0
+X-KDE-PluginInfo-Category=UI
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PluginInfo-HasActions=true
+X-KDE-PluginInfo-OnDemand=true
+X-KDE-SKIM-Overload-SCIM-Modules=8034d025-bdfc-4a10-86a4-82b9461b32b0
+X-KDE-Library=skimplugin_setupwindow
+
+Actions=Configure;
+
+[Desktop Action Configure]
+Name=Configure
+Name[de]=Einrichten
+Name[fr]=Configuration
+Name[it]=Configurazione
+Name[ja]=設定
+Name[ko]=설정
+Name[pa]=ਸੰਰਚਨਾ
+Name[zh_CN]=配置
+Name[zh_TW]=設定
+Icon=configure
+InternalName=configure
+Slot=SlotConfigure

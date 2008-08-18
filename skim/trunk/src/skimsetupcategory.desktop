@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=ServiceType
+X-KDE-ServiceType=Skim/SetupDir
+X-KDE-Derived=KPluginInfo
+Comment=A definition of one Skim Setup Category 
+
+[PropertyDef::X-KDE-SKIM-ParentDir]
+Type=QString
+
+[PropertyDef::X-KDE-SKIM-Weight]
+Type=int

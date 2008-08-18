@@ -1,0 +1,1048 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy, no-wrap
+msgid ""
+msgstr ""
+"Project-Id-Version: scim 0.1.4\n"
+"POT-Creation-Date: 2003-10-30 16:56+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: James Su <suzhe@turbolinux.com.cn>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/scim_server.cpp:286 modules/FrontEnd/scim_x11_frontend.cpp:1987
+#: extras/gtk2_immodule/gtkimcontextscim.cpp:986
+#: extras/panel/scim_panel_gtk.cpp:3025
+msgid "English"
+msgstr "英文鍵盤"
+
+#: src/scim_server.cpp:376 modules/Server/scim_table_server.cpp:726
+#: modules/FrontEnd/scim_x11_frontend.cpp:1905
+#: extras/gtk2_immodule/gtkimcontextscim.cpp:919
+msgid "En"
+msgstr "英"
+
+#: modules/Server/scim_rawcode_server.cpp:53
+msgid ""
+"zh_CN.UTF-8,zh_CN.GB18030,zh_CN.GBK,zh_CN.GB2312,zh_CN,zh_TW.UTF-8,zh_TW."
+"Big5,zh_TW,zh_HK.UTF-8,zh_HK,ja_JP.eucJP,ja_JP.ujis,ja_JP,ja,ko_KR.eucKR,"
+"ko_KR"
+msgstr ""
+
+#: modules/Server/scim_rawcode_server.cpp:91
+#: modules/Server/scim_rawcode_server.cpp:100
+msgid "RAW CODE"
+msgstr "內碼輸入"
+
+#: modules/Server/scim_rawcode_server.cpp:133
+msgid "(C) 2002,2003 James Su <suzhe@turbolinux.com.cn>"
+msgstr "(C) 2002,2003 James Su <suzhe@turbolinux.com.cn>"
+
+#: modules/Server/scim_rawcode_server.cpp:146
+msgid ""
+"Hot Keys:\n"
+"\n"
+"  Control+u:\n"
+"    switch between Multibyte encoding and Unicode.\n"
+"\n"
+"  Control+comma:\n"
+"    switch between full/half width punctuation mode.\n"
+"\n"
+"  Shift+space:\n"
+"    switch between full/half width letter mode.\n"
+"\n"
+"  Esc:\n"
+"    reset the input method.\n"
+msgstr ""
+"熱鍵:\n"
+"\n"
+"  Control+u:\n"
+"    切換本地編碼和 Unicode 編碼模式.\n"
+"\n"
+"  Control+comma:\n"
+"    切換全角和半角標點符號狀態.\n"
+"\n"
+"  Shift+space:\n"
+"    切換全角和半角字符狀態.\n"
+"\n"
+"  Esc:\n"
+"    復位輸入法服務器.\n"
+
+#: modules/Server/scim_table_server.cpp:261
+msgid ""
+"Hot Keys:\n"
+"\n"
+"  "
+msgstr ""
+"熱鍵:\n"
+"\n"
+"  "
+
+#: modules/Server/scim_table_server.cpp:263
+msgid ""
+"    switch between full/half width letter mode.\n"
+"\n"
+"  "
+msgstr ""
+"    切換全角和半角字符狀態.\n"
+"\n"
+"  "
+
+#: modules/Server/scim_table_server.cpp:265
+msgid ""
+"    switch between full/half width punctuation mode.\n"
+"\n"
+"  "
+msgstr ""
+"    切換全角和半角標點符號狀態.\n"
+"\n"
+"  "
+
+#: modules/Server/scim_table_server.cpp:267
+msgid ""
+"    switch between Forward/Unforward mode.\n"
+"\n"
+msgstr ""
+"    切換 輸入/轉發 狀態.\n"
+"\n"
+
+#: modules/Server/scim_table_server.cpp:268
+msgid ""
+"  Control+Down:\n"
+"    Move lookup cursor to next shorter phrase\n"
+"    Only available when LongPhraseFirst option is set.\n"
+"\n"
+msgstr ""
+"  Control+Down:\n"
+"    將候選詞表的光標移動到下一個更短的詞\n"
+"    只在打開 LongPhraseFirst 選項的時候才生效.\n"
+"\n"
+
+#: modules/Server/scim_table_server.cpp:270
+msgid ""
+"  Control+Up:\n"
+"    Move lookup cursor to previous longer phrase\n"
+"    Only available when LongPhraseFirst option is set.\n"
+"\n"
+msgstr ""
+"  Control+Up:\n"
+"    將候選詞表的光標移動到前一個更長的詞\n"
+"    只在打開 LongPhraseFirst 選項的時候才生效.\n"
+"\n"
+
+#: modules/Server/scim_table_server.cpp:272
+msgid ""
+"  Esc:\n"
+"    reset the input method.\n"
+msgstr ""
+"  Esc:\n"
+"    復位輸入法.\n"
+
+#: modules/Server/scim_make_table.cpp:142
+msgid ""
+"Too few argument!\n"
+"Usage:\n"
+"  scim_make_table <table_file> [options]\n"
+"\n"
+"  table_file\tthe table file for table server module\n"
+"  -b\t\tconvert to binary format, otherwise to text format\n"
+"  -o output\tsave new table to file output\n"
+"  -no\t\tdo not save new phrase table\n"
+"  -if ifreq\tload phrase frequencies from this file\n"
+"  -of ofreq\tsave phrase frequencies to this file\n"
+"  -s file\tspecifiy the source file to count phrase ages.\n"
+msgstr ""
+
+#: modules/Server/scim_make_table.cpp:166
+msgid "option -no cannot be used with -o\n"
+msgstr ""
+
+#: modules/Server/scim_make_table.cpp:175
+msgid "option -o cannot be used with -no\n"
+msgstr ""
+
+#: modules/Server/scim_make_table.cpp:179
+#: modules/Server/scim_make_table.cpp:188
+#: modules/Server/scim_make_table.cpp:197
+msgid "No argument for option "
+msgstr ""
+
+#: modules/Server/scim_make_table.cpp:213
+msgid "Invalid option: "
+msgstr ""
+
+#: modules/Server/scim_make_table.cpp:219
+msgid "Loading table file "
+msgstr ""
+
+#: modules/Server/scim_make_table.cpp:219
+#: modules/Server/scim_make_table.cpp:230
+#: modules/Server/scim_make_table.cpp:242
+#: modules/Server/scim_make_table.cpp:248
+msgid " ...\n"
+msgstr ""
+
+#: modules/Server/scim_make_table.cpp:222
+msgid "table file load failed!"
+msgstr ""
+
+#: modules/Server/scim_make_table.cpp:226
+msgid "Total "
+msgstr ""
+
+#: modules/Server/scim_make_table.cpp:226
+msgid " key-phrase pairs loaded.\n"
+msgstr ""
+
+#: modules/Server/scim_make_table.cpp:230
+msgid "Loading frequency table file "
+msgstr ""
+
+#: modules/Server/scim_make_table.cpp:232
+#: modules/Server/scim_make_table.cpp:244
+msgid "frequency table file load failed!"
+msgstr ""
+
+#: modules/Server/scim_make_table.cpp:242
+msgid "Saving frequency table file "
+msgstr ""
+
+#: modules/Server/scim_make_table.cpp:248
+msgid "Saving table file "
+msgstr ""
+
+#: modules/Server/scim_make_table.cpp:251
+msgid "Table file save failed!"
+msgstr ""
+
+#: modules/FrontEnd/scim_x11_frontend.cpp:2134
+#: extras/gtk2_immodule/gtkimcontextscim.cpp:1682
+msgid "Smart Common Input Method platform "
+msgstr "智能通用輸入法平台"
+
+#: modules/FrontEnd/scim_x11_frontend.cpp:2136
+#: extras/gtk2_immodule/gtkimcontextscim.cpp:1684
+msgid ""
+"\n"
+"(C) 2002,2003 James Su <suzhe@turbolinux.com.cn>\n"
+"\n"
+"Hot keys:\n"
+"\n"
+"  "
+msgstr ""
+"\n"
+"(C) 2002,2003 James Su <suzhe@turbolinux.com.cn>\n"
+"\n"
+"熱鍵:\n"
+"\n"
+"  "
+
+#: modules/FrontEnd/scim_x11_frontend.cpp:2140
+#: extras/gtk2_immodule/gtkimcontextscim.cpp:1688
+msgid ""
+":\n"
+"    open/close the input server.\n"
+"\n"
+"  "
+msgstr ""
+":\n"
+"    打開/關閉輸入法服務器.\n"
+"\n"
+"  "
+
+#: modules/FrontEnd/scim_x11_frontend.cpp:2143
+#: extras/gtk2_immodule/gtkimcontextscim.cpp:1691
+msgid ""
+":\n"
+"    switch to the next input method.\n"
+"\n"
+"  "
+msgstr ""
+":\n"
+"    切換到下一個輸入法.\n"
+"\n"
+"  "
+
+#: modules/FrontEnd/scim_x11_frontend.cpp:2146
+#: extras/gtk2_immodule/gtkimcontextscim.cpp:1694
+msgid ""
+":\n"
+"    switch to the previous input method.\n"
+"\n"
+"\n"
+msgstr ""
+":\n"
+"    切換到前一個輸入法.\n"
+"\n"
+"\n"
+
+#: modules/FrontEnd/scim_x11_frontend.cpp:2150
+#: extras/gtk2_immodule/gtkimcontextscim.cpp:1698
+msgid ""
+":\n"
+"\n"
+msgstr ""
+
+#: modules/FrontEnd/scim_x11_frontend.cpp:2153
+#: modules/FrontEnd/scim_x11_frontend.cpp:2156
+#: extras/gtk2_immodule/gtkimcontextscim.cpp:1701
+#: extras/gtk2_immodule/gtkimcontextscim.cpp:1704
+msgid ""
+"\n"
+"\n"
+msgstr ""
+
+#: modules/SetupUI/scim_socket_frontend_setup.cpp:85
+#: modules/SetupUI/scim_socket_server_setup.cpp:82
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:350
+msgid "Socket"
+msgstr "套接字"
+
+#: modules/SetupUI/scim_socket_frontend_setup.cpp:90
+msgid "A FrontEnd module to provide the input method service via a socket."
+msgstr "一個通過套接字提供輸入法服務的前端模塊."
+
+#: modules/SetupUI/scim_socket_frontend_setup.cpp:168
+#: modules/SetupUI/scim_socket_server_setup.cpp:153
+msgid "_Socket Address:"
+msgstr "套接字地址(_S):"
+
+#: modules/SetupUI/scim_socket_frontend_setup.cpp:184
+#: modules/SetupUI/scim_socket_server_setup.cpp:169
+msgid "_Timeout:"
+msgstr "超時(_T):"
+
+#: modules/SetupUI/scim_socket_frontend_setup.cpp:204
+msgid "_Max Clients:"
+msgstr "最多客戶端數量(_M):"
+
+#: modules/SetupUI/scim_socket_frontend_setup.cpp:222
+msgid "_Config ReadOnly"
+msgstr "配置只讀(_C)"
+
+#: modules/SetupUI/scim_socket_frontend_setup.cpp:245
+msgid ""
+"The address of the socket to be listened. Must begin with local: or inet:. "
+"For example:\n"
+"  local:/tmp/scim-socket-frontend\n"
+"  inet:localhost:12345"
+msgstr ""
+"要監聽的套接字地址. 必須以 local: 或 inet: 開始. 例如:\n"
+"  local:/tmp/scim-socket-frontend\n"
+"  inet:localhost:12345"
+
+#: modules/SetupUI/scim_socket_frontend_setup.cpp:252
+#: modules/SetupUI/scim_socket_server_setup.cpp:204
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:526
+msgid "The timeout value of the socket, in milliseconds. -1 means unlimited."
+msgstr "套接字的超時值, 單位為毫秒. -1 代表無限大."
+
+#: modules/SetupUI/scim_socket_frontend_setup.cpp:257
+msgid ""
+"The maximum number of clients can be connected to this Socket FrontEnd. -1 "
+"means unlimited."
+msgstr "允許連接到套接字前端的客戶端的最多個數, -1 代表無限制."
+
+#: modules/SetupUI/scim_socket_frontend_setup.cpp:262
+msgid ""
+"If this option is checked, then the clients can only read the configurations "
+"via this Socket FrontEnd. Otherwise, the update will be allowed."
+msgstr ""
+"如果選中這個選項, 則客戶端只能夠通過套接字前端讀取配置. 否則將允許客戶端更新"
+"配置."
+
+#: modules/SetupUI/scim_socket_frontend_setup.cpp:341
+#: modules/SetupUI/scim_socket_server_setup.cpp:264
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:746
+msgid "Socket address must begin with \"local:\" or \"inet:\"."
+msgstr "套接字地址必須以 \"local:\" 或 \"inet:\" 開始."
+
+#: modules/SetupUI/scim_x11_frontend_setup.cpp:91
+msgid "X Window (XIM)"
+msgstr "X 窗口 (XIM)"
+
+#: modules/SetupUI/scim_x11_frontend_setup.cpp:96
+msgid "A FrontEnd module for X11R6 Window System, using XIM Protocol."
+msgstr "一個用于 X11R6 窗口系統的前端模塊, 使用 XIM 協議."
+
+#. label
+#: modules/SetupUI/scim_x11_frontend_setup.cpp:146
+msgid "_Trigger:"
+msgstr "開關鍵(_T):"
+
+#. title
+#: modules/SetupUI/scim_x11_frontend_setup.cpp:148
+msgid "Select the trigger keys"
+msgstr "選擇輸入法開關換鍵"
+
+#. tooltip
+#: modules/SetupUI/scim_x11_frontend_setup.cpp:150
+msgid ""
+"The key events to turn on/off SCIM input method. Multiple key events should "
+"be separated by comma."
+msgstr "用以打開/關閉 SCIM 輸入法的按鍵. 多個按鍵可以用逗號分隔."
+
+#. label
+#: modules/SetupUI/scim_x11_frontend_setup.cpp:163
+msgid "_Next input method:"
+msgstr "後一個輸入法(_N):"
+
+#. title
+#: modules/SetupUI/scim_x11_frontend_setup.cpp:165
+msgid "Select the next input method keys"
+msgstr "選擇後一個輸入法按鍵"
+
+#. tooltip
+#: modules/SetupUI/scim_x11_frontend_setup.cpp:167
+msgid ""
+"The key events to switch to the next input method.Multiple key events should "
+"be separated by comma."
+msgstr "用以切換到後一個輸入法的按鍵. 多個按鍵可以用逗號分隔."
+
+#. label
+#: modules/SetupUI/scim_x11_frontend_setup.cpp:182
+msgid "_Previous input method:"
+msgstr "前一個輸入法(_P):"
+
+#. title
+#: modules/SetupUI/scim_x11_frontend_setup.cpp:184
+msgid "Select the previous input method keys"
+msgstr "選擇前一個輸入法按鍵"
+
+#. tooltip
+#: modules/SetupUI/scim_x11_frontend_setup.cpp:186
+msgid ""
+"The key events to switch to the previous input method.Multiple key events "
+"should be separated by comma."
+msgstr "用以切換到前一個輸入法的按鍵. 多個按鍵可以用逗號分隔."
+
+#. Create the ToolBar setup block.
+#: modules/SetupUI/scim_x11_frontend_setup.cpp:252
+msgid "XIM Settings"
+msgstr "XIM 設置"
+
+#: modules/SetupUI/scim_x11_frontend_setup.cpp:262
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:308
+msgid "Show status _box"
+msgstr "顯示狀態欄(_B)"
+
+#: modules/SetupUI/scim_x11_frontend_setup.cpp:266
+msgid "_On The Spot"
+msgstr "在光標處預編輯(_O)"
+
+#. Create the Lookup Table setup block.
+#: modules/SetupUI/scim_x11_frontend_setup.cpp:271
+#: modules/SetupUI/scim_table_server_setup.cpp:286
+msgid "Keyboard"
+msgstr "鍵盤"
+
+#: modules/SetupUI/scim_x11_frontend_setup.cpp:326
+msgid ""
+"If this option is checked, the OnTheSpot input style will be used when the "
+"client supports it."
+msgstr ""
+"如果選中這個選項, 當客戶端支持時, 預編輯字符串將顯示在光標位置上, 即 On The "
+"Spot 模式."
+
+#: modules/SetupUI/scim_x11_frontend_setup.cpp:331
+msgid ""
+"If this option is checked, a status box will be displayed on the lower left "
+"corner of the client window to show the status of the current input method."
+"This option needs the support of the client application."
+msgstr ""
+"如果選中這個選項, 將在客戶程序窗口的左下角顯示一個浮動的狀態欄, 用以顯示當前"
+"輸入法的狀態. 這個選項需要客戶應用程序的支持."
+
+#: modules/SetupUI/scim_table_server_setup.cpp:87
+msgid "Generic Table"
+msgstr "通用碼表"
+
+#: modules/SetupUI/scim_table_server_setup.cpp:92
+msgid "A Server Module which uses generic table input method file."
+msgstr "一個使用通用碼表輸入法文件的服務模塊."
+
+#. label
+#: modules/SetupUI/scim_table_server_setup.cpp:147
+msgid "Full width _punctuation:"
+msgstr "全/半角標點切換(_P):"
+
+#. title
+#: modules/SetupUI/scim_table_server_setup.cpp:149
+msgid "Select full width puncutation keys"
+msgstr "選擇全/半角標點狀態切換鍵"
+
+#. tooltip
+#: modules/SetupUI/scim_table_server_setup.cpp:151
+msgid ""
+"The key events to switch full/half width punctuation input mode. Multiple "
+"key events should be separated by comma."
+msgstr "用以切換全/半角標點輸入模式的按鍵. 多個按鍵可以用逗號分隔."
+
+#. label
+#: modules/SetupUI/scim_table_server_setup.cpp:164
+msgid "Full width _letter:"
+msgstr "全/半角字母切換(_L):"
+
+#. title
+#: modules/SetupUI/scim_table_server_setup.cpp:166
+msgid "Select full width letter keys"
+msgstr "選擇全/半角字母狀態切換鍵"
+
+#. tooltip
+#: modules/SetupUI/scim_table_server_setup.cpp:168
+msgid ""
+"The key events to switch full/half width letter input mode. Multiple key "
+"events should be separated by comma."
+msgstr "用以切換全/半角字母輸入模式的按鍵. 多個按鍵可以用逗號分隔."
+
+#. label
+#: modules/SetupUI/scim_table_server_setup.cpp:181
+msgid "_Mode switch:"
+msgstr "輸入模式切換(_M):"
+
+#. title
+#: modules/SetupUI/scim_table_server_setup.cpp:183
+msgid "Select mode switch keys"
+msgstr "選擇輸入模式切換鍵"
+
+#. tooltip
+#: modules/SetupUI/scim_table_server_setup.cpp:185
+msgid ""
+"The key events to change current input mode. Multiple key events should be "
+"separated by comma."
+msgstr "用以切換當前輸入模式的按鍵. 多個按鍵可以用逗號分隔."
+
+#. Create the label for this note page.
+#: modules/SetupUI/scim_table_server_setup.cpp:256
+msgid "Generic"
+msgstr "通用"
+
+#: modules/SetupUI/scim_table_server_setup.cpp:260
+msgid "Show _prompt"
+msgstr "顯示提示(_P)"
+
+#: modules/SetupUI/scim_table_server_setup.cpp:265
+msgid "Show key _hint"
+msgstr "顯示逐鍵提示(_H)"
+
+#: modules/SetupUI/scim_table_server_setup.cpp:270
+msgid "Save _user table in binary format"
+msgstr "以二進制格式保存用戶碼表(_U)"
+
+#: modules/SetupUI/scim_table_server_setup.cpp:275
+msgid "Show the _longer phrases first"
+msgstr "優先顯示較長的詞語(_L)"
+
+#: modules/SetupUI/scim_table_server_setup.cpp:343
+msgid ""
+"If this option is checked, the key prompt of the currently selected phrase "
+"will be shown."
+msgstr "如果選中這個選項, 則顯示當前詞語按鍵的提示信息."
+
+#: modules/SetupUI/scim_table_server_setup.cpp:348
+msgid ""
+"If this option is checked, the remaining keystrokes of the phraseswill be "
+"shown on the lookup table."
+msgstr "如果選中這個選項, 將在候選詞表中顯示每個詞語剩下需要輸入的按鍵."
+
+#: modules/SetupUI/scim_table_server_setup.cpp:353
+msgid ""
+"If this option is checked, the user table will be stored with binary format, "
+"this will increase the loading speed."
+msgstr "如果選中這個選項, 用戶碼表將以二進制格式存儲, 這會提高調入速度."
+
+#: modules/SetupUI/scim_table_server_setup.cpp:358
+msgid ""
+"If this option is checked, the longer phrase will be shown in front of "
+"others. "
+msgstr "如果選中這個選項, 將優先顯示較長的詞語."
+
+#: modules/SetupUI/scim_socket_server_setup.cpp:87
+msgid ""
+"A Server Module which uses the input mothod service provided by a Socket "
+"FrontEnd."
+msgstr "一個使用套接字前端提供輸入法的服務模塊."
+
+#: modules/SetupUI/scim_socket_server_setup.cpp:197
+msgid ""
+"The address of the socket to be connected. Must begin with local: or inet:. "
+"For example:\n"
+"  local:/tmp/scim-socket-frontend\n"
+"  inet:localhost:12345"
+msgstr ""
+"要連接到的套接字地址. 必須以 local: 或者 inet: 開始. 例如:\n"
+"  local:/tmp/scim-socket-frontend\n"
+"  inet:localhost:12345"
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:94
+msgid "GTK"
+msgstr ""
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:99
+msgid "A panel daemon which based on GTK+-2.x library."
+msgstr "一個基于 GTK+-2.x 庫的面板程序."
+
+#. Create the label for this note page.
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:209
+msgid "Interface"
+msgstr "界面"
+
+#. Create the ToolBar setup block.
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:214
+msgid "ToolBar"
+msgstr "工具條"
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:225
+msgid "Always _show"
+msgstr "永遠顯示(_S)"
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:231
+msgid "Auto s_nap"
+msgstr "自動靠邊(_N)"
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:237
+msgid "Show _input method icon"
+msgstr "顯示輸入法圖標(_I)"
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:243
+msgid "Show inp_ut method name"
+msgstr "顯示輸入法名稱(_U)"
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:255
+msgid "Hide time_out:"
+msgstr "隱藏超時(_O):"
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:268
+msgid "Show s_tick icon"
+msgstr "顯示粘住圖標(_T)"
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:274
+msgid "Show s_etup icon"
+msgstr "顯示設置圖標(_E)"
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:280
+msgid "Show _help icon"
+msgstr "顯示幫助圖標(_H)"
+
+#. Create the Input Window setup block
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:291
+msgid "Input window"
+msgstr "輸入窗口"
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:300
+msgid "E_mbedded lookup table"
+msgstr "嵌入式候選詞表(_M)"
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:304
+msgid "_Vertical lookup table"
+msgstr "垂直式候選詞表(_V)"
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:312
+msgid "Misc"
+msgstr "其它"
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:321
+msgid "Show tra_y icon"
+msgstr "顯示託盤圖標(_Y)"
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:325
+msgid "Stick _windows"
+msgstr "粘住窗口(_W)"
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:333
+msgid "_Font:"
+msgstr "字體(_F):"
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:355
+msgid "_Socket address:"
+msgstr "套接字地址(_S):"
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:369
+msgid "Socket _timeout:"
+msgstr "套接字超時(_T):"
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:453
+msgid ""
+"If this option is checked, the toolbar will be always shown on the screen."
+"Otherwise, it will be hidden when SCIM is deactivated."
+msgstr ""
+"如果選中這個選項, 工具條將永遠顯示在屏幕上. 否則當 SCIM 處于非激活狀態時工具"
+"條將被隱藏."
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:459
+msgid ""
+"If this option is checked, the toolbar will be snapped to the screen border."
+msgstr "如果選中這個選項, 工具條將粘附在屏幕邊緣上."
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:464
+msgid ""
+"The toolbar will be hidden out after this timeout is elapsed. This option is "
+"only valid when \"Always show\" is checked. Set to zero to disable this "
+"behavior."
+msgstr ""
+"當超時過後, 工具條將被隱藏起來. 該選項只在 \"永遠顯示\" 被選中時才生效. 設置"
+"成 0 則禁止此功能."
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:471
+msgid ""
+"If this option is checked, the input method icon will be showed on the "
+"toolbar."
+msgstr "如果選中這個選項, 輸入法圖標將顯示在工具條上."
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:475
+msgid ""
+"If this option is checked, the input method name will be showed on the "
+"toolbar."
+msgstr "如果選中這個選項, 輸入法名稱將顯示在工具條上."
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:479
+msgid ""
+"If this option is checked, the stick icon will be showed on the toolbar."
+msgstr "如果選中這個選項, 粘住圖標將顯示在工具條上."
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:483
+msgid ""
+"If this option is checked, the setup icon will be showed on the toolbar."
+msgstr "如果選中這個選項, 設置圖標將顯示在工具條上."
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:487
+msgid "If this option is checked, the help icon will be showed on the toolbar."
+msgstr "如果選中這個選項, 幫助圖標將顯示在工具條上."
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:491
+msgid ""
+"If this option is checked, the lookup table will be embedded into the input "
+"window."
+msgstr "如果選中這個選項, 候選詞表將被嵌入到輸入窗口中."
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:496
+msgid ""
+"If this option is checked, the lookup table will be displayed vertically."
+msgstr "如果選中這個選項, 將垂直顯示候選詞表."
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:501
+msgid ""
+"If this option is checked, a float status box will be displayed to show the "
+"status of current input module."
+msgstr "如果選中這個選項, 將顯示一個浮動的狀態欄用以顯示當前輸入模塊的狀態."
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:506
+msgid ""
+"If this option is checked, the tray icon will be showed on the desktop's "
+"taskbar."
+msgstr "如果選中這個選項, 託盤圖標將顯示在桌面的任務欄上."
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:510
+msgid ""
+"If this option is checked, the toolbar, input and lookup table windows will "
+"be sticked to its original position."
+msgstr "如果選中這個選項, 則輸入和候選詞表窗口將停在它們的原始位置."
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:516
+msgid "The font setting will be used in the input and lookup table windows."
+msgstr "該字體設置將用于輸入和候選詞表窗口."
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:520
+msgid ""
+"The address of the socket to be listened. Must begin with local: or inet:. "
+"For example:\n"
+"  local:/tmp/scim-panel-socket"
+msgstr ""
+"要監聽的套接字地址. 必須以 local: 或 inet: 開始. 例如:\n"
+"  local:/tmp/scim-panel-socket"
+
+#: modules/SetupUI/scim_panel_gtk_setup.cpp:816
+msgid "Select Interface Font"
+msgstr "選擇界面字體"
+
+#: extras/setup/scim_setup_ui.cpp:38
+msgid "SCIM"
+msgstr ""
+
+#: extras/setup/scim_setup_ui.cpp:39
+msgid "FrontEnd"
+msgstr "前端"
+
+#: extras/setup/scim_setup_ui.cpp:40
+msgid "Server"
+msgstr "服務"
+
+#: extras/setup/scim_setup_ui.cpp:41
+msgid "Panel"
+msgstr "面板"
+
+#: extras/setup/scim_setup_ui.cpp:42
+msgid "Extra"
+msgstr "附加"
+
+#: extras/setup/scim_setup_ui.cpp:174
+msgid "Failed to load any Config Modules!"
+msgstr "無法調入任何配置模塊!"
+
+#.
+#. vi:ts=4:nowrap:ai:expandtab
+#.
+#: extras/setup/scim_setup_ui.cpp:202 extras/setup/scim-setup.desktop.in.h:1
+msgid "SCIM Input Method Setup"
+msgstr "SCIM 輸入法設置"
+
+#: extras/setup/scim_setup_ui.cpp:335
+msgid ""
+" <span size=\"20000\">Smart Common Input Method platform</span> \n"
+"\n"
+"<span size=\"16000\" style=\"italic\">GUI Setup Utility</span>\n"
+"\n"
+"\n"
+"\n"
+"<span size=\"12000\">Copyright 2003, James Su &lt;suzhe@turbolinux.com.cn&gt;"
+"</span>"
+msgstr ""
+" <span size=\"20000\">智能通用輸入法平台</span> \n"
+"\n"
+"<span size=\"16000\" style=\"italic\">圖形設置工具</span>\n"
+"\n"
+"\n"
+"\n"
+"<span size=\"12000\">版權所有 2003, 蘇  哲&lt;suzhe@turbolinux.com.cn&gt;</"
+"span>"
+
+#: extras/setup/scim_setup_ui.cpp:349
+msgid "_Current Config Module:"
+msgstr "當前配置模塊(_C):"
+
+#: extras/setup/scim_setup_ui.cpp:365
+msgid "<Not found>"
+msgstr "<沒有找到>"
+
+#: extras/setup/scim_setup_ui.cpp:401
+#, c-format
+msgid "<span size=\"x-large\">The Setup for %s modules.</span>"
+msgstr "<span size=\"x-large\">%s模塊的設置.</span>"
+
+#: extras/setup/scim_setup_ui.cpp:463
+msgid "Are you sure to quit SCIM Setup?"
+msgstr "你確定要退出 SCIM 設置程序麼?"
+
+#: extras/setup/scim_setup_ui.cpp:655
+#, c-format
+msgid "Current Config Module has been changed to %s."
+msgstr "當前配置模塊已經變成 %s."
+
+#: extras/setup/scim_setup_ui.cpp:707
+msgid ""
+"Don't forget to restart SCIM in order to let the new configurations take "
+"effect."
+msgstr "別忘了重新啟動 SCIM 以使新的配置生效."
+
+#: extras/setup/scim-setup.desktop.in.h:2
+msgid "Setup utility for Smart Common Input Method platform"
+msgstr "智能通用輸入法平台的設置工具"
+
+#: extras/panel/scim_panel_gtk.cpp:955
+msgid "SCIM Help"
+msgstr "SCIM 幫助"
+
+#: extras/panel/scim_panel_gtk.cpp:972
+msgid "Smart Common Input Method"
+msgstr "智能通用輸入法平台"
+
+#: extras/panel/scim_panel_gtk.cpp:1031
+msgid "Stick/unstick the input window and the toolbar."
+msgstr "粘住/放開 輸入窗口和工具條."
+
+#: extras/panel/scim_panel_gtk.cpp:1035
+msgid "The status of the current input method. Click to change it."
+msgstr "當前輸入法的狀態, 點擊切換狀態."
+
+#: extras/panel/scim_panel_gtk.cpp:1039
+msgid ""
+"The input mode of the puncutations. Click to toggle between half and full."
+msgstr "標點輸入模式. 點擊以切換全角/半角模式."
+
+#: extras/panel/scim_panel_gtk.cpp:1043
+msgid "The input mode of the letters. Click to toggle between half and full."
+msgstr "字母輸入模式. 點擊以切換全角/半角模式."
+
+#: extras/panel/scim_panel_gtk.cpp:1049
+msgid "Start the SCIM Setup Utility."
+msgstr "啟動 SCIM 設置工具."
+
+#: extras/panel/scim_panel_gtk.cpp:1055
+msgid "Show a brief help about SCIM and the current input method."
+msgstr "顯示關于 SCIM 和當前輸入法的簡單幫助."
+
+#: extras/panel/scim_panel_gtk.cpp:1528
+msgid "Unstick Windows"
+msgstr "放開窗口"
+
+#: extras/panel/scim_panel_gtk.cpp:1528
+msgid "Stick Windows"
+msgstr "粘住窗口"
+
+#: extras/panel/scim_panel_gtk.cpp:1540
+msgid "Setup ..."
+msgstr "設置 ..."
+
+#: extras/panel/scim_panel_gtk.cpp:1552
+msgid "Help ..."
+msgstr "幫助 ..."
+
+#: utils/scimstringview.c:194
+msgid "Cursor Position"
+msgstr ""
+
+#: utils/scimstringview.c:195
+msgid "The current position of the insertion cursor in chars."
+msgstr ""
+
+#: utils/scimstringview.c:204
+msgid "Maximum length"
+msgstr ""
+
+#: utils/scimstringview.c:205
+msgid "Maximum number of characters for this string view. Zero if no maximum."
+msgstr ""
+
+#: utils/scimstringview.c:214
+msgid "Maximum width"
+msgstr ""
+
+#: utils/scimstringview.c:215
+msgid "Maximum width of this string view."
+msgstr ""
+
+#: utils/scimstringview.c:224
+msgid "Has Frame"
+msgstr ""
+
+#: utils/scimstringview.c:225
+msgid "FALSE removes outside bevel from string view."
+msgstr ""
+
+#: utils/scimstringview.c:232
+msgid "Draw cursor"
+msgstr ""
+
+#: utils/scimstringview.c:233
+msgid "TRUE draw blinking cursor."
+msgstr ""
+
+#: utils/scimstringview.c:240
+msgid "Auto move cursor"
+msgstr ""
+
+#: utils/scimstringview.c:241
+msgid "TRUE auto move cursor position when mouse clicking."
+msgstr ""
+
+#: utils/scimstringview.c:248
+msgid "Forward button press event"
+msgstr ""
+
+#: utils/scimstringview.c:249
+msgid "TRUE forward button press event to user program."
+msgstr ""
+
+#: utils/scimstringview.c:256
+msgid "Auto resize the widget to fit the string"
+msgstr ""
+
+#: utils/scimstringview.c:257
+msgid "TRUE Auto resize on."
+msgstr ""
+
+#: utils/scimstringview.c:264
+msgid "Width in chars"
+msgstr ""
+
+#: utils/scimstringview.c:265
+msgid "Number of characters to leave space for in the string view."
+msgstr ""
+
+#: utils/scimstringview.c:274
+msgid "Scroll offset"
+msgstr ""
+
+#: utils/scimstringview.c:275
+msgid "Number of pixels of the string view scrolled off the screen to the left"
+msgstr ""
+
+#: utils/scimstringview.c:284
+msgid "Text"
+msgstr ""
+
+#: utils/scimstringview.c:285
+msgid "The contents of the string view"
+msgstr ""
+
+#: utils/scimkeyselection.cpp:394
+msgid "Selected _Keys:"
+msgstr "選中的按鍵(_K):"
+
+#: utils/scimkeyselection.cpp:439
+msgid "Key Code:"
+msgstr "鍵碼:"
+
+#: utils/scimkeyselection.cpp:455
+msgid "Modifiers:"
+msgstr "修飾鍵:"
+
+#: utils/scimkeyselection.cpp:468
+msgid "_Ctrl"
+msgstr ""
+
+#: utils/scimkeyselection.cpp:472
+msgid "A_lt"
+msgstr ""
+
+#: utils/scimkeyselection.cpp:476
+msgid "_Shift"
+msgstr ""
+
+#: utils/scimkeyselection.cpp:480
+msgid "_Release"
+msgstr "釋放(_R)"
+
+#: utils/scimkeyselection.cpp:769
+msgid "Key Selection"
+msgstr "按鍵選擇"
+
+#: utils/scimtrayicon.c:108
+msgid "Orientation"
+msgstr ""
+
+#: utils/scimtrayicon.c:109
+msgid "The orientation of the tray."
+msgstr ""
+
+#~ msgid "Show server _icon"
+#~ msgstr "顯示服務圖標(_I)"
+
+#~ msgid "Show se_rver name"
+#~ msgstr "顯示服務名稱(_R)"
+
+#~ msgid ""
+#~ "If this option is checked, the server icon will be showed on the toolbar."
+#~ msgstr "如果選中這個選項, 服務圖標將顯示在工具條上."
+
+#~ msgid "Lookup Table"
+#~ msgstr "候選詞表"
+
+#~ msgid "_Embedded"
+#~ msgstr "嵌入(_E)"
+
+#~ msgid "_Vertical"
+#~ msgstr "垂直(_V)"
+
+#~ msgid "Input"
+#~ msgstr "輸入"
+
+#~ msgid "S_ticked"
+#~ msgstr "粘住(_T)"
+
+#~ msgid "Look and Feel"
+#~ msgstr "視感"

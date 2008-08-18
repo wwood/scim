@@ -1,0 +1,869 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>SmartPinyinSettingUI</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>SmartPinyinSettingUI</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>564</width>
+            <height>347</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Smart Pinyin</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>0</number>
+        </property>
+        <property name="spacing">
+            <number>0</number>
+        </property>
+        <widget class="QTabWidget">
+            <property name="name">
+                <cstring>tabWidget2</cstring>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab</cstring>
+                </property>
+                <attribute name="title">
+                    <string>General</string>
+                </attribute>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLayoutWidget">
+                        <property name="name">
+                            <cstring>layout14</cstring>
+                        </property>
+                        <hbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLayoutWidget">
+                                <property name="name">
+                                    <cstring>layout10</cstring>
+                                </property>
+                                <vbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QCheckBox">
+                                        <property name="name">
+                                            <cstring>kcfg__IMEngine_Pinyin_AutoCombinePhrase</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Auto &amp;combin phrase</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QCheckBox">
+                                        <property name="name">
+                                            <cstring>kcfg__IMEngine_Pinyin_AutoFillPreedit</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Auto &amp;fill preedit</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QCheckBox">
+                                        <property name="name">
+                                            <cstring>kcfg__IMEngine_Pinyin_MatchLongerPhrase</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>&amp;Match longer phrase</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QCheckBox">
+                                        <property name="name">
+                                            <cstring>kcfg__IMEngine_Pinyin_AlwaysShowLookup</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Always show lookup &amp;table</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QCheckBox">
+                                        <property name="name">
+                                            <cstring>kcfg__IMEngine_Pinyin_ShowAllKeys</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Show all &amp;keys</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QCheckBox">
+                                        <property name="name">
+                                            <cstring>kcfg__IMEngine_Pinyin_DynamicAdjust</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>&amp;Dynamic adjust</string>
+                                        </property>
+                                    </widget>
+                                </vbox>
+                            </widget>
+                            <widget class="Line">
+                                <property name="name">
+                                    <cstring>line1</cstring>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>VLine</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Sunken</enum>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Vertical</enum>
+                                </property>
+                            </widget>
+                            <widget class="QFrame">
+                                <property name="name">
+                                    <cstring>frame3</cstring>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>NoFrame</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Raised</enum>
+                                </property>
+                                <property name="lineWidth">
+                                    <number>0</number>
+                                </property>
+                                <vbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <property name="margin">
+                                        <number>0</number>
+                                    </property>
+                                    <property name="spacing">
+                                        <number>0</number>
+                                    </property>
+                                    <widget class="QLayoutWidget">
+                                        <property name="name">
+                                            <cstring>layout11</cstring>
+                                        </property>
+                                        <grid>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <widget class="QSpinBox" row="5" column="1">
+                                                <property name="name">
+                                                    <cstring>kcfg__IMEngine_Pinyin_SavePeriod</cstring>
+                                                </property>
+                                                <property name="maxValue">
+                                                    <number>1000000</number>
+                                                </property>
+                                            </widget>
+                                            <widget class="QSpinBox" row="4" column="1">
+                                                <property name="name">
+                                                    <cstring>kcfg__IMEngine_Pinyin_DynamicSensitivity</cstring>
+                                                </property>
+                                            </widget>
+                                            <widget class="QLabel" row="3" column="0">
+                                                <property name="name">
+                                                    <cstring>textLabel1_5_2_2_3</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>&amp;Burst stack size</string>
+                                                </property>
+                                                <property name="buddy" stdset="0">
+                                                    <cstring>kcfg__IMEngine_Pinyin_BurstStackSize</cstring>
+                                                </property>
+                                            </widget>
+                                            <widget class="QLabel" row="0" column="0">
+                                                <property name="name">
+                                                    <cstring>textLabel1_5</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>Max &amp;user phrase length</string>
+                                                </property>
+                                                <property name="buddy" stdset="0">
+                                                    <cstring>kcfg__IMEngine_Pinyin_MaxUserPhraseLength</cstring>
+                                                </property>
+                                            </widget>
+                                            <widget class="QLabel" row="1" column="0">
+                                                <property name="name">
+                                                    <cstring>textLabel1_5_2</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>Max &amp;preedit length</string>
+                                                </property>
+                                                <property name="buddy" stdset="0">
+                                                    <cstring>kcfg__IMEngine_Pinyin_MaxPreeditLength</cstring>
+                                                </property>
+                                            </widget>
+                                            <widget class="QLabel" row="4" column="0">
+                                                <property name="name">
+                                                    <cstring>textLabel1_5_2_2_2</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>D&amp;ynamic sensitivity</string>
+                                                </property>
+                                                <property name="buddy" stdset="0">
+                                                    <cstring>kcfg__IMEngine_Pinyin_DynamicSensitivity</cstring>
+                                                </property>
+                                            </widget>
+                                            <widget class="QSpinBox" row="1" column="1">
+                                                <property name="name">
+                                                    <cstring>kcfg__IMEngine_Pinyin_MaxPreeditLength</cstring>
+                                                </property>
+                                            </widget>
+                                            <widget class="QLabel" row="2" column="0">
+                                                <property name="name">
+                                                    <cstring>textLabel1_5_2_2</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>&amp;Smart match level</string>
+                                                </property>
+                                                <property name="buddy" stdset="0">
+                                                    <cstring>kcfg__IMEngine_Pinyin_SmartMatchLevel</cstring>
+                                                </property>
+                                            </widget>
+                                            <widget class="QSpinBox" row="0" column="1">
+                                                <property name="name">
+                                                    <cstring>kcfg__IMEngine_Pinyin_MaxUserPhraseLength</cstring>
+                                                </property>
+                                                <property name="maxValue">
+                                                    <number>100</number>
+                                                </property>
+                                            </widget>
+                                            <widget class="QSpinBox" row="2" column="1">
+                                                <property name="name">
+                                                    <cstring>kcfg__IMEngine_Pinyin_SmartMatchLevel</cstring>
+                                                </property>
+                                            </widget>
+                                            <widget class="QLabel" row="5" column="0">
+                                                <property name="name">
+                                                    <cstring>textLabel1_5_2_2_2_2</cstring>
+                                                </property>
+                                                <property name="text">
+                                                    <string>Sa&amp;ve period (sec)</string>
+                                                </property>
+                                                <property name="buddy" stdset="0">
+                                                    <cstring>kcfg__IMEngine_Pinyin_SavePeriod</cstring>
+                                                </property>
+                                            </widget>
+                                            <widget class="QSpinBox" row="3" column="1">
+                                                <property name="name">
+                                                    <cstring>kcfg__IMEngine_Pinyin_BurstStackSize</cstring>
+                                                </property>
+                                                <property name="maxValue">
+                                                    <number>1000</number>
+                                                </property>
+                                            </widget>
+                                        </grid>
+                                    </widget>
+                                </vbox>
+                            </widget>
+                        </hbox>
+                    </widget>
+                    <widget class="Line">
+                        <property name="name">
+                            <cstring>line2</cstring>
+                        </property>
+                        <property name="frameShape">
+                            <enum>HLine</enum>
+                        </property>
+                        <property name="frameShadow">
+                            <enum>Sunken</enum>
+                        </property>
+                        <property name="orientation">
+                            <enum>Horizontal</enum>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox">
+                        <property name="name">
+                            <cstring>kcfg__IMEngine_Pinyin_User_DataBinary</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Save user data in binary &amp;format</string>
+                        </property>
+                    </widget>
+                    <widget class="QLayoutWidget">
+                        <property name="name">
+                            <cstring>layout13</cstring>
+                        </property>
+                        <hbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <spacer>
+                                <property name="name">
+                                    <cstring>spacer1</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>309</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                            <widget class="QCheckBox">
+                                <property name="name">
+                                    <cstring>advancedCBox</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>&amp;Advanced</string>
+                                </property>
+                            </widget>
+                        </hbox>
+                    </widget>
+                    <spacer>
+                        <property name="name">
+                            <cstring>spacer2</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Vertical</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>20</width>
+                                <height>30</height>
+                            </size>
+                        </property>
+                    </spacer>
+                </vbox>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Pinyin</string>
+                </attribute>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLayoutWidget">
+                        <property name="name">
+                            <cstring>layout9</cstring>
+                        </property>
+                        <hbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QCheckBox">
+                                <property name="name">
+                                    <cstring>kcfg__IMEngine_Pinyin_Tone</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>&amp;Use tone</string>
+                                </property>
+                            </widget>
+                            <widget class="QCheckBox">
+                                <property name="name">
+                                    <cstring>kcfg__IMEngine_Pinyin_Incomplete</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Allow incomplete &amp;pinyin</string>
+                                </property>
+                            </widget>
+                            <widget class="QCheckBox">
+                                <property name="name">
+                                    <cstring>kcfg__IMEngine_Pinyin_Ambiguities</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Enable A&amp;mbiguities</string>
+                                </property>
+                            </widget>
+                        </hbox>
+                    </widget>
+                    <widget class="QGroupBox">
+                        <property name="name">
+                            <cstring>groupBox1</cstring>
+                        </property>
+                        <property name="title">
+                            <string>Ambiguities</string>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QCheckBox" row="0" column="1">
+                                <property name="name">
+                                    <cstring>kcfg__IMEngine_Pinyin_Ambiguity_NeLe</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>&amp;N and L</string>
+                                </property>
+                            </widget>
+                            <widget class="QCheckBox" row="1" column="1">
+                                <property name="name">
+                                    <cstring>kcfg__IMEngine_Pinyin_Ambiguity_LeRi</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>&amp;L and R</string>
+                                </property>
+                            </widget>
+                            <widget class="QCheckBox" row="2" column="1">
+                                <property name="name">
+                                    <cstring>kcfg__IMEngine_Pinyin_Ambiguity_FoHe</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>&amp;F and H</string>
+                                </property>
+                            </widget>
+                            <widget class="QCheckBox" row="0" column="0">
+                                <property name="name">
+                                    <cstring>kcfg__IMEngine_Pinyin_Ambiguity_ZhiZi</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>&amp;Zh and Z</string>
+                                </property>
+                            </widget>
+                            <widget class="QCheckBox" row="1" column="0">
+                                <property name="name">
+                                    <cstring>kcfg__IMEngine_Pinyin_Ambiguity_ChiCi</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>&amp;Ch and C</string>
+                                </property>
+                            </widget>
+                            <widget class="QCheckBox" row="2" column="0">
+                                <property name="name">
+                                    <cstring>kcfg__IMEngine_Pinyin_Ambiguity_ShiSi</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>&amp;Sh and S</string>
+                                </property>
+                            </widget>
+                            <widget class="QCheckBox" row="2" column="2">
+                                <property name="name">
+                                    <cstring>kcfg__IMEngine_Pinyin_Ambiguity_InIng</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>&amp;In and Ing</string>
+                                </property>
+                            </widget>
+                            <widget class="QCheckBox" row="0" column="2">
+                                <property name="name">
+                                    <cstring>kcfg__IMEngine_Pinyin_Ambiguity_AnAng</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>&amp;An and Ang</string>
+                                </property>
+                            </widget>
+                            <widget class="QCheckBox" row="1" column="2">
+                                <property name="name">
+                                    <cstring>kcfg__IMEngine_Pinyin_Ambiguity_EnEng</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>&amp;En and Eng</string>
+                                </property>
+                            </widget>
+                        </grid>
+                    </widget>
+                    <spacer>
+                        <property name="name">
+                            <cstring>spacer3</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Vertical</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>20</width>
+                                <height>101</height>
+                            </size>
+                        </property>
+                    </spacer>
+                </vbox>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>TabPage</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Keyboard</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLabel" row="1" column="0">
+                        <property name="name">
+                            <cstring>textLabel1_2</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Full width &amp;letter</string>
+                        </property>
+                        <property name="buddy" stdset="0">
+                            <cstring>kcfg__IMEngine_Pinyin_FullWidthLetterKey</cstring>
+                        </property>
+                    </widget>
+                    <widget class="QLabel" row="2" column="0">
+                        <property name="name">
+                            <cstring>textLabel1_3</cstring>
+                        </property>
+                        <property name="text">
+                            <string>&amp;Mode switch</string>
+                        </property>
+                        <property name="buddy" stdset="0">
+                            <cstring>kcfg__IMEngine_Pinyin_ModeSwitchKey</cstring>
+                        </property>
+                    </widget>
+                    <widget class="QLabel" row="3" column="0">
+                        <property name="name">
+                            <cstring>textLabel1_4</cstring>
+                        </property>
+                        <property name="text">
+                            <string>&amp;Chinese mode switch</string>
+                        </property>
+                        <property name="buddy" stdset="0">
+                            <cstring>kcfg__IMEngine_Pinyin_ChineseSwitchKey</cstring>
+                        </property>
+                    </widget>
+                    <widget class="QLabel" row="0" column="0">
+                        <property name="name">
+                            <cstring>textLabel1</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Full with &amp;punctuation</string>
+                        </property>
+                        <property name="buddy" stdset="0">
+                            <cstring>kcfg__IMEngine_Pinyin_FullWidthPunctKey</cstring>
+                        </property>
+                    </widget>
+                    <widget class="SkimEditShortcutButton" row="0" column="2">
+                        <property name="name">
+                            <cstring>punctButton</cstring>
+                        </property>
+                    </widget>
+                    <widget class="KLineEdit" row="0" column="1">
+                        <property name="name">
+                            <cstring>kcfg__IMEngine_Pinyin_FullWidthPunctKey</cstring>
+                        </property>
+                    </widget>
+                    <widget class="SkimEditShortcutButton" row="1" column="2">
+                        <property name="name">
+                            <cstring>letterButton</cstring>
+                        </property>
+                    </widget>
+                    <widget class="KLineEdit" row="1" column="1">
+                        <property name="name">
+                            <cstring>kcfg__IMEngine_Pinyin_FullWidthLetterKey</cstring>
+                        </property>
+                    </widget>
+                    <widget class="SkimEditShortcutButton" row="2" column="2">
+                        <property name="name">
+                            <cstring>modeButton</cstring>
+                        </property>
+                    </widget>
+                    <widget class="KLineEdit" row="2" column="1">
+                        <property name="name">
+                            <cstring>kcfg__IMEngine_Pinyin_ModeSwitchKey</cstring>
+                        </property>
+                    </widget>
+                    <widget class="KLineEdit" row="3" column="1">
+                        <property name="name">
+                            <cstring>kcfg__IMEngine_Pinyin_ChineseSwitchKey</cstring>
+                        </property>
+                    </widget>
+                    <widget class="SkimEditShortcutButton" row="3" column="2">
+                        <property name="name">
+                            <cstring>chineseModeButton</cstring>
+                        </property>
+                    </widget>
+                    <widget class="SkimEditShortcutButton" row="4" column="2">
+                        <property name="name">
+                            <cstring>upButton</cstring>
+                        </property>
+                    </widget>
+                    <widget class="KLineEdit" row="4" column="1">
+                        <property name="name">
+                            <cstring>kcfg__IMEngine_Pinyin_PageUpKey</cstring>
+                        </property>
+                    </widget>
+                    <widget class="SkimEditShortcutButton" row="5" column="2">
+                        <property name="name">
+                            <cstring>downButton</cstring>
+                        </property>
+                    </widget>
+                    <widget class="KLineEdit" row="5" column="1">
+                        <property name="name">
+                            <cstring>kcfg__IMEngine_Pinyin_PageDownKey</cstring>
+                        </property>
+                    </widget>
+                    <widget class="SkimEditShortcutButton" row="6" column="2">
+                        <property name="name">
+                            <cstring>disableButton</cstring>
+                        </property>
+                    </widget>
+                    <widget class="KLineEdit" row="6" column="1">
+                        <property name="name">
+                            <cstring>kcfg__IMEngine_Pinyin_DisablePhraseKey</cstring>
+                        </property>
+                    </widget>
+                    <widget class="QLabel" row="6" column="0">
+                        <property name="name">
+                            <cstring>textLabel1_4_2_2_2</cstring>
+                        </property>
+                        <property name="text">
+                            <string>&amp;Disable phrase</string>
+                        </property>
+                        <property name="buddy" stdset="0">
+                            <cstring>kcfg__IMEngine_Pinyin_DisablePhraseKey</cstring>
+                        </property>
+                    </widget>
+                    <widget class="QLabel" row="4" column="0">
+                        <property name="name">
+                            <cstring>textLabel1_4_2</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Page &amp;up</string>
+                        </property>
+                        <property name="buddy" stdset="0">
+                            <cstring>kcfg__IMEngine_Pinyin_PageUpKey</cstring>
+                        </property>
+                    </widget>
+                    <widget class="QLabel" row="5" column="0">
+                        <property name="name">
+                            <cstring>textLabel1_4_2_2</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Page dow&amp;n</string>
+                        </property>
+                        <property name="buddy" stdset="0">
+                            <cstring>kcfg__IMEngine_Pinyin_PageDownKey</cstring>
+                        </property>
+                    </widget>
+                    <spacer row="7" column="1">
+                        <property name="name">
+                            <cstring>spacer5</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Vertical</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>20</width>
+                                <height>31</height>
+                            </size>
+                        </property>
+                    </spacer>
+                </grid>
+            </widget>
+        </widget>
+    </vbox>
+</widget>
+<customwidgets>
+    <customwidget>
+        <class>SkimEditShortcutButton</class>
+        <header location="local">skimkeygrabber.h</header>
+        <sizehint>
+            <width>24</width>
+            <height>24</height>
+        </sizehint>
+        <container>0</container>
+        <sizepolicy>
+            <hordata>1</hordata>
+            <verdata>1</verdata>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+        <pixmap>image0</pixmap>
+        <signal>setEditorText(const QString &amp;)</signal>
+        <slot access="public" specifier="">slot()</slot>
+        <slot access="public" specifier="">setShortcuts(const QString &amp;)</slot>
+    </customwidget>
+</customwidgets>
+<images>
+    <image name="image0">
+        <data format="PNG" length="881">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000033849444154388dad9431681c471486bf3353bc05096641c52d38700711e88a1417111772544890e6888b33b848828ba448235205dcb88ae354c6659242e0c64429ecd885402914a43477074a4e27706003173815821dd0c10ec4b0af58508ad149bac488147ab0c5ecce7cf3cddb7fb7d2dfeb43091858bcb178c21554bfdbaf543add0e6284172f5f9c34179a38efc85d4ef63afb5f10ef3da3e188deefbd20785a468cb07863f1e4f90fcf4912259e87a2f434014a2512a140898c20281821d7302e5022847408ac0bbd5ff51cac6518b8b123aec368fc13793e02947856c90bc11d09f95801219e83c6bc8204809660638893e993183161463ece294a8ffe3d023cf1acb03fb0f4363d83030f4c6c84da82d0ba63797719acd1009ff91778629cf98c264a5106e8ce366c7cef026a46a82f58c44076a41cfea97cf7b5a3f591e5e34f052b01fe46e3c844502af12cec0fe414aaac7c58a5d5169204d42894093b9b051beb8ead1f1db5eb3556db3162fc14f8dac4b8280b2281bc10765ffa33e8279f0bc95b1e351e3d16b69ee5dcbe13f1d9175540d878ea517fdea8371a1728de09e91f1e6b2dadb620e2c3a2d7966f1f29e981273f86b57b31bded3077f0ca62651a3c6d6c20730a2849edf4f8a7d0c70f3ce981c7ce094bcb0233058d66a065878a96d3e46b178d05988cad849eeab1e5f103253d081b8a40723d229e01cc0426c865c618886c98981e2994313bbf104cad50ad5adc91e7e1fd8cfddf62b261589bd4a2cb5391abd298576a6f0b877f293b9b05b7efc6e4c7caea8a1057231ede0777e8f9666d84aa62e78466b32077d3afef3f3d46a0d5b6006cac3b767ece59bb17d35886c67b395f7e55c7562dde7bb45456db55ea0b5c6e5c9c6eb2b402de59369e3a9e3c72f4b685e63b821ac886193a563001b0bfeb496f2558112e86eefccb1b674426ec2ca2b4ee0a325763eb5948437a706e63e78456bb4677d7e355a104379e6ec599f16838221d82c417e06d61f5833a835739f951b85fafc5349a39f50558bd9520a5a064a4836970a5d3ed7073e9e609069aef87ec8a70f6f3c780989094c9f143296204ef211d289953bcbbf0b8bfd70738b9eaeb2c15575dd7c408fd6ebf72e5602d43743addce95c1fb7bfdca3fdcb3ae17a3e19dbf0000000049454e44ae426082</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>kcfg__IMEngine_Pinyin_ChineseSwitchKey</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>chineseModeButton</receiver>
+        <slot>setShortcuts(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>chineseModeButton</sender>
+        <signal>setEditorText(const QString&amp;)</signal>
+        <receiver>kcfg__IMEngine_Pinyin_ChineseSwitchKey</receiver>
+        <slot>setText(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>kcfg__IMEngine_Pinyin_DisablePhraseKey</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>disableButton</receiver>
+        <slot>setShortcuts(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>disableButton</sender>
+        <signal>setEditorText(const QString&amp;)</signal>
+        <receiver>kcfg__IMEngine_Pinyin_DisablePhraseKey</receiver>
+        <slot>setText(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>kcfg__IMEngine_Pinyin_FullWidthLetterKey</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>letterButton</receiver>
+        <slot>setShortcuts(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>letterButton</sender>
+        <signal>setEditorText(const QString&amp;)</signal>
+        <receiver>kcfg__IMEngine_Pinyin_FullWidthLetterKey</receiver>
+        <slot>setText(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>kcfg__IMEngine_Pinyin_FullWidthPunctKey</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>punctButton</receiver>
+        <slot>setShortcuts(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>punctButton</sender>
+        <signal>setEditorText(const QString&amp;)</signal>
+        <receiver>kcfg__IMEngine_Pinyin_FullWidthPunctKey</receiver>
+        <slot>setText(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>kcfg__IMEngine_Pinyin_ModeSwitchKey</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>modeButton</receiver>
+        <slot>setShortcuts(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>modeButton</sender>
+        <signal>setEditorText(const QString&amp;)</signal>
+        <receiver>kcfg__IMEngine_Pinyin_ModeSwitchKey</receiver>
+        <slot>setText(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>kcfg__IMEngine_Pinyin_PageDownKey</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>downButton</receiver>
+        <slot>setShortcuts(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>downButton</sender>
+        <signal>setEditorText(const QString&amp;)</signal>
+        <receiver>kcfg__IMEngine_Pinyin_PageDownKey</receiver>
+        <slot>setText(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>kcfg__IMEngine_Pinyin_PageUpKey</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>upButton</receiver>
+        <slot>setShortcuts(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>upButton</sender>
+        <signal>setEditorText(const QString&amp;)</signal>
+        <receiver>kcfg__IMEngine_Pinyin_PageUpKey</receiver>
+        <slot>setText(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>advancedCBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>kcfg__IMEngine_Pinyin_User_DataBinary</receiver>
+        <slot>setShown(bool)</slot>
+    </connection>
+    <connection>
+        <sender>advancedCBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>line2</receiver>
+        <slot>setShown(bool)</slot>
+    </connection>
+    <connection>
+        <sender>advancedCBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>line1</receiver>
+        <slot>setShown(bool)</slot>
+    </connection>
+    <connection>
+        <sender>advancedCBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>frame3</receiver>
+        <slot>setShown(bool)</slot>
+    </connection>
+    <connection>
+        <sender>kcfg__IMEngine_Pinyin_AutoCombinePhrase</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>kcfg__IMEngine_Pinyin_MatchLongerPhrase</receiver>
+        <slot>setDisabled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>kcfg__IMEngine_Pinyin_AutoFillPreedit</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>kcfg__IMEngine_Pinyin_AlwaysShowLookup</receiver>
+        <slot>setEnabled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>kcfg__IMEngine_Pinyin_AutoFillPreedit</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>kcfg__IMEngine_Pinyin_ShowAllKeys</receiver>
+        <slot>setEnabled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>kcfg__IMEngine_Pinyin_Ambiguities</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>groupBox1</receiver>
+        <slot>setEnabled(bool)</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>tabWidget2</tabstop>
+    <tabstop>kcfg__IMEngine_Pinyin_AutoCombinePhrase</tabstop>
+    <tabstop>kcfg__IMEngine_Pinyin_AutoFillPreedit</tabstop>
+    <tabstop>kcfg__IMEngine_Pinyin_MatchLongerPhrase</tabstop>
+    <tabstop>kcfg__IMEngine_Pinyin_AlwaysShowLookup</tabstop>
+    <tabstop>kcfg__IMEngine_Pinyin_ShowAllKeys</tabstop>
+    <tabstop>kcfg__IMEngine_Pinyin_DynamicAdjust</tabstop>
+    <tabstop>advancedCBox</tabstop>
+    <tabstop>kcfg__IMEngine_Pinyin_MaxUserPhraseLength</tabstop>
+    <tabstop>kcfg__IMEngine_Pinyin_MaxPreeditLength</tabstop>
+    <tabstop>kcfg__IMEngine_Pinyin_SmartMatchLevel</tabstop>
+    <tabstop>kcfg__IMEngine_Pinyin_BurstStackSize</tabstop>
+    <tabstop>kcfg__IMEngine_Pinyin_DynamicSensitivity</tabstop>
+    <tabstop>kcfg__IMEngine_Pinyin_SavePeriod</tabstop>
+    <tabstop>kcfg__IMEngine_Pinyin_User_DataBinary</tabstop>
+    <tabstop>kcfg__IMEngine_Pinyin_Tone</tabstop>
+    <tabstop>kcfg__IMEngine_Pinyin_Incomplete</tabstop>
+    <tabstop>kcfg__IMEngine_Pinyin_Ambiguity_NeLe</tabstop>
+    <tabstop>kcfg__IMEngine_Pinyin_Ambiguity_LeRi</tabstop>
+    <tabstop>kcfg__IMEngine_Pinyin_Ambiguity_FoHe</tabstop>
+    <tabstop>kcfg__IMEngine_Pinyin_Ambiguity_ZhiZi</tabstop>
+    <tabstop>kcfg__IMEngine_Pinyin_Ambiguity_ChiCi</tabstop>
+    <tabstop>kcfg__IMEngine_Pinyin_Ambiguity_ShiSi</tabstop>
+    <tabstop>kcfg__IMEngine_Pinyin_Ambiguity_InIng</tabstop>
+    <tabstop>kcfg__IMEngine_Pinyin_Ambiguity_AnAng</tabstop>
+    <tabstop>kcfg__IMEngine_Pinyin_Ambiguity_EnEng</tabstop>
+    <tabstop>kcfg__IMEngine_Pinyin_FullWidthPunctKey</tabstop>
+    <tabstop>kcfg__IMEngine_Pinyin_FullWidthLetterKey</tabstop>
+    <tabstop>kcfg__IMEngine_Pinyin_ModeSwitchKey</tabstop>
+    <tabstop>kcfg__IMEngine_Pinyin_ChineseSwitchKey</tabstop>
+    <tabstop>kcfg__IMEngine_Pinyin_PageUpKey</tabstop>
+    <tabstop>kcfg__IMEngine_Pinyin_PageDownKey</tabstop>
+    <tabstop>kcfg__IMEngine_Pinyin_DisablePhraseKey</tabstop>
+</tabstops>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>klineedit.h</includehint>
+</includehints>
+</UI>

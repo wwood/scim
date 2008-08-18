@@ -1,0 +1,8 @@
+.deps
+.libs
+Makefile
+Makefile.in
+edittest
+testinputwidgets.cpp
+testinputwidgets.h
+*.moc

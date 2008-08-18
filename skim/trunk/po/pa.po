@@ -1,0 +1,960 @@
+# translation of skim.po to Punjabi
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Amanpreet Singh Alam <amanpreetalam@yahoo.com>, 2005.
+# Amanpreet Singh Brar <amanpreetalam@yahoo.com>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: skim\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-04-29 21:36+0100\n"
+"PO-Revision-Date: 2005-09-07 11:27+0530\n"
+"Last-Translator: Amanpreet Singh Brar <amanpreetalam@yahoo.com>\n"
+"Language-Team: Punjabi <fedora-trans-pa@redhat.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: rc.cpp:3 ../plugins/mainwindow/mainwindow.cpp:64
+#, no-c-format
+msgid "Main Toolbar"
+msgstr "ਮੁੱਖ ਸੰਦ-ਪੱਟੀ"
+
+#: ../src/skimglobalactions.cpp:32
+msgid "SCIM Help"
+msgstr "SCIM ਸਹਾਇਤਾ"
+
+#: ../src/skimglobalactions.cpp:34
+msgid "SCIM Setup"
+msgstr "SCIM ਸੈੱਟਅੱਪ"
+
+#: ../src/skimglobalactions.cpp:42
+msgid "Reload all modules"
+msgstr "ਸਭ ਮੈਡੀਊਲ ਮੁੜ ਲੋਡ"
+
+#: ../src/skimglobalactions.cpp:50
+msgid "Input Method"
+msgstr "ਇੰਪੁੱਟ ਢੰਗ"
+
+#: ../src/skimglobalactions.cpp:166
+msgid "Keyboard"
+msgstr "ਕੀਬੋਰਡ"
+
+#: ../src/main.cpp:24
+msgid "KDE Frontend for SCIM Input Method Platform"
+msgstr "SCIM ਇੰਪੁੱਟ ਢੰਗ ਪਲੇਟਫਾਰਮ ਲਈ KDE ਮੁੱਖ ਭੂਮੀ"
+
+#: ../src/main.cpp:28
+msgid "Start as daemon."
+msgstr "ਡਾਈਮੋਨ ਵਾਂਗ ਸ਼ੁਰੂ ਕਰੋ।"
+
+#: ../src/main.cpp:29
+msgid "List all availabe skim plugins."
+msgstr "ਸਭ ਉਪਲੱਬਧ skim ਪਲੱਗਿੰਨ ਵੇਖਾਓ।"
+
+#: ../src/main.cpp:30
+msgid "Uses specified Config module."
+msgstr "ਖਾਸ ਸੰਰਚਨਾ ਮੈਡੀਊਲ ਵਰਤੋਂ।"
+
+#: ../src/main.cpp:31
+msgid ""
+"A comma separated list of plugin names. All of these plugins will be loaded "
+"no matter whether they are enabled in the setting file."
+msgstr ""
+
+#: ../src/main.cpp:32
+msgid ""
+"A comma separated list of plugin names. All of these plugins will be "
+"disabled no matter whether they are disabled in the setting file."
+msgstr ""
+
+#: ../src/main.cpp:33
+msgid "Quit if no connected client."
+msgstr "ਜੇਕਰ ਕੋਈ ਕਲਾਂਈਟ ਜੁੜਿਆ ਨਾ ਹੋਵੇ ਤਾਂ ਬੰਦ ਕਰੋ।"
+
+#: ../src/main.cpp:34
+msgid " Enable debug info, to specific LEVEL.."
+msgstr " ਡੀਬੱਗ ਜਾਣਕਾਰੀ ਯੋਗ, ਖਾਸ ਪੱਧਰ..."
+
+#: ../src/main.cpp:35
+msgid "Current version of skim"
+msgstr "skim ਦਾ ਮੌਜੂਦਾ ਵਰਜਨ"
+
+#: ../src/main.cpp:36
+msgid "Output debug file.(No effort, always use none)"
+msgstr "ਆਉਟਪੁੱਟ ਡੀਬੱਗ ਫਾਇਲ ਹੈ। (ਕੋਈ ਜਤਨ ਨਹੀਂ, ਹਮੇਸਾਂ ਕੋਈ ਨਹੀਂ ਵਰਤਦਾ)"
+
+#: ../src/main.cpp:37
+msgid "Force start even if scim panel socket can not be established."
+msgstr "ਭਾਵੇਂ scim ਪੈਨਲ ਸਾਕਟ ਤਿਆਰ ਨਾ ਹੀ ਹੋਵੇ ਤਾਂ ਵੀ ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਮਜਬੂਰ ਕਰੋ।"
+
+#: ../src/main.cpp:58
+msgid ""
+"IRC:\n"
+"server: irc.freenode.net / channel: #scim\n"
+"\n"
+"Feedback:\n"
+"scim-user@lists.sourceforge.net"
+msgstr ""
+
+#: ../src/main.cpp:60
+msgid "Core Developer"
+msgstr "ਮੋਢੀ ਖੋਜੀ"
+
+#: ../src/main.cpp:62
+msgid "SCIM Core Author"
+msgstr "SCIM ਮੋਢੀ ਲੇਖਕ"
+
+#: ../src/main.cpp:63
+msgid "Doc writer and German translator"
+msgstr "ਦਸਤਾਵੇਜ਼ ਲੇਖਕ ਅਤੇ ਜਰਮਨ ਅਨੁਵਾਦਕ"
+
+#: ../src/main.cpp:65
+msgid "Art designer and Korean translator"
+msgstr "ਕਲਾਕਾਰ ਅਤੇ ਕੋਰੀਆਈ ਅਨੁਵਾਦਕ"
+
+#: ../src/main.cpp:67
+msgid "Japanese translator"
+msgstr "ਜਪਾਨੀ ਅਨੁਵਾਦਕ"
+
+#: ../src/main.cpp:69
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "ਅਮਨਪਰੀਤ ਸਿੰਘ ਬਰਾੜ ਆਲਮਵਾਲਾ"
+
+#: ../src/main.cpp:70
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "amanpreetalam@yahoo.com"
+
+#: ../src/main.cpp:114
+#, fuzzy
+msgid "Installed skim Plugins:"
+msgstr ""
+"ਇੰਸਟਾਲ ਸਕਿਮ ਪਲੱਗਿੰਨ:\n"
+"\tਨਾਂ\t\t\tਟਿੱਪਣੀ\n"
+
+#: ../src/main.cpp:114 ../plugins/setupwindow/scimimenginesettingsui.cpp:34
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:75
+#: ../plugins/setupwindow/configskimplugins.cpp:95
+msgid "Name"
+msgstr "ਨਾਂ"
+
+#: ../src/main.cpp:114 ../plugins/setupwindow/configskimplugins.cpp:96
+msgid "Comment"
+msgstr "ਟਿੱਪਣੀ"
+
+#: ../src/main.cpp:118
+msgid " (Hidden)"
+msgstr ""
+
+#: ../src/main.cpp:121
+msgid "Note: Hidden plugins can not be disabled."
+msgstr ""
+
+#: ../src/socketserverthread.cpp:342
+msgid "SKIM: KDE frontend for SCIM %1\n"
+msgstr "SKIM: SCIM %1 ਲਈ KDE ਦਿੱਖ\n"
+
+#: ../src/socketserverthread.cpp:343
+#, fuzzy
+msgid "(C) 2003-2006 LiuCougar <liuspider@users.sourceforge.net>"
+msgstr "(C) 2003-2005 LiuCougar <liuspider@users.sourceforge.net>"
+
+#: ../src/scimhelpdialog.cpp:16 ../plugins/setupwindow/scim_global.cpp:397
+msgid "&General"
+msgstr "ਸਧਾਰਨ(&G)"
+
+#: ../src/skimkeygrabber.cpp:63
+msgid "Grab Key"
+msgstr "ਸਵਿੱਚ ਲਵੋ"
+
+#: ../src/skimkeygrabber.cpp:69
+msgid ""
+"<center>Please press shortcut...</center><p>When you release a key this "
+"dialog will be closed automatically.</p>"
+msgstr ""
+"<center>ਇੱਕ ਸ਼ਾਰਟਕੱਟ ਦਬਾਓ...</center><p>ਜਦੋਂ ਤੁਸੀਂ ਇੱਕ ਸਵਿੱਚ ਨੂੰ ਛੱਡੋਗੇ ਤਾਂ ਇਹ ਵਾਰਤਾਲਾਪ ਆਪਣੇ "
+"ਆਪ ਹੀ ਬੰਦ ਹੋ ਜਾਵੇਗਾ।</p>"
+
+#: ../src/skimkeygrabber.cpp:75
+msgid "Control"
+msgstr "ਕੰਟਰੋਲ"
+
+#: ../src/skimkeygrabber.cpp:77
+msgid "Alt"
+msgstr "Alt"
+
+#: ../src/skimkeygrabber.cpp:79
+msgid "Shift"
+msgstr "Shift"
+
+#: ../src/skimkeygrabber.cpp:81
+msgid "Release"
+msgstr "ਜਾਰੀ"
+
+#: ../src/skimkeygrabber.cpp:97
+msgid "CapsLock"
+msgstr "CapsLock"
+
+#: ../src/skimkeygrabber.cpp:99
+msgid "Meta"
+msgstr "ਮੈਟਾ"
+
+#: ../src/skimkeygrabber.cpp:101
+msgid "Hyper"
+msgstr "ਹਾਇਪਰ"
+
+#: ../src/skimkeygrabber.cpp:103
+msgid "Super"
+msgstr "ਸੁਪਰ"
+
+#: ../src/skimkeygrabber.cpp:291
+msgid "Edit Shortcut List"
+msgstr "ਸ਼ਾਰਟਕੱਟ ਸੂਚੀ ਸੋਧ"
+
+#: ../src/skimkeygrabber.cpp:296
+msgid "Edit Shortcuts"
+msgstr "ਸ਼ਾਰਟਕੱਟ ਸੋਧ"
+
+#: ../src/skimkeygrabber.cpp:322
+msgid "Warning"
+msgstr "ਚੇਤਾਵਨੀ"
+
+#: ../src/skimkeygrabber.cpp:322
+msgid "\"%1\" is not a valid shortcut!"
+msgstr "\"%1\" ਇੱਕ ਠੀਕ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹੈ!"
+
+#: ../utils/scimkdesettings.cpp:30
+msgid "Auto Start"
+msgstr "ਸਵੈ-ਚਾਲੂ"
+
+#: ../utils/scimkdesettings.cpp:31
+msgid "Whether to start skim automatically when KDE starts."
+msgstr "ਕੀ skim ਆਪਣੇ ਆਪ ਹੀ ਚਾਲੂ ਹੋ ਜਾਵੇ ਜਦੋਂ ਵੀ KDE ਚਾਲੂ ਹੋਵੇ।"
+
+#: ../utils/scimkdesettings.cpp:37
+msgid "Enable Composite"
+msgstr "ਸੰਯੁਕਤ ਯੋਗ"
+
+#: ../utils/scimkdesettings.cpp:38
+msgid "Whether to enable Composite support which is essential for transparent."
+msgstr ""
+
+#: ../utils/scimkdesettings.cpp:41
+msgid "Use Kompmgr Composite Manager"
+msgstr "Kompmgr ਸੰਯੁਕਤ ਪਰਬੰਧਕ ਵਰਤੋਂ"
+
+#: ../utils/scimkdesettings.cpp:42
+msgid "Whether to use KDE built-in composite manager."
+msgstr "ਕੀ KDE ਸ਼ਾਮਲ ਸੰਯੁਕਤ ਪਰਬੰਧਕ ਵਰਤਣਾ ਹੈ।"
+
+#: ../utils/scimkdesettings.cpp:48
+msgid "Use GTK IMModule support"
+msgstr "GTK IMModule ਸਹਿਯੋਗ ਵਰਤੋਂ"
+
+#: ../utils/scimkdesettings.cpp:49
+msgid "Whether to start scim to support gtk2 immodule."
+msgstr "ਕੀ scim ਨੂੰ gtk2 immodule ਸਹਿਯੋਗ ਨਾਲ ਚਾਲੂ ਕਰਨਾ ਹੈ।"
+
+#: ../utils/scimkdesettings.cpp:55
+msgid "Show Quit option in context menu"
+msgstr "ਪਰਸੰਗ ਮੇਨੂ ਵਿੱਚ ਚੋਣ ਬੰਦ ਵੇਖਾਓ"
+
+#: ../utils/scimkdesettings.cpp:56
+msgid "Whether to show the quit entry in right click menu."
+msgstr "ਕੀ ਸੱਜਾ ਬਟਨ ਦਬਾਉਣ ਵਾਲੇ ਮੇਨੂ ਵਿੱਚ ਬੰਦ ਕਰੋ ਇੰਦਰਾਜ਼ ਰੱਖਣਾ ਹੈ।"
+
+#: ../utils/scimkdesettings.cpp:62
+msgid "Font Setting for Input Window"
+msgstr "ਇੰਪੁੱਟ ਝਰੋਖੇ ਲਈ ਫੋਂਟ ਵਿਵਸਥਾ"
+
+#: ../utils/scimkdesettings.cpp:63
+msgid "Use this font in Input Window"
+msgstr "ਇੰਪੁੱਟ ਝਰੋਖੇ ਵਿੱਚ ਇਹ ਫੋਂਟ ਵਰਤੋਂ"
+
+#: ../utils/scimkdesettings.cpp:66
+msgid "Use Vertical Lookup Table"
+msgstr "ਲੰਬਕਾਰੀ ਖੋਜ ਸਾਰਨੀ ਵਰਤੋਂ"
+
+#: ../utils/scimkdesettings.cpp:67
+msgid "Whether the candidates in Lookup Table are aligned vertically."
+msgstr "ਕੀ ਖੋਜ ਸਾਰਣੀ ਵਿੱਚ ਇਕਾਈਆਂ ਲੰਬਕਾਰੀ ਹੋਣ।"
+
+#: ../utils/scimkdesettings.cpp:70
+msgid "Minimize the width of Lookup Table"
+msgstr "ਖੋਜ ਸਾਰਣੀ ਵਿੱਚ ਘੱਟੋ-ਘੱਟ ਚੌੜਾਈ"
+
+#: ../utils/scimkdesettings.cpp:71
+msgid ""
+"If unchecked, the minimum width of Lookup Table will be set to 100, "
+"otherwise 0."
+msgstr "ਜੇਕਰ ਚੋਣ ਨਾ ਕੀਤੀ ਗਈ ਤਾਂ ਖੋਜ ਸਾਰਣੀ ਦੀ ਘੱਟੋ-ਘੱਟ ਚੌੜਾਈ 100 ਦਿੱਤੀ ਜਾਵੇਗੀ, ਨਹੀਂ ਤਾਂ 0"
+
+#: ../utils/scimkdesettings.cpp:74
+msgid "Fix the position of the Input Window"
+msgstr "ਇੰਪੁੱਟ ਝਰੋਖੇ ਦੀ ਸਥਿਰ ਥਾਂ"
+
+#: ../utils/scimkdesettings.cpp:75
+msgid "If enabled, Input Window does not follow the cursor."
+msgstr "ਜੇਕਰ ਯੋਗ ਕੀਤਾ ਗਿਆ ਤਾਂ, ਇੰਪੁੱਟ ਝਰੋਖਾ ਕਰਸਰ ਦਾ ਪਿੱਛਾ ਨਹੀਂ ਕਰਦਾ।"
+
+#: ../utils/scimkdesettings.cpp:78
+msgid "Use embedded lookup table"
+msgstr "ਸ਼ਾਮਲ ਖੋਜ ਸਾਰਣੀ ਵਰਤੋਂ।"
+
+#: ../utils/scimkdesettings.cpp:79
+msgid "If you prefer standalone lookup table, please uncheck this option."
+msgstr "ਜੇਕਰ ਤੁਸੀਂ ਇੱਕਲੀ ਖੋਜ ਸਾਰਣੀ ਚਾਹੁੰਦੇ ਹੋ ਤਾਂ ਕਿਰਪਾ ਕਰਕੇ ਇਹ ਚੋਣ ਨਾ ਕਰੋ।"
+
+#: ../utils/scimkdesettings.cpp:85
+msgid "Always show Main Window"
+msgstr "ਹਮੇਸ਼ਾ ਮੁੱਖ ਝਰੋਖਾ ਵੇਖਾਓ"
+
+#: ../utils/scimkdesettings.cpp:86
+msgid ""
+"Show Main Window all the time. When checked, even if no input method is "
+"selected, the Main Window remains on the screen."
+msgstr ""
+"ਸਭ ਸਮੇਂ ਮੁੱਖ ਝਰੋਖਾ ਵੇਖਾਓ। ਜੇਕਰ ਇਹ ਚੋਣ ਕੀਤੀ ਗਈ ਤਾਂ ਭਾਵੇਂ ਕੋਈ ਵੀ ਇੰਪੁੱਟ ਦੀ ਚੋਣ ਨਾ ਕੀਤੀ ਗਈ ਹੋਵੇ "
+"ਤਾਂ ਵੀ ਮੁੱਖ ਝਰੋਖਾ ਪਰਦੇ ਉੱਪਰ ਹੀ ਰਹੇਗਾ।"
+
+#: ../utils/scimkdesettings.cpp:89
+msgid "Always show the move handle"
+msgstr "ਹਮੇਸ਼ਾ ਏਧਰ ਓਧਰ ਕਰਨ ਲਈ ਹੱਥੀ ਵੇਖਾਓ"
+
+#: ../utils/scimkdesettings.cpp:90
+msgid ""
+"whether the handle in the panel applet should be shown all the time. This is "
+"only effective in Panel Embedded mode."
+msgstr ""
+"ਕੀ ਪੈਨਲ ਐਪਲਿਟ ਵਿੱਚ ਹੱਥੀ ਸਭ ਸਮੇਂ ਵਿਖਾਈ ਜਾਵੇ। ਇਹ ਸਿਰਫ਼ ਪੈਨਲ ਸ਼ਾਮਲ ਢੰਗ ਵਿੱਚ ਹੀ ਪਰਭਾਵੀ ਹੈ।"
+
+#: ../utils/scimkdesettings.cpp:93
+msgid "Always show extension handle"
+msgstr "ਹਮੇਸ਼ਾ ਸਹਿਯੋਗੀ ਹੱਥੀ ਵੇਖਾਓ"
+
+#: ../utils/scimkdesettings.cpp:94
+msgid ""
+"Whether the extension handle in the panel applet should be shown all the "
+"time.This is only effective in Panel Embedded mode."
+msgstr ""
+
+#: ../utils/scimkdesettings.cpp:97
+msgid "Docking Main Window to the panel"
+msgstr "ਮੁੱਖ ਝਰੋਖੇ ਨੂੰ ਪੈਨਲ ਵਿੱਚ ਸਮੇਟਣਾ"
+
+#: ../utils/scimkdesettings.cpp:98
+msgid ""
+"Dock the main toolbar into the KDE panel (kicker): if selected, Panel "
+"Embedded mode is activated."
+msgstr ""
+
+#: ../utils/scimkdesettings.cpp:101
+msgid "Snap to screen borders automatically"
+msgstr "ਪਰਦਾ ਹਾਸ਼ੀਆਂ ਸਵੈ-ਚਾਲਤ ਹੀ ਲਵੋ"
+
+#: ../utils/scimkdesettings.cpp:102
+msgid ""
+"When enabled, the Main Window will always besides the border of left or "
+"right of the screen."
+msgstr ""
+
+#: ../utils/scimkdesettings.cpp:105
+msgid "Timeout for always show option"
+msgstr "ਹਮੇਸ਼ਾ ਵੇਖਾਉਣ ਲਈ ਸਮਾਂ-ਅੰਤਰਾਲ"
+
+#: ../utils/scimkdesettings.cpp:106
+msgid ""
+"After this timeout (in second) eclapse, Main Window will be hidden. This "
+"option is only valid when \"Always Show\" is enabled. It is equal to disable "
+"\"Always Show\" option if this value is set to 0."
+msgstr ""
+
+#: ../utils/scimkdesettings.cpp:109
+msgid "Display the name of current input method"
+msgstr "ਮੌਜੂਦਾ ਇੰਪੁੱਟ ਢੰਗ ਦਾ ਨਾਂ ਵੇਖਾਓ"
+
+#: ../utils/scimkdesettings.cpp:110
+msgid ""
+"Whether show the text of current IM factory: if disabled, only the icon will "
+"be shown"
+msgstr ""
+
+#: ../utils/scimkdesettings.cpp:116
+msgid "From left to right"
+msgstr "ਖੱਬੇ ਤੋਂ ਸੱਜੇ"
+
+#: ../utils/scimkdesettings.cpp:122
+msgid "From right to left"
+msgstr "ਸੱਜੇ ਤੋਂ ਖੱਬੇ"
+
+#: ../utils/scimkdesettings.cpp:128
+msgid "From top to bottom (Down)"
+msgstr "ਉੱਤੋਂ ਹੇਠਾਂ (ਥੱਲੇ)"
+
+#: ../utils/scimkdesettings.cpp:134
+msgid "From bottom to top (up)"
+msgstr "ਹੇਠੋਂ ਉੱਤੇ (ਉੱਪਰ)"
+
+#: ../utils/scimkdesettings.cpp:138
+msgid "Direction of Main Window"
+msgstr "ਮੁੱਖ ਝਰੋਖੇ ਦੀ ਦਿਸ਼ਾ"
+
+#: ../utils/scimkdesettings.cpp:139
+msgid ""
+"Determine the layout of widgets in the main window. This setting is always "
+"honored in standalone mode. The layout can honor the kicker's direction in "
+"docking mode, please take a look at the \"Use 'From Left to Right' Direction"
+"\" option."
+msgstr ""
+
+#: ../utils/scimkdesettings.cpp:142
+msgid "Auto Adjust Direction"
+msgstr "ਸਵੈ-ਚਾਲਤ ਦਿਸ਼ਾ ਅਨੁਕੂਲਣ"
+
+#: ../utils/scimkdesettings.cpp:143
+msgid ""
+"With this option enabled, if more than half of the main window is invisible "
+"due to user movement, the direction will be changed automatically. This "
+"option only takes effect in standalone mode."
+msgstr ""
+
+#: ../utils/scimkdesettings.cpp:146
+msgid "Use left to right mode when in docking mode"
+msgstr "ਜਦੋਂ ਡੋਕ ਢੰਗ ਵਿੱਚ ਹੋਵੇ ਤਾਂ ਖੱਬੇ ਤੋਂ ਸੱਜਾ ਢੰਗ ਵਰਤੋਂ"
+
+#: ../utils/scimkdesettings.cpp:147
+msgid ""
+"If this option is enabled, in docking mode the layout is always \"from left "
+"to right\" direction. This option only takes effect in docking mode."
+msgstr ""
+
+#: ../utils/scimkdesettings.cpp:150
+msgid "Main Window Position"
+msgstr "ਮੁੱਖ ਝਰੋਖਾ ਸਥਿਤੀ"
+
+#: ../utils/scimkdesettings.cpp:156
+msgid "These plugins will be loaded at startup"
+msgstr "ਇਹ ਪਲੱਗਿੰਨ ਸ਼ੁਰੂ ਸਮੇਂ ਵਰਤੋਂ"
+
+#: ../utils/scimkdesettings.cpp:162
+msgid "Share the same input method among all applications"
+msgstr "ਸਭ ਕਾਰਜਾਂ ਵਿੱਚ ਇੱਕੋ ਹੀ ਇੰਪੁੱਟ ਢੰਗ ਵਰਤੋਂ"
+
+#: ../utils/scimkdesettings.cpp:163
+msgid "If enabled, all the applications always use the same input method."
+msgstr "ਜੇਕਰ ਯੋਗ ਕੀਤਾ ਤਾਂ ਸਭ ਕਾਰਜ ਇੱਕ ਹੀ ਇੰਪੁੱਟ ਢੰਗ ਵਰਤਣਗੇ।"
+
+#: ../utils/scimkdesettings.cpp:166
+msgid "On the spot input style"
+msgstr "ਮੌਕੇ 'ਤੇ ਇੰਪੁੱਟ ਸ਼ੈਲੀ"
+
+#: ../utils/scimkdesettings.cpp:169
+msgid "Use on the spot input style in XIM clients"
+msgstr "XIM ਕਲਾਂਈਟਾਂ ਵਿੱਚ ਮੌਕੇ ਉੱਤੇ ਇੰਪੁੱਟ ਸ਼ੈਲੀ ਵਰਤੋਂ"
+
+#: ../utils/scimkdesettings.cpp:170
+msgid "This option will only take effect in clients using XIM protocol."
+msgstr "ਇਹ ਚੋਣ ਸਿਰਫ਼ XIM ਪਰੋਟੋਕਾਲ ਦੀ ਵਰਤੋਂ ਕਰਨ ਵਾਲੇ ਕਲਾਂਈਟਾਂ ਲਈ ਹੀ ਪਰਭਾਵੀ ਹੈ।"
+
+#: ../utils/scimkdesettings.cpp:173
+msgid ""
+"Use Dynamic Event Flow. This can speed up the key event response, especially "
+"in remote X11 environment. But skim may become unstable."
+msgstr ""
+
+#: ../utils/scimkdesettings.cpp:174
+msgid ""
+"This can speed up the key event response, especially in remote X11 enviro\n"
+"      nment. But skim may become unstable."
+msgstr ""
+
+#: ../utils/scimkdesettings.cpp:178
+msgid "whether locale encoding should be used instead of UTF8"
+msgstr "ਕੀ UTF8 ਦੀ ਬਜਾਏ ਲੋਕੇਲ ਇੰਕੋਡਿੰਗ ਦੀ ਵਰਤੋਂ ਕੀਤੀ ਜਾਵੇ"
+
+#: ../utils/scimkdesettings.cpp:179
+msgid "Using locale encoding rather than UTF8."
+msgstr "UTF8 ਦੀ ਬਜਾਏ ਲੋਕੇਲ ਇੰਕੋਡਿੰਗ ਦੀ ਵਰਤੋਂ ਕਰਕੇ"
+
+#: ../utils/scimkdesettings.cpp:182
+msgid "frontend socket address"
+msgstr "ਮੁੱਖ-ਭੂਮੀ ਸਾਕਟ ਸਿਰਨਾਵਾਂ"
+
+#: ../utils/scimkdesettings.cpp:185
+msgid "frontend socket connection timeout"
+msgstr "ਮੁੱਖ-ਭੂਮੀ ਸਾਕਟ ਕੁਨੈਕਸ਼ਨ ਸਮਾਂ-ਅੰਤਾਰਲ"
+
+#: ../utils/scimkdesettings.cpp:188
+msgid "frontend socket connection max clients"
+msgstr "ਮੁੱਖ-ਭੂਮੀ ਸਾਕਟ ਕੁਨੈਕਸ਼ਨ ਵੱਧੋ-ਵੱਧ ਕਲਾਂਈਟ"
+
+#: ../utils/scimkdesettings.cpp:191
+msgid "frontend socket config is readonly"
+msgstr "ਮੁੱਖ-ਭੂਮੀ ਸਾਕਟ ਸੰਰਚਨਾ ਸਿਰਫ਼ ਪੜਨ ਲਈ ਹੈ"
+
+#: ../utils/scimkdesettings.cpp:194
+msgid "all valid key mask"
+msgstr "ਸਭ ਸੰਭਵ ਸਵਿੱਚ ਮਖੌਟਾ"
+
+#: ../utils/scimkdesettings.cpp:197
+msgid "IM Trigger Keys"
+msgstr "IM ਤਬਦੀਲ ਸਵਿੱਚਾਂ"
+
+#: ../utils/scimkdesettings.cpp:198
+msgid "Toggle Input Method On/Off."
+msgstr "ਇੰਪੁੱਟ ਢੰਗ ਚਾਲੂ/ਬੰਦ ਕਰਨਾ"
+
+#: ../utils/scimkdesettings.cpp:201
+msgid "Turn IM On Keys"
+msgstr "IM ਚਲਾਉਣ ਸਵਿੱਚਾਂ"
+
+#: ../utils/scimkdesettings.cpp:202
+msgid "Turn On Input Method Keys."
+msgstr "ਇੰਪੁੱਟ ਢੰਗ ਚਲਾਉਣ ਵਾਲੀਆਂ ਸਵਿੱਚਾਂ।"
+
+#: ../utils/scimkdesettings.cpp:205
+msgid "Turn IM Off Keys"
+msgstr "IM ਬੰਦ ਕਰਨ ਸਵਿੱਚਾਂ"
+
+#: ../utils/scimkdesettings.cpp:206
+msgid "Turn Off Input Method Keys."
+msgstr "ਇੰਪੁੱਟ ਢੰਗ ਬੰਦ ਕਰਨ ਸਵਿੱਚਾਂ।"
+
+#: ../utils/scimkdesettings.cpp:209
+msgid "Next IM Keys"
+msgstr "ਅਗਲਾ IM ਸਵਿੱਚਾਂ"
+
+#: ../utils/scimkdesettings.cpp:210
+msgid "Changing to next Input method keys."
+msgstr "ਅੱਗੇ ਇੰਪੁੱਟ ਢੰਗ ਬਦਲਣ ਸਵਿੱਚਾਂ ਹਨ।"
+
+#: ../utils/scimkdesettings.cpp:213
+msgid "Previous IM Keys"
+msgstr "ਪਿਛਲਾ IM ਸਵਿੱਚਾਂ"
+
+#: ../utils/scimkdesettings.cpp:214
+msgid "Changing to previous Input method keys."
+msgstr "ਪਿਛਲਾ ਇੰਪੁੱਟ ਢੰਗ ਬਦਲਣ ਲਈ ਸਵਿੱਚਾਂ ਹਨ।"
+
+#: ../utils/scimkdesettings.cpp:217
+msgid "Keys for showing input method menu"
+msgstr "ਇੰਪੁੱਟ ਮੇਨੂ ਵੇਖਾਉਣ ਲਈ ਸਵਿੱਚਾਂ ਹਨ।"
+
+#: ../utils/scimkdesettings.cpp:218
+msgid "Show the input method menu where you can select one."
+msgstr "ਇੰਪੁੱਟ ਮੇਨੂ ਵੇਖਾਓ, ਜਿੱਥੇ ਕਿ ਤੁਸੀਂ ਕਿਸੇ ਦੀ ਚੋਣ ਕਰ ਸਕਦੇ ਹੋ।"
+
+#: ../utils/scimkdesettings.cpp:221
+msgid "Supported Unicode Locales scim supports"
+msgstr "ਯੂਨੀਕੋਡ ਲੋਕੇਲ scim ਸਹਿਯੋਗ"
+
+#: ../utils/scimkdesettings.cpp:222
+msgid "Supported Unicode locales under which scim can work."
+msgstr "scim ਵਿੱਚ ਸਹਾਇਕ ਯੂਨੀਕਰੋਡ ਲੋਕੇਲ, ਜੋ ਕਿ ਕੰਮ ਕਰਦੇ ਹਨ।"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:159
+msgid "Main &Toolbar Display Mode"
+msgstr "ਮੁੱਖ ਸੰਦ-ਪੱਟੀ ਦਿੱਖ ਢੰਗ(&T)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:161
+msgid "Stand Alone"
+msgstr "ਇੱਕਲਾ"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:162
+msgid "Embedded"
+msgstr "ਸ਼ਾਮਲ"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:163
+msgid "&Docking into KDE Panel (kicker)"
+msgstr "K&DE ਪੈਨਲ ਵਿੱਚ ਚਿਣੋ (ਕਿੱਕਰ)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:164
+msgid "A&uto Snap"
+msgstr "ਸਵੈ-ਸਨੈਪ(&u)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:165
+msgid "&Show input method name"
+msgstr "ਇੰਪੁੱਟ ਢੰਗ ਨਾਂ ਵੇਖਾਓ(&S)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:166
+msgid "A&lways Show"
+msgstr "ਹਮੇਸ਼ਾ ਵੇਖਾਓ(&l)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:167
+msgid "Auto Ad&just Direction"
+msgstr "ਹਮੇਸ਼ਾ ਸਵੈ-ਦਿਸ਼ਾ ਅਨੁਕੂਲਣ(&j)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:168
+msgid "Always Show the Elements Selected below"
+msgstr "ਹੇਠਾਂ ਚੁਣੀਆਂ ਇਕਾਈਆਂ ਹਮੇਸ਼ਾ ਵੇਖਾਓ"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:169
+msgid "&Move Handle"
+msgstr "ਏਧਰ ਓਧਰ ਹੱਥੀ(&M)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:170
+msgid "&Extension Button"
+msgstr "ਸਹਿਯੋਗ ਬਟਨ(&E)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:171
+msgid "&Use \"From Left To Right\" Direction"
+msgstr "\"ਖੱਬੇ ਤੋਂ ਸੱਜੇ\" ਦਿਸ਼ਾ ਵਰਤੋਂ(&U)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:172
+msgid "&Layout Direction"
+msgstr "ਖਾਕਾ ਦਿਸ਼ਾ(&L)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:174
+msgid "From Left to Right"
+msgstr "ਖੱਬੇ ਤੋਂ ਸੱਜੇ"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:175
+msgid "From Right to Left"
+msgstr "ਸੱਜੇ ਤੋਂ ਖੱਬੇ"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:176
+msgid "From Top to Bottom"
+msgstr "ਉੱਤੋਂ ਹੇਠਾਂ"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:177
+msgid "From Bottom to Top"
+msgstr "ਹੇਠੋਂ ਉੱਤੇ"
+
+#: ../plugins/mainwindow/mainwindow.cpp:101
+msgid "Reload"
+msgstr "ਮੁੜ-ਲੋਡ"
+
+#: ../plugins/kdetraystatus/kdetraystatus_config.cpp:54
+msgid "Enable Quit Action in Right Click Menu"
+msgstr "ਸੱਜਾ ਬਟਨ ਮੇਨੂ ਵਿੱਚ ਬੰਦ ਕਰਨ ਕਾਰਵਾਈ ਯੋਗ"
+
+#: ../plugins/kdetraystatus/kdetraystatus.cpp:26
+msgid "Skim - SCIM KDE Frontend"
+msgstr ""
+
+#: ../plugins/setupwindow/scim_global.cpp:378
+msgid "SCIM Global Settings"
+msgstr "SCIM ਗਲੋਬਲ ਵਿਵਸਥਾ"
+
+#: ../plugins/setupwindow/scim_global.cpp:379
+msgid "&Keyboard Layout:"
+msgstr "ਕੀ-ਬੋਰਡ ਖਾਕਾ(&K):"
+
+#: ../plugins/setupwindow/scim_global.cpp:380
+msgid "Embed Preedit String into Client &Window (OnTheSpot Style)"
+msgstr "ਕਲਾਂਈਟ ਝਰੋਖੇ ਵਿੱਚ ਸ਼ਾਮਲ ਪਹਿਲਾਂ-ਸੋਧ ਸਤਰ (ਮੌਕੇ ਉੱਤੇ ਸ਼ੈਲੀ) (&W)"
+
+#: ../plugins/setupwindow/scim_global.cpp:381
+msgid "Sha&re input method among all applications"
+msgstr "ਸਭ ਕਾਰਜਾਂ ਵਿੱਚ ਇੰਪੁੱਟ ਢੰਗ ਵਰਤੋਂ(&r)"
+
+#: ../plugins/setupwindow/scim_global.cpp:382
+msgid "Keyboard Shortcuts"
+msgstr "ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ"
+
+#: ../plugins/setupwindow/scim_global.cpp:383
+msgid "&Toggle On/Off:"
+msgstr "ਚਾਲੂ/ਬੰਦ ਬਦਲੋ(&T):"
+
+#: ../plugins/setupwindow/scim_global.cpp:384
+msgid "T&urn On:"
+msgstr "ਚਾਲੂ(&u):"
+
+#: ../plugins/setupwindow/scim_global.cpp:385
+msgid "Turn O&ff:"
+msgstr "ਬੰਦ(&f):"
+
+#: ../plugins/setupwindow/scim_global.cpp:386
+msgid "&Next Input Method:"
+msgstr "ਅੱਗੇ ਇੰਪੁੱਟ ਢੰਗ(&N):"
+
+#: ../plugins/setupwindow/scim_global.cpp:387
+msgid "&Previous Input Method:"
+msgstr "ਪਿੱਛੇ ਇੰਪੁੱਟ ਢੰਗ(&P):"
+
+#: ../plugins/setupwindow/scim_global.cpp:388
+msgid "&Show input method menu:"
+msgstr "ਇੰਪੁੱਟ ਢੰਗ ਮੇਨੂ ਵੇਖਾਓ(&S):"
+
+#: ../plugins/setupwindow/scim_global.cpp:389
+msgid "Enabled &Modifiers"
+msgstr "ਸੋਧ ਯੋਗ(&M)"
+
+#: ../plugins/setupwindow/scim_global.cpp:390
+msgid "Cont&rol"
+msgstr "Cont&rol"
+
+#: ../plugins/setupwindow/scim_global.cpp:391
+msgid "Sh&ift"
+msgstr "Sh&ift"
+
+#: ../plugins/setupwindow/scim_global.cpp:392
+msgid "&Alt"
+msgstr "&Alt"
+
+#: ../plugins/setupwindow/scim_global.cpp:393
+msgid "M&eta"
+msgstr "M&eta"
+
+#: ../plugins/setupwindow/scim_global.cpp:394
+msgid "S&uper"
+msgstr "S&uper"
+
+#: ../plugins/setupwindow/scim_global.cpp:395
+msgid "H&yper"
+msgstr "H&yper"
+
+#: ../plugins/setupwindow/scim_global.cpp:396
+msgid "Caps &Lock"
+msgstr "Caps &Lock"
+
+#: ../plugins/setupwindow/scim_global.cpp:398
+msgid "&Panel Program"
+msgstr "ਪੈਨਲ ਪਰੋਗਰਾਮ(&P)"
+
+#: ../plugins/setupwindow/scim_global.cpp:400
+msgid "scim-panel-kde"
+msgstr "scim-panel-kde"
+
+#: ../plugins/setupwindow/scim_global.cpp:401
+msgid "scim-panel-gtk"
+msgstr "scim-panel-gtk"
+
+#: ../plugins/setupwindow/scim_global.cpp:402
+msgid "Config &Module"
+msgstr "ਸੰਰਚਨਾ ਮੈਡੀਊਲ(&M)"
+
+#: ../plugins/setupwindow/scim_global.cpp:403
+msgid "Ad&vanced"
+msgstr "ਤਕਨੀਕੀ(&v)"
+
+#: ../plugins/setupwindow/scim_global.cpp:404
+msgid "Advanced Settings"
+msgstr "ਤਕਨੀਕੀ ਵਿਵਸਥਾ"
+
+#: ../plugins/setupwindow/scim_global.cpp:405
+msgid "&Supported Unicode Locales"
+msgstr "ਸਹਾਇਕ ਯੂਨੀਕੋਡ ਲੋਕੇਲ(&S)"
+
+#: ../plugins/setupwindow/scim_global.cpp:406
+msgid "&Edit"
+msgstr "ਸੋਧ(&E)"
+
+#: ../plugins/setupwindow/scim_global.cpp:407
+msgid "&FrontEnd Socket Address"
+msgstr "ਮੁੱਖਭੂਮੀ ਸਾਕਟ ਸਿਰਨਾਵਾਂ(&F)"
+
+#: ../plugins/setupwindow/scim_global.cpp:408
+msgid "&IMEngine Socket Address"
+msgstr "&IMEngine ਸਾਕਟ ਸਿਰਨਾਵਾਂ"
+
+#: ../plugins/setupwindow/scim_global.cpp:409
+msgid "C&onfig Socket Address"
+msgstr "ਸੰਰਚਨਾ ਸਾਕਟ ਸਿਰਨਾਵਾਂ(&o)"
+
+#: ../plugins/setupwindow/scim_global.cpp:410
+msgid "P&anel Socket Address"
+msgstr "ਪੈਨਲ ਸਾਕਟ ਸਿਰਨਾਵਾਂ(&a)"
+
+#: ../plugins/setupwindow/scim_global.cpp:411
+msgid "Socket Timeo&ut"
+msgstr "ਸਾਕਟ ਸਮਾਂ-ਅੰਤਰਾਲ(&u)"
+
+#: ../plugins/setupwindow/scim_global.cpp:412
+msgid "Oth&er"
+msgstr "ਹੋਰ(&e)"
+
+#: ../plugins/setupwindow/scimattachfilter.cpp:51
+msgid "Filter %1"
+msgstr "ਫਿਲਟਰ %1"
+
+#: ../plugins/setupwindow/scimattachfilter.cpp:140
+msgid "Edit Filters for %1"
+msgstr "%1 ਲਈ ਫਿਲਟਰ ਸੋਧ"
+
+#: ../plugins/setupwindow/scimattachfilter.cpp:141
+msgid "&Installed Filters for %1"
+msgstr "%1 ਲਈ ਇੰਸਟਾਲ ਫਿਲਟਰ(&I)"
+
+#: ../plugins/setupwindow/scim_x.cpp:69
+msgid "X Window (XIM)"
+msgstr "X Window (XIM)"
+
+#: ../plugins/setupwindow/scim_x.cpp:70
+msgid "S&tart skim automatically when KDE starts"
+msgstr "ਜਦੋਂ KDE ਸ਼ੁਰੂ ਹੋਵੇ ਤਾਂ skim ਸਵੈ-ਚਾਲਤ ਚਲਾਓ(&t)"
+
+#: ../plugins/setupwindow/scim_x.cpp:71
+msgid "XIM Settings"
+msgstr "XIM ਵਿਵਸਥਾ"
+
+#: ../plugins/setupwindow/scim_x.cpp:72
+msgid "&On the Spot"
+msgstr "ਮੌਕੇ ਉੱਤੇ(&O)"
+
+#: ../plugins/setupwindow/scim_x.cpp:73
+msgid "&Dynamic Event Flow"
+msgstr "ਸਫ਼ਰੀ ਘਟਨਾ ਵਹਾ(&D)"
+
+#: ../plugins/setupwindow/filterinfodlgbase.cpp:97
+msgid "<b>Name:</b>"
+msgstr "<b>ਨਾਂ:</b>"
+
+#: ../plugins/setupwindow/filterinfodlgbase.cpp:99
+msgid "<b>Description:</b>"
+msgstr "<b>ਵੇਰਵਾ:</b>"
+
+#: ../plugins/setupwindow/filterinfodlgbase.cpp:101
+msgid "<b>Supported Languages:</b>"
+msgstr "<b>ਸਹਾਇਕ ਭਾਸ਼ਾਵਾਂ:</b>"
+
+#: ../plugins/setupwindow/filterinfodlgbase.cpp:103
+#: ../plugins/setupwindow/attachfilteruibase.cpp:130
+msgid "&Ok"
+msgstr "ਠੀਕ ਹੈ(&O)"
+
+#: ../plugins/setupwindow/scimsetupwindow.cpp:53
+msgid "Configure skim"
+msgstr "skim ਸੰਰਚਨਾ"
+
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:35
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:76
+msgid "Hotkeys"
+msgstr "ਹਾਟ-ਸਵਿੱਚ"
+
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:36
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:77
+msgid "Installed Filter"
+msgstr "ਇੰਸਟਾਲ ਹੋਏ ਫਿਲਟਰ"
+
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:78
+msgid "&Enable All"
+msgstr "ਸਭ ਯੋਗ(&E)"
+
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:79
+msgid "D&isable All"
+msgstr "ਸਭ ਅਯੋਗ(&i)"
+
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:80
+msgid "Edi&t Hotkeys"
+msgstr "ਹਾਟ-ਸਵਿੱਚਾਂ ਯੋਗ(&t)"
+
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:81
+msgid "Edit &Filters"
+msgstr "ਫਿਲਟਰ ਸੋਧ(&F)"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:122
+msgid "Available &Filters"
+msgstr "ਉਪਲੱਬਧ ਫਿਲਟਰ(&F)"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:124
+msgid "&Remove Filter"
+msgstr "ਫਿਲਟਰ ਹਟਾਓ(&R)"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:125
+msgid "Move &Up"
+msgstr ""
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:126
+msgid "Move &Down"
+msgstr ""
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:127
+msgid "&Add Filter"
+msgstr "ਫਿਲਟਰ ਸ਼ਾਮਲ(&A)"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:128
+msgid "&More Info"
+msgstr "ਹੋਰ ਜਾਣਕਾਰੀ(&M)"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:129
+msgid "&Installed Filters for this Input Method"
+msgstr "ਇਹ ਇੰਪੁੱਟ ਢੰਗ ਲਈ ਇੰਸਟਾਲ ਫਿਲਟਰ(&I)"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:131
+msgid "Canc&el"
+msgstr "ਰੱਦ ਕਰੋ(&e)"
+
+#: ../plugins/setupwindow/scimglobalconfigplugin.cpp:120
+msgid "Edit Supported Locales"
+msgstr "ਸਹਿਯੋਗੀ ਲੋਕੇਲ ਸੋਧ"
+
+#: ../plugins/setupwindow/scimglobalconfigplugin.cpp:266
+msgid ""
+"If you want to use skim (scim-panel-kde) or scim-qtimm (Qt immodule support "
+"for SCIM), please select kconfig as the config module."
+msgstr ""
+
+#: ../plugins/setupwindow/scimimenginesettings.cpp:313
+msgid "Specify Hotkeys for IME \"%1\""
+msgstr "IME \"%1\" ਲਈ ਹਾਟ-ਸਵਿੱਚਾਂ ਦਿਓ"
+
+#: ../plugins/inputwindow/inputwindow.cpp:39
+msgid "Input Window"
+msgstr "ਇੰਪੁੱਟ ਝਰੋਖਾ"
+
+#: ../plugins/inputwindow/inputwindow.cpp:63
+msgid "Candidates Window (Lookup Table)"
+msgstr "ਇਕਾਈ ਝਰੋਖਾ (ਖੋਜ ਸਾਰਣੀ)"
+
+#: ../plugins/inputwindow/inputwindow_settings.cpp:88
+msgid "Input Window Settings"
+msgstr "ਇੰਪੁੱਟ ਝਰੋਖਾ ਵਿਵਸਥਾ"
+
+#: ../plugins/inputwindow/inputwindow_settings.cpp:89
+msgid "&Sticky Window"
+msgstr "ਚੇਪੂ ਝਰੋਖਾ(&S)"
+
+#: ../plugins/inputwindow/inputwindow_settings.cpp:90
+msgid "Use &Vertical Lookup Table"
+msgstr "ਲੰਬਕਾਰੀ ਖੋਜ ਸਾਰਣੀ ਵਰਤੋਂ(&V)"
+
+#: ../plugins/inputwindow/inputwindow_settings.cpp:91
+msgid "&Embedded Lookup Table"
+msgstr "ਸ਼ਾਮਲ ਖੋਜ ਸਾਰਣੀ(&E)"
+
+#: ../plugins/inputwindow/inputwindow_settings.cpp:92
+msgid "&Minimize the width of Lookup Table"
+msgstr "ਖੋਜ ਸਾਰਣੀ ਦੀ ਘੱਟੋ-ਘੱਟ ਚੌੜਾਈ(&M)"
+
+#: ../plugins/inputwindow/inputwindow_settings.cpp:93
+msgid "&Font"
+msgstr "ਫੋਂਟ(&F)"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:51
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:111
+msgid "Window Name"
+msgstr "ਝਰੋਖਾ ਨਾਂ"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:52
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:112
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:113
+msgid "Translucency"
+msgstr "ਪਾਰਦਰਸ਼ੀ"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:108
+msgid "Enable &Composite Support"
+msgstr "ਸੰਯੁਕਤ ਸਹਿਯੋਗ ਯੋਗ(&C)"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:109
+msgid "Composite Settings"
+msgstr "ਸੰਯੁਕਤ ਵਿਵਸਥਾ"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:110
+msgid "&Use KDE built-in Composite Manager (kompmgr)"
+msgstr "KDE ਵਿੱਚ ਸ਼ਾਮਲ ਸੰਯੁਕਤ ਪਰਬੰਧਕ ਵਰਤੋਂ (kompmgr) (&U)"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:114
+msgid "&Active Window:"
+msgstr "ਸਰਗਰਮ ਝਰੋਖਾ(&A):"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:115
+msgid "%"
+msgstr "%"

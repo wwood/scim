@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Plugin
+Encoding=UTF-8
+X-KDE-Library=skim_panelapplet
+X-KDE-UniqueApplet=true
+Name=Skim Panel Applet
+Comment=This applet must be added in order to enable the skim panel docking capability.

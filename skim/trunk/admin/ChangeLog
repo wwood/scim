@@ -1,0 +1,2 @@
+2004-04-06 cougar <liuspider@users.sourceforge.net>
+	modified detect-autoconf.sh: use automake 1.7

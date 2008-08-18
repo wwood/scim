@@ -1,0 +1,963 @@
+# translation of zh_CN.po to
+# LiuCougar <liuspider@users.sourceforge.net>, 2004, 2005, 2006.
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+msgid ""
+msgstr ""
+"Project-Id-Version: zh_CN\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-04-29 21:36+0100\n"
+"PO-Revision-Date: 2006-04-29 21:42+0100\n"
+"Last-Translator: LiuCougar <liuspider@users.sourceforge.net>\n"
+"Language-Team:  <scim-user@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.2\n"
+
+#: rc.cpp:3 ../plugins/mainwindow/mainwindow.cpp:64
+#, no-c-format
+msgid "Main Toolbar"
+msgstr "主工具条窗口"
+
+#: ../src/skimglobalactions.cpp:32
+msgid "SCIM Help"
+msgstr "SCIM 帮助"
+
+#: ../src/skimglobalactions.cpp:34
+msgid "SCIM Setup"
+msgstr "SCIM 配置"
+
+#: ../src/skimglobalactions.cpp:42
+msgid "Reload all modules"
+msgstr "重载所有模块"
+
+#: ../src/skimglobalactions.cpp:50
+msgid "Input Method"
+msgstr "输入法"
+
+#: ../src/skimglobalactions.cpp:166
+msgid "Keyboard"
+msgstr "键盘"
+
+#: ../src/main.cpp:24
+msgid "KDE Frontend for SCIM Input Method Platform"
+msgstr "SCIM 输入法平台 KDE 前端"
+
+#: ../src/main.cpp:28
+msgid "Start as daemon."
+msgstr "后台服务方式启动。"
+
+#: ../src/main.cpp:29
+msgid "List all availabe skim plugins."
+msgstr "列出所有可用的 skim 插件"
+
+#: ../src/main.cpp:30
+msgid "Uses specified Config module."
+msgstr "使用特定的配置模块"
+
+#: ../src/main.cpp:31
+msgid ""
+"A comma separated list of plugin names. All of these plugins will be loaded "
+"no matter whether they are enabled in the setting file."
+msgstr "以逗号分割的插件名称。无论在配置文件中是否启用， 指定的插件将被加载。"
+
+#: ../src/main.cpp:32
+msgid ""
+"A comma separated list of plugin names. All of these plugins will be "
+"disabled no matter whether they are disabled in the setting file."
+msgstr "以逗号分割的插件名称。无论在配置文件中是否禁用， 指定的插件将不会被载入。"
+
+#: ../src/main.cpp:33
+msgid "Quit if no connected client."
+msgstr "当没有连接的客户端时自动退出"
+
+#: ../src/main.cpp:34
+msgid " Enable debug info, to specific LEVEL.."
+msgstr "指定输出调试信息详细级别(LEVEL)"
+
+#: ../src/main.cpp:35
+msgid "Current version of skim"
+msgstr "当前 skim 版本"
+
+#: ../src/main.cpp:36
+msgid "Output debug file.(No effort, always use none)"
+msgstr "调试信息输出文件。（未实现，总是 stdout)"
+
+#: ../src/main.cpp:37
+msgid "Force start even if scim panel socket can not be established."
+msgstr "强行启动，即使面板服务套接字不能建立。 "
+
+#: ../src/main.cpp:58
+msgid ""
+"IRC:\n"
+"server: irc.freenode.net / channel: #scim\n"
+"\n"
+"Feedback:\n"
+"scim-user@lists.sourceforge.net"
+msgstr ""
+"在线聊天室（IRC）: 服务器: irc.freenode.net / 频道: #scim 反馈: scim-"
+"user@lists.sourceforge.net"
+
+#: ../src/main.cpp:60
+msgid "Core Developer"
+msgstr "核心开发者"
+
+#: ../src/main.cpp:62
+msgid "SCIM Core Author"
+msgstr "SCIM 核心作者"
+
+#: ../src/main.cpp:63
+msgid "Doc writer and German translator"
+msgstr "文档编写和德语翻译"
+
+#: ../src/main.cpp:65
+msgid "Art designer and Korean translator"
+msgstr "美工和韩语翻译"
+
+#: ../src/main.cpp:67
+msgid "Japanese translator"
+msgstr "日语翻译"
+
+#: ../src/main.cpp:69
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "LiuCougar"
+
+#: ../src/main.cpp:70
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "liuspider@users.sourceforge.net"
+
+#: ../src/main.cpp:114
+msgid "Installed skim Plugins:"
+msgstr "已安装的 skim 插件"
+
+#: ../src/main.cpp:114 ../plugins/setupwindow/scimimenginesettingsui.cpp:34
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:75
+#: ../plugins/setupwindow/configskimplugins.cpp:95
+msgid "Name"
+msgstr "名称"
+
+#: ../src/main.cpp:114 ../plugins/setupwindow/configskimplugins.cpp:96
+msgid "Comment"
+msgstr "注释"
+
+#: ../src/main.cpp:118
+msgid " (Hidden)"
+msgstr " (隐藏)"
+
+#: ../src/main.cpp:121
+msgid "Note: Hidden plugins can not be disabled."
+msgstr "注意：隐藏的插件是不能被禁用的。"
+
+#: ../src/socketserverthread.cpp:342
+msgid "SKIM: KDE frontend for SCIM %1\n"
+msgstr "SKIM: SCIM KDE 前端 %1\n"
+
+#: ../src/socketserverthread.cpp:343
+msgid "(C) 2003-2006 LiuCougar <liuspider@users.sourceforge.net>"
+msgstr "(C) 2003-2006 LiuCougar <liuspider@users.sourceforge.net>"
+
+#: ../src/scimhelpdialog.cpp:16 ../plugins/setupwindow/scim_global.cpp:397
+msgid "&General"
+msgstr "常规(&G)"
+
+#: ../src/skimkeygrabber.cpp:63
+msgid "Grab Key"
+msgstr "捕获热键"
+
+#: ../src/skimkeygrabber.cpp:69
+msgid ""
+"<center>Please press shortcut...</center><p>When you release a key this "
+"dialog will be closed automatically.</p>"
+msgstr "<center>请按下热键...</center><p>当第一个按键被松开后本对话框将自动关闭。</p>"
+
+#: ../src/skimkeygrabber.cpp:75
+msgid "Control"
+msgstr "Control"
+
+#: ../src/skimkeygrabber.cpp:77
+msgid "Alt"
+msgstr "Alt"
+
+#: ../src/skimkeygrabber.cpp:79
+msgid "Shift"
+msgstr "Shift"
+
+#: ../src/skimkeygrabber.cpp:81
+msgid "Release"
+msgstr "释放触发"
+
+#: ../src/skimkeygrabber.cpp:97
+msgid "CapsLock"
+msgstr "CapsLock"
+
+#: ../src/skimkeygrabber.cpp:99
+msgid "Meta"
+msgstr "Meta"
+
+#: ../src/skimkeygrabber.cpp:101
+msgid "Hyper"
+msgstr "Hyper"
+
+#: ../src/skimkeygrabber.cpp:103
+msgid "Super"
+msgstr "Super"
+
+#: ../src/skimkeygrabber.cpp:291
+msgid "Edit Shortcut List"
+msgstr "编辑热键列表"
+
+#: ../src/skimkeygrabber.cpp:296
+msgid "Edit Shortcuts"
+msgstr "修改热键"
+
+#: ../src/skimkeygrabber.cpp:322
+msgid "Warning"
+msgstr "警告"
+
+#: ../src/skimkeygrabber.cpp:322
+msgid "\"%1\" is not a valid shortcut!"
+msgstr "\"%1\" 不是一个合法的热键！"
+
+#: ../utils/scimkdesettings.cpp:30
+msgid "Auto Start"
+msgstr "自动启动"
+
+#: ../utils/scimkdesettings.cpp:31
+msgid "Whether to start skim automatically when KDE starts."
+msgstr "KDE启动时，自动运行 skim。"
+
+#: ../utils/scimkdesettings.cpp:37
+msgid "Enable Composite"
+msgstr "启用混合效果支持"
+
+#: ../utils/scimkdesettings.cpp:38
+msgid "Whether to enable Composite support which is essential for transparent."
+msgstr "是否启用混合效果支持（用以实现半透明效果）"
+
+#: ../utils/scimkdesettings.cpp:41
+msgid "Use Kompmgr Composite Manager"
+msgstr "使用 KDE 内建混合效果管理功能"
+
+#: ../utils/scimkdesettings.cpp:42
+msgid "Whether to use KDE built-in composite manager."
+msgstr "使用KDE内建 Composite 管理器 (kompmgr)"
+
+#: ../utils/scimkdesettings.cpp:48
+msgid "Use GTK IMModule support"
+msgstr "启用 GTK 输入法模块支持"
+
+#: ../utils/scimkdesettings.cpp:49
+msgid "Whether to start scim to support gtk2 immodule."
+msgstr "是否在启用 scim 时使用 GTK 输入法模块"
+
+#: ../utils/scimkdesettings.cpp:55
+msgid "Show Quit option in context menu"
+msgstr "在右键菜单中显示退出选项"
+
+#: ../utils/scimkdesettings.cpp:56
+msgid "Whether to show the quit entry in right click menu."
+msgstr "是否在右键菜单中显示退出选项"
+
+#: ../utils/scimkdesettings.cpp:62
+msgid "Font Setting for Input Window"
+msgstr "输入窗口字体设置"
+
+#: ../utils/scimkdesettings.cpp:63
+msgid "Use this font in Input Window"
+msgstr "在输入窗口中使用用户指定的字体"
+
+#: ../utils/scimkdesettings.cpp:66
+msgid "Use Vertical Lookup Table"
+msgstr "纵向显示候选词"
+
+#: ../utils/scimkdesettings.cpp:67
+msgid "Whether the candidates in Lookup Table are aligned vertically."
+msgstr "是否将候选词纵向排列"
+
+#: ../utils/scimkdesettings.cpp:70
+msgid "Minimize the width of Lookup Table"
+msgstr "使用尽可能窄的候选词窗口"
+
+#: ../utils/scimkdesettings.cpp:71
+msgid ""
+"If unchecked, the minimum width of Lookup Table will be set to 100, "
+"otherwise 0."
+msgstr "如果未选中该项，则设置候选词窗口的最小宽度为100，否则不设置最小宽度。"
+
+#: ../utils/scimkdesettings.cpp:74
+msgid "Fix the position of the Input Window"
+msgstr "固定输入窗口位置"
+
+#: ../utils/scimkdesettings.cpp:75
+msgid "If enabled, Input Window does not follow the cursor."
+msgstr "如果选中该选项，输入窗口将不会跟随光标移动"
+
+#: ../utils/scimkdesettings.cpp:78
+msgid "Use embedded lookup table"
+msgstr "嵌入式候选词窗口"
+
+#: ../utils/scimkdesettings.cpp:79
+msgid "If you prefer standalone lookup table, please uncheck this option."
+msgstr "如果更倾向于使用独立的候选词窗口，请不要选中该项"
+
+#: ../utils/scimkdesettings.cpp:85
+msgid "Always show Main Window"
+msgstr "始终显示主窗口"
+
+#: ../utils/scimkdesettings.cpp:86
+msgid ""
+"Show Main Window all the time. When checked, even if no input method is "
+"selected, the Main Window remains on the screen."
+msgstr "始终显示主窗口。如果选中该选项，不论输入法是否激活，主窗口都会被显示。"
+
+#: ../utils/scimkdesettings.cpp:89
+msgid "Always show the move handle"
+msgstr "始终显示移动手柄"
+
+#: ../utils/scimkdesettings.cpp:90
+msgid ""
+"whether the handle in the panel applet should be shown all the time. This is "
+"only effective in Panel Embedded mode."
+msgstr "GUI元素是否始终显示。该选项仅仅在嵌入模式生效。"
+
+#: ../utils/scimkdesettings.cpp:93
+msgid "Always show extension handle"
+msgstr "始终显示扩展按键"
+
+#: ../utils/scimkdesettings.cpp:94
+msgid ""
+"Whether the extension handle in the panel applet should be shown all the "
+"time.This is only effective in Panel Embedded mode."
+msgstr "GUI元素是否始终显示。该选项仅在嵌入模式生效。"
+
+#: ../utils/scimkdesettings.cpp:97
+msgid "Docking Main Window to the panel"
+msgstr "将主窗口嵌入任务栏"
+
+#: ../utils/scimkdesettings.cpp:98
+msgid ""
+"Dock the main toolbar into the KDE panel (kicker): if selected, Panel "
+"Embedded mode is activated."
+msgstr "将主窗口嵌入 KDE 任务栏 (kicker) 中"
+
+#: ../utils/scimkdesettings.cpp:101
+msgid "Snap to screen borders automatically"
+msgstr "自动靠到屏幕左或右边"
+
+#: ../utils/scimkdesettings.cpp:102
+msgid ""
+"When enabled, the Main Window will always besides the border of left or "
+"right of the screen."
+msgstr "如果启用改选项，主窗口将自动靠到屏幕左或右边"
+
+#: ../utils/scimkdesettings.cpp:105
+msgid "Timeout for always show option"
+msgstr "隐藏超时"
+
+#: ../utils/scimkdesettings.cpp:106
+msgid ""
+"After this timeout (in second) eclapse, Main Window will be hidden. This "
+"option is only valid when \"Always Show\" is enabled. It is equal to disable "
+"\"Always Show\" option if this value is set to 0."
+msgstr ""
+"当超时指定的时间后 (单位为秒)，主窗口将被隐藏起来。该选项只有在 始终显示 选项"
+"打开时才可用。设置成 0 则禁止此功能。"
+
+#: ../utils/scimkdesettings.cpp:109
+msgid "Display the name of current input method"
+msgstr "显示当前输入法名称"
+
+#: ../utils/scimkdesettings.cpp:110
+msgid ""
+"Whether show the text of current IM factory: if disabled, only the icon will "
+"be shown"
+msgstr "是否显示当前输入法的名称：如果未选中该项则仅显示图标"
+
+#: ../utils/scimkdesettings.cpp:116
+msgid "From left to right"
+msgstr "从左向右"
+
+#: ../utils/scimkdesettings.cpp:122
+msgid "From right to left"
+msgstr "从右向左"
+
+#: ../utils/scimkdesettings.cpp:128
+msgid "From top to bottom (Down)"
+msgstr "从上向下"
+
+#: ../utils/scimkdesettings.cpp:134
+msgid "From bottom to top (up)"
+msgstr "从下向上"
+
+#: ../utils/scimkdesettings.cpp:138
+msgid "Direction of Main Window"
+msgstr "主窗口按键排列方向"
+
+#: ../utils/scimkdesettings.cpp:139
+msgid ""
+"Determine the layout of widgets in the main window. This setting is always "
+"honored in standalone mode. The layout can honor the kicker's direction in "
+"docking mode, please take a look at the \"Use 'From Left to Right' Direction"
+"\" option."
+msgstr ""
+"主窗口中按键排列方向。此选项在独立模式时总是生效。在嵌入模式时，如果 \"使用 "
+"'从左到右'\" 选中，则该选项无作用。"
+
+#: ../utils/scimkdesettings.cpp:142
+msgid "Auto Adjust Direction"
+msgstr "自动调整方向"
+
+#: ../utils/scimkdesettings.cpp:143
+msgid ""
+"With this option enabled, if more than half of the main window is invisible "
+"due to user movement, the direction will be changed automatically. This "
+"option only takes effect in standalone mode."
+msgstr ""
+"当选中该项时，如果多于一半的主窗口由于用户移动而不可见，则自动调整方向。该选"
+"项仅在独立模式生效。"
+
+#: ../utils/scimkdesettings.cpp:146
+msgid "Use left to right mode when in docking mode"
+msgstr "在嵌入模式使用从左到右方向"
+
+#: ../utils/scimkdesettings.cpp:147
+msgid ""
+"If this option is enabled, in docking mode the layout is always \"from left "
+"to right\" direction. This option only takes effect in docking mode."
+msgstr "如果选中此选项，在嵌入模式时只强迫使用从左到右方向。"
+
+#: ../utils/scimkdesettings.cpp:150
+msgid "Main Window Position"
+msgstr "主窗口位置"
+
+#: ../utils/scimkdesettings.cpp:156
+msgid "These plugins will be loaded at startup"
+msgstr "这些插件将在启动时加载"
+
+#: ../utils/scimkdesettings.cpp:162
+msgid "Share the same input method among all applications"
+msgstr "在所有的程序中共享一个输入法上下文"
+
+#: ../utils/scimkdesettings.cpp:163
+msgid "If enabled, all the applications always use the same input method."
+msgstr "该项启用时，所有的程序中将总是使用同一个输入法。"
+
+#: ../utils/scimkdesettings.cpp:166
+msgid "On the spot input style"
+msgstr "在光标处预编辑"
+
+#: ../utils/scimkdesettings.cpp:169
+msgid "Use on the spot input style in XIM clients"
+msgstr "在XIM应用程序中使用在光标处预编辑模式"
+
+#: ../utils/scimkdesettings.cpp:170
+msgid "This option will only take effect in clients using XIM protocol."
+msgstr "此选项仅在使用 XIM 协议的程序中有效。"
+
+#: ../utils/scimkdesettings.cpp:173
+msgid ""
+"Use Dynamic Event Flow. This can speed up the key event response, especially "
+"in remote X11 environment. But skim may become unstable."
+msgstr ""
+"启用动态事件流。此选项有助于提高反应速度，特别是在使用远程X桌面时。但是此选项"
+"可能导致 skim 不稳定。"
+
+#: ../utils/scimkdesettings.cpp:174
+msgid ""
+"This can speed up the key event response, especially in remote X11 enviro\n"
+"      nment. But skim may become unstable."
+msgstr ""
+"启用动态事件流。此选项有助于提高反应速度，特别是在使用远程X桌面时。但是此选项"
+"可能导致 skim 不稳定。"
+
+#: ../utils/scimkdesettings.cpp:178
+msgid "whether locale encoding should be used instead of UTF8"
+msgstr "是否使用本地设置而不是 UTF8"
+
+#: ../utils/scimkdesettings.cpp:179
+msgid "Using locale encoding rather than UTF8."
+msgstr "使用本地化设定中的编码，而不是 UTF-8"
+
+#: ../utils/scimkdesettings.cpp:182
+msgid "frontend socket address"
+msgstr "前端 套接字 地址"
+
+#: ../utils/scimkdesettings.cpp:185
+msgid "frontend socket connection timeout"
+msgstr "连接前端超时等待时间"
+
+#: ../utils/scimkdesettings.cpp:188
+msgid "frontend socket connection max clients"
+msgstr "前端最大同时连接数"
+
+#: ../utils/scimkdesettings.cpp:191
+msgid "frontend socket config is readonly"
+msgstr "前端 Socket 配置模块是否只读"
+
+#: ../utils/scimkdesettings.cpp:194
+msgid "all valid key mask"
+msgstr "所有可用的修饰键"
+
+#: ../utils/scimkdesettings.cpp:197
+msgid "IM Trigger Keys"
+msgstr "开关键"
+
+#: ../utils/scimkdesettings.cpp:198
+msgid "Toggle Input Method On/Off."
+msgstr "开启/关闭输入法"
+
+#: ../utils/scimkdesettings.cpp:201
+msgid "Turn IM On Keys"
+msgstr "打开键"
+
+#: ../utils/scimkdesettings.cpp:202
+msgid "Turn On Input Method Keys."
+msgstr "开启输入法快捷键"
+
+#: ../utils/scimkdesettings.cpp:205
+msgid "Turn IM Off Keys"
+msgstr "关闭键"
+
+#: ../utils/scimkdesettings.cpp:206
+msgid "Turn Off Input Method Keys."
+msgstr "关闭输入法快捷键"
+
+#: ../utils/scimkdesettings.cpp:209
+msgid "Next IM Keys"
+msgstr "下一个输入法"
+
+#: ../utils/scimkdesettings.cpp:210
+msgid "Changing to next Input method keys."
+msgstr "切换到下一个输入法快捷键。"
+
+#: ../utils/scimkdesettings.cpp:213
+msgid "Previous IM Keys"
+msgstr "前一个输入法"
+
+#: ../utils/scimkdesettings.cpp:214
+msgid "Changing to previous Input method keys."
+msgstr "切换到前一个输入法快捷键。"
+
+#: ../utils/scimkdesettings.cpp:217
+msgid "Keys for showing input method menu"
+msgstr "显示输入法列表"
+
+#: ../utils/scimkdesettings.cpp:218
+msgid "Show the input method menu where you can select one."
+msgstr "显示所有启用的输入法列表。"
+
+#: ../utils/scimkdesettings.cpp:221
+msgid "Supported Unicode Locales scim supports"
+msgstr "支持的 Unicode 区域设置"
+
+#: ../utils/scimkdesettings.cpp:222
+msgid "Supported Unicode locales under which scim can work."
+msgstr "支持的 Unicode 区域设置"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:159
+msgid "Main &Toolbar Display Mode"
+msgstr "主工具条显示模式(&T)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:161
+msgid "Stand Alone"
+msgstr "独立窗口"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:162
+msgid "Embedded"
+msgstr "嵌入模式 "
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:163
+msgid "&Docking into KDE Panel (kicker)"
+msgstr "嵌入 KDE 工具条 (kicker) (&D)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:164
+msgid "A&uto Snap"
+msgstr "自动靠边(&U)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:165
+msgid "&Show input method name"
+msgstr "显示输入法名称(&S)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:166
+msgid "A&lways Show"
+msgstr "始终显示(&L)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:167
+msgid "Auto Ad&just Direction"
+msgstr "自动调整方向(&J)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:168
+msgid "Always Show the Elements Selected below"
+msgstr "始终显示以下选中的部件"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:169
+msgid "&Move Handle"
+msgstr "移动柄(&M)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:170
+msgid "&Extension Button"
+msgstr "扩展按钮(&E)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:171
+msgid "&Use \"From Left To Right\" Direction"
+msgstr "使用 \"从左到右\" (&U)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:172
+msgid "&Layout Direction"
+msgstr "排列方向(&L)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:174
+msgid "From Left to Right"
+msgstr "从左到右"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:175
+msgid "From Right to Left"
+msgstr "从右到左"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:176
+msgid "From Top to Bottom"
+msgstr "从上向下"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:177
+msgid "From Bottom to Top"
+msgstr "从下向上"
+
+#: ../plugins/mainwindow/mainwindow.cpp:101
+msgid "Reload"
+msgstr "重新载入"
+
+#: ../plugins/kdetraystatus/kdetraystatus_config.cpp:54
+msgid "Enable Quit Action in Right Click Menu"
+msgstr "在右键菜单中显示退出选项"
+
+#: ../plugins/kdetraystatus/kdetraystatus.cpp:26
+msgid "Skim - SCIM KDE Frontend"
+msgstr "Skim - SCIM KDE 前端"
+
+#: ../plugins/setupwindow/scim_global.cpp:378
+msgid "SCIM Global Settings"
+msgstr "SCIM 全局设置"
+
+#: ../plugins/setupwindow/scim_global.cpp:379
+msgid "&Keyboard Layout:"
+msgstr "键盘布局(&K)"
+
+#: ../plugins/setupwindow/scim_global.cpp:380
+msgid "Embed Preedit String into Client &Window (OnTheSpot Style)"
+msgstr "嵌入客户窗口式预编辑区（光标处预编辑模式）(&W)"
+
+#: ../plugins/setupwindow/scim_global.cpp:381
+msgid "Sha&re input method among all applications"
+msgstr "在所有的程序中共享一个输入法上下文(&R)"
+
+#: ../plugins/setupwindow/scim_global.cpp:382
+msgid "Keyboard Shortcuts"
+msgstr "键盘热键"
+
+#: ../plugins/setupwindow/scim_global.cpp:383
+msgid "&Toggle On/Off:"
+msgstr "打开/关闭(&T)"
+
+#: ../plugins/setupwindow/scim_global.cpp:384
+msgid "T&urn On:"
+msgstr "打开(&U)："
+
+#: ../plugins/setupwindow/scim_global.cpp:385
+msgid "Turn O&ff:"
+msgstr "关闭(&F)："
+
+#: ../plugins/setupwindow/scim_global.cpp:386
+msgid "&Next Input Method:"
+msgstr "下一个输入法(&N)："
+
+#: ../plugins/setupwindow/scim_global.cpp:387
+msgid "&Previous Input Method:"
+msgstr "前一个输入法(&P)："
+
+#: ../plugins/setupwindow/scim_global.cpp:388
+msgid "&Show input method menu:"
+msgstr "显示输入法名称(&S)"
+
+#: ../plugins/setupwindow/scim_global.cpp:389
+msgid "Enabled &Modifiers"
+msgstr "使用以下修饰键(&M)"
+
+#: ../plugins/setupwindow/scim_global.cpp:390
+msgid "Cont&rol"
+msgstr "Cont&rol"
+
+#: ../plugins/setupwindow/scim_global.cpp:391
+msgid "Sh&ift"
+msgstr "Sh&ift"
+
+#: ../plugins/setupwindow/scim_global.cpp:392
+msgid "&Alt"
+msgstr "&Alt"
+
+#: ../plugins/setupwindow/scim_global.cpp:393
+msgid "M&eta"
+msgstr "M&eta"
+
+#: ../plugins/setupwindow/scim_global.cpp:394
+msgid "S&uper"
+msgstr "S&uper"
+
+#: ../plugins/setupwindow/scim_global.cpp:395
+msgid "H&yper"
+msgstr "H&yper"
+
+#: ../plugins/setupwindow/scim_global.cpp:396
+msgid "Caps &Lock"
+msgstr "Caps &Lock"
+
+#: ../plugins/setupwindow/scim_global.cpp:398
+msgid "&Panel Program"
+msgstr "图形前端程序(&P)"
+
+#: ../plugins/setupwindow/scim_global.cpp:400
+msgid "scim-panel-kde"
+msgstr "scim-panel-kde"
+
+#: ../plugins/setupwindow/scim_global.cpp:401
+msgid "scim-panel-gtk"
+msgstr "scim-panel-gtk"
+
+#: ../plugins/setupwindow/scim_global.cpp:402
+msgid "Config &Module"
+msgstr "配置模块(&M)"
+
+#: ../plugins/setupwindow/scim_global.cpp:403
+msgid "Ad&vanced"
+msgstr "高级配置(&V)"
+
+#: ../plugins/setupwindow/scim_global.cpp:404
+msgid "Advanced Settings"
+msgstr "高级选项"
+
+#: ../plugins/setupwindow/scim_global.cpp:405
+msgid "&Supported Unicode Locales"
+msgstr "支持的 Unicode 区域设置(&S)"
+
+#: ../plugins/setupwindow/scim_global.cpp:406
+msgid "&Edit"
+msgstr "编辑(&E)"
+
+#: ../plugins/setupwindow/scim_global.cpp:407
+msgid "&FrontEnd Socket Address"
+msgstr "前端 套接字 地址(&F)"
+
+#: ../plugins/setupwindow/scim_global.cpp:408
+msgid "&IMEngine Socket Address"
+msgstr "套接字 输入法模块地址(&I)"
+
+#: ../plugins/setupwindow/scim_global.cpp:409
+msgid "C&onfig Socket Address"
+msgstr "套接字 配置模块地址(&O)"
+
+#: ../plugins/setupwindow/scim_global.cpp:410
+msgid "P&anel Socket Address"
+msgstr "图形前端 套接字 地址(&A)"
+
+#: ../plugins/setupwindow/scim_global.cpp:411
+msgid "Socket Timeo&ut"
+msgstr "套接字 超时时间(&U)"
+
+#: ../plugins/setupwindow/scim_global.cpp:412
+msgid "Oth&er"
+msgstr "其他(&E)"
+
+#: ../plugins/setupwindow/scimattachfilter.cpp:51
+msgid "Filter %1"
+msgstr "过滤器 %1"
+
+#: ../plugins/setupwindow/scimattachfilter.cpp:140
+msgid "Edit Filters for %1"
+msgstr "编辑安装于 %1 的过滤器"
+
+#: ../plugins/setupwindow/scimattachfilter.cpp:141
+msgid "&Installed Filters for %1"
+msgstr "%1 已安装的过滤器"
+
+#: ../plugins/setupwindow/scim_x.cpp:69
+msgid "X Window (XIM)"
+msgstr "X 窗口系统 （XIM）"
+
+#: ../plugins/setupwindow/scim_x.cpp:70
+msgid "S&tart skim automatically when KDE starts"
+msgstr "KDE启动时，自动运行 skim。"
+
+#: ../plugins/setupwindow/scim_x.cpp:71
+msgid "XIM Settings"
+msgstr "XIM 设置"
+
+#: ../plugins/setupwindow/scim_x.cpp:72
+msgid "&On the Spot"
+msgstr "光标处预编辑模式(&O)"
+
+#: ../plugins/setupwindow/scim_x.cpp:73
+msgid "&Dynamic Event Flow"
+msgstr "动态事件流(&D)"
+
+#: ../plugins/setupwindow/filterinfodlgbase.cpp:97
+msgid "<b>Name:</b>"
+msgstr "<b>名称：</b>"
+
+#: ../plugins/setupwindow/filterinfodlgbase.cpp:99
+msgid "<b>Description:</b>"
+msgstr "<b>描述：</b>"
+
+#: ../plugins/setupwindow/filterinfodlgbase.cpp:101
+msgid "<b>Supported Languages:</b>"
+msgstr "<b>支持的语言：</b>"
+
+#: ../plugins/setupwindow/filterinfodlgbase.cpp:103
+#: ../plugins/setupwindow/attachfilteruibase.cpp:130
+msgid "&Ok"
+msgstr "确定(&O)"
+
+#: ../plugins/setupwindow/scimsetupwindow.cpp:53
+msgid "Configure skim"
+msgstr "配置 skim"
+
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:35
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:76
+msgid "Hotkeys"
+msgstr "热键"
+
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:36
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:77
+msgid "Installed Filter"
+msgstr "已安装的过滤器"
+
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:78
+msgid "&Enable All"
+msgstr "启用全部(&E)"
+
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:79
+msgid "D&isable All"
+msgstr "全部禁用(&I)"
+
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:80
+msgid "Edi&t Hotkeys"
+msgstr "编译热键(&T)"
+
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:81
+msgid "Edit &Filters"
+msgstr "编译转换器(&F)"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:122
+msgid "Available &Filters"
+msgstr "可用的过滤器(&F)"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:124
+msgid "&Remove Filter"
+msgstr "移除过滤器(&R)"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:125
+msgid "Move &Up"
+msgstr "上移(&U)"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:126
+msgid "Move &Down"
+msgstr "下移(&D)"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:127
+msgid "&Add Filter"
+msgstr "安装过滤器(&A)"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:128
+msgid "&More Info"
+msgstr "详细信息(&M)"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:129
+msgid "&Installed Filters for this Input Method"
+msgstr "此输入法已安装的过滤器(&I)"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:131
+msgid "Canc&el"
+msgstr "取消(&E)"
+
+#: ../plugins/setupwindow/scimglobalconfigplugin.cpp:120
+msgid "Edit Supported Locales"
+msgstr "设置支持的 Unicode 区域"
+
+#: ../plugins/setupwindow/scimglobalconfigplugin.cpp:266
+msgid ""
+"If you want to use skim (scim-panel-kde) or scim-qtimm (Qt immodule support "
+"for SCIM), please select kconfig as the config module."
+msgstr ""
+"如果您想使用 skim (scim-panel-kde) 或者  scim-qtimm (SCIM 的Qt 输入法模块支"
+"持)，请选择 kconfig 作为配置模块。"
+
+#: ../plugins/setupwindow/scimimenginesettings.cpp:313
+msgid "Specify Hotkeys for IME \"%1\""
+msgstr "为输入法 \"%1\"指定热键"
+
+#: ../plugins/inputwindow/inputwindow.cpp:39
+msgid "Input Window"
+msgstr "输入窗口"
+
+#: ../plugins/inputwindow/inputwindow.cpp:63
+msgid "Candidates Window (Lookup Table)"
+msgstr "候选词窗口"
+
+#: ../plugins/inputwindow/inputwindow_settings.cpp:88
+msgid "Input Window Settings"
+msgstr "输入窗口设置"
+
+#: ../plugins/inputwindow/inputwindow_settings.cpp:89
+msgid "&Sticky Window"
+msgstr "固定窗口位置(&S)"
+
+#: ../plugins/inputwindow/inputwindow_settings.cpp:90
+msgid "Use &Vertical Lookup Table"
+msgstr "纵向显示候选词(&V)"
+
+#: ../plugins/inputwindow/inputwindow_settings.cpp:91
+msgid "&Embedded Lookup Table"
+msgstr "嵌入式候选词窗口(&E)"
+
+#: ../plugins/inputwindow/inputwindow_settings.cpp:92
+msgid "&Minimize the width of Lookup Table"
+msgstr "使用尽可能窄的候选词窗口(&M)"
+
+#: ../plugins/inputwindow/inputwindow_settings.cpp:93
+msgid "&Font"
+msgstr "字体(&F)"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:51
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:111
+msgid "Window Name"
+msgstr "窗口名称"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:52
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:112
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:113
+msgid "Translucency"
+msgstr "通明度"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:108
+msgid "Enable &Composite Support"
+msgstr "启用混合效果支持(&C)"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:109
+msgid "Composite Settings"
+msgstr "配置混合效果"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:110
+msgid "&Use KDE built-in Composite Manager (kompmgr)"
+msgstr "使用KDE内建 Composite 管理器 (kompmgr) (&U)"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:114
+msgid "&Active Window:"
+msgstr "活动窗口(&A)"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:115
+msgid "%"
+msgstr "%"
+

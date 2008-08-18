@@ -1,0 +1,126 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>ConfigInputWindowBase</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>ConfigInputWindowBase</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>518</width>
+            <height>327</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>7</hsizetype>
+            <vsizetype>7</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="caption">
+        <string>Input Window Settings</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>0</number>
+        </property>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>layout2</cstring>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QCheckBox" row="0" column="1">
+                    <property name="name">
+                        <cstring>kcfg_Is_Sticky</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Sticky Window</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="0" column="0">
+                    <property name="name">
+                        <cstring>kcfg_LookupTable_IsVertical</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Use &amp;Vertical Lookup Table</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="1" column="0">
+                    <property name="name">
+                        <cstring>kcfg_embedded_Lookup_Table</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Embedded Lookup Table</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="1" column="1">
+                    <property name="name">
+                        <cstring>kcfg_LookupTable_MinimumWidth</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Minimize the width of Lookup Table</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>groupBox1</cstring>
+            </property>
+            <property name="title">
+                <string>&amp;Font</string>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="KFontRequester">
+                    <property name="name">
+                        <cstring>defaultFontRequester</cstring>
+                    </property>
+                </widget>
+            </vbox>
+        </widget>
+        <spacer>
+            <property name="name">
+                <cstring>spacer1</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Vertical</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>21</width>
+                    <height>240</height>
+                </size>
+            </property>
+        </spacer>
+    </vbox>
+</widget>
+<customwidgets>
+</customwidgets>
+<connections>
+    <connection>
+        <sender>kcfg_LookupTable_IsVertical</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>kcfg_LookupTable_MinimumWidth</receiver>
+        <slot>setEnabled(bool)</slot>
+    </connection>
+</connections>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>kfontrequester.h</includehint>
+</includehints>
+</UI>

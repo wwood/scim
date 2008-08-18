@@ -1,0 +1,50 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>KCM_SystemTray</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>KCM_SystemTray</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>399</width>
+            <height>392</height>
+        </rect>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>0</number>
+        </property>
+        <widget class="QCheckBox">
+            <property name="name">
+                <cstring>kcfg_show_Quit</cstring>
+            </property>
+            <property name="text">
+                <string>Enable Quit Action in Right Click Menu</string>
+            </property>
+        </widget>
+        <spacer>
+            <property name="name">
+                <cstring>spacer1</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Vertical</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>20</width>
+                    <height>350</height>
+                </size>
+            </property>
+        </spacer>
+    </vbox>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

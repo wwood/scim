@@ -1,0 +1,415 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "/usr/kde/3.3/share/apps/ksgmltools2/customization/dtd/kdex.dtd" [
+  <!ENTITY skim "<application>skim</application>">
+  <!ENTITY kappname "&skim;">
+  <!ENTITY scim "<application>libscim</application>">
+  <!ENTITY skim_version "1.4.4">
+  <!ENTITY skim_doc_revision "1">
+  <!ENTITY require_scim_version "1.3.3">
+  <!ENTITY skim_commondir "../skim_common">
+  <!ENTITY kappname "&skim;">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Dutch "INCLUDE" >
+]>
+<book lang="&language;">
+
+<bookinfo>
+    <title><!--Uncomment following line when upload to the web-->
+    <!--inlinemediaobject><imageobject><imagedata align="right" fileref="&skim_commondir;/skim_logo.png"/></imageobject></inlinemediaobject-->
+    Het &skim; handboek
+    </title>
+    <authorgroup>
+      <author>
+        <firstname/>
+        <surname>LiuCougar (liuspider)</surname>
+        <affiliation>
+          <address>
+            <email>liuspider_ZAI_users.sourceforge.net</email>
+          </address>
+        </affiliation>
+      </author>
+    </authorgroup>
+    <date>December/16/2006</date>
+    <releaseinfo>&skim_version;-r&skim_doc_revision;</releaseinfo>
+    <abstract>
+      <para>Een invoer methode platform gebaseert op 
+      <ulink url="http://scim.sourceforge.net">scim-lib</ulink> en een alles-in-een configureerbare GUI.</para>
+    </abstract>
+    <keywordset>
+      <keyword>KDE</keyword>
+      <keyword>SCIM</keyword>
+      <keyword>FrontEnd</keyword>
+      <keyword>Paneel</keyword>
+      <keyword>GUI</keyword>
+      <keyword>scim-panel-kde</keyword>
+      <keyword>skim</keyword>
+    </keywordset>
+  </bookinfo>
+  <chapter id="introduction" >
+    <title>Inleiding</title>
+    <para>
+    &skim; is een invoer methode platform gebaseerd op scim-lib onder *NIX (inclusief
+    <ulink url="http://www.gnu.org/gnu/the-gnu-project.html">GNU/Linux</ulink> en
+    <ulink url="http://www.freebsd.org/">FreeBSD</ulink>)
+    systemen geoptimalizeerd voor &kde;. Het bezit een GUI paneel (genaamd scim-panel-kde), 
+    een KConfig configuratie module en Setup-dialogen voor zichzelf en scim-lib. 
+    Het heeft ook zijn eigen plugin systemen die op verzoek laadbare actie's ondersteunen. 
+    </para>
+    <sect1 id="features" >
+      <title>Functies</title>
+      <itemizedlist>
+      <listitem><para>
+      Overeenkomstig de KDE-standaarden:
+      <itemizedlist>
+      <listitem><para>De standaard instellingen worden verkregen van KDE en de GUI volgt 
+      de algemene stijl van KDE/Qt, inclusief (maar niet beperkt tot) tot het uiterlijk en kleuren van elementen en iconen;</para>
+      </listitem>
+      <listitem><para>De gebruikte taal in de menu's word bepaald door de algemene instelling van KDE, en niet door een omgevings-variabele zoals LANG, dus onafhankelijk van de locale-instellingen kan de gewenste menu-taal gekozen worden. Skim komt zelfs met een handvol vertalingen, op dit moment inclusief: (Versimpeld/Traditioneel) 
+      Chinees, Duits, Japans, Koreaans en Nederlands.</para>
+      </listitem>
+      </itemizedlist>
+      </para></listitem>
+      <listitem><para>
+      Volledige &kde; integratie: indien &kde; wordt gesloten terwijl &skim; nog niet is gestopt (indien KDE zo is ingesteld om de sessies te bewaren wanneer U uitlogt), 
+      zal bij de volgende keer dat wordt ingelogd in &kde;, &skim; automatisch worden geladen; 
+      Na installatie van &skim;, kan het gestart worden via "KDE Menu->Utilitis->&skim;"
+      </para></listitem>
+      <listitem><para>
+      Volledig aanpasbaar: &skim; is inclusief een setup-menu, hierin kan niet alleen alle instellingen van &skim; maar ook van &scim; en de meeste instellingen hebben onmiddelijk invloed zonder de moeite van het opnieuw starten (alleen zelden gebruikte instellingen kunnen niet veranderd worden in &skim;, lees ook 
+      <xref linkend="faq-no-scim-settings"/>);
+      </para></listitem>
+      <listitem><para>
+      Gebaseerd op het concept van module's: bijna alles wat zichtbaar is, zit in aparte plugins, zodat ingesteld kan worden welke gewenst zijn, niet ingestelde plugins worden helemaal niet geladen om geheugen te sparen; enkele tijdelijke functies zoals configuratie dialogen worden alleen worden geladen wanneer ze nodig zijn, en weer uit het geheugen verwijdert wanneer ze niet langer nodig zijn;
+      </para></listitem>
+      <listitem><para>
+      Object georienteerd: zoals elke andere KDE/Qt programma, is &skim; geschreven in C++.
+      </para></listitem>
+      </itemizedlist>
+    </sect1>
+    <sect1 id="screenshots" >
+    <title>Schermafbeelding</title>
+		<mediaobject>
+		  <imageobject>
+		    <imagedata fileref="mainwindow.png" format="PNG"/>
+		  </imageobject>
+      <caption>
+      <para>Schermafbeelding van het plugin Algemene Venster (Algemene Werkbalk)
+      </para>
+      </caption>
+		</mediaobject>
+    <mediaobject>
+		  <imageobject>
+		    <imagedata fileref="inputwindow.png" format="PNG"/>
+		  </imageobject>
+      <caption>
+      <para>Schermafbeelding van het plugin Invoer Venster
+      </para>
+      </caption>
+    </mediaobject>
+    <mediaobject>
+		  <imageobject>
+		    <imagedata fileref="kdesystray.png" format="PNG"/>
+		  </imageobject>
+      <caption>
+      <para>Schermafbeelding van het plugin KDE Systeemvak Indicator
+      </para>
+      </caption>
+    </mediaobject>
+    <mediaobject>
+		  <imageobject>
+		    <imagedata fileref="setupwindow.png" format="PNG"/>
+		  </imageobject>
+      <caption>
+      <para>Schermafbeelding van het Configuratie Dialoog plugin
+      </para>
+      </caption>
+    </mediaobject>
+    </sect1>
+  </chapter>
+  <chapter id="installation" >
+    <title>Installatie</title>
+    <sect1 id="how-to-obtain-skim" >
+      <title>Hoe &skim; te verkrijgen</title>
+      <para>
+      Download de laatste &skim; &skim_version; van
+      <ulink url="http://sourceforge.net/project/showfiles.php?group_id=108454&amp;package_id=118018" type="html">Sourceforge</ulink>.
+      </para>
+    </sect1>
+    <sect1 id="requirements" >
+      <title>Benodigheden</title>
+      <para>
+      	&scim; >= &require_scim_version;, &Qt; >= 3.2.0 en &kde; >= 3.2.0 zijn nodig om &skim;. te laten werken of te compileren
+      </para>
+      <note><title>Letop:</title><para>Na het installeren van skim, moet ook minstens één IMEngine worden geïnstalleerd
+      (verwijzend naar een invoer methode), zoals <emphasis>scim-chinese</emphasis>
+       (Bevat op dit moment Pinyin IMEngine voor Versimpeld Chinees), 
+      <emphasis>scim-tabellen</emphasis> (bevat tabel-gebaseerde invoer methodes, zoals Wubi, Erbi voor Versimpeld Chinees),
+      <emphasis>scim-hangul</emphasis> (een populaire Koreaanse invoer methode), <emphasis>scim-uim</emphasis> (bevat veel Japanse IMEngines) of <emphasis>scim-m17n</emphasis> (bevat meer dan 30 invoer methodes voor verschillende talen).</para></note>
+      <sect2 id="binary_requirements" >
+      <title>Het installeren van een (Binare) RPM</title>
+      <para>Als U &SKIM; direct wilt kunnen gebruiken, installeer dan RPM's 
+      voor scim en skim.</para>
+      </sect2>
+      <sect2 id="compile_from_source_requirements" >
+      <title>Compileren van Bronbestanden</title>
+      <para>Als het gewenst is om &SKIM; vanuit een bronbestand te compileren, moet er voor gezorgd zijn dat voor het compileren van &skim; in ieder geval de RPM's voor scim en scim-devel zijn geïnstalleerd.</para>
+      <para>Maar als &scim; al eerder op deze computer is gecompileerd, zijn alle benodigde bestanden aanwezig.</para>
+      <para>Indien de orginele op Gtk2 gebaseerde GUI van scim-lib niet gewenst zijn, kunnen deze uitgezet worden wanneer ze geconfigureerd worden: na het daaropvolgende compileren kan &skim; nog steeds geïnstalleerd worden;.
+	Kortom, &skim; is niet afhankelijk van de orginele op Gtk2 gebaseerde GUI.
+      </para>
+      <para>De header bestanden voor &Qt; en &kde; zijn ook nodig om &skim; te kunnen compileren, deze zitten normaal in libqt-devel en libkdecore-devel/libkdelibs-devel RPMs.
+      </para>
+      </sect2>
+    </sect1>
+    <sect1 id="compilation-and-installation" >
+      <title>Compilatie en Installatie</title>
+      <para>Indien de voorkeur wordt gegeven aan het zelf compileren, moet het volgende worden gedaan: <screen>
+          <prompt>%</prompt><userinput><command>./configure</command></userinput>
+          <prompt>%</prompt><userinput><command>make</command></userinput>
+          <prompt>#</prompt><userinput><command>make</command> install</userinput>
+        </screen>
+      </para>
+      <para>Het laatste commando moet als root uitgevoert worden. Indien problemen ondervonden worden, meld die dan aan <ulink url="http://sourceforge.net/mail/?group_id=108454" >Mailing list</ulink>.
+      </para>
+    </sect1>
+  </chapter>
+  <chapter id="using-skim" >
+    <title>&skim; gebruiken</title>
+     <sect1 id="prerequisite-start-skim" >
+      <title>Voorbereiding</title>
+      <para>
+      	Voordat enige XIM server in X gebruikt kan worden, moet de omgeving worden ingesteld.
+      </para>
+      <para>Eerst, voor Gentoo gebruikers, bewerk het bestand ~/.xinitrc (als het nog niet bestaat, creeer dit bestand), 
+      en pas het aan overeenkomstig het voorbeeld hieronder
+      <screen><userinput>export XMODIFIERS=@im=SCIM</userinput>
+<userinput>export LC_CTYPE="zh_CN.GBK"</userinput>
+<userinput>export GTK_IM_MODULE=scim</userinput>
+<userinput>export QT_IM_MODULE=scim</userinput>
+<userinput><command>startkde</command></userinput></screen>
+      De vierde lijn is alleen nodig als uw &Qt; is compileerd met
+      <ulink url="http://immodule-qt.freedesktop.org">qt-immodule</ulink> ondersteuning en 
+      <ulink url="http://scim.sf.net/">scim-qtimm</ulink> is geïnstalleerd. Onder Gentoo, please voeg de laatste Qt toe met USE="immqt-bc" (of USE="immqt" indien u bereid bent om alle op Qt gebaseerde aanwezige programma's opnieuw te compileren) en voeg vervolgens scim-qtimm toe. SuSE zal deze standaard toevoegen bij de komende versie. 
+      </para>
+      <para>Pas de locale/codering (zh_CN.GBK is gebruikt in het voorbeeld hierboven)
+      overeenkomstig uw voorkeur. Alle locales/coderingen nu ondersteund door &scim; worden hieronder genoemd
+      <screen>zh_TW.Big5,zh_TW,zh_HK.Big5-HKSCS,zh_HK,zh_CN.GB18030,zh_CN.GBK,zh_CN.GB2312,zh_CN,
+ja_JP.eucJP,ja_JP.ujis,ja_JP,ko_KR.eucKR,ko_KR</screen>
+      </para>
+      <warning><title>Waarschuwing:</title><para>sommige van deze locales/coderingen worden niet aanbevolen om te gebruiken, 
+      zoals zh_CN.GB2312 (gebruik liever daarvoor in de plaats zh_CN), wegens programmeerfouten in andere programma's/bibiotheken (Xfree 86 enz.)</para></warning>
+      <para>Naast de hierboven genoemde locales/coderingen, worden de meeste utf8 locales ook ondersteund. De ingebouwde locale heeft alleen "en_US.UTF-8". Als ook andere utf8 aangezette locales gewenst zijn (bijvoorbeeld fr_FR.UTF-8), volg dan de volgende procedures:</para>
+      <procedure><title>Andere utf8 locales aanzetten in scim/skim</title>
+      <step><para>Start skim met
+        <screen><prompt>%</prompt><userinput><command>scim-panel-kde</command> -d -f</userinput></screen>
+      </para></step>
+      <step><para>Open het configuratie dialoog door <guimenuitem>configure</guimenuitem>
+      keuze te selecteren in het rechts klik menu in of de systeemvak of in het hoofdvenster;</para></step>
+      <step><para>Ga naar <guimenu>Algemene instellingen</guimenu> -> <guisubmenu>General SCIM</guisubmenu>;</para></step>
+      <step><para>Controleer <guibutton>advanced</guibutton> checkbox;</para></step>
+      <step><para>Replace the content in the combobox of "Supported unicode locales" with fr_FR.UTF-8;</para></step>
+      <step><para>Klik op <guibutton>Toevoegen</guibutton> knop;</para></step>
+      <step><para>Vergeet niet om te klikken op <guibutton>Toepassen</guibutton> 
+      (of <guibutton>Ok</guibutton>) knop als laatste.</para></step>
+      </procedure>
+      <para>Na het toevoegen van de nieuwe utf8 locale, zou fr_FR.UTF-8 in het drop down
+      menu van <guimenu>Ondersteunde unicode locales</guimenu> combobox te zien moeten zijn. Herstart AUB skim 
+      na deze aanpassing (Verlaat X en start het opnieuw).</para>
+      <para>Voor Fedora core 1 gebruikers, voeg zoals hierboven de volgende twee export commando's aan het eind van het bestand /etc/X11/xinit/xinitrc.d/xinput.</para>
+     </sect1>
+     <sect1 id="start-skim" >
+      <title>Start &skim;</title>
+      <para>Overtuig U ervan dat &scim; en scim-panel-gtk
+      NIET gestart zijn voordat &skim; wordt opgestart. Als ze toch al opgestart zijn, stop ze eerst: stop eerst scim en daarna scim-panel-gtk als volgt:
+      <screen>
+          <prompt>%</prompt><userinput><command>killall</command> scim-launcher</userinput>
+          <prompt>%</prompt><userinput><command>killall</command> scim-panel-gtk</userinput></screen></para>
+      <para>
+        Op dit moment zijn er drie verschillende methodes om &skim; te starten:
+      </para>
+     <sect2 id="use-skim-as-default-panel" >
+      <title>Gebruik van &skim; als standaard invoer panel</title>
+      <para>
+      	Indien de voorkeur wordt gegeven aan de KDE/Qt interface en wilt dat &scim; als standaard paneel &skim; gebruikt, 
+        voer dan de volgende commando's uit.
+        <screen><prompt>%</prompt><userinput><command>scim-panel-kde</command> -d -f </userinput></screen>
+        Open vervolgens het configuratie dialoog (klik op de  
+	<guimenuitem>configuratie</guimenuitem> knop) en ga naar 
+        <guimenu>Algemene instellingen</guimenu> -> <guisubmenu>Algemeen SCIM</guisubmenu>,
+        verander de instellingen als volgt: 
+        <screen>
+              <guilabel>Paneel Programma: </guilabel><constant>scim-panel-kde</constant> 
+              <guilabel>Configuratie Module: </guilabel><constant>kconfig</constant></screen>
+        Dit hoeft alleen de eerste keer ingesteld te worden dat &skim; gebruikt wordt.
+      </para>
+      <para>
+        Na deze aanpassing, weet &scim; dat de voorkeur wordt gegeven aan &skim; en zal &skim;
+        automatisch gebruiken. Het enige dat hoeft te worden gedaan om &skim; en &scim; te starten is alleen maar
+        <screen><prompt>%</prompt><userinput><command>scim</command> -d</userinput></screen>
+	or
+	<screen><prompt>%</prompt><userinput><command>skim</command> -d</userinput></screen>
+        (Lees ook <xref linkend="faq-differ-skim-scim_panel_kde"/>)
+      </para>
+      <para>Indien het gewenst is dat KDE automatisch &skim; gebruikt wanneer een KDE sessie begint, zorg ervoor dat 
+      onder <guimenu>Algemene instellingen</guimenu> -> <guisubmenu>X Window</guisubmenu>, <guibutton>Start skim automatisch wanneer KDE start</guibutton> checkbox is aangevinkt.
+      </para>
+    </sect2>
+     <sect2 id="start-skim-auto" >
+      <title>Laat &skim; al het vuile werk doen</title>
+      <para>
+      	Indien skim weinig wordt gebruikt, is enige wat moet worden gedaan om &skim; en &scim; te starten is alleen maar
+        <screen>
+                <prompt>%</prompt><userinput><command>&skim;</command> -d</userinput></screen>
+        of start het via "KDE Menu->Utilities->&skim;"
+      </para>
+    </sect2>
+     <sect2 id="start-skim-manually" >
+      <title>Handmatige start van &skim;</title>
+      <para>
+      	Indien U voor welke reden dan ook (b.v. debuggen), &skim; en &scim; handmatig en apart wilt starten, moet het volgende gedaan worden
+      </para>
+      <para>
+    <screen>
+          <prompt>%</prompt><userinput><command>scim-panel-kde</command> -d</userinput>
+          <prompt>%</prompt><userinput><command>scim</command> -c kconfig -d</userinput></screen>
+    </para>
+    <para>
+    BELANGRIJK: &skim; moet voor &scim; gestart worden.
+    </para>
+    <!--para>
+    (NOTICE: If you need gtk_immodule, then please run following commands:
+    </para-->
+    </sect2>
+    </sect1>
+  </chapter>
+  <chapter id="questionsanswersandtips" >
+    <title>Vragen, antwoorden en aanwijzingen</title>
+    <qandaset id="faq" >
+      <title>Vaak gestelde vragen</title>
+      <qandaentry>
+        <question>
+          <para>Vraag: Waarom heeft U de moeite genomen om  &skim; te programeren, als &scim; 
+          al een Gtk2 gebaseerde paneel heeft?</para>
+        </question>
+        <answer>
+          <para>Ok, de belangrijkste reden is de volgende: Bijna alle programma's die op mijn Desktop draaien zijn op KDE/Qt gebaseerd, en &scim;'s paneel was de enige uitzondering, en het paste daarom niet goed in het gehele K Desktop omgeving, daarom besloot ik om een KDE/Qt paneel te programmeren voor &scim;.</para>
+          <!--para>On the other hand, the Gtk2 panel has some disadvantages, which 
+          &skim; is designed to overcome, such as incapability of online 
+          reconfiguration.</para-->
+        </answer>
+      </qandaentry>
+      <qandaentry>
+        <question>
+          <para>Vraag: &scim; en &skim; zijn met succes geladen, ik kan het invoer-venster openen en daarna CJK invoeren, maar de ingevoerde karakters worden niet overgestuurt naar het KDE/Qt doelprogramma.</para>
+        </question>
+        <answer>
+          <para>Overtuig U zelf ervan dat XIM Invoer Style instelling van Qt is "Over The Spot". U kunt dit aanpassen door het aanroepen van "qtconfig", "Interface" tab, aan het eind van deze pagina.
+	  </para>
+        </answer>
+      </qandaentry>
+      <qandaentry>
+        <question id="faq-no-scim-settings">
+          <para>Vraag: Hoe kan ik &scim; speciale instellingen aanpassen? Ik kan ze niet vinden in het configuratie dialoog.</para>
+        </question>
+        <answer>
+          <para>Op dit moment &skim; heeft bijna alle &scim; speciale instellingen in zijn configuratie dialoog, met als enige uitzondering: De speciale UI instelling voor een algemene tabel in niet opgenomen. Dus als dit soort instellingen verandert moeten worden, gebruik dan scim-setup. 
+          Dit kan gestart worden door:
+          <screen>
+          <prompt>%</prompt><userinput><command>scim-setup</command> -c kconfig</userinput>
+          </screen>
+          </para>
+          <para>Indien skim het standaard paneel is, kan scim-setup opgestart worden zonder de parameters ("-c kconfig").</para>
+          <para>Dit probleem zal opgelost worden in &skim; post-1.0 versie wanneer de algemene tabel IMEngine is afgesplist van scim-lib.</para>
+        </answer>
+      </qandaentry>
+      <qandaentry>
+        <question id="faq-no-ims-in-list">
+          <para>Vraag: Waarom verschijnt er na het linksklikken op het icoon van het systeem-boom geen invoervenster?</para>
+        </question>
+        <answer>
+          <para>Omdat er geen scim backend process is gestart. U kunt proberen
+          <screen>
+          <prompt>%</prompt><userinput><command>scim</command> -d</userinput>
+          </screen>
+          </para>
+          <para>Dit wordt waarschijnlijk veroorzaakt door een misconfiguratie van scim/skim: volg AUB de methode beschreven in <xref linkend="using-skim"/></para>
+        </answer>
+      </qandaentry>
+      <qandaentry>
+        <question id="faq-differ-skim-scim_panel_kde">
+          <para>Vraag: Wat is het verschil tussen skim en scim-panel-kde?</para>
+        </question>
+        <answer>
+          <para>Voordat &skim; 0.9.0 bestond, werdt dit pakket scim-panel-kde genoemd. Maar toen dit pakket meer en meer mogelijkheden kreeg dan alleen maar een paneel voor &scim;, besloot ik om het de nieuwe naam &skim; te geven;.</para>
+          <para>Maar, er kan nog steeds een programma met de naam scim-panel-kde in &skim; gevonden worden. Het verschil tussen skim en scim-panel-kde is dat: onafhankelijk wat is ingesteld in skim configuratie dialoog in "Global Settings -> Skim Plugins", de plugin "SCIM Server" wordt niet geladen door dit laatste programma. In het kort, scim-panel-kde
+          is bedoeld om gebruikt te worden door scim-launcher om skim automatisch te starten. 
+          </para>
+          <para>(Mischien wilt U de bron-bestanden van scim-panel-kde bekijken: eigenlijk is alleen  een shell wrapper voor het echte &skim; programma.)</para>
+        </answer>
+      </qandaentry>
+    </qandaset>
+  </chapter>
+  <chapter id="credits">
+    <title>Met dank aan en Licentie</title>
+      <para>&skim;</para>
+      <para>
+	Programma copyright 2004 Liucougar (Liuspider) <email>liuspider_ZAI_users.sourceforge.net</email>
+	</para>
+	<para>
+	Auteurs:
+	<itemizedlist>
+	<listitem><para>&scim; Hoofd auteur: JamesSu
+		<email>suzhe_ZAI_tsinghua.org.cn</email></para>
+	</listitem>
+  <listitem><para>Art ontwerper: Kitae
+		<email>neeum_ZAI_yahoo.com</email></para>
+	</listitem>
+  </itemizedlist></para>
+  <para>Translators:<itemizedlist>
+  <listitem><para>Duits : Hendrik Brand
+          <email>eru_ZAI_gmx.li</email>, 
+          Jan Hefti
+          <email>j.hefti_ZAI_hamburg.de</email></para>
+  </listitem>
+  <listitem><para>Japans : Yukiko Bando
+          <email>ybando_ZAI_k6.dion.ne.jp</email></para>
+  </listitem>
+  <listitem><para>Koreaans : Kitae
+          <email>neeum_ZAI_yahoo.com</email></para>
+  </listitem>
+  <listitem><para>Traditioneel Chinees : Jim Huang
+          <email>jserv_ZAI_kaffe.org</email></para>
+  </listitem>
+   <listitem><para>Nederlands : Ronald Stroethoff
+          <email>stroet43_ZAI_zonnet.nl</email></para>
+  </listitem>  
+	</itemizedlist>
+  (Vervang _ZAI_ door @ om het werkelijke Email-adres te verkrijgen)
+	</para>
+	<para>
+	Documentatie Copyright &copy; 2004 Liucougar (Liuspider) 
+		<email>liuspider_ZAI_users.sourceforge.net</email>
+	</para>
+	
+	<!-- TRANS:CREDIT_FOR_TRANSLATORS -->
+	
+	&underFDL;               <!-- FDL: do not remove -->
+	
+	<!-- Determine which license your application is licensed under,
+	     and delete all the remaining licenses below:
+	
+	     (NOTE:  All documentation are licensed under the FDL,
+	     regardless of what license the application uses) -->
+	
+	&underGPL;               <!-- GPL License -->
+	
+	</chapter>
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+sgml-general-insert-case: lower
+End:
+-->

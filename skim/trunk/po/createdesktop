@@ -1,0 +1,131 @@
+#! /bin/bash
+
+test -z "$VERBOSE" || echo "creating desktop file"
+
+if test -n "$2"; then
+  outputfile=$2
+else
+  outputfile=desktop.pot
+fi
+filelist=$1
+cachefile=`tempfile`
+
+rm -f $outputfile
+rm -f $cachefile
+touch $cachefile
+
+if test ! -r $filelist; then
+  echo "ERROR: no file list"
+  exit
+fi
+
+date=`date +"%Y-%m-%d %H:%M%z"`
+echo "#, fuzzy" >> $outputfile
+echo "msgid \"\"" >> $outputfile
+echo "msgstr \"\"" >> $outputfile
+echo "\"Project-Id-Version: desktop files\n\"" >> $outputfile
+echo "\"POT-Creation-Date: $date\n\"" >> $outputfile
+echo "\"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n\"" >> $outputfile
+echo "\"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n\"" >> $outputfile
+echo "\"Language-Team: LANGUAGE <LL@li.org>\n\"" >> $outputfile
+echo "\"MIME-Version: 1.0\n\"" >> $outputfile
+echo "\"Content-Type: text/plain; charset=UTF-8\n\"" >> $outputfile
+echo "\"Content-Transfer-Encoding: ENCODING\n\"" >> $outputfile
+echo "" >> $outputfile
+
+function grepTag() {
+   testfile=`tempfile`
+   rm -f $testfile
+   grep "^$tag=" $file | sed -e "s#^$tag=\(.*\)#\1#" > $testfile
+   if test -f $testfile; then
+     lines=`cat $testfile | wc -l`
+   else
+     lines=0;
+   fi
+   line=0
+   orig=
+   esc=
+   has=no
+
+   until test ! "$line" -lt "$lines"; do
+
+   line=`expr $line + 1`
+
+   orig=`head -n $line $testfile | tail -n 1`
+   esc=`echo $orig | sed -e 's#\"#\\\\"#g'`
+   has=yes
+
+   if test -n "$warn" && test -z "$orig"; then
+     echo "desktop file without $tag entry: $filename"
+     has=no
+   fi
+
+   if test "$has" = "yes"; then
+     if grep -q "^$tag=$orig$" $cachefile; then
+       test
+     else
+       echo "$tag=$orig" >> $cachefile
+
+       echo "#: $filename:$number" >> $outputfile
+       echo "msgid \"$tag=$esc\""  | sed -e 's#\\n#\\\\n#g' >> $outputfile
+       echo "msgstr \"\"" >> $outputfile
+       echo "" >> $outputfile
+
+     fi
+   fi
+
+   done
+
+   rm -f $testfile
+}
+
+list=`cat $filelist`
+
+for file in $list; do
+   echo "parsing $file"
+
+   filename=`echo $file | sed -e "s#^\./##"`
+
+   if test ! -f $filename; then
+     echo "can't find $filename"
+   fi
+
+   warn=
+   tag=Name
+   number=1
+   grepTag
+
+   orig_name="$orig"
+
+   warn=
+   tag=Comment
+   number=2
+   grepTag
+
+#   if test "$orig" = "$orig_name"; then
+#     echo "comment is the same as name: $filename" >&2
+#   fi
+
+   tag=Language
+   number=3
+   grepTag
+
+   tag=Keywords
+   number=4
+   grepTag
+
+   tag=About
+   number=5
+   grepTag
+   
+   tag=Description
+   number=6
+   grepTag
+
+   tag=GenericName
+   number=7
+   grepTag
+
+done
+
+rm -f $cachefile

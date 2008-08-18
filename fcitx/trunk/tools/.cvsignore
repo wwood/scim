@@ -1,0 +1,9 @@
+ Makefile.in
+ Makefile
+ txt2mb
+ mb2txt
+ createPYMB
+ *.lo
+ *.la
+ .deps
+ .libs

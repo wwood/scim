@@ -1,0 +1,53 @@
+%define nam             @PACKAGE@
+%define ver             @VERSION@
+%define rel             1
+
+Summary:        An filter for SCIM to convert chars into CNS11643 tags.
+Name:           %{nam}
+Version:        %{ver}
+Release:        %{rel}
+License:        GPL
+Group:          System Environment/Libraries
+URL:            http://www.freedesktop.org/~suzhe
+BuildRoot:      %{_tmppath}/%{name}-%{version}-root
+
+Source0:        %{name}-%{version}.tar.gz
+#NoSource:	0
+
+PreReq:         /sbin/ldconfig, /bin/sh
+
+Requires:	scim >= @SCIM_VERSION@
+BuildRequires:  scim-devel >= @SCIM_VERSION@
+
+%description
+SCIM is a developing platform to significant reduce the difficulty of 
+input method development. 
+
+%changelog
+* Tue Dec 27 2005 James Su <suzhe@tsinghua.org.cn>
+- first release of scim-cns11643-filter.
+
+#--------------------------------------------------
+
+%prep
+
+%setup -n %{name}-%{version}
+
+%build
+./configure --prefix=%{_prefix} --sysconfdir=%{_sysconfdir} --mandir=%{_mandir}
+
+make 
+
+%install
+[ -n "$RPM_BUILD_ROOT" -a "$RPM_BUILD_ROOT" != / ] && rm -rf $RPM_BUILD_ROOT
+make DESTDIR=${RPM_BUILD_ROOT} install
+
+rm -f $RPM_BUILD_ROOT/@SCIM_MODULEDIR@/Filter/cns11643.{a,la}
+
+%clean
+[ -n "$RPM_BUILD_ROOT" -a "$RPM_BUILD_ROOT" != / ] && rm -rf $RPM_BUILD_ROOT
+
+%files
+%defattr(-, root, root)
+%doc AUTHORS COPYING NEWS README ChangeLog
+@SCIM_MODULEDIR@/Filter/cns11643.so

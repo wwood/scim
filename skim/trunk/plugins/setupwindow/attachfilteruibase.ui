@@ -1,0 +1,209 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>AttachFilterUIBase</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>AttachFilterUIBase</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>432</width>
+            <height>308</height>
+        </rect>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLabel" row="0" column="0" rowspan="1" colspan="4">
+            <property name="name">
+                <cstring>textLabel1</cstring>
+            </property>
+            <property name="text">
+                <string>Available &amp;Filters</string>
+            </property>
+            <property name="buddy" stdset="0">
+                <cstring>filterListBox</cstring>
+            </property>
+        </widget>
+        <widget class="QListBox" row="1" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>filterListBox</cstring>
+            </property>
+            <property name="currentItem">
+                <number>-1</number>
+            </property>
+        </widget>
+        <widget class="QLayoutWidget" row="3" column="2" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>layout3</cstring>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>removeButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Remove Filter</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>moveUpButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Move &amp;Up</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>moveDownButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Move &amp;Down</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer3</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+            </vbox>
+        </widget>
+        <widget class="QLayoutWidget" row="1" column="2" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>layout3</cstring>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>addButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Add Filter</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>moreInfoButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;More Info</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+            </vbox>
+        </widget>
+        <widget class="QLabel" row="2" column="0" rowspan="1" colspan="4">
+            <property name="name">
+                <cstring>installedTextLabel</cstring>
+            </property>
+            <property name="text">
+                <string>&amp;Installed Filters for this Input Method</string>
+            </property>
+            <property name="buddy" stdset="0">
+                <cstring>installedFilterListBox</cstring>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="4" column="1" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>saveButton</cstring>
+            </property>
+            <property name="text">
+                <string>&amp;Ok</string>
+            </property>
+        </widget>
+        <spacer row="4" column="0">
+            <property name="name">
+                <cstring>spacer1</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>190</width>
+                    <height>20</height>
+                </size>
+            </property>
+        </spacer>
+        <widget class="QPushButton" row="4" column="3">
+            <property name="name">
+                <cstring>cancelButton</cstring>
+            </property>
+            <property name="text">
+                <string>Canc&amp;el</string>
+            </property>
+        </widget>
+        <widget class="QListBox" row="3" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>installedFilterListBox</cstring>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>saveButton</sender>
+        <signal>clicked()</signal>
+        <receiver>AttachFilterUIBase</receiver>
+        <slot>accept()</slot>
+    </connection>
+    <connection>
+        <sender>cancelButton</sender>
+        <signal>clicked()</signal>
+        <receiver>AttachFilterUIBase</receiver>
+        <slot>reject()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>filterListBox</tabstop>
+    <tabstop>installedFilterListBox</tabstop>
+    <tabstop>addButton</tabstop>
+    <tabstop>removeButton</tabstop>
+    <tabstop>saveButton</tabstop>
+    <tabstop>cancelButton</tabstop>
+</tabstops>
+<slots>
+    <slot>cancelButton_2_clicked()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

@@ -1,0 +1,21 @@
+#QTDIR=/usr scons debug=1 qtlibs=/usr/lib/qt4/ qtincludes=/usr/include/qt4
+if [ ! -d "bksys" ]; then
+  echo "Please press enter directly for the next question about the password"
+  cvs -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/scim login
+  cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/scim co -P -d bksys skim/bksys
+fi
+
+if [ ! -d "bksys" ]; then
+  echo -e "ERROR: missing bksys directory\n       please see README on how to bootstrap from CVS"
+  exit
+fi
+
+#gmake -f Makefile.cvs
+
+if test "$1" = "release"; then
+  echo "Cleaning files"
+  find . -name .cvsignore | xargs rm -fr
+  rm templates/ -fr
+  find -name CVS | xargs rm -rf
+  rm autom4te.cache *.kdev* stamp*.in -fr
+fi

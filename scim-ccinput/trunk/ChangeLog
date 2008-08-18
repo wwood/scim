@@ -1,0 +1,354 @@
+#format:
+#date<TAB>changer
+#<TAB>* 事由1
+#<TAB>- 涉及文件1
+#<TAB><TAB>具体改动1
+#<TAB><TAB>具体改动2
+#<TAB>- 涉及文件2
+#<TAB><TAB>具体改动1
+#<TAB><TAB>具体改动2
+#
+#<TAB>* 事由2
+#...
+2003-10-22	ZHANG Qian
+	* make a basic simple file framework.
+	- changelog
+	- datatype.h
+	- ddinput.h
+	- file_operation.c
+	- file_operation.h
+	- glossary_lookup.c
+	- imcontext.c
+	- pinyin_parse.c
+	- pinyin_parse.h
+	- pinyin_table.c
+	- pinyin_table.h
+
+2003-10-23	ZHANG Qian
+	* rename sth.
+	- ddinput.h
+		SyllableFileHeadInfo -> SyllableSegmentHeadInfo
+		SyllableFileHeadInfo_t -> SyllableSegmentHeadInfo_t
+		SyllableFileSegmentHead -> SyllableSegmentHead
+		SyllableFileSegmentHead_t -> SyllableSegmentHead_t
+		word_flag -> word_phrase_flag (member)
+
+	* SyllableSegmentHead_t中的结构定义调整。
+	- ddinput.h
+		增加成员u_short word_phrase_total表示字词总数
+		增加成员u_short *word_phrase_num_pointer，作为各字词字数的指向指针
+
+	* UTF字符定义改为无符号。
+	- datatype.h
+		typedef char ddUTF8Char_t[3]; -> typedef u_char ddUTF8Char_t[3];
+
+2003-10-23	ZHANG Qian
+	* 词条类型变更，改为直接分配空间。
+	- ddinput.h
+		词条类型中的汉字指针和pinyin_key指针都改为预定空间的数组
+		查找表结构也做相应改动
+
+2003-10-23	ZHANG Qian
+	* rename sth.
+	- ddinput.h
+		phrase_syllable_file_head_info -> phrase_syllable_file_segment_info (member)
+
+2003-10-24	ZHANG Qian
+	* 修正手误。
+	- ddinput.h
+		ddPhraseFourWordInfo *lookup_phrase_word_three; -> ddPhraseFourWordInfo *lookup_phrase_word_four; (member)
+
+2003-10-24	ZHANG Qian
+	* add code about query the glossary.
+	- glossary_lookup.c
+		dd_query_glossary func
+		dd_find_matching
+
+2003-10-27	ZHANG Qian
+	* 基本数据结构变更。
+	- ddinput.h
+		各个词条的词频链表改为双向，增加一个前向指针。
+		长词条类型中去掉无用的词频信息dd_query_glossary func
+		各个词条类型中为找到链表位置，对piyin_key增加一个u_short位置，存放首音节key。
+
+2003-10-31	ZHANG Qian
+	* 音节解析中加入对隔音符号的处理。
+	- pinyin_parse.c
+
+2003-10-31	ZHANG Qian
+	* 加入词库装载、词库查询、词频调整模块。
+	- file_operation.c .h
+	- glossary_lookup.c .h
+	- glossary_adjust.c .h
+
+	* 加入控制台测试程序。
+	- test_on_console.c
+	- codeset_conv.c .h
+
+2003-11-06	ZHANG Qian
+	* 加入用户词库数据结构定义。
+	- file_operation.c .h
+		用户全局词库
+		用户词库文件头
+		用户词频文件头
+		其他……
+
+2003-11-07	ZHANG Qian
+	* 加入模糊拼音处理。
+	- pinyin_parse.c .h  glossary_lookup.c .h  pinyin_table.c  ddinput.h
+		相关定义在ddinput.h和pinyin_table.c中。没有添加单独源文件模块。
+		有些函数的传入参数增加了一个模糊音的标志，例如dd_is_fuzzy**与dd_find_matching。
+
+2003-11-10	ZHANG Qian
+	* 加入临时性的防止简拼过多导致词库查询响应太慢的措施。
+	- glossary_lookup.c
+
+2003-11-10	ZHANG Qian
+	* 针对用户词库而做的改变。
+	- glossary_lookup.c .h
+		内部相关函数增加一个参数，把词库由全局引用改为参数指针传入。外部调用者对dd_find_matching的调用不变。
+
+2003-11-10	ZHANG Qian
+	* 解析拼音中加入输入串合法性判断。
+	- pinyin_parse.c
+
+2003-11-10	ZHANG Qian
+	* 功能上增加同是最高词频的比较与调整模块。
+	- glossary_adjust.c .h  glossary_lookup.c .h
+
+2003-11-12	ZHANG Qian
+	* 增加用户词库模块。
+	- file_operation.c .h
+
+2003-11-13	ZHANG Qian
+	* 新增用户词条接口增加对原有词库的唯一性查询。
+	- file_operation.c  glossary_lookup.c .h
+		增加函数dd_is_phrase_exist_in_glossary
+
+2003-11-13	ZHANG Qian
+	* 拼音解析模块增加用户自加的隔音符信息返回，目的是方便处理预编辑串显示。与解析后的拼音串一样，也是逆序。
+	- pinyin_parse.c .h
+		dd_parse_pinyin函数增加一个参数u_short * has_separator，是由调用者自己维护的数组。
+
+2003-11-14	ZHANG Qian
+	* 模糊音功能Bug修补：简拼模糊处理最多只能两个。
+	- glossary_lookup.c
+		改为计数，而非封顶，但实际上还是有最大值为3
+
+2003-11-14	ZHANG Qian
+	* 模糊音功能Bug修补：简拼的双字母声母第二字母丢失。
+	- glossary_lookup.c
+		赋值语句手误成“==”
+
+2003-11-14	ZHANG Qian
+	* dd_get_syllable_first_letter_index函数改为有符号类型。
+	- glossary_adjust.c .h
+
+2003-11-17	ZHANG Qian
+	* 修补拼音解析模块中用户自加的隔音符信息方面的一个Bug。
+	- pinyin_parse.c .h
+		最后的隔音符号处理不当
+
+2003-11-17	ZHANG Qian
+	* 加词的唯一性检测的函数改名。
+	- glossary_lookup.c .h
+		dd_is_already_exist -> dd_is_phrase_exist_in_glossary
+
+2003-11-17	ZHANG Qian
+	* 定义细节更新。
+	- ddinput.h
+
+2003-11-17	ZHANG Qian
+	* 保存新词的Bug以及删除词条。
+	- file_operation.c
+		当用户词库第一次加载，然后再调用用户词库存储模块，写入用户词库模块的音节段头pinyin_key信息有错误（所有的413个pinyin_key都写入的是0）
+
+2003-11-18	ZHANG Qian
+	* 查询词库的新算法。
+	- glossary_lookup.c .h
+		外部接口未变
+
+2003-11-18	ZHANG Qian
+	* 全拼拼音值得到简拼序号中的边界处理。
+	- glossary_adjust.c
+		dd_get_syllable_first_letter_index函数的输入边界校验修改为开区间
+
+2003-11-19	ZHANG Qian
+	* 简拼比较中的Bug。
+	- glossary_lookup.c
+		dd_query_one_phrase函数中的简拼部分
+
+2003-11-19	ZHANG Qian
+	* 拼音码解析的返回值定义。
+	- pinyin_parse.c
+		对超出最大解析段数的，返回-2
+
+2003-11-20	ZHANG Qian
+	* 9字词查询错误。
+	- glossary_lookup.c
+		第9个字的拼音存放错误
+
+2003-11-21	ZHANG Qian
+	* 系统和用户数据路径。
+	- ddinput.h
+		用户路径设定为与SCIM无关
+		控制台的测试路径另外定义，由_SCIM_APP决定
+
+2003-11-21	LIN ShiQun
+	* 加入SCIM接口。
+	- scim_dd_server.cpp
+	- scim_dd_server.h
+	- scim_dd_server_setup.cpp
+
+2003-11-21	Lin Shiqun
+	* 解决选择一部分文字后，继续输入，先选择的字自动上屛问题。
+	- scim_dd_server.cpp
+		 insert函数的commit_converted时机有问题。
+
+2003-11-21	Lin Shiqun
+	* 解决超过50个字母输入时，前50子母消失问题。
+	- scim_dd_server.cpp
+		 dd_pinyin_parse函数原来没有处理50个字母输入的情况。
+
+
+2003-11-21	Lin Shiqun
+	* 解决内存严重泄漏问题问题。
+	- scim_dd_server.cpp
+		 由于笔误，在一处程序中加入分配内存的语句。
+
+
+2003-11-21	Lin Shiqun
+	* 切换输入法时，instance死掉的问题。
+	- scim_dd_server.cpp
+		 变量im_context的定义改为instance中的公共变量。
+
+2003-11-21	Lin Shiqun
+	* 解决启动时加载若干个factory的问题。
+	- scim_dd_server.cpp
+		 由于SCIM加载输入法时，在相关的位置查找文件，有几个文件加载几次，当然不都是有效的。
+
+2003-11-25	Lin Shiqun
+	* 添加东东配置模块。
+	- scim_dd_server_setup.cpp
+
+2003-11-25	Lin Shiqun
+	* 修改zh_CN.po解决的东东配置模块的中文显示问题。
+	- zh_CN.po
+
+2003-11-25	ZHANG Qian
+	* 模糊音处理中的不合法拼音相关Bug。
+	- glossary_lookup.c
+		全拼简拼判断中，对于本来非法的拼音情况未加考虑，现补上
+		另外，真正处理全拼的模糊时，也要考虑这种情况而减少一个计数
+
+2003-11-28	SHAO changqing
+	* 创造.ddinput目录时,赋给目录的权限不对,现改为0700。
+	- file_operation.c
+
+2003-12－3	Zhangqian
+	* 删除警告信息。
+	- 所有文件
+		所有的C文件中的警告和调试信息。
+
+2003-12－3	Shao Changqing
+	* 修正词库。
+	- 系统词库和系统词频
+		使用质保部提供的修正结果更新词库，主要是多音字。
+
+2003-12－3	LIN Shiqun
+	* 改掉原来的输入法图标和相应程序。
+	- 涉及较多文件
+		名字改为共创，图标改为双“S”。
+
+2003-12－3	LIN Shiqun
+	* 屏蔽掉英文输入和内码输入。
+	- 涉及configure.ac文件
+		在此处修改较为合适。
+
+2003-12－3	LIN Shiqun
+	* 修改共创输入法版本。
+	- scim.spec
+
+2003-12－10	Zhan Qian
+	* 整理所有的源代码。
+	- 涉及所有程序。
+
+2003-12－10	LIN Shiqun
+	* 替换成scim 0.8.2。
+	- 所有的程序和scim.spec
+
+2003-12－10	LIN Shiqun
+	* 改正一个切换焦点不reset的bug。
+	- scim-dd-server.cpp
+
+2003-12－12	LIN Shiqun
+	* 从scim中完全剥离出来。
+	- 涉及所有文件。
+
+2003-12－12	LIN Shiqun
+	* 把所有外部涉及“东东”的文件改掉。
+	- 涉及所有文件。
+
+2003-12－16	Zhang Qian
+	* 把所有外部涉及“东东”的文件改掉。
+	- 涉及所有核心文件。
+
+2003-12－17	LIN Shiqun
+	* 添加新的词库。
+	- 涉及词库文件。
+
+2003-12－17	LIN Shiqun
+	* 改掉所有与输入法核心接口部分。
+	- 涉及所有文件。
+
+2003-12－17	LIN Shiqun
+	* 更新附属文件，如AUTHOR，README等。
+	- 涉及所有附属文件。
+
+2003-12－17	LIN Shiqun
+	* 重新涉及目录结构，添加icons和configs目录，调整了data和scim目录。
+	- 涉及所有文件。
+2003-12-25	ZHANG Qian
+	* add shuangpin module.
+	- pinyin_parse.c, .h
+		add func ccin_parse_shuangpin and ccin_sp_to_qp
+		add global variable "ccinSPMappingKey_t * g_sp_config_working"
+	- ccinput.h
+		add typedef ccinSPMappingKey_t
+	- pinyin_table.c
+		add some shuangpin configure
+
+2003-12-26	ZHANG Qian
+	* a small fix.
+	- ccinput.h
+		line 59: "./data/" -> "../data/"
+（对SCIM下程序无影响！）
+
+2003-12-29	ZHANG Qian
+	* add no GBK option support.
+	- glossary_lookup.c
+		use flag "g_flag_is_GBK" in func ccin_query_recursive_by_number
+
+2003-12-30	ZHANG Qian
+	* add lookup result link table operation : delete a node.
+	- glossary_lookup.c
+		add func delete_phrase_from_result_list
+
+2003-12-29	ZHANG Qian
+	* add a new shuangpin configure.
+	- pinyin_table.c
+		add g_sp_config_ms
+
+2004-1-5	Lin Shiqun
+		修改UISetup模块，添加读取双拼配置，添加配置页。
+
+2004-1-6	Lin Shiqun
+		修改Server模块，读取双拼配置，添加双拼功能。
+
+2004-1-6	Lin Shiqun
+		修改Server模块，读取GBK选项配置，实现GBK是否支持功能。
+
+2004-1-6	Lin Shiqun
+		升级ccinput版本至0.3.0。
+
+

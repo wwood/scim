@@ -1,0 +1,30 @@
+[Desktop Entry]
+Encoding=UTF-8
+Icon=input_devices_settings
+DocPath=skim/index.html
+Type=Service
+ServiceTypes=Skim/KCModule
+X-KDE-ModuleType=Library
+X-KDE-Library=skimplugin_configplugin
+X-KDE-ParentApp=skim
+X-KDE-ParentComponents=skim
+X-KDE-PluginInfo-DisplayParent=skimsetupdir_panel
+X-KDE-Weight=0
+#the first one
+Name=Skim Plugins
+Name[de]=Komponenten von skim
+Name[fr]=Composants Skim
+Name[it]=Plugin di Skim
+Name[ja]=skimプラグイン
+Name[ko]=스킴 플러그인
+Name[pa]=ਸਕਿਪ ਪਲੱਗਿੰਨ
+Name[zh_CN]=Skim 插件
+Comment=Enable/disable Skim Plugins
+Comment[de]=Komponenten von skim aktivieren/deaktivieren
+Comment[fr]=Activation/désactivation des composants de Skim
+Comment[it]=Abilita/disabilita i plugin di Skim
+Comment[ja]=skimのプラグインの有効/無効を設定
+Comment[ko]=스킴 플러그인 활성/비활성화
+Comment[pa]=ਸਕਿਮ ਪਲੱਗਿੰਨ ਯੋਗ/ਅਯੋਗ
+Comment[zh_CN]=启用/禁用 Skim 插件
+Comment[zh_TW]=啟用/禁用 Skim Plugins

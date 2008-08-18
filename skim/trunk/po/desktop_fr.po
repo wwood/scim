@@ -1,0 +1,186 @@
+# translation of desktop_fr.po to French
+# translation of desktop.po to French
+# Damien Menanteau <damien.menanteau@cegetel.net>, 2004, 2005.
+msgid ""
+msgstr ""
+"Project-Id-Version: desktop_fr\n"
+"POT-Creation-Date: 2005-06-09 00:08+0000\n"
+"PO-Revision-Date: 2005-06-04 21:24+0200\n"
+"Last-Translator: Damien Menanteau <damien.menanteau@cegetel.net>\n"
+"Language-Team: French\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.10.1\n"
+"Plural-Forms:  nplurals=2; plural=(n > 1);\n"
+
+#: src/skim.desktop:1
+msgid "Name=skim"
+msgstr "Name=skim"
+
+#: src/skim.desktop:2
+msgid "Comment=Input method platform"
+msgstr "Comment=Plateforme méthode de saisie"
+
+#: src/skimplugin.desktop:2
+msgid "Comment=A Skim Plugin"
+msgstr "Comment=Un Composant pour Skim"
+
+#: src/skimui.desktop:2
+msgid "Comment=A Skim UI Plugin"
+msgstr "Comment=Un Composant interface utilisateur pour Skim"
+
+#: src/skimkcmplugin.desktop:2
+msgid "Comment=A Config Plugin for Skim"
+msgstr "Comment=Un Composant de configuration pour Skim"
+
+#: src/skimsetupcategory.desktop:2
+msgid "Comment=A definition of one Skim Setup Category"
+msgstr "Comment=La définition d'une rubrique de configuration pour Skim"
+
+#: plugins/mainwindow/skimplugin_mainwindow_config.desktop:1
+msgid "Name=Main Toolbar"
+msgstr "Name=Barre d'Outils Principale"
+
+#: plugins/mainwindow/skimplugin_mainwindow_config.desktop:2
+msgid "Comment=Main Toolbar Configuration"
+msgstr "Comment=Configuration de la Barre d'Outils Principale"
+
+#: plugins/mainwindow/skimplugin_mainwindow.desktop:1
+msgid "Name=Toggle Docking"
+msgstr "Name=Activation Amarrage"
+
+#: plugins/mainwindow/skimplugin_mainwindow.desktop:2
+msgid "Comment=Main Window"
+msgstr "Comment=Fenêtre Principale"
+
+#: plugins/scimlauncher/skimplugin_scim.desktop:1
+msgid "Name=SCIM Server"
+msgstr "Name=Serveur SCIM"
+
+#: plugins/scimlauncher/skimplugin_scim.desktop:2
+msgid "Comment=init scim-lib as backend server"
+msgstr "Comment=initialisation de scim-lib en tant que serveur en base arrière"
+
+#: plugins/kdetraystatus/skimplugin_systemtray_config.desktop:1
+msgid "Name=System Tray Icon"
+msgstr "Name=Icône de la Barre des Tâches"
+
+#: plugins/kdetraystatus/skimplugin_systemtray_config.desktop:2
+msgid "Comment=Configure plugin for System Tray Indicator"
+msgstr "Comment=Configuration Indicateur de la Barre des Tâches"
+
+#: plugins/kdetraystatus/skimplugin_systemtray.desktop:2
+msgid "Comment=System Tray Indicator"
+msgstr "Comment=Indicateur de la Barre des Tâches"
+
+#: plugins/setupwindow/kcm_skimplugin_configplugin_config.desktop:1
+msgid "Name=Skim Plugins"
+msgstr "Name=Composants Skim"
+
+#: plugins/setupwindow/kcm_skimplugin_configplugin_config.desktop:2
+msgid "Comment=Enable/disable Skim Plugins"
+msgstr "Comment=Activation/désactivation des composants de Skim"
+
+#: plugins/setupwindow/skimplugin_scim_global_config.desktop:1
+msgid "Name=General SCIM"
+msgstr "Name=Communs SCIM"
+
+#: plugins/setupwindow/skimplugin_scim_global_config.desktop:2
+msgid "Comment=Configure for SCIM global settings"
+msgstr "Comment=Configuration des paramètres globaux de SCIM"
+
+#: plugins/setupwindow/skimplugin_setupwindow.desktop:1
+msgid "Name=Global Settings"
+msgstr "Name=Configuration Globale"
+
+#: plugins/setupwindow/skimplugin_setupwindow.desktop:1
+msgid "Name=Configure"
+msgstr "Name=Configuration"
+
+#: plugins/setupwindow/skimplugin_setupwindow.desktop:2
+msgid "Comment=Global Configuration Dialog"
+msgstr "Comment=Dialogue de Configuration Globale"
+
+#: plugins/setupwindow/skimplugin_scim_x_config.desktop:1
+msgid "Name=X Window"
+msgstr "Name=X Window"
+
+#: plugins/setupwindow/skimplugin_scim_x_config.desktop:2
+msgid "Comment=Configure for X Window FrontEnd of SCIM"
+msgstr "Comment=Configuration de X Window pour SCIM"
+
+#: plugins/setupwindow/skimplugin_scim_imengines_config.desktop:1
+msgid "Name=Global Setup"
+msgstr "Name=Configuration Globale"
+
+#: plugins/setupwindow/skimsetupdir_frontend.desktop:1
+msgid "Name=Frontend"
+msgstr "Name=Fenêtre de Saisie"
+
+#: plugins/setupwindow/skimsetupdir_imengines.desktop:1
+msgid "Name=IMEngines"
+msgstr "Name=Moteurs de Saisie"
+
+#: plugins/setupwindow/skimsetupdir_panel.desktop:1
+msgid "Name=Panel"
+msgstr "Name=Panneau"
+
+#: plugins/inputwindow/skimplugin_inputwindow.desktop:1
+msgid "Name=Input Window"
+msgstr "Name=Fenêtre de Saisie"
+
+#: plugins/inputwindow/skimplugin_inputwindow.desktop:1
+msgid "Name=Stick"
+msgstr "Name=Epingler"
+
+#: plugins/inputwindow/skimplugin_inputwindow.desktop:2
+msgid ""
+"Comment=When typing CJK characters you are interacting with this Input Window"
+msgstr ""
+"Comment=Lors de la saisie de caractères CJK, vous interragissez avec cette "
+"Fenêtre de Saisie"
+
+#: plugins/inputwindow/skimplugin_inputwindow_config.desktop:2
+msgid "Comment=Configure for Input Window"
+msgstr "Comment=Configuration Fenêtre de Saisie"
+
+#: plugins/compmgrclient/skimplugin_compmgrclient_config.desktop:1
+msgid "Name=Composite"
+msgstr "Name=Mode Composite"
+
+#: plugins/compmgrclient/skimplugin_compmgrclient_config.desktop:2
+msgid "Comment=Configuration of the composite features in skim"
+msgstr "Comment=Configuration des fonctions composites dans skim"
+
+#: plugins/compmgrclient/skimplugin_compmgrclient.desktop:1
+msgid "Name=Composite Management"
+msgstr "Name=Gestion Modes Composites"
+
+#: plugins/compmgrclient/skimplugin_compmgrclient.desktop:2
+msgid "Comment=Manage the composite features in skim"
+msgstr "Comment=Gestion des fonctions composites dans skim"
+
+#: ../scim-pinyin/skim/setupui/skimplugin_scim_smartpinyin_config.desktop:1
+msgid "Name=Smart Pinyin"
+msgstr "Name=Smart Pinyin"
+
+#: ../scim-pinyin/skim/setupui/skimplugin_scim_smartpinyin_config.desktop:2
+msgid "Comment=Configure plugin for Smart Pinyin IMEngine"
+msgstr "Comment=Configuration du Moteur de Saisie Smart Pinyin"
+
+#: ../scim-tables/skim/setupui/skimplugin_scim_table_config.desktop:1
+msgid "Name=Generic Tables"
+msgstr "Name=Tables Génériques"
+
+#: ../scim-tables/skim/setupui/skimplugin_scim_table_config.desktop:2
+msgid "Comment=Configuration of Generic Tables IMEngine"
+msgstr "Comment=Configuration du Moteur de Tables Génériques"
+
+#: ../scim-hangul/skim/setupui/skimplugin_scim_hangul_config.desktop:1
+msgid "Name=Hangul"
+msgstr "Name=Hangul"
+
+#: ../scim-hangul/skim/setupui/skimplugin_scim_hangul_config.desktop:2
+msgid "Comment=Configure for scim-hangul IMEngine"
+msgstr "Comment=Configuration Moteur de Saisie scim-Hangul"

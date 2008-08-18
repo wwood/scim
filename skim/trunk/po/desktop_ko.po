@@ -1,0 +1,197 @@
+# translation of desktop_ko.po to Korean translation of skim.
+# Copyright (C) 2005 THE skim's COPYRIGHT HOLDER
+# This file is distributed under the same license as the skim package.
+# LiuCougar <liuspider@users.sourceforge.net>, 2004, 2005.
+# Kitae Kim<bluetux@gmail.com>, 2004, 2005.
+# 
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: skim files\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-04-29 21:38+0100\n"
+"PO-Revision-Date: 2006-04-07 14:33+0900\n"
+"Last-Translator: Kitae <bluetux@gmail.com>\n"
+"Language-Team: Korean\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/skim.desktop:1
+msgid "Name=skim"
+msgstr "Name=스킴"
+
+#: src/skim.desktop:2
+msgid "Comment=Input method platform"
+msgstr "Comment=입력방식"
+
+#: src/skimplugin.desktop:2
+msgid "Comment=A Skim Plugin"
+msgstr "Comment=스킴 플로그인"
+
+#: src/skimui.desktop:2
+msgid "Comment=A Skim UI Plugin"
+msgstr "Comment=스킴 사용자환경 플러그인"
+
+#: src/skimkcmplugin.desktop:2
+msgid "Comment=A Config Plugin for Skim"
+msgstr "Comment=스킴을 위한 설정 플러그인"
+
+#: src/skimsetupcategory.desktop:2
+msgid "Comment=A definition of one Skim Setup Category"
+msgstr "Comment=하나의 Skim 카테고리 설정 정의"
+
+#: plugins/mainwindow/skimplugin_mainwindow_config.desktop:1
+msgid "Name=Main Toolbar"
+msgstr "Name=주 도구창"
+
+#: plugins/mainwindow/skimplugin_mainwindow_config.desktop:2
+msgid "Comment=Main Toolbar Configuration"
+msgstr "Comment=주 도구창 설정"
+
+#: plugins/mainwindow/skimplugin_mainwindow.desktop:1
+msgid "Name=Toggle Docking"
+msgstr "Name=삽입 전환"
+
+#: plugins/mainwindow/skimplugin_mainwindow.desktop:2
+msgid "Comment=Main Window"
+msgstr "Comment=중심 창"
+
+#: plugins/scimlauncher/skimplugin_scim.desktop:1
+msgid "Name=SCIM Server"
+msgstr "Name=SCIM 서버"
+
+#: plugins/scimlauncher/skimplugin_scim.desktop:2
+msgid "Comment=init scim-lib as backend server"
+msgstr "Comment=기반 서버로 scim-lib 구동"
+
+#: plugins/kdetraystatus/skimplugin_systemtray_config.desktop:1
+msgid "Name=System Tray Icon"
+msgstr "Name=시스템 트레이 아이콘"
+
+#: plugins/kdetraystatus/skimplugin_systemtray_config.desktop:2
+msgid "Comment=Configure plugin for System Tray Indicator"
+msgstr "Comment=시스템 트레이 표시자 설정 플러그인"
+
+#: plugins/kdetraystatus/skimplugin_systemtray.desktop:2
+msgid "Comment=System Tray Indicator"
+msgstr "Comment=시스템 트레이 표시자"
+
+#: plugins/setupwindow/kcm_skimplugin_configplugin_config.desktop:1
+msgid "Name=Skim Plugins"
+msgstr "Name=스킴 플러그인"
+
+#: plugins/setupwindow/kcm_skimplugin_configplugin_config.desktop:2
+msgid "Comment=Enable/disable Skim Plugins"
+msgstr "Comment=스킴 플러그인 활성/비활성화"
+
+#: plugins/setupwindow/skimplugin_scim_global_config.desktop:1
+msgid "Name=General SCIM"
+msgstr "Name=일반 SCIM"
+
+#: plugins/setupwindow/skimplugin_scim_global_config.desktop:2
+msgid "Comment=Configure for SCIM global settings"
+msgstr "Comment=SCIM 주 설정 조정"
+
+#: plugins/setupwindow/skimplugin_setupwindow.desktop:1
+msgid "Name=Global Settings"
+msgstr "Name=주요 설정"
+
+#: plugins/setupwindow/skimplugin_setupwindow.desktop:1
+msgid "Name=Configure"
+msgstr "Name=설정"
+
+#: plugins/setupwindow/skimplugin_setupwindow.desktop:2
+msgid "Comment=Global Configuration Dialog"
+msgstr "Comment=전체 설정 대화창"
+
+#: plugins/setupwindow/skimplugin_scim_x_config.desktop:1
+msgid "Name=X Window"
+msgstr "Name=X 윈도우"
+
+#: plugins/setupwindow/skimplugin_scim_x_config.desktop:2
+msgid "Comment=Configure for X Window FrontEnd of SCIM"
+msgstr "Comment=SCIM 연결에 대한 X Window 설정"
+
+#: plugins/setupwindow/skimplugin_scim_imengines_config.desktop:1
+msgid "Name=Global Setup"
+msgstr "Name=주 설정"
+
+#: plugins/setupwindow/skimsetupdir_frontend.desktop:1
+msgid "Name=Frontend"
+msgstr "Name=프론트엔드"
+
+#: plugins/setupwindow/skimsetupdir_imengines.desktop:1
+msgid "Name=IMEngines"
+msgstr "Name=IM 엔진"
+
+#: plugins/setupwindow/skimsetupdir_panel.desktop:1
+msgid "Name=Panel"
+msgstr "Name=패"
+
+#: plugins/inputwindow/skimplugin_inputwindow.desktop:1
+msgid "Name=Input Window"
+msgstr "Name=입력창"
+
+#: plugins/inputwindow/skimplugin_inputwindow.desktop:1
+msgid "Name=Stick"
+msgstr "Name=고정"
+
+#: plugins/inputwindow/skimplugin_inputwindow.desktop:2
+msgid ""
+"Comment=When typing CJK characters you are interacting with this Input Window"
+msgstr ""
+"Comment=CJK(중국어,일본어,한국어) 문자 입력시 이 입력창을 이용하게 됩니다."
+
+#: plugins/inputwindow/skimplugin_inputwindow_config.desktop:2
+msgid "Comment=Configure for Input Window"
+msgstr "Comment=입력창 설정"
+
+#: plugins/compmgrclient/skimplugin_compmgrclient_config.desktop:1
+msgid "Name=Composite"
+msgstr "Name=투명설정"
+
+#: plugins/compmgrclient/skimplugin_compmgrclient_config.desktop:2
+msgid "Comment=Configuration of the composite features in skim"
+msgstr "Comment=skim 에서 투명화 지원 부분 설정"
+
+#: plugins/compmgrclient/skimplugin_compmgrclient.desktop:1
+msgid "Name=Composite Management"
+msgstr "Name=투명화 지원 설정"
+
+#: plugins/compmgrclient/skimplugin_compmgrclient.desktop:2
+msgid "Comment=Manage the composite features in skim"
+msgstr "Comment=skim 에 투명화 지원 부분 설정 "
+
+#: ../scim-pinyin/skim/setupui/skimplugin_scim_smartpinyin_config.desktop:1
+msgid "Name=Smart Pinyin"
+msgstr "Name=똑똑한 평음"
+
+#: ../scim-pinyin/skim/setupui/skimplugin_scim_smartpinyin_config.desktop:2
+msgid "Comment=Configure plugin for Smart Pinyin IMEngine"
+msgstr "Comment=똑똑한 평음 IM엔진 설정 플러그인"
+
+#: ../scim-tables/skim/setupui/skimplugin_scim_table_config.desktop:1
+msgid "Name=Generic Tables"
+msgstr "Name=일반 테이블"
+
+#: ../scim-tables/skim/setupui/skimplugin_scim_table_config.desktop:2
+msgid "Comment=Configuration of Generic Tables IMEngine"
+msgstr "Comment=일반 테이블 IM엔진 설정"
+
+#: ../scim-hangul/skim/setupui/skimplugin_scim_hangul_config.desktop:1
+msgid "Name=Hangul"
+msgstr "Name=한글"
+
+#: ../scim-hangul/skim/setupui/skimplugin_scim_hangul_config.desktop:2
+msgid "Comment=Configure for scim-hangul IMEngine"
+msgstr "Comment=scim-hangul IM엔진 설정"
+
+#~ msgid "Name=Qt Immodule"
+#~ msgstr "Name=Qt Immodule"
+
+#~ msgid "Comment=Configure for Qt Immodule support of SCIM"
+#~ msgstr "Comment=SICM의 QT Immodule정 지원 설정"
+
+#~ msgid "Comment=Configure plugin for IM Engines"
+#~ msgstr "Comment=IM 엔진을 위한 설정 플러그인"

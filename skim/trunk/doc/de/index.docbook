@@ -1,0 +1,266 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "/opt/kde3/share/apps/ksgmltools2/customization/dtd/kdex.dtd" [
+  <!ENTITY skim "<application>skim</application>">
+  <!ENTITY scim "<application>scim-lib</application>">
+  <!ENTITY skim_version "1.0.0">
+  <!ENTITY require_scim_version "0.99.4">
+  <!ENTITY kappname "&skim;">
+  <!ENTITY skim_commondir "../skim_common">
+  <!ENTITY package "&skim;">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % German "INCLUDE" >
+]>
+<book lang="&language;">
+<bookinfo>
+    <title><!--Uncomment following inlinemediaobject when upload to the web-->
+        <!--inlinemediaobject><imageobject>
+        <imagedata align="right" fileref="&skim_commondir;/skim_logo.png"/>
+	</imageobject></inlinemediaobject-->
+    Verwendung von &skim;</title>
+    <authorgroup>
+      <author>
+        <firstname>Jan</firstname>
+        <surname>Hefti</surname>
+        <affiliation>
+          <address>
+            <email>j.hefti@hamburg.de</email>
+          </address>
+        </affiliation>
+      </author>
+    </authorgroup>
+	<othercredit role="developer">
+        <firstname/>
+        <surname>LiuCougar (liuspider)</surname>
+        <affiliation>
+          <address>
+            <email>liuspider ZAI users.sourceforge.net</email>
+          </address>
+        </affiliation>
+		<contrib>Entwickler von &skim;</contrib>
+	</othercredit>
+<copyright>
+<year>2004</year>
+<holder>Jan Hefti</holder>
+</copyright>
+<legalnotice>&FDLNotice;</legalnotice>
+
+    <date>2004-09-05</date>
+    <releaseinfo>&skim_version;</releaseinfo>
+    <abstract>
+      <para>Beschreibt die Verwendung von &skim;, einer auf &scim; basierenden Plattform für Eingabemethoden mit einheitlicher Benutzeroberfläche.</para>
+    </abstract>
+    <keywordset>
+      <keyword>KDE</keyword>
+      <keyword>SCIM</keyword>
+      <keyword>FrontEnd</keyword>
+      <keyword>Panel</keyword>
+      <keyword>GUI</keyword>
+      <keyword>scim-panel-kde</keyword>
+      <keyword>skim</keyword>
+    </keywordset>
+</bookinfo>
+<chapter id="einleitung">
+<title>Einleitung</title>
+<para>&skim; ist eine auf &scim; basierende, einheitliche KDE-Benutzeroberfläche für eine Vielzahl von Eingabemethoden, mit denen unter anderem chinesische, japanische und koreanische Schriftzeichen eingegeben werden können.</para>
+<section id="installation">
+<title>Installation von &skim;</title>
+<para>Wenn Sie dieses Buch als Online-Hilfe lesen, ist &skim; vermutlich bereits vollständig und korrekt auf Ihrem Computer installiert. Andernfalls finden Sie auf folgenden Seiten Informationen über die Installation von &skim;:
+<itemizedlist>
+<listitem><para><ulink url="http://www.freedesktop.org/Software/ScimKDE">http://www.freedesktop.org/Software/ScimKDE</ulink> (Hauptseite von &skim;)</para></listitem>
+<listitem><para><ulink url="http://www.chinaboard.de/skim">http://www.chinaboard.de/skim</ulink> (Deutsche Beschreibung der Installation unter SuSE Linux 9.1)</para></listitem>
+</itemizedlist></para>
+</section>
+<section id="startskim">
+<title>Starten von &skim;</title>
+<para>Starten Sie &skim;, indem Sie als normaler Benutzer in einem Befehlsfenster folgendes eingeben:</para>
+<screen><prompt>%</prompt><userinput><command>killall</command> <parameter>scim-launcher</parameter></userinput><footnote id="fn:killall"><para>Anmerkung: Die <command>killall</command>-Anweisungen sind nur notwendig, wenn das GTK-Frontend von SCIM bereits geladen wurde, da immer nur ein Frontend aktiv sein kann. Sollte die Ausführung von <command>killall</command> ... die Meldung <errorname>Kein Prozess abgebrochen</errorname> zurückgeben, können Sie den Befehl getrost weglassen.</para></footnote>
+<prompt>%</prompt><userinput><command>killall</command> <parameter>scim-panel-gtk</parameter></userinput><footnoteref linkend="fn:killall" />
+<prompt>%</prompt><userinput><command>skim</command> <option>-d</option></userinput></screen>
+<para>Nun müßte unten rechts auf Ihrer Taskleiste ein kleines Icon erscheinen. <inlinemediaobject><imageobject><imagedata format="PNG" fileref="skim24c.png" /></imageobject></inlinemediaobject> (oder so ähnlich)</para>
+<para>Möchten Sie &skim; für alle Programme verwenden, stellen Sie die Umgebungsvariable <envar>XMODIFIERS</envar> entsprechend ein, indem Sie
+<screen><prompt>%</prompt><userinput><command>export</command> <envar>XMODIFIERS</envar>="@im=SCIM"</userinput></screen>
+eingeben. Diese Zeile sollten Sie auch einem der Skripte, die bei Start des X Window Systems automatisch geladen werden, hinzufügen (z.B. <filename>~/.xinitrc</filename> oder <filename>~/.xsession</filename>, bei SuSE Linux am besten <filename>~/.xim</filename>).</para>
+<para>Sofern Sie eine Locale verwenden, die nicht standardmäßig von &skim; unterstützt wird, tragen Sie sie in <guilabel>Unterstützte Unicode-Regionaleinstellungen</guilabel> ein, wie unter <xref linkend="globale-einstellungen" endterm="tit:globale-einstellungen" /> beschrieben.</para>
+<para>Wenn Sie &skim; nur für bestimmte Programme verwenden möchten, geben Sie zur Vereinfachung einmal
+<screen><prompt>%</prompt><userinput><command>echo</command> <parameter>"alias CN='LANG=zh_CN.UTF-8 XMODIFIERS="'"@im=SCIM"'"'"</parameter> >> <filename>~/.alias</filename></userinput></screen>
+ein. Dadurch können Sie Programme einfach mit <userinput>CN <command><replaceable>[Programmname]</replaceable></command></userinput> aufrufen, wenn Sie Chinesisch eingeben möchten. Anschließend starten Sie Ihren Computer am besten einmal neu, damit die Datei <filename>~/.alias</filename> neu eingelesen wird. &skim; wird nach jedem Neustart automatisch zusammen mit der Benutzeroberfläche &kde; neu geladen.</para>
+<para>Sollte &skim; nicht automatisch neu geladen werden, geben Sie einfach erneut
+<screen><prompt>%</prompt><userinput><command>killall</command> <parameter>scim-launcher</parameter></userinput><footnoteref linkend="fn:killall" />
+<prompt>%</prompt><userinput><command>killall</command> <parameter>scim-panel-gtk</parameter></userinput><footnoteref linkend="fn:killall" />
+<prompt>%</prompt><userinput><command>skim</command> <option>-d</option></userinput></screen>
+ein.</para>
+<para>Die obigen Anweisungen funktionieren z.B. unter der Locale <literal>de_DE.UTF-8</literal> (also der Spracheinstellung: Deutsch mit Zeichensatzcodierung UTF-8/Unicode), welche z.B. bei einer deutschen Installation von SuSE 9.1 als Standard gewählt wird. Sollten bei Ihnen Probleme auftauchen, kann es daran liegen, daß Sie eine andere Locale eingestellt haben. Versuchen Sie dann, anstelle von <userinput><command>skim</command> <option>-d</option></userinput> einzugeben <userinput>LANG=de_DE.UTF-8 <command>skim</command> <option>-d</option></userinput>.</para>
+</section>
+</chapter>
+<chapter id="einstellungen">
+<title>Ändern der Einstellungen von &skim;</title>
+<section id="oeffnen">
+<title>Öffnen des Einstellungsdialogs</title>
+<para>&skim; läßt sich durch vielfältige Einstellungsmöglichkeiten an die individuellen Bedürfnisse des Nutzers anpassen. Rufen Sie dazu zunächst das Kontextmenü auf, indem Sie mit der rechten Maustaste einmal auf das Symbol von &skim; (<inlinemediaobject><imageobject><imagedata format="PNG" fileref="skim24c.png" /></imageobject></inlinemediaobject>) im Systemabschnitt der Kontrolleiste (meist unten rechts auf dem Bildschirm) klicken.</para>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim_contextmenu.png" /></imageobject></mediaobject></screenshot>
+<para>Dort wählen Sie den Punkt <guimenuitem>Einrichten</guimenuitem> und gelangen in den Einstellungsdialog.</para>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim_configuration1.png" /></imageobject></mediaobject></screenshot>
+<para>Klicken Sie auf die <guilabel>+</guilabel>-Symbole in der linken Liste, um alle Einstellungsmöglichkeiten zu sehen:</para>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim_configuration2.png" /></imageobject></mediaobject></screenshot>
+</section>
+<section id="global">
+<title>Globale Einstellungen</title>
+<section id="qtimmodule">
+<title>Qt Immodule</title>
+<para>Auf der rechten Seite haben Sie die Möglichkeit, festzulegen, ob &skim; den in die Qt-Bibliothek eingebauten Eingabebereich nutzt oder nicht. Diese Option ist nur relevant, wenn Sie eine Qt-Bibliothek installiert haben, die Qt-immodule unterstützt. Sollte Ihnen das alles nichts sagen, hier ein praktischer Tip: Wenn Sie &skim; mit einem bestimmten Programm nicht benutzen können, deaktivieren Sie die Option, ansonsten sollten Sie das Feld einfach aktiviert lassen.</para>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim_configuration2.png" /></imageobject></mediaobject></screenshot>
+</section>
+<section id="xwindows">
+<title>X Windows</title>
+<para>Wählen Sie durch Klick auf <guilabel>X Windows</guilabel> in der linken Hälfte den nächsten Einstellungsdialog:</para>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim_configuration3.png" /></imageobject></mediaobject></screenshot>
+<para>Wenn <guilabel>Eingabe direkt am Cursor</guilabel> aktiviert ist, wird die gerade gewählte Umwandlungsmöglichkeit direkt im bearbeiteten Text angezeigt. Einige Programme (z.B. OpenOffice.org) unterstützen diese Möglichkeit nicht; in dem Fall deaktivieren Sie einfach diese Option.</para>
+<para>Mit der <guilabel>Tastenkombination zur Aktivierung</guilabel> (hier: <keycombo action="simul">&Strg;<keycap>Leertaste</keycap></keycombo>) starten bzw. schließen Sie die Eingabemethode &skim;, schalten also z.B. zwischen der Eingabe von deutschem und chinesischem Text hin und her. Sie können die zugeordneten Tastenkürzel ändern, indem Sie auf die drei Punkte rechts daneben klicken. Dann öffnet sich das folgende Fenster:</para>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim_configuration4.png" /></imageobject></mediaobject></screenshot>
+<para>Klicken Sie auf <guilabel>...</guilabel>, um eine neue Tastenkombination einzugeben:</para>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim_configuration5.png" /></imageobject></mediaobject></screenshot>
+<para>Nachdem Sie die gewünschten Tasten gedrückt und wieder losgelassen haben, können Sie eine weitere Tastenkombination hinzufügen oder die bereits bestehenden Tastenkürzel bearbeiten oder entfernen:</para>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim_configuration6.png" /></imageobject></mediaobject></screenshot>
+<para>Analog dazu können Sie Tastenkürzel einrichten, mit denen Sie zur nächsten Eingabemethode (also z.B. von <guilabel>Intelligentes Pinyin</guilabel> zu <guilabel>Katakana</guilabel>) bzw. zur vorangehenden Eingabemethode wechseln.</para>
+</section>
+<section>
+<title>Komponenten von &skim;</title>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim_configuration7.png" /></imageobject></mediaobject></screenshot>
+<para>Im nächsten Dialog können sie einzelne Komponenten von &skim; ein- und ausschalten. Normalerweise müssen Sie hier nichts ändern; wenn Sie das Symbol in der Kontrolleiste stört, können Sie den Haken neben <guilabel>Kontrollleistensymbol</guilabel> löschen.</para>
+</section>
+<section id="globale-einstellungen">
+<title id="tit:globale-einstellungen">SCIM Globale Einstellungen</title>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim_configuration8.png" /></imageobject></mediaobject></screenshot>
+<para>Wenn Sie &skim; als Benutzeroberfläche für SCIM verwenden möchten, stellen Sie sicher, daß als <guilabel>Progamm für die Kontrollleiste</guilabel> <application>scim-panel-kde</application> und als <guilabel>Einrichtungsmodul</guilabel> <application>kconfig</application> gewählt sind.</para>
+<para>Klicken Sie auf <guilabel>Erweitert</guilabel>, um weitere Einstellungen anzuzeigen.</para>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim_configuration9.png" /></imageobject></mediaobject></screenshot>
+<para>Wenn Sie möchten, daß &skim; mit neu gestarteten Programmen automatisch verwendet wird, und Sie eine Unicode-Locale verwenden (z.B. ist bei neuen Installationen von SuSE Linux 9.1 die Locale <literal>de_DE.UTF-8</literal> voreingestellt), tragen Sie diese in das Feld <guilabel>Unterstützte Unicode-Regionaleinstellungen</guilabel> ein und drücken <guibutton>Hinzufügen</guibutton>.</para>
+<note><para>Überschreiben Sie einfach den voreingestellten Wert <literal>en_US.UTF-8</literal>. Er wird nicht gelöscht, solange Sie nicht <guibutton>Löschen</guibutton> drücken. Sie können das Ergebnis überprüfen, indem Sie auf den kleinen Pfeil rechts vom Kombinationsfeld klicken.</para></note>
+<para>Die <guilabel>Sockeleinstellungen</guilabel> und das <guilabel>Zeitlimit</guilabel> müssen Sie normalerweise nicht ändern.</para>
+</section>
+</section>
+<section id="eingabefenster">
+<title>Eingabefenster</title>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim_configuration10.png" /></imageobject></mediaobject></screenshot>
+<para>Hier können Sie festlegen, ob die Auswahlliste waagerecht (Standard) oder senkrecht angezeigt wird, und ob diese immer ihre Position behält, unabhängig davon, wo Sie gerade Text eingeben.</para>
+<para>Außerdem können Sie die Schriftart wählen, in der unter anderem die Auswahlliste angezeigt wird:</para>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim_configuration11.png" /></imageobject></mediaobject></screenshot>
+</section>
+<section id="symbolleiste">
+<title>Symbolleiste</title>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim_configuration12.png" /></imageobject></mediaobject></screenshot>
+<para>Hier können Sie festlegen, was auf der Symbolleiste angezeigt wird.</para>
+<para>Die obige Auswahl ergibt z.B. folgende Symbolleiste:
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim_toolbar1.png" /></imageobject></mediaobject></screenshot></para>
+</section>
+<section id="kontrolleistensymbol">
+<title>Kontrollleistensymbol</title>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim_configuration13.png" /></imageobject></mediaobject></screenshot>
+<para>Hier können Sie festlegen, ob im Kontextmenü des Kontrolleistensymbols ein Eintrag erscheint, mit dem sich das Programm &skim; endgültig beenden läßt. Dies ist nicht mit einem kurzzeitigen Umschalten zur normalen deutschen Tastatur zu verwechseln: nach dem Beenden muß das Programm gegebenenfalls erst wieder durch Eingabe von <userinput><command>skim</command> <option>-d</option></userinput> neu gestartet werden.</para>
+</section>
+<section id="scimserver">
+<title>SCIM Server</title>
+<section id="intelligentespinyin">
+<title>Intelligentes Pinyin</title>
+<section id="intelligentespinyin1">
+<title>Intelligentes Pinyin - Allgemein</title>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim_configuration14.png" /></imageobject></mediaobject></screenshot>
+<para>Die folgenden Einstellungen beziehen sich auf die im Kapitel <xref linkend="chinesisch" endterm="tit:chinesisch" /> beschriebene Eingabemethode <guilabel>Intelligentes Pinyin</guilabel>.</para>
+<para>Nehmen wir wieder das dortige Beispiel <quote>xie zhongwen wenjian 写中文文件</quote>. Diese Eingabe besteht aus den drei Ausdrücken <quote>xie 写</quote>, <quote>zhongwen 中文</quote> und <quote>wenjian 文件</quote>. Ist <guilabel>Ausdrücke automatisch zusammenziehen</guilabel> aktiviert, werden die drei Ausdrücke automatisch zum neuen Ausdruck <quote>写中文文件</quote> kombiniert, der bei der nächsten Eingabe direkt zur Auswahl angezeigt wird. Dies ist vor allem praktisch, um Eigennamen wie z.B. <quote>汉堡中德协会青年会</quote> fest miteinander zu verbinden, damit man die einzelnen Bestandteile nicht jedesmal neu auswählen muß.</para>
+<para>Wenn <guilabel>Automatisch vervollständigen</guilabel> gewählt ist, wird eine unvollständige Eingabe automatisch zu einem gültigen Ausdruck ergänzt.</para>
+<para><guilabel>Alle Tasten anzeigen</guilabel> gibt an, ob alle eingegebenen, aber noch nicht umgewandelten Zeichen angezeigt werden sollen, oder nur die zum letzten Ausdruck gehörenden.</para>
+<para>Ist die <guilabel>Dynamische Anpassung</guilabel> aktiv, werden die zuletzt eingegebenen Ausdrücke beim nächsten Mal automatisch weiter vorne in der Auswahlliste plaziert.</para>
+<para>Dieses Einstellungsfeld kann durch Mausklick <guilabel>Erweitert</guilabel> werden:</para>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim_configuration15.png" /></imageobject></mediaobject></screenshot>
+<para>Hier läßt sich einstellen, bis zu welcher <guilabel>Max. Länge eigener Ausdrücke</guilabel> selbst zusammengestellte Zeichenkombinationen (z.B. Eigennamen) in der Datenbank gespeichert werden, so daß sie beim nächsten Mal direkt ausgewählt werden können.</para>
+<para>Je höher der <guilabel>Grad des intelligenten Vergleichs</guilabel>, desto besser sind normalerweise die Vorschläge in der Auswahlliste, aber desto mehr hat der Computer auch zu arbeiten, um diese zusammenzustellen.</para>
+<para>Die <guilabel>Dynamische Empfindlichkeit</guilabel> gibt an, wie sehr zuletzt eingegebene Ausdrücke bevorzugt werden sollen, also wie stark die Häufigkeit der letzten Eingaben in Relation zur Häufigkeit der Ausdrücke im Chinesischen insgesamt berücksichtigt werden soll.</para>
+<para><guilabel>Benutzerdaten im Binärformat speichern</guilabel> legt fest, ob die benutzerdefinierten Ausdrücke und Häufigkeiten im schneller zu ladenden Binärformat oder in einem leichter zu ändernden Textformat gespeichert werden. Wenn Sie nicht vorhaben, die Liste Ihrer Ausdrücke selbst zu ändern, sollten Sie diese Option aktivieren.</para>
+</section>
+<section id="intelligentespinyin2">
+<title>Intelligentes Pinyin - Pinyin</title>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim_configuration16.png" /></imageobject></mediaobject></screenshot>
+<para>Wenn Sie <guilabel>Töne verwenden</guilabel>, werden Informationen über die Töne der einzelnen Silben bei der Konvertierung berücksichtigt. Die Informationen über Töne lassen sich auf einer amerikanischen Tastatur mit <keycombo action="simul">&Shift;<keycap><replaceable>Zahl</replaceable></keycap></keycombo> eingeben, also als <keycap>!</keycap>, <keycap>"</keycap>, <keycap>#</keycap> und <keycap>$</keycap>. Normalerweise ist der intelligente Auswahlalgorithmus ohne Töne aber mehr als ausreichend.</para>
+<para>Wesentlich praktischer ist die Option <guilabel>Unvollständiges Pinyin erlauben</guilabel>. Ist sie aktiviert, genügt die Eingabe der Anlaute der einzelnen Silben, also z.B. <quote>xzhwwj</quote> für <quote>写中文文件</quote>.</para>
+<para>Außerdem können Sie festlegen, daß Sie <guilabel>Folgende Laute gleich behandeln</guilabel> wollen, wenn Sie zwischen ähnlichen Lauten der chinesischen Hochsprache nicht sicher unterscheiden können.</para>
+</section>
+<section id="intelligentespinyin3">
+<title>Intelligentes Pinyin - Tastatur</title>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim_configuration17.png" /></imageobject></mediaobject></screenshot>
+<para>Mit den Tastenkürzeln für <guilabel>Satzzeichen in voller Breite</guilabel> schalten Sie zwischen der Eingabe von Satzzeichen in voller Breite (= der Breite chinesischer Schriftzeichen, also chinesischen Satzzeichen) und halber Breite (= der Breite lateinischer Buchstaben, also europäischen Satzzeichen) hin und her. Analog funktionieren die Tastenkürzel für <guilabel>Buchstaben in voller Breite</guilabel>.</para>
+<para><guilabel>Modus ändern</guilabel> heißt hier, zur nächsten Eingabemethode (z.B. Koreanisch) zu wechseln. Dagegen bedeutet das <guilabel>Umschalten des chinesischen Modus</guilabel> das Wechseln zwischen der Eingabe von Kurzzeichen/Langzeichen/beiden gemischt.</para>
+<para>Die Tastenkombination für <guilabel>Ausdruck deaktivieren</guilabel> erlaubt Ihnen, einen Ausdruck, der fälschlicherweise durch Auswahl von eigentlich nicht zusammengehörenden Zeichen entstanden ist, wieder zu löschen, so daß er nicht mehr auf der Auswahlliste angezeigt wird.</para>
+</section>
+</section>
+<section id="eingabemethoden">
+<title>Eingabemethoden</title>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim_configuration18.png" /></imageobject></mediaobject></screenshot>
+<para>Hier können Sie entscheiden, ob einzelne (bereits installierte) Eingabemethoden verwendet werden sollen. Dies ist praktisch, wenn Sie ohnehin immer nur wenige Eingabemethoden verwenden, da Sie durch Deaktivieren der nicht verwendeten Eingabemethoden schneller zwischen den für Sie wirklich wichtigen Eingabemethoden umschalten können. Klicken Sie auf die <guilabel>+</guilabel>-Zeichen, um die zur jeweiligen Sprache gehörenden Eingabemethoden anzuzeigen:</para>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim_configuration19.png" /></imageobject></mediaobject></screenshot>
+</section>
+<section id="hangul">
+<title>Hangul</title>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim_configuration110.png" /></imageobject></mediaobject></screenshot>
+<para>Hier können Sie die Einstellungen für die Eingabemethode <guilabel>scim-hangul</guilabel> (Koreanisch) ändern. <guilabel>Feststelltaste benutzen</guilabel> legt fest, ob die Feststelltaste verwendet wird, um zwischen der Eingabe von Hangul (Silben) und Jamo ("Buchstaben") zu wechseln.</para>
+<para>Wenn Sie eine Tastatur mit <guilabel>Dvorak-Tastaturschema verwenden</guilabel>, können Sie die zugehörige Option aktivieren, damit Sie mit den einzelnen Tasten wie auf einer Qwerty-Tastatur gewohnt Koreanisch eingeben können.</para>
+<para><guilabel>Zeige Erläuterungen zu den Kandidaten</guilabel> legt fest, ob Erläuterungen zu den einzelnen Einträgen der Auswahlliste angezeigt werden.</para>
+<para>Außerdem können Sie Tastenkombinationen zur <guilabel>Aktivierung</guilabel> der koreanischen Eingabemethode, zur <guilabel>Umwandlung von Hangul nach Hanja</guilabel> (chinesische Schriftzeichen) und zum Aktivieren des <guilabel>Manuellen Modus</guilabel> festlegen.</para>
+</section>
+<section id="tabellen">
+<title>Generische Tabellen</title>
+<section id="tabellen1">
+<title>Allgemein</title>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim_configuration111.png" /></imageobject></mediaobject></screenshot>
+<para><guilabel>Zeige Eingabeaufforderung</guilabel> legt fest, ob die zum jeweiligen Eintrag gehörende Buchstabenfolge angezeigt wird.</para>
+<para><guilabel>Zeige Tastenkürzel</guilabel> bestimmt, ob die zur Vervollständigung eines Kandidaten der Auswahlliste jeweils noch ausstehenden Tasten angezeigt werden.</para>
+<para>Wenn Sie die Ladegeschwindigkeit der Eingabemethode erhöhen wollen, und es Ihnen nichts ausmacht, daß Sie die Tabellendaten nicht mehr direkt aus der Datei lesen können, sollten Sie die <guilabel>Benutzerdaten im Binärformat speichern</guilabel>.</para>
+<para>Ist <guilabel>Zeige Benutzereinträge zuerst</guilabel> gewählt, werden die von Ihnen selbst erzeugten Einträge in der Auswahlliste immer zuerst angezeigt.</para>
+<para>Analog bestimmt <guilabel>Lange Einträge zuerst anzeigen</guilabel>, ob längere Kandidaten in der Auswahlliste stets zuerst angezeigt werden sollen.</para>
+</section>
+<section id="tabellen2">
+<title>Tastatur</title>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim_configuration112.png" /></imageobject></mediaobject></screenshot>
+<para>In dieser Registerkarte legen Sie die Tastenkürzel für die Bedienung der auf generischen Tabellen basierenden Eingabemethoden fest.</para>
+<para>Das erste Tastenkürzel dient dem Umschalten zwischen der Eingabe von <guilabel>Satzzeichen in voller Breite</guilabel> (Chinesisch, Japanisch, Koreanisch) und Satzzeichen in halber Breite (europäisch). Darunter können Sie analog bestimmen, wie Sie zwischen der Eingabe von <guilabel>Buchstaben in voller Breite</guilabel> und halber Breite wechseln.</para>
+<para>Mit der Tastenkombination für <guilabel>Modus ändern</guilabel> schalten Sie zur nächsten, auf generischen Tabellen basierenden Eingabemethode.</para>
+<para>Mit den letzten beiden Tastenkürzeln können Sie der generischen Tabelle einen neuen <guilabel>Ausdruck hinzufügen</guilabel> oder einen bestehenden <guilabel>Ausdruck löschen</guilabel>.</para>
+</section>
+</section>
+</section>
+</chapter>
+<chapter id="chinesisch">
+<title id="tit:chinesisch">Eingabe chinesischer Zeichen mit &skim;</title>
+<para>Starten Sie ein Programm mit <userinput>CN <command><replaceable>Programmname</replaceable></command></userinput>, also z.B.
+<screen><prompt>%</prompt><userinput>CN <command>mozilla</command></userinput></screen>
+um den Webbrowser Mozilla zu starten. Wenn Sie <keycombo action="simul">&Strg;<keycap>Leertaste</keycap></keycombo> drücken, sollte folgende Symbolleiste erscheinen:</para>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim_toolbar1.png" /></imageobject></mediaobject></screenshot>
+<para>Sofern als Eingabemethode nicht automatisch <guilabel>Intelligentes Pinyin</guilabel> voreingestellt ist, wählen Sie es einfach aus der Liste, die erscheint, wenn Sie auf den Namen der Eingabemethode klicken, z.B. so:</para>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim_choose_ime.png" /></imageobject></mediaobject></screenshot>
+<para>Nehmen wir an, Sie wollen <quote>写中文文件</quote> eingeben. Dazu schreiben Sie zunächst das Pinyin des ersten Zeichens <quote>xie</quote> (ohne Angabe des Tons):</para>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim01a.png" /></imageobject></mediaobject></screenshot>
+<para>Korrekt ist das zweite Zeichen, also drücken Sie die <keycap>2</keycap>. Wenn das gesuchte Zeichen einmal nicht sofort erscheint, können Sie mit den Tasten <keycap>.</keycap> (Punkt) und <keycap>,</keycap> (Komma) nach rechts bzw. links durch die Liste laufen. Die nächsten beiden Zeichen gehören zusammen, also geben Sie ruhig <quote>zhongwen</quote> ein:</para>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim02a.png" /></imageobject></mediaobject></screenshot>
+<para>Mit einer <keycap>1</keycap> wählen Sie die korrekte Schreibung. Alternativ können Sie mit der Leertaste immer die gerade gewählte, blau unterlegte Schreibweise in Ihren Text übernehmen. Mit skim können Sie auch längere Wortketten oder ganze Sätze auf einmal eingeben. Versuchen Sie z.B. <quote>xiezhongwenwenjian</quote>:</para>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim04a.png" /></imageobject></mediaobject></screenshot>
+<para>Hier stehen bereits die richtigen Zeichen hintereinander. Wäre dies nicht der Fall, hätten Sie auch mit der <keycap>4</keycap> zuerst nur das erste Zeichen wählen können, dann mit einer anderen Zahl die beiden folgenden, usw.</para>
+<para>Wie Sie im oberen Beispiel gesehen haben, kann man mit skim auch traditionelle Schriftzeichen eingeben. Um zu erzwingen, daß Sie nur Kurzzeichen (oder nur Langzeichen) vorgeschlagen bekommen, drücken Sie einfach auf das Zeichen <guilabel>中</guilabel>, bis Sie den gewünschten Zeichenumfang erreicht haben:</para>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim_toolbar3.png" /></imageobject></mediaobject></screenshot>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim_toolbar4.png" /></imageobject></mediaobject></screenshot>
+<para>Mit den weiteren Knöpfen können Sie einstellen, ob Leerzeichen ein halbes oder ein ganzes Schriftzeichen lang sein sollen:</para>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim_toolbar6.png" /></imageobject></mediaobject></screenshot>
+<para>und ob chinesische oder europäische Satzzeichen eingefügt werden:</para>
+<screenshot><mediaobject><imageobject><imagedata format="PNG" fileref="skim_toolbar8.png" /></imageobject></mediaobject></screenshot>
+</chapter>
+<chapter id="schluss">
+<title>Schlußbemerkungen</title>
+<para>Ich werde mich bemühen, diese Beschreibung aktuell zu halten. Sollte bei Ihnen etwas nicht so funktionieren, wie hier beschrieben, versuchen Sie bitte folgendes:</para>
+<itemizedlist>
+<listitem><para>Schauen Sie in die englische Beschreibung unter <ulink url="http://freedesktop.org/~cougar/skim/doc/user/en">http://freedesktop.org/~cougar/skim/doc/user/en</ulink>. Die deutsche Anleitung ist keine einfache Übersetzung, sondern eine eigenständige Anleitung, die nicht unbedingt dieselben Punkte abdeckt wie das englische Handbuch. Möglicherweise finden Sie dort einen Hinweis, den Sie in dieser Anleitung vermissen.</para></listitem>
+<listitem><para>Schauen Sie, ob unter <ulink url="http://www.chinaboard.de/skim">http://www.chinaboard.de/skim</ulink> eine aktuellere Version dieser Anleitung verfügbar ist, die Ihre Frage vielleicht beantwortet. Dort können Sie den Autor dieser Anleitung auch gerne direkt fragen.</para></listitem>
+<listitem><para>Suchen Sie im <ulink url="http://freedesktop.org/mailman/listinfo/scim">Archiv der Mailingliste</ulink>. Sollten Sie dort ebenfalls keine Lösung finden, wenden Sie sich mit Ihrer Frage (auf Englisch) direkt an die Mailingliste <email>scim@freedesktop.org</email>.</para></listitem>
+</itemizedlist>
+<para><application><acronym>SCIM</acronym></application> und &skim; sind zwei sehr vielversprechende, aktiv entwickelte OpenSource-Projekte, deren Hauptseiten Sie unter <ulink url="http://www.freedesktop.org/Software/scim">http://www.freedesktop.org/Software/scim</ulink> und <ulink url="http://www.freedesktop.org/Software/ScimKDE">http://www.freedesktop.org/Software/ScimKDE</ulink> erreichen. Hauptautoren sind Liu Cougar (&skim;) und James Su (<application><acronym>SCIM</acronym></application>).</para>
+<para>&skim; Copyright © 2004 LiuCougar &underGPL;</para>
+<para>Dokumentation Copyright © 2004 Jan Hefti &underFDL; </para>
+</chapter>
+</book>

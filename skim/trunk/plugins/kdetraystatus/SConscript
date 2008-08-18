@@ -1,0 +1,11 @@
+#! /usr/bin/env python
+
+Import( 'env' )
+
+kdesystemtray_sources='systemtrayplugin.cpp kdetraystatus.cpp'
+plugin_desktop_file='skimplugin_systemtray.desktop'
+env.SKIMPLUGIN('skimplugin_systemtray', kdesystemtray_sources, plugin_desktop_file)
+
+kcm_kdesystemtray_sources='kdetraystatus_config.ui kcmloader.cpp'
+plugin_kcm_desktop_file='skimplugin_systemtray_config.desktop'
+env.SKIMKCMPLUGIN('kcm_skimplugin_systemtray', kcm_kdesystemtray_sources, plugin_kcm_desktop_file)

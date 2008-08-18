@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE kcfg SYSTEM "http://www.kde.org/standards/kcfg/1.0/kcfg.dtd">
+<kcfg>
+  <kcfgfile name="skimrc"/>
+  <group name="SCIM">
+    <entry name="_IMEngine_Chinese_CCIN_ShuangPinKey" key="/IMEngine/Chinese/CCIN/ShuangpinKey" type="Bool">
+      <label>Use ShuangPin</label>
+      <default>false</default>
+    </entry>
+    <entry name="_IMEngine_Chinese_CCIN_ShuangPinKindKey" key="/IMEngine/Chinese/CCIN/ShuangpinKindKey" type="Enum">
+      <label>ShuangPin Kind</label>
+        <choices>
+            <choice name="chinesestar">
+                <label>Chinese Star</label>
+            </choice>
+            <choice name="nature">
+                <label>Nature</label>
+            </choice>
+            <choice name="microsoft">
+                <label>Microsoft</label>
+            </choice>
+            <choice name="ziguang">
+                <label>ZiGuang</label>
+            </choice>
+            <choice name="abc">
+                <label>ABC</label>
+            </choice>
+            <choice name="liu">
+                <label>Liu</label>
+            </choice>
+        </choices>    
+      <default>chinesestar</default>
+    </entry>
+    <entry name="_IMEngine_Chinese_CCIN_GbkKey" key="/IMEngine/Chinese/CCIN/GbkKey" type="Bool">
+      <label>Use GBK</label>
+      <default>false</default>
+    </entry>
+    
+    <entry name="_IMEngine_Chinese_CCIN_FuzzyCChKey" key="/IMEngine/Chinese/CCIN/FuzzyCChKey" type="Bool">
+      <label>C and Ch</label>
+      <default>false</default>
+    </entry>
+    <entry name="_IMEngine_Chinese_CCIN_FuzzySShKey" key="/IMEngine/Chinese/CCIN/FuzzySShKey" type="Bool">
+      <label>S and Sh</label>
+      <default>false</default>
+    </entry>
+    <entry name="_IMEngine_Chinese_CCIN_FuzzyZZhKey" key="/IMEngine/Chinese/CCIN/FuzzyZZhKey" type="Bool">
+      <label>Z and Zh</label>
+      <default>false</default>
+    </entry>
+    <entry name="_IMEngine_Chinese_CCIN_FuzzyFHKey" key="/IMEngine/Chinese/CCIN/FuzzyFHKey" type="Bool">
+      <label>F and H</label>
+      <default>false</default>
+    </entry>
+    <entry name="_IMEngine_Chinese_CCIN_FuzzyLNKey" key="/IMEngine/Chinese/CCIN/FuzzyLNKey" type="Bool">
+      <label>L and N</label>
+      <default>false</default>
+    </entry>
+    <entry name="_IMEngine_Chinese_CCIN_FuzzyKGKey" key="/IMEngine/Chinese/CCIN/FuzzyKGKey" type="Bool">
+      <label>K and G</label>
+      <default>false</default>
+    </entry>
+    <entry name="_IMEngine_Chinese_CCIN_FuzzyRLKey" key="/IMEngine/Chinese/CCIN/FuzzyRLKey" type="Bool">
+      <label>R and L</label>
+      <default>false</default>
+    </entry>
+    <entry name="_IMEngine_Chinese_CCIN_FuzzyAnAngKey" key="/IMEngine/Chinese/CCIN/FuzzyAnAngKey" type="Bool">
+      <label>An and Ang</label>
+      <default>false</default>
+    </entry>
+    <entry name="_IMEngine_Chinese_CCIN_FuzzyEnEngKey" key="/IMEngine/Chinese/CCIN/FuzzyEnEngKey" type="Bool">
+      <label>En and Eng</label>
+      <default>false</default>
+    </entry>
+    <entry name="_IMEngine_Chinese_CCIN_FuzzyInIngKey" key="/IMEngine/Chinese/CCIN/FuzzyInIngKey" type="Bool">
+      <label>In and Ing</label>
+      <default>false</default>
+    </entry>
+    <entry name="_IMEngine_Chinese_CCIN_FuzzyWangHuangKey" key="/IMEngine/Chinese/CCIN/FuzzyWangHuangKey" type="Bool">
+      <label>Wang and Huang</label>
+      <default>false</default>
+    </entry>
+  </group>
+</kcfg>

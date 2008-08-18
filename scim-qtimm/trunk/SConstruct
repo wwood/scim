@@ -1,0 +1,66 @@
+#! /usr/bin/env python
+
+"""
+help       -> scons -h
+compile    -> scons
+clean      -> scons -c
+install    -> scons install
+uninstall  -> scons -c install
+configure  -> scons configure prefix=/tmp/ita debug=full extraincludes=/usr/local/include:/tmp/include prefix=/usr/local
+
+Run from a subdirectory -> scons -u
+The variables are saved automatically after the first run (look at cache/kde.cache.py, ..)
+"""
+
+###################################################################
+# LOAD THE ENVIRONMENT AND SET UP THE TOOLS
+###################################################################
+
+VERSION = "0.9.99"
+PACKAGE = "scim-qtimm"
+REQUIRED_SCIM_VERSION='1.3.3'
+
+## Load the builders in config
+env = Environment( REQUIRED_LIBSCIM_VERSION=REQUIRED_SCIM_VERSION, tools=['default', 'generic', 'qt4', 'pkg', 'libscim'], toolpath=['./', './bksys'])
+
+#env.QT4use("environ rpath thread")
+#env.QT4use("environ rpath lang_qt thread nohelp")
+
+###################################################################
+# SCRIPTS FOR BUILDING THE TARGETS
+###################################################################
+
+## add the include dirs
+inctypes="QtGui QtCore".split()
+qtincludes=[]
+for i in inctypes:
+	#print i
+	qtincludes.append( env['QTINCLUDEPATH']+'/'+i )
+#for i in qtincludes:
+#	print i
+env.AppendUnique(CPPPATH=qtincludes)
+
+## add misc compilation flags
+flags="-D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SHARED"
+env.AppendUnique(CPPFLAGS=flags.split())
+
+#env.AppendUnique(LIBPATH=['/usr/X11R6/lib'])
+
+## BuilDir example - try to have all sources to process in only one top-level folder
+
+#SetOption('duplicate', 'soft-copy')
+#env.BuildDir('#build/src', '#src')
+#env.subdirs('build/src')
+
+env['PACKAGE']=PACKAGE
+env['VERSION']=VERSION
+
+## target processing is done in the subdirectory
+env.subdirs('src tests po')
+
+###################################################################
+# CONVENIENCE FUNCTIONS TO EMULATE 'make dist' and 'make distclean'
+###################################################################
+
+# if you forget to add a version number, the one in the file VERSION will be used instead
+env.dist(PACKAGE, VERSION)

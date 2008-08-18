@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Icon=ccinput
+Type=Service
+ServiceTypes=Skim/KCModule
+
+X-KDE-ModuleType=Library
+X-KDE-Library=skimplugin_scim_ccinput
+X-KDE-ParentApp=skimplugin_scim
+X-KDE-ParentComponents=skimplugin_scim
+X-KDE-PluginInfo-DisplayParent=skimsetupdir_imengines
+Name=CC Input
+Comment=Configure plugin for CC Input IMEngine

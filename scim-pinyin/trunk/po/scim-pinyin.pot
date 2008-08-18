@@ -1,0 +1,436 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR James Su <suzhe@tsinghua.org.cn>
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: James Su <suzhe@tsinghua.org.cn>\n"
+"POT-Creation-Date: 2005-08-23 09:09+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/scim_pinyin_imengine.cpp:120
+msgid "The status of the current input method. Click to change it."
+msgstr ""
+
+#: src/scim_pinyin_imengine.cpp:121
+msgid "The input mode of the letters. Click to toggle between half and full."
+msgstr ""
+
+#: src/scim_pinyin_imengine.cpp:122
+msgid "Full/Half Letter"
+msgstr ""
+
+#: src/scim_pinyin_imengine.cpp:123
+msgid ""
+"The input mode of the puncutations. Click to toggle between half and full."
+msgstr ""
+
+#: src/scim_pinyin_imengine.cpp:124
+msgid "Full/Half Punct"
+msgstr ""
+
+#: src/scim_pinyin_imengine.cpp:435 src/scim_pinyin_imengine_setup.cpp:67
+msgid "Smart Pinyin"
+msgstr ""
+
+#: src/scim_pinyin_imengine.cpp:550
+msgid "Copyright (C) 2002, 2003 James Su <suzhe@tsinghua.org.cn>"
+msgstr ""
+
+#: src/scim_pinyin_imengine.cpp:579
+msgid "Hot Keys:"
+msgstr ""
+
+#: src/scim_pinyin_imengine.cpp:580 src/scim_pinyin_imengine.cpp:582
+#: src/scim_pinyin_imengine.cpp:584 src/scim_pinyin_imengine.cpp:586
+#: src/scim_pinyin_imengine.cpp:588 src/scim_pinyin_imengine.cpp:590
+#: src/scim_pinyin_imengine.cpp:592
+msgid ""
+"\n"
+"\n"
+"  "
+msgstr ""
+
+#: src/scim_pinyin_imengine.cpp:580 src/scim_pinyin_imengine.cpp:582
+#: src/scim_pinyin_imengine.cpp:584 src/scim_pinyin_imengine.cpp:586
+#: src/scim_pinyin_imengine.cpp:588 src/scim_pinyin_imengine.cpp:590
+#: src/scim_pinyin_imengine.cpp:592
+msgid ":\n"
+msgstr ""
+
+#: src/scim_pinyin_imengine.cpp:581
+msgid "    Switch between full/half width letter mode."
+msgstr ""
+
+#: src/scim_pinyin_imengine.cpp:583
+msgid "    Switch between full/half width punctuation mode."
+msgstr ""
+
+#: src/scim_pinyin_imengine.cpp:585
+msgid "    Switch between Simplified/Traditional Chinese mode."
+msgstr ""
+
+#: src/scim_pinyin_imengine.cpp:587
+msgid "    Switch between English/Chinese mode."
+msgstr ""
+
+#: src/scim_pinyin_imengine.cpp:589
+msgid "    Page up in lookup table."
+msgstr ""
+
+#: src/scim_pinyin_imengine.cpp:591
+msgid "    Page down in lookup table."
+msgstr ""
+
+#: src/scim_pinyin_imengine.cpp:593
+msgid "    Disable the selected user created phrase."
+msgstr ""
+
+#: src/scim_pinyin_imengine.cpp:594
+msgid ""
+"\n"
+"\n"
+"  Esc:\n"
+"    Reset the input method.\n"
+msgstr ""
+
+#: src/scim_pinyin_imengine.cpp:596
+msgid ""
+"\n"
+"\n"
+"  v:\n"
+"    Enter the English input mode.\n"
+"    Press Space or Return to commit\n"
+"    the inputed string and exit this mode."
+msgstr ""
+
+#: src/scim_pinyin_imengine.cpp:600
+msgid ""
+"\n"
+"\n"
+"  i:\n"
+"    Enter the special input mode. For example:\n"
+"      Input \"idate\" will give you the\n"
+"      string of the current date.\n"
+"      Input \"imath\" will give you the\n"
+"      common mathematic symbols.\n"
+"    For more informat about this mode,\n"
+"    please refer to\n"
+"    /usr/share/scim/pinyin/special_table"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:72
+msgid "An IMEngine Module for Chinese which utilizes pinyin input method."
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:147
+msgid "A_mbiguities"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:148
+msgid "_Zh and Z"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:149
+msgid "_Ch and C"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:150
+msgid "_Sh and S"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:151
+msgid "_N and L"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:152
+msgid "_L and R"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:153
+msgid "_F and H"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:154
+msgid "_An and Ang"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:155
+msgid "_En and Eng"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:156
+msgid "_In and Ing"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:167
+msgid "Full width _punctuation:"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:169
+msgid "Select full width puncutation keys"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:171
+msgid ""
+"The key events to switch full/half width punctuation input mode. Click on "
+"the button on the right to edit it."
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:184
+msgid "Full width _letter:"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:186
+msgid "Select full width letter keys"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:188
+msgid ""
+"The key events to switch full/half width letter input mode. Click on the "
+"button on the right to edit it."
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:201
+msgid "_Mode switch:"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:203
+msgid "Select mode switch keys"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:205
+msgid ""
+"The key events to change current input mode. Click on the button on the "
+"right to edit it."
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:221
+msgid "_Chinese mode switch:"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:223
+msgid "Select Chinese mode switch keys"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:225
+msgid ""
+"The key events to change current Chinese input mode. .Click on the button on "
+"the right to edit it"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:238
+msgid "Page _up:"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:240
+msgid "Select page up keys"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:242
+msgid ""
+"The key events to page up the lookup table. Click on the button on the right "
+"to edit it."
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:255
+msgid "Page dow_n:"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:257
+msgid "Select page down keys"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:259
+msgid ""
+"The key events to page down the lookup table. Click on the button on the "
+"right to edit it."
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:272
+msgid "_Disable phrase:"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:274
+msgid "Select disable phrase keys"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:276
+msgid ""
+"The key events to disable the currently selected user defined phrase. Click "
+"on the button on the right to edit it."
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:398
+msgid "Input"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:408
+msgid "Auto _combine phrase"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:416
+msgid "Auto _fill preedit"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:424
+msgid "_Match longer phrase"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:432
+msgid "Always show lookup _table"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:440
+msgid "Show all _keys"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:448
+msgid "_Dynamic adjust"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:463
+msgid "Max _user phrase length:"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:485
+msgid "Max _preedit length:"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:507
+msgid "_Smart match level:"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:529
+msgid "_Burst stack size:"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:551
+msgid "D_ynamic sensitivity:"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:573
+msgid "Sa_ve period (s):"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:599
+msgid "Save user data in binary _format"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:614
+msgid "Pinyin"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:623
+msgid "_Use tone"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:628
+msgid "Allow incomplete _pinyin"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:668
+msgid "Keyboard"
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:776
+msgid ""
+"If this option is checked, the user pinyin and phrase data will be stored in "
+"binary format. This will increase the loading speed."
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:782
+msgid ""
+"If this option is checked, the inputed phrases will be combined to one "
+"longer phrase automatically."
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:787
+msgid ""
+"If this option is checked, the preedit string will be filled up "
+"automatically, by a kind of smart matching algorithm."
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:792
+msgid ""
+"If this option is checked, the phrases which are longer than the inputed "
+"keys can also be matched. This option is valid only when \"Auto combine "
+"phrase\" is checked."
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:799
+msgid ""
+"If this option is checked, the lookup table will be always shown when there "
+"are any candidate phrases."
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:804
+msgid ""
+"If this option is checked, all inputed keys will be shown. This option is "
+"valid only when \"Auto fill preedit\" is checked."
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:810
+msgid ""
+"If this option is checked, the phrase library will be adjusted dynamically "
+"according to the inputed contents. The changed part of the phrase library "
+"will be stored into local files owned by the user."
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:817
+msgid ""
+"The maxmium length of the custom phrases created by user. Those phrases will "
+"be created automatically when user inputs text."
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:822
+msgid "The maxmium length of the preedit string."
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:825
+msgid ""
+"The level of the smart matching algorithm. The larger the more accurate but "
+"slower."
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:829
+msgid ""
+"The size of the burst stack. Newly inputed phrases will be put into the "
+"burst stack. The phrases in this stack have higher priority than others."
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:835
+msgid ""
+"The sensitivity of the dynamic adjusting algorithm. The larger the more "
+"sensitive."
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:840
+msgid "The period in seconds to save the user data."
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:844
+msgid ""
+"If this option is checked, the tone information will be used in matching "
+"pinyin key."
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:849
+msgid ""
+"If this option is checked, the pinyin keys which only have initial part "
+"(Sheng Mu) will be allowed. "
+msgstr ""
+
+#: src/scim_pinyin_imengine_setup.cpp:854
+msgid ""
+"The following options control the ambiguous behaviour of the pinyin matching "
+"algorithm. Turn on them as you wish, if you can't distinguish between them."
+msgstr ""

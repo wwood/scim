@@ -1,0 +1,14 @@
+.deps
+.libs
+Makefile
+Makefile.in
+kcm_skimplugin_scim_smartpinyin.la
+scimsmartpinyinsettingplugin.lo
+scimsmartpinyinsettingplugin.moc
+smartpinyin.cpp
+smartpinyin.h
+smartpinyin.lo
+smartpinyinui.cpp
+smartpinyinui.h
+smartpinyinui.lo
+smartpinyinui.moc

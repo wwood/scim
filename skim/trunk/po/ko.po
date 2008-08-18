@@ -1,0 +1,1190 @@
+# translation of ko.po to Korean translation of skim. 
+# Copyright (C) 2004 THE skim'S COPYRIGHT HOLDER 
+# This file is distributed under the same license as the skim package.
+# LiuCougar <liuspider@users.sourceforge.net>, 2004, 2005. 
+# Kitae Kim<bluetux@gmail.com>, 2004, 2005.
+# 
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: skim 1.3.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-01-30 00:21+0000\n"
+"PO-Revision-Date: 2006-04-07 14:15+0900\n"
+"Last-Translator: Kitae <neeum@yahoo.com>\n"
+"Language-Team: Korean <ko@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+#: rc.cpp:3 ../plugins/mainwindow/mainwindow.cpp:64
+#, no-c-format
+msgid "Main Toolbar"
+msgstr "주 툴바"
+
+#: ../src/skimglobalactions.cpp:32
+msgid "SCIM Help"
+msgstr "SCIM 도움말"
+
+#: ../src/skimglobalactions.cpp:34
+msgid "SCIM Setup"
+msgstr "SCIM 설정"
+
+#: ../src/skimglobalactions.cpp:42
+msgid "Reload all modules"
+msgstr "모든 모듈 새로 불러들이기"
+
+#: ../src/skimglobalactions.cpp:50
+msgid "Input Method"
+msgstr "입력모드"
+
+#: ../src/skimglobalactions.cpp:166
+msgid "Keyboard"
+msgstr "자판"
+
+#: ../src/main.cpp:24
+msgid "KDE Frontend for SCIM Input Method Platform"
+msgstr "KDE 를 위한 SCIM 입력 방식"
+
+#: ../src/main.cpp:28
+msgid "Start as daemon."
+msgstr "데몬으로 시작."
+
+#: ../src/main.cpp:29
+msgid "List all availabe skim plugins."
+msgstr "사용가능한 스킴플러그인 리스트."
+
+#: ../src/main.cpp:30
+msgid "Uses specified Config module."
+msgstr "특화된 설정 모듈사용."
+
+#: ../src/main.cpp:31
+msgid ""
+"A comma separated list of plugin names. All of these plugins will be loaded "
+"no matter whether they are enabled in the setting file."
+msgstr ""
+"플러그인 리스트에서 구분된 쉼표. 플러그인들이 설정에 활성화 과 되어 있던 않되"
+"어있던간에 모든 플러그인이 새로 불러들여 질것입니다."
+
+#: ../src/main.cpp:32
+msgid ""
+"A comma separated list of plugin names. All of these plugins will be "
+"disabled no matter whether they are disabled in the setting file."
+msgstr ""
+"플러그인 리스트에서 구분된 쉼표. 플러그인들이 설정에 불활성화 되어 있던 간에"
+"있던간에 모든 플러그인이 불활성화 될것입니다."
+
+#: ../src/main.cpp:33
+msgid "Quit if no connected client."
+msgstr "연결된 클라이언트가 없으면 종료."
+
+#: ../src/main.cpp:34
+msgid " Enable debug info, to specific LEVEL.."
+msgstr "특정 단계로 디버깅 정보 활성화.."
+
+#: ../src/main.cpp:35
+msgid "Current version of skim"
+msgstr "스킴의 현재 버전"
+
+#: ../src/main.cpp:36
+msgid "Output debug file.(No effort, always use none)"
+msgstr "디버그파일 출력.(효과없음. 항상 사용않함으로 선택)"
+
+#: ../src/main.cpp:37
+msgid "Force start even if scim panel socket can not be established."
+msgstr "SCIM 패널 소켓연결이 되지 않았어도  강제 시작."
+
+#: ../src/main.cpp:58
+msgid ""
+"IRC:\n"
+"server: irc.freenode.net / channel: #scim\n"
+"\n"
+"Feedback:\n"
+"scim-user@lists.sourceforge.net"
+msgstr ""
+"아알씨:\n"
+"서버: irc.freenode.net / 채널: #scim\n"
+"\n"
+"의견:\n"
+"scim-user@lists.sourceforge.net"
+
+#: ../src/main.cpp:60
+msgid "Core Developer"
+msgstr "주 개발자"
+
+#: ../src/main.cpp:62
+msgid "SCIM Core Author"
+msgstr "SCIM 주 제작자"
+
+#: ../src/main.cpp:63
+msgid "Doc writer and German translator"
+msgstr "문서 제작및 독일어 번역자"
+
+#: ../src/main.cpp:65
+msgid "Art designer and Korean translator"
+msgstr "그래픽 디자인 및 한국어 번역자"
+
+#: ../src/main.cpp:67
+msgid "Japanese translator"
+msgstr "일본어 번역자"
+
+#: ../src/main.cpp:69
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "김기태"
+
+#: ../src/main.cpp:70
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "bluetux@gmail.com"
+
+#: ../src/main.cpp:114
+msgid "Installed skim Plugins:"
+msgstr "설치된 스킴 플러그인:"
+
+#: ../src/main.cpp:114 ../plugins/setupwindow/scimimenginesettingsui.cpp:34
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:75
+#: ../plugins/setupwindow/configskimplugins.cpp:95
+msgid "Name"
+msgstr "이름"
+
+#: ../src/main.cpp:114 ../plugins/setupwindow/configskimplugins.cpp:96
+msgid "Comment"
+msgstr "설명"
+
+#: ../src/main.cpp:118
+msgid " (Hidden)"
+msgstr " (숨김)"
+
+#: ../src/main.cpp:121
+msgid "Note: Hidden plugins can not be disabled."
+msgstr "주: 숨겨진 플러그 인은 활성화가 않됨."
+
+#: ../src/socketserverthread.cpp:342
+msgid "SKIM: KDE frontend for SCIM %1\n"
+msgstr "SKIM: SCIM 의 KDE 프론트엔드 %1\n"
+
+#: ../src/socketserverthread.cpp:343
+msgid "(C) 2003-2006 LiuCougar <liuspider@users.sourceforge.net>"
+msgstr "C) 2003-2006 류 쿠루거 <liuspider@users.sourceforge.net>"
+
+#: ../src/scimhelpdialog.cpp:16 ../plugins/setupwindow/scim_global.cpp:397
+msgid "&General"
+msgstr "일반(&G)"
+
+#: ../src/skimkeygrabber.cpp:63
+msgid "Grab Key"
+msgstr "잡는 키"
+
+#: ../src/skimkeygrabber.cpp:69
+msgid ""
+"<center>Please press shortcut...</center><p>When you release a key this "
+"dialog will be closed automatically.</p>"
+msgstr ""
+"<center>단축키를 누르세요.</center></p>키늘 놓았을때이 창은 자동으로 닫힘니"
+"다.</p>"
+
+#: ../src/skimkeygrabber.cpp:75
+msgid "Control"
+msgstr "Control"
+
+#: ../src/skimkeygrabber.cpp:77
+msgid "Alt"
+msgstr "Alt"
+
+#: ../src/skimkeygrabber.cpp:79
+msgid "Shift"
+msgstr "Shift"
+
+#: ../src/skimkeygrabber.cpp:81
+msgid "Release"
+msgstr "버전"
+
+#: ../src/skimkeygrabber.cpp:97
+msgid "CapsLock"
+msgstr "CapsLock"
+
+#: ../src/skimkeygrabber.cpp:99
+msgid "Meta"
+msgstr "메타"
+
+#: ../src/skimkeygrabber.cpp:101
+msgid "Hyper"
+msgstr "하이퍼"
+
+#: ../src/skimkeygrabber.cpp:103
+msgid "Super"
+msgstr "슈퍼"
+
+#: ../src/skimkeygrabber.cpp:291
+msgid "Edit Shortcut List"
+msgstr "단축키 리스트 수정"
+
+#: ../src/skimkeygrabber.cpp:296
+msgid "Edit Shortcuts"
+msgstr "단축키 수정"
+
+#: ../src/skimkeygrabber.cpp:322
+msgid "Warning"
+msgstr "경고"
+
+#: ../src/skimkeygrabber.cpp:322
+msgid "\"%1\" is not a valid shortcut!"
+msgstr "\"%1\" 는 잘못된 단축키입니다."
+
+#: ../utils/scimkdesettings.cpp:30
+msgid "Auto Start"
+msgstr "자동 시작"
+
+#: ../utils/scimkdesettings.cpp:31
+msgid "Whether to start skim automatically when KDE starts."
+msgstr "KDE 시작시 skim 자동 시작 여부 선택"
+
+#: ../utils/scimkdesettings.cpp:37
+msgid "Enable Composite"
+msgstr "투명화 지원 활성화"
+
+#: ../utils/scimkdesettings.cpp:38
+msgid "Whether to enable Composite support which is essential for transparent."
+msgstr "투명화 지원을 위한 활성화 여부."
+
+#: ../utils/scimkdesettings.cpp:41
+msgid "Use Kompmgr Composite Manager"
+msgstr "Kompmgr 을 투명화 매뉴로 사용"
+
+#: ../utils/scimkdesettings.cpp:42
+msgid "Whether to use KDE built-in composite manager."
+msgstr "KDE 내장 투명화 관리자 사용 여부"
+
+#: ../utils/scimkdesettings.cpp:48
+msgid "Use GTK IMModule support"
+msgstr "GTK IM모듈 지원 사용"
+
+#: ../utils/scimkdesettings.cpp:49
+msgid "Whether to start scim to support gtk2 immodule."
+msgstr "gtk2 im모듈을 지원하는 상태로 scim 시작 여부."
+
+#: ../utils/scimkdesettings.cpp:55
+msgid "Show Quit option in context menu"
+msgstr "문맥 메뉴에 \"끝내기\" 옵션 보이기"
+
+#: ../utils/scimkdesettings.cpp:56
+msgid "Whether to show the quit entry in right click menu."
+msgstr "오른쪽 버튼 클릭으로 나오는 메뉴에 종료 메뉴를 보일것인지 여부"
+
+#: ../utils/scimkdesettings.cpp:62
+msgid "Font Setting for Input Window"
+msgstr "입력창을 위한 글꼴 설정"
+
+#: ../utils/scimkdesettings.cpp:63
+msgid "Use this font in Input Window"
+msgstr "이 글꼴을 입력창에 사용"
+
+#: ../utils/scimkdesettings.cpp:66
+msgid "Use Vertical Lookup Table"
+msgstr "수직 미리보기 테이블 사용"
+
+#: ../utils/scimkdesettings.cpp:67
+msgid "Whether the candidates in Lookup Table are aligned vertically."
+msgstr "미리보기 테이블에 후보 글자를 수직으로 정리할것인가의 여부"
+
+#: ../utils/scimkdesettings.cpp:70
+msgid "Minimize the width of Lookup Table"
+msgstr "미리 보기 테이블 폭을 최소화"
+
+#: ../utils/scimkdesettings.cpp:71
+msgid ""
+"If unchecked, the minimum width of Lookup Table will be set to 100, "
+"otherwise 0."
+msgstr ""
+"만약 선택 되어 있지 않으면 미리보기 테이블을  폭은 100, 으로 그렇지 안 "
+"으면 0 으로 설정."
+
+#: ../utils/scimkdesettings.cpp:74
+msgid "Fix the position of the Input Window"
+msgstr "입력창 위치 고정"
+
+#: ../utils/scimkdesettings.cpp:75
+msgid "If enabled, Input Window does not follow the cursor."
+msgstr "만약 활성화 되어 있다면, 입력창이 커서를 따라다니지 않음"
+
+#: ../utils/scimkdesettings.cpp:78
+msgid "Use embedded lookup table"
+msgstr "미리보기 테이블 내장 형태로 사용"
+
+#: ../utils/scimkdesettings.cpp:79
+msgid "If you prefer standalone lookup table, please uncheck this option."
+msgstr "만약 독립적인 미리보기 테이블을 원한다면, 이곳은 선택하지 마세요."
+
+#: ../utils/scimkdesettings.cpp:85
+msgid "Always show Main Window"
+msgstr "항상 주 창 보이기"
+
+#: ../utils/scimkdesettings.cpp:86
+msgid ""
+"Show Main Window all the time. When checked, even if no input method is "
+"selected, the Main Window remains on the screen."
+msgstr ""
+"항상 메인 창 보여주기. 입력 방법이 선택되어 있지 않더라도, 항상 "
+"스크린에 메인 윈도우가 남아 있음."
+
+#: ../utils/scimkdesettings.cpp:89
+msgid "Always show the move handle"
+msgstr "이동장치 항상 보이기"
+
+#: ../utils/scimkdesettings.cpp:90
+msgid ""
+"whether the handle in the panel applet should be shown all the time. This is "
+"only effective in Panel Embedded mode."
+msgstr ""
+"패널에 설정 애플릿이 항상보이게 한다 하더라도 이 효과는 패널 내장 모드로 "
+"했을때만 효과가 있음"
+
+#: ../utils/scimkdesettings.cpp:93
+msgid "Always show extension handle"
+msgstr "확장 기능 항상 보이기(&t)"
+
+#: ../utils/scimkdesettings.cpp:94
+msgid ""
+"Whether the extension handle in the panel applet should be shown all the "
+"time.This is only effective in Panel Embedded mode."
+msgstr ""
+"패널에 확장 설정 애플릿이 항상보이게 한다 하더라도 이 효과는 패널 내장 모드로 "
+"했을때만 효과가 있음"
+
+#: ../utils/scimkdesettings.cpp:97
+msgid "Docking Main Window to the panel"
+msgstr "주 창을 패널에 삽입"
+
+#: ../utils/scimkdesettings.cpp:98
+msgid ""
+"Dock the main toolbar into the KDE panel (kicker): if selected, Panel "
+"Embedded mode is activated."
+msgstr ""
+"주 투타를 KDE 패널(키커) 에 삽입: 만약 선택이 된다면, 패널 삽입 모드가"
+"활성화 됨."
+
+#: ../utils/scimkdesettings.cpp:101
+msgid "Snap to screen borders automatically"
+msgstr ""
+
+#: ../utils/scimkdesettings.cpp:102
+msgid ""
+"When enabled, the Main Window will always besides the border of left or "
+"right of the screen."
+msgstr ""
+
+#: ../utils/scimkdesettings.cpp:105
+msgid "Timeout for always show option"
+msgstr "항상 보여주기 옵션 시간 제한"
+
+#: ../utils/scimkdesettings.cpp:106
+msgid ""
+"After this timeout (in second) eclapse, Main Window will be hidden. This "
+"option is only valid when \"Always Show\" is enabled. It is equal to disable "
+"\"Always Show\" option if this value is set to 0."
+msgstr ""
+
+#: ../utils/scimkdesettings.cpp:109
+msgid "Display the name of current input method"
+msgstr "현재 입력방법 이름 보여주기"
+
+#: ../utils/scimkdesettings.cpp:110
+msgid ""
+"Whether show the text of current IM factory: if disabled, only the icon will "
+"be shown"
+msgstr ""
+
+#: ../utils/scimkdesettings.cpp:116
+msgid "From left to right"
+msgstr "왼쪽에서 오른쪽으로"
+
+#: ../utils/scimkdesettings.cpp:122
+msgid "From right to left"
+msgstr "오른쪽에서 왼쪽으로"
+
+#: ../utils/scimkdesettings.cpp:128
+msgid "From top to bottom (Down)"
+msgstr "위에서 아래로 (밑으로)"
+
+#: ../utils/scimkdesettings.cpp:134
+msgid "From bottom to top (up)"
+msgstr "아래에서 위로"
+
+#: ../utils/scimkdesettings.cpp:138
+msgid "Direction of Main Window"
+msgstr "주 창의 방향"
+
+#: ../utils/scimkdesettings.cpp:139
+msgid ""
+"Determine the layout of widgets in the main window. This setting is always "
+"honored in standalone mode. The layout can honor the kicker's direction in "
+"docking mode, please take a look at the \"Use 'From Left to Right' Direction"
+"\" option."
+msgstr ""
+
+#: ../utils/scimkdesettings.cpp:142
+msgid "Auto Adjust Direction"
+msgstr "자동 적응 방향"
+
+#: ../utils/scimkdesettings.cpp:143
+msgid ""
+"With this option enabled, if more than half of the main window is invisible "
+"due to user movement, the direction will be changed automatically. This "
+"option only takes effect in standalone mode."
+msgstr ""
+
+#: ../utils/scimkdesettings.cpp:146
+msgid "Use left to right mode when in docking mode"
+msgstr "삽입 모드일때 왼쪽에서 오른쪽 모드사용"
+
+#: ../utils/scimkdesettings.cpp:147
+msgid ""
+"If this option is enabled, in docking mode the layout is always \"from left "
+"to right\" direction. This option only takes effect in docking mode."
+msgstr ""
+"만약 이 설정이 활성화 되어 있으면, 삽입모드에서 틀이 항상 방향이 \"왼쪽에서 "
+"오른쪽으로\" 됨. 이 옵션은 삽입 모드에서만 효과가 있음."
+
+#: ../utils/scimkdesettings.cpp:150
+msgid "Main Window Position"
+msgstr "주 창 위치"
+
+#: ../utils/scimkdesettings.cpp:156
+msgid "These plugins will be loaded at startup"
+msgstr "이 플러그인들은 시작시 올려집니다."
+
+#: ../utils/scimkdesettings.cpp:162
+msgid "Share the same input method among all applications"
+msgstr "똑같은 입력방법을 모든 프로그램에서 공통 사용"
+
+#: ../utils/scimkdesettings.cpp:163
+msgid "If enabled, all the applications always use the same input method."
+msgstr "만약 활성화 되어 있다면, 모든 프로그램들은 항상 같은 입력방법을 사용함"
+
+#: ../utils/scimkdesettings.cpp:166
+msgid "On the spot input style"
+msgstr "온스폿 입력방식"
+
+#: ../utils/scimkdesettings.cpp:169
+msgid "Use on the spot input style in XIM clients"
+msgstr "XIM 클라이언트에 온스폿 입력 방식을 사용"
+
+#: ../utils/scimkdesettings.cpp:170
+msgid "This option will only take effect in clients using XIM protocol."
+msgstr "이 옵션은 XIM 프로토콜을 이용하는 클라인터에면 영향을 줌"
+
+#: ../utils/scimkdesettings.cpp:173
+msgid ""
+"Use Dynamic Event Flow. This can speed up the key event response, especially "
+"in remote X11 environment. But skim may become unstable."
+msgstr ""
+
+#: ../utils/scimkdesettings.cpp:174
+msgid ""
+"This can speed up the key event response, especially in remote X11 enviro\n"
+"      nment. But skim may become unstable."
+msgstr ""
+
+#: ../utils/scimkdesettings.cpp:178
+msgid "whether locale encoding should be used instead of UTF8"
+msgstr "UTF8 대신에 지역 로케일 엔코딩을 사용 여부"
+
+#: ../utils/scimkdesettings.cpp:179
+msgid "Using locale encoding rather than UTF8."
+msgstr "UTF8대신 로케일 엔코딩 사용."
+
+#: ../utils/scimkdesettings.cpp:182
+msgid "frontend socket address"
+msgstr "프로트엔드 소케 주소"
+
+#: ../utils/scimkdesettings.cpp:185
+msgid "frontend socket connection timeout"
+msgstr "포론트엔트 소켓 열견 시잔 제한"
+
+#: ../utils/scimkdesettings.cpp:188
+msgid "frontend socket connection max clients"
+msgstr "프론트엔트 소켓 최대 열결 수."
+
+#: ../utils/scimkdesettings.cpp:191
+msgid "frontend socket config is readonly"
+msgstr "프론트엔드 소켓 절정이 읽지 전용임"
+
+#: ../utils/scimkdesettings.cpp:194
+msgid "all valid key mask"
+msgstr ""
+
+#: ../utils/scimkdesettings.cpp:197
+msgid "IM Trigger Keys"
+msgstr "구동 키"
+
+#: ../utils/scimkdesettings.cpp:198
+msgid "Toggle Input Method On/Off."
+msgstr "입력방법 켜기/끄기 전환"
+
+#: ../utils/scimkdesettings.cpp:201
+msgid "Turn IM On Keys"
+msgstr "입력방법 키 켜기"
+
+#: ../utils/scimkdesettings.cpp:202
+msgid "Turn On Input Method Keys."
+msgstr "입력방법 키 활성화"
+
+#: ../utils/scimkdesettings.cpp:205
+msgid "Turn IM Off Keys"
+msgstr "입력방법 키 끄기"
+
+#: ../utils/scimkdesettings.cpp:206
+msgid "Turn Off Input Method Keys."
+msgstr "입력방법 키 끄기 "
+
+#: ../utils/scimkdesettings.cpp:209
+msgid "Next IM Keys"
+msgstr "다음 입력방법 키"
+
+#: ../utils/scimkdesettings.cpp:210
+msgid "Changing to next Input method keys."
+msgstr "다음 입력 방법 전환 키 변경"
+
+#: ../utils/scimkdesettings.cpp:213
+msgid "Previous IM Keys"
+msgstr "이전 입력 키"
+
+#: ../utils/scimkdesettings.cpp:214
+msgid "Changing to previous Input method keys."
+msgstr "이전 입력방법 으로 전환."
+
+#: ../utils/scimkdesettings.cpp:217
+msgid "Keys for showing input method menu"
+msgstr "입력방법 보여주기 키"
+
+#: ../utils/scimkdesettings.cpp:218
+msgid "Show the input method menu where you can select one."
+msgstr "선택할수 있는곳에 입력방법 메뉴를 보여줌."
+
+#: ../utils/scimkdesettings.cpp:221
+msgid "Supported Unicode Locales scim supports"
+msgstr "스킴이 지원하는 유니코드 지원 로케일 지원"
+
+#: ../utils/scimkdesettings.cpp:222
+msgid "Supported Unicode locales under which scim can work."
+msgstr "scim 이 작동되는 상태에서 지원되는 유니코드 로케일."
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:159
+msgid "Main &Toolbar Display Mode"
+msgstr "주 투바 보기 모드(&T)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:161
+msgid "Stand Alone"
+msgstr "독립적"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:162
+msgid "Embedded"
+msgstr "내장"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:163
+msgid "&Docking into KDE Panel (kicker)"
+msgstr "KDE 패널(키커)과 합체(&D)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:164
+msgid "A&uto Snap"
+msgstr "자동 스냅(&u)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:165
+msgid "&Show input method name"
+msgstr "입력방법 보이기(&S)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:166
+msgid "A&lways Show"
+msgstr "항상 보임(&l)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:167
+msgid "Auto Ad&just Direction"
+msgstr "자동 방향 조절(&j)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:168
+msgid "Always Show the Elements Selected below"
+msgstr "항상 선택된 요소를 보여줌"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:169
+msgid "&Move Handle"
+msgstr "조정자 이동(&M)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:170
+msgid "&Extension Button"
+msgstr "확장 버트(&E)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:171
+msgid "&Use \"From Left To Right\" Direction"
+msgstr "\"왼쪽에서 오른쪽으로\" 방법 사용(&U)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:172
+msgid "&Layout Direction"
+msgstr "레이아웃 방향(&L)"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:174
+msgid "From Left to Right"
+msgstr "왼쪽에서 오른쪽으로"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:175
+msgid "From Right to Left"
+msgstr "오른쪽에서 왼쪽으로"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:176
+msgid "From Top to Bottom"
+msgstr "위에서 아래로"
+
+#: ../plugins/mainwindow/mainwindow_settings.cpp:177
+msgid "From Bottom to Top"
+msgstr "아래에서 위로"
+
+#: ../plugins/mainwindow/mainwindow.cpp:101
+msgid "Reload"
+msgstr "새로 불러 들이기"
+
+#: ../plugins/kdetraystatus/kdetraystatus_config.cpp:54
+msgid "Enable Quit Action in Right Click Menu"
+msgstr "종료하기 기능을 오른쪽 버튼 클릭 메뉴에 활성화"
+
+#: ../plugins/kdetraystatus/kdetraystatus.cpp:26
+msgid "Skim - SCIM KDE Frontend"
+msgstr "Skim - SCIM KDE 프론트엔드"
+
+#: ../plugins/setupwindow/scim_global.cpp:378
+msgid "SCIM Global Settings"
+msgstr "SCIM 전체 설정"
+
+#: ../plugins/setupwindow/scim_global.cpp:379
+msgid "&Keyboard Layout:"
+msgstr "키보드 배열(&K):"
+
+#: ../plugins/setupwindow/scim_global.cpp:380
+msgid "Embed Preedit String into Client &Window (OnTheSpot Style)"
+msgstr "클라이언트 창안에 삽입된 수정이전 글자(온스폿 스타일)"
+
+#: ../plugins/setupwindow/scim_global.cpp:381
+msgid "Sha&re input method among all applications"
+msgstr "모든 프로그램에서 입력방법 공유(&r)"
+
+#: ../plugins/setupwindow/scim_global.cpp:382
+msgid "Keyboard Shortcuts"
+msgstr "키보다 단축키"
+
+#: ../plugins/setupwindow/scim_global.cpp:383
+msgid "&Toggle On/Off:"
+msgstr "켜기/끄기 전환(&T):"
+
+#: ../plugins/setupwindow/scim_global.cpp:384
+msgid "T&urn On:"
+msgstr "켜기(&u):"
+
+#: ../plugins/setupwindow/scim_global.cpp:385
+msgid "Turn O&ff:"
+msgstr "끄기(&f):"
+
+#: ../plugins/setupwindow/scim_global.cpp:386
+msgid "&Next Input Method:"
+msgstr "다음 입력방법(&N):"
+
+#: ../plugins/setupwindow/scim_global.cpp:387
+msgid "&Previous Input Method:"
+msgstr "이전 입력방법(&P):"
+
+#: ../plugins/setupwindow/scim_global.cpp:388
+msgid "&Show input method menu:"
+msgstr "입력방법 보이기(&S)"
+
+#: ../plugins/setupwindow/scim_global.cpp:389
+msgid "Enabled &Modifiers"
+msgstr "수정자 활성화(&M)"
+
+#: ../plugins/setupwindow/scim_global.cpp:390
+msgid "Cont&rol"
+msgstr "Cont&rol"
+
+#: ../plugins/setupwindow/scim_global.cpp:391
+msgid "Sh&ift"
+msgstr "Sh&ift"
+
+#: ../plugins/setupwindow/scim_global.cpp:392
+msgid "&Alt"
+msgstr "&Alt"
+
+#: ../plugins/setupwindow/scim_global.cpp:393
+msgid "M&eta"
+msgstr "메타(&e)"
+
+#: ../plugins/setupwindow/scim_global.cpp:394
+msgid "S&uper"
+msgstr "S&uper"
+
+#: ../plugins/setupwindow/scim_global.cpp:395
+msgid "H&yper"
+msgstr "하이퍼(&y)"
+
+#: ../plugins/setupwindow/scim_global.cpp:396
+msgid "Caps &Lock"
+msgstr "Caps &Lock"
+
+#: ../plugins/setupwindow/scim_global.cpp:398
+msgid "&Panel Program"
+msgstr "패널 프로그램(&P)"
+
+#: ../plugins/setupwindow/scim_global.cpp:400
+msgid "scim-panel-kde"
+msgstr "scim-panel-kde"
+
+#: ../plugins/setupwindow/scim_global.cpp:401
+msgid "scim-panel-gtk"
+msgstr "scim-panel-gtk"
+
+#: ../plugins/setupwindow/scim_global.cpp:402
+msgid "Config &Module"
+msgstr "모듈 설정(&M)"
+
+#: ../plugins/setupwindow/scim_global.cpp:403
+msgid "Ad&vanced"
+msgstr "고급(&v)"
+
+#: ../plugins/setupwindow/scim_global.cpp:404
+msgid "Advanced Settings"
+msgstr "고급 설정"
+
+#: ../plugins/setupwindow/scim_global.cpp:405
+msgid "&Supported Unicode Locales"
+msgstr "유니코드 로케일 지원(&S)"
+
+#: ../plugins/setupwindow/scim_global.cpp:406
+msgid "&Edit"
+msgstr "수정(&E)"
+
+#: ../plugins/setupwindow/scim_global.cpp:407
+msgid "&FrontEnd Socket Address"
+msgstr "프로트엔드 소케 주소(&F)"
+
+#: ../plugins/setupwindow/scim_global.cpp:408
+msgid "&IMEngine Socket Address"
+msgstr "IM엔지 소켓 주소(&I)"
+
+#: ../plugins/setupwindow/scim_global.cpp:409
+msgid "C&onfig Socket Address"
+msgstr "소켓 주소 설정(&o)"
+
+#: ../plugins/setupwindow/scim_global.cpp:410
+msgid "P&anel Socket Address"
+msgstr "패널 소켓 주소(&a)"
+
+#: ../plugins/setupwindow/scim_global.cpp:411
+msgid "Socket Timeo&ut"
+msgstr "소켓 시간제한(&u)"
+
+#: ../plugins/setupwindow/scim_global.cpp:412
+msgid "Oth&er"
+msgstr "다른(&e)"
+
+#: ../plugins/setupwindow/scimattachfilter.cpp:51
+msgid "Filter %1"
+msgstr "필터 %1"
+
+#: ../plugins/setupwindow/scimattachfilter.cpp:140
+msgid "Edit Filters for %1"
+msgstr "%1 을 위한 필터들 수정"
+
+#: ../plugins/setupwindow/scimattachfilter.cpp:141
+msgid "&Installed Filters for %1"
+msgstr "%1 을 위해 설치된 필터들(&I)"
+
+#: ../plugins/setupwindow/scim_x.cpp:69
+msgid "X Window (XIM)"
+msgstr "X 윈도우 (XIM)"
+
+#: ../plugins/setupwindow/scim_x.cpp:70
+msgid "S&tart skim automatically when KDE starts"
+msgstr "KDE 시작시 skim 자동 시작(&t)"
+
+#: ../plugins/setupwindow/scim_x.cpp:71
+msgid "XIM Settings"
+msgstr "XIM 설정"
+
+#: ../plugins/setupwindow/scim_x.cpp:72
+msgid "&On the Spot"
+msgstr "On the Spot(&O)"
+
+#: ../plugins/setupwindow/scim_x.cpp:73
+msgid "&Dynamic Event Flow"
+msgstr ""
+
+#: ../plugins/setupwindow/filterinfodlgbase.cpp:97
+msgid "<b>Name:</b>"
+msgstr "<b>이름:</b>"
+
+#: ../plugins/setupwindow/filterinfodlgbase.cpp:99
+msgid "<b>Description:</b>"
+msgstr "<b>설명:</b>"
+
+#: ../plugins/setupwindow/filterinfodlgbase.cpp:101
+msgid "<b>Supported Languages:</b>"
+msgstr "<b>지원 언어:</b>"
+
+#: ../plugins/setupwindow/filterinfodlgbase.cpp:103
+#: ../plugins/setupwindow/attachfilteruibase.cpp:130
+msgid "&Ok"
+msgstr "예(&O)"
+
+#: ../plugins/setupwindow/scimsetupwindow.cpp:53
+msgid "Configure skim"
+msgstr "skim 설정"
+
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:35
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:76
+msgid "Hotkeys"
+msgstr "단축키"
+
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:36
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:77
+msgid "Installed Filter"
+msgstr "설치된 필터"
+
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:78
+msgid "&Enable All"
+msgstr "전부 활성화(&E)"
+
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:79
+msgid "D&isable All"
+msgstr "전부 비활성화(&i)"
+
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:80
+msgid "Edi&t Hotkeys"
+msgstr "단축키 수정(&t)"
+
+#: ../plugins/setupwindow/scimimenginesettingsui.cpp:81
+msgid "Edit &Filters"
+msgstr "필터 수정(&F)"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:122
+msgid "Available &Filters"
+msgstr "가용한 필터들(&F)"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:124
+msgid "&Remove Filter"
+msgstr "필터 삭제(&R)"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:125
+msgid "Move &Up"
+msgstr "위로 이동(&U)"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:126
+msgid "Move &Down"
+msgstr "아래로 이동(&D)"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:127
+msgid "&Add Filter"
+msgstr "필터 추가(&A)"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:128
+msgid "&More Info"
+msgstr "추가 정보(&M)"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:129
+msgid "&Installed Filters for this Input Method"
+msgstr "입력방법을 위해 설치된 필터들(&I)"
+
+#: ../plugins/setupwindow/attachfilteruibase.cpp:131
+msgid "Canc&el"
+msgstr "취소(&e)"
+
+#: ../plugins/setupwindow/scimglobalconfigplugin.cpp:120
+msgid "Edit Supported Locales"
+msgstr "지원 로케일 수정"
+
+#: ../plugins/setupwindow/scimglobalconfigplugin.cpp:266
+msgid ""
+"If you want to use skim (scim-panel-kde) or scim-qtimm (Qt immodule support "
+"for SCIM), please select kconfig as the config module."
+msgstr ""
+"스킴 (scim-panel-kde) 또는 scim-qtimm (SCIM을 지원하는 Qt immodule) 을 사용하"
+"려고 한다면, kconfig 를 선택하고 모듈설정을 조절 하세요."
+
+#: ../plugins/setupwindow/scimimenginesettings.cpp:313
+msgid "Specify Hotkeys for IME \"%1\""
+msgstr "IME \"%1\" 을 위한 특별 단축키"
+
+#: ../plugins/inputwindow/inputwindow.cpp:39
+msgid "Input Window"
+msgstr "입력창"
+
+#: ../plugins/inputwindow/inputwindow.cpp:63
+msgid "Candidates Window (Lookup Table)"
+msgstr "후보 창(미리보디 테이블)"
+
+#: ../plugins/inputwindow/inputwindow_settings.cpp:88
+msgid "Input Window Settings"
+msgstr "입력창 설정"
+
+#: ../plugins/inputwindow/inputwindow_settings.cpp:89
+msgid "&Sticky Window"
+msgstr "고정 창(&S)"
+
+#: ../plugins/inputwindow/inputwindow_settings.cpp:90
+msgid "Use &Vertical Lookup Table"
+msgstr "수직 미리보기테이블 사용(&V)"
+
+#: ../plugins/inputwindow/inputwindow_settings.cpp:91
+msgid "&Embedded Lookup Table"
+msgstr "내장된 미리보기 창(&E)"
+
+#: ../plugins/inputwindow/inputwindow_settings.cpp:92
+msgid "&Minimize the width of Lookup Table"
+msgstr "미리보기 테이블 폭 최소화(&M)"
+
+#: ../plugins/inputwindow/inputwindow_settings.cpp:93
+msgid "&Font"
+msgstr "글꼴(&F)"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:51
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:111
+msgid "Window Name"
+msgstr "창 이름"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:52
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:112
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:113
+msgid "Translucency"
+msgstr "반투명"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:108
+msgid "Enable &Composite Support"
+msgstr "투명화 기능 활성화"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:109
+msgid "Composite Settings"
+msgstr "투명화 설정"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:110
+msgid "&Use KDE built-in Composite Manager (kompmgr)"
+msgstr "KDE 내장 투명 관리자(kompmgr) 사용(&U)"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:114
+msgid "&Active Window:"
+msgstr "창 활성화(&A):"
+
+#: ../plugins/compmgrclient/compositemanagerbase.cpp:115
+msgid "%"
+msgstr "%"
+
+#, fuzzy
+#~ msgid "&Trigger:"
+#~ msgstr "시작키:"
+
+#, fuzzy
+#~ msgid "List of available top level windows"
+#~ msgstr "사용가능한 스킴플러그인 리스트."
+
+#, fuzzy
+#~ msgid "server socket address"
+#~ msgstr "패널 소켓 주소(&a)"
+
+#~ msgid "Highlight Selected Candidate"
+#~ msgstr "선택된 추천 하이라이트"
+
+#~ msgid "Lookup Table is Vertical"
+#~ msgstr "미리보기 테이블 세로로 보기"
+
+#~ msgid "Sticky"
+#~ msgstr "붙이기"
+
+#~ msgid "General"
+#~ msgstr "일반"
+
+#, fuzzy
+#~ msgid "Alt+E"
+#~ msgstr "Alt"
+
+#~ msgid "Options"
+#~ msgstr "설정"
+
+#~ msgid "Use &Dvorak keyboard"
+#~ msgstr "드보락 자판 사용(&D)"
+
+#~ msgid "&Show candidate comment"
+#~ msgstr "추천 문자 보이기(&S)"
+
+#~ msgid "Hangul to Hanja keys:"
+#~ msgstr "한글, 한자 변환 키:"
+
+#~ msgid "Manual mode keys:"
+#~ msgstr "수동 모드 키:"
+
+#~ msgid "Generic Table"
+#~ msgstr "일반 테이블"
+
+#~ msgid "Show &prompt"
+#~ msgstr "프롬프트 보이기(&p)"
+
+#~ msgid "Show key &hint"
+#~ msgstr "힌트보이기(&h)"
+
+#~ msgid "Save &user table in binary format"
+#~ msgstr "사용자 테이블을 바이너리 형식으로 저장(&u)"
+
+#~ msgid "Show the u&ser defined phrases first"
+#~ msgstr "사용자 정의 문절을 먼저 보임(&s)"
+
+#~ msgid "Show &longer phrases first"
+#~ msgstr "긴 문절을 먼저 보임"
+
+#~ msgid "Full width &letter"
+#~ msgstr "전각 문자(&l)"
+
+#~ msgid "&Mode switch"
+#~ msgstr "모드 전환(&M)"
+
+#~ msgid "Full with &punctuation"
+#~ msgstr "전각 구두점(&p)"
+
+#~ msgid "&Add phrase"
+#~ msgstr "문절 더하기(&A)"
+
+#~ msgid "&Delete phrase"
+#~ msgstr "문절 지우기(&D)"
+
+#~ msgid "Smart Pinyin"
+#~ msgstr "똑똑한 평음"
+
+#~ msgid "Auto &combin phrase"
+#~ msgstr "자동 문절 비교(&c)"
+
+#~ msgid "Auto &fill preedit"
+#~ msgstr "자동 미리수정(preedit) 채움(&f)"
+
+#~ msgid "&Match longer phrase"
+#~ msgstr "보다 긴 음절 비교(&M)"
+
+#~ msgid "Show all &keys"
+#~ msgstr "모든 키 보이기(&k)"
+
+#~ msgid "&Dynamic adjust"
+#~ msgstr "능동 적용(&D)"
+
+#~ msgid "&Burst stack size"
+#~ msgstr "빠른 찾기 크기(&B)"
+
+#~ msgid "Max &user phrase length"
+#~ msgstr "사용자 문절 최대 길이(&u)"
+
+#~ msgid "Max &preedit length"
+#~ msgstr "preedit 최대 길이"
+
+#~ msgid "D&ynamic sensitivity"
+#~ msgstr "능동적 감도(&D)"
+
+#~ msgid "&Smart match level"
+#~ msgstr "똑똑한 비교 단계(&S)"
+
+#~ msgid "Sa&ve period (sec)"
+#~ msgstr "저장 간격, 초(&v)"
+
+#~ msgid "Save user data in binary &format"
+#~ msgstr "사용자 데이타를 바이너리 형식으로 저장(&f)"
+
+#~ msgid "&Advanced"
+#~ msgstr "고급(&A)"
+
+#~ msgid "&Use tone"
+#~ msgstr "사용자 톤(&U)"
+
+#~ msgid "Allow incomplete &pinyin"
+#~ msgstr "완성되지 않은 평음 허용(&p)"
+
+#~ msgid "Ambiguities"
+#~ msgstr "모호함"
+
+#~ msgid "&N and L"
+#~ msgstr "N 과 L(&N)"
+
+#~ msgid "&L and R"
+#~ msgstr "L 과 R(&L)"
+
+#~ msgid "&F and H"
+#~ msgstr "F 과 H(&F)"
+
+#~ msgid "&Zh and Z"
+#~ msgstr "Zh·과·Z(&Z)"
+
+#~ msgid "&Ch and C"
+#~ msgstr "Ch·과·C(&C)"
+
+#~ msgid "&Sh and S"
+#~ msgstr "Sh·과·S(&S)"
+
+#~ msgid "&In and Ing"
+#~ msgstr "In·과·Ing(&l)"
+
+#~ msgid "&An and Ang"
+#~ msgstr "An·과·Ang(&A)"
+
+#~ msgid "&En and Eng"
+#~ msgstr "En·과·Eng(&E)"
+
+#~ msgid "Pinyin"
+#~ msgstr "평음"
+
+#~ msgid "&Chinese mode switch"
+#~ msgstr "중국어 모드 전환(&C)"
+
+#~ msgid "&Disable phrase"
+#~ msgstr "문절 기능 끄기(&D)"
+
+#~ msgid "Page &up"
+#~ msgstr "이전 페이지(&u)"
+
+#~ msgid "Page dow&n"
+#~ msgstr "다음페이지(&n)"
+
+#, fuzzy
+#~ msgid "Alt+O"
+#~ msgstr "Alt"
+
+#, fuzzy
+#~ msgid "Alt+D"
+#~ msgstr "Alt"
+
+#, fuzzy
+#~ msgid "Alt+H"
+#~ msgstr "Alt"
+
+#, fuzzy
+#~ msgid "Alt+U"
+#~ msgstr "Alt"
+
+#, fuzzy
+#~ msgid "Alt+P"
+#~ msgstr "Alt"
+
+#, fuzzy
+#~ msgid "Alt+M"
+#~ msgstr "Alt"
+
+#~ msgid "Qt Immodule"
+#~ msgstr "Qt Immodule"
+
+#~ msgid "Use Qt built-in Preedit Area"
+#~ msgstr "Qt 의 내장 미리수정(preedit) 영역 사용"
+
+#~ msgid "Left/Right Modifier"
+#~ msgstr "좌/우측 수정"
+
+#~ msgid ""
+#~ "Applied to the last key if it is a modifer key. If left modifier is "
+#~ "intended, please leave this unchecked."
+#~ msgstr ""
+#~ "만약 수정 키라면 마지막 키를 적용합니다. 왼쪽 수정키를 의도한다면 이 설정"
+#~ "을 건드리지 마세요."
+
+#~ msgid "&Add"
+#~ msgstr "더하기(&A)"
+
+#~ msgid "&Delete"
+#~ msgstr "삭제(&D)"

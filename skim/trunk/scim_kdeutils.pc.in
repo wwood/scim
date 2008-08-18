@@ -1,0 +1,14 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+localedir=@datadir@/locale
+datadir=@datadir@
+sysconfdir=@sysconfdir@
+
+Name: scim-kdeutils
+Description: KDE Utilities for SKIM
+Version: @VERSION@
+Requires: skim 
+Libs: -L${libdir} -lscim-kdeutils
+Cflags: -I${includedir}/skim

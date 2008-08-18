@@ -1,0 +1,17 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=ServiceType
+X-KDE-ServiceType=Skim/KCModule
+X-KDE-Derived=KCModule
+Comment=A Config Plugin for Skim
+Comment[de]=Eine Einstellungskomponente für skim
+Comment[fr]=Un Composant de configuration pour Skim
+Comment[it]=Un plugin per la configurazione di Skim
+Comment[ja]=skim設定プラグイン
+Comment[ko]=스킴을 위한 설정 플러그인
+Comment[pa]=ਸਕਿਮ ਲਈ ਸੰਰਚਨਾ ਪਲੱਗਿੰਨ
+Comment[zh_CN]=Skim 配置模块
+Comment[zh_TW]=Skim 設定 Plugin
+
+[PropertyDef::X-KDE-PluginInfo-DisplayParent]
+Type=QString

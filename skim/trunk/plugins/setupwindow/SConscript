@@ -1,0 +1,24 @@
+#! /usr/bin/env python
+
+Import( 'env' )
+
+setup_sources='scimsetupwindow.cpp'
+plugin_desktop_file='skimplugin_setupwindow.desktop skimsetupdir_panel.desktop skimsetupdir_frontend.desktop skimsetupdir_imengines.desktop'
+env.SKIMPLUGIN('skimplugin_setupwindow', setup_sources, plugin_desktop_file.split())
+
+kcm_sources='scim_x.ui scimxsettings.cpp'
+plugin_kcm_desktop_file='skimplugin_scim_x_config.desktop'
+env.SKIMKCMPLUGIN('kcm_skimplugin_scim_x', kcm_sources, plugin_kcm_desktop_file)
+
+kcm_sources='scimimenginesettings.cpp scimimenginesettingsui.ui scimattachfilter.cpp attachfilteruibase.ui filterinfodlgbase.ui'
+plugin_kcm_desktop_file='skimplugin_scim_imengines_config.desktop'
+env.SKIMKCMPLUGIN('kcm_skimplugin_scim_imengines', kcm_sources, plugin_kcm_desktop_file)
+
+kcm_sources='configskimplugins.cpp'
+plugin_kcm_desktop_file='kcm_skimplugin_configplugin_config.desktop'
+env.SKIMKCMPLUGIN('kcm_skimplugin_configplugin', kcm_sources, plugin_kcm_desktop_file)
+
+kcm_sources='scim_global.ui scimglobalconfigplugin.cpp'
+plugin_kcm_desktop_file='skimplugin_scim_global_config.desktop'
+env.SKIMKCMPLUGIN('kcm_skimplugin_scim_global', kcm_sources, plugin_kcm_desktop_file)
+

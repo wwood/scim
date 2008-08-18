@@ -1,0 +1,223 @@
+2006-04-29 cougar <liuspider@users.sourceforge.net>
+  1.4.5 Bug Fix release:
+    Fixed: crash issue when deleting helper properties
+    Improved: implement session management support to save user config when logout from session
+    Fixed: compilation with qt 3.3.6
+    Updated: korean translation
+
+2006-01-30 cougar <liuspider@users.sourceforge.net>
+  1.4.4 Bug Fix release:
+    Fixed: -f option did not work properly
+    Fixed: name of Built-in compose (european keyboard support) IM
+    Fixed: kde 3.3 compatibility
+    Fixed: filter saving bugs
+    Improved: user can not disable the setupwindow plugin to prevent users from having no configure dialog by accident
+    Improved: display the name of the current IM by default
+    Added: Panjabi(pa) translation
+    
+2005-11-01 cougar <liuspider@users.sourceforge.net>
+  1.4.3 Minor Bug fix release:
+    Improved: apperance consistency of buttons in main window
+    Fixed: compile problem with qt 3.3.5
+    Fixed: scim-setup could not be started
+    
+2005-08-29 cougar <liuspider@users.sourceforge.net>
+  1.4.2 Minor Bug fix release:
+    Improved: added move up/down button in filter config dialog
+    Improved: added ComposeKeyFactory in IMEngine setup dialog
+    Fixed: a bug in configure script (affecting debian system)
+    Fixed: toggling main window mode did not update property buttons in it
+
+2005-08-10 cougar <liuspider@users.sourceforge.net>
+  1.4.1 Bug fix version:
+    Improved: embedded mode (in kicker) of main window
+    Fixed: build system issues in regarding to packaging and 64 systems
+
+2005-07-14 cougar <liuspider@users.sourceforge.net>
+  1.4.0 Stable version release:
+    Fixed remaining build system issues.
+
+2005-07-10 cougar <liuspider@users.sourceforge.net>
+  1.3.3 Major bug fix release:
+    Fixed a lot of outstanding build system issues existing in 1.3.2
+
+2005-07-07 cougar <liuspider@users.sourceforge.net>
+  1.3.2 Build system migrated to bksys:
+    From this release, skim migrated to bksys build system (http://freehackers.org/~tnagy/bksys.html) 
+    fixed: font text color issue in the input window
+    fixed: handbook invoking in the help dialog
+  Please consult the README file on how to install
+
+2005-06-18 cougar <liuspider@users.sourceforge.net>
+  1.3.1 bug fix release:
+    improvement: docking handling
+    improvement: transparent window management
+    improvement: separate GUI and Frontend property display area in mainwindow
+    improvement: performance of input window and fixed the flitter issue
+    improvement: a new option for input window to set a minium width for lookup table when in standalone mode
+    fixed: compile issue in some distro
+    fixed: tool button size issue
+    fixed: other minor issues
+  This version is highly recommanded for everyone who is using skim 1.3.0.
+  Please delete the file ~/.kde/share/apps/skim/mainwindowui.rc if you upgrade from previous version (skim <= 1.3.0)
+
+2005-05-28 cougar <liuspider@users.sourceforge.net>
+  1.3.0 major feature release:
+    new: Transparent Window support and the configure UI
+    new: Main Window Dockable into Panel (only works with kicker)
+    new: 4 Direction support in Main Window
+    new: reworked Always show option of Main Window
+    new: three more modifier keys support (meta/hyper/super) and a config options to customize modifiers
+    new: filter setup dialog for the filter mechanism (new to libscim 1.3.0)
+    improvement: refined configure dialog to be more user friendly, re-structured the hierachy and new icons
+    improvement: do not display the border of the next/previous buttons; hide next/previous button when disabled; (thanks to cjacker for advice)
+    improvement: smaller buttons in main toolbar which just use as little space as possible
+    improvement: String layout in Input Window
+    new: SCIM Setup can be added to the Main Toolbar
+    fixed: other minor bugs
+
+2005-05-25 cougar <liuspider@users.sourceforge.net>
+  1.2.3 bug fix version is released
+    fixed: crash with some KDE theme
+    fixed: make sure Main window is always visible
+    fixed: support icons whose filenames contain none-latin1 chars
+    fixed: do not show inputwindow when show lookuptable if detached
+    fixed: lookup table should be hiden by default
+
+2005-03-28 cougar <liuspider@users.sourceforge.net>
+  1.2.2 bug fix version is released
+    improvement: inputwindow honors the current KDE style now, rather than a pre-defined pattern
+    improvement: reduced the size main window, now honor the size of font rather than the default icon size
+    improvement: get rid of the extra space in the main window on the far right
+    improvement: new option to set up tear off lookup table
+    fixed: tear off lookup table support (none-embedded lookup table)
+    fixed: the input window was not kept visible when qt built-in preedit-area is used
+    fixed: other input window (mainly lookup table issues) were rectified
+    fixed: drawing issue of inputwindow (lookup table mainly)
+    performance: use timer to reduce adjustSize calls
+    fixed: forced start didn't behave as expected (exit immediately)
+
+2005-03-16 cougar <liuspider@users.sourceforge.net>
+  1.2.1 Major bug fix version is released
+    now all exit issue with skim should have been fixed
+    SCIM standalone helper module menu support (scim-input-pad can be called in skim now)
+    Workaround for issues in Qt 3.3.4 qtimm patch
+  This upgrade is highly recommanded for everyone.
+
+2005-02-28 cougar <liuspider@users.sourceforge.net>
+  1.2.0 released
+    skim is now pkgconfig library: contains libskim and libscim-kdeutils
+    config options for scim-qtimm is splitted to its corresponding package
+    fixed amd64 compile issue (thanks to Federico Zenith)
+    update configure options for scim-pinyin/scim-tables
+    more compatible with qt 3.3.4
+
+2005-02-03 cougar <liuspider@users.sourceforge.net>
+  1.1.0 released
+    First release compatible with libscim 1.1.x (requires scim >= 1.1.3)
+    New disable/enable All buttons in IMEngines configure dialog
+    New Edit Hotkeys button in IMEngines configure dialog
+    New Italian translation, thanks to Federico Zenith [zenith ZAI chemeng.ntnu.no]
+    Other minor bugs fixed
+
+2005-01-20 cougar <liuspider@users.sourceforge.net>
+  1.0.3 released
+        Fixed several bugs reported, especially in configure dialogs.
+        New French translation, thanks to Damien Menanteau <damien.menanteau ZAI cegetel.net>
+
+2004-10-10 cougar <liuspider@users.sourceforge.net>
+  1.0.2 released
+        Fixed bug #1042106;
+        Incorporated Qt-immodule related info in the English doc;
+        Updated to support for latest Intel compiler;
+        Other minor improvement.
+
+2004-09-27 cougar <liuspider@users.sourceforge.net>
+  1.0.1 released
+        New option in configure dialog: Autostart skim when KDE starts;
+        Updated document;
+       Display less candidates in the lookuptable window if it is too long.
+  
+2004-09-08 cougar <liuspider@users.sourceforge.net>
+  1.0.0 released
+        New German document;
+        New icons;
+        Fixed/Enhanced the factory menu shortcut support bug;
+        Updated English document;
+        Other small improvement and cleanup.
+
+2004-09-07 cougar <liuspider@users.sourceforge.net>
+  3 contributors now join us as "offical" developers:
+        JanHefti: Doc writer and German translator
+        KitaeKim: Art designer and Korean translator
+        YukikoBando: Japanese translator
+
+2004-08-28 cougar <liuspider@users.sourceforge.net>
+  0.9.7 released
+        New translations for German, Japanese, Korean and Tranditional Chinese: thanks to Jan, Yukiko, Kitae and Jim Huang;
+        Now fully i18ned: include all translatible strings.
+        Get rid of extra space in text buttons in the mainwindow;
+        New option -f: with this option, skim will start even if scim-panel-gtk is running;
+        move libskim and libscim-kdeutils to ${libdir};
+        New Translator Tab in the about dialog ;)
+        Fixed other minor bugs.
+  If no further bugs are reported, this will become the skim 1.0 version when scim 1.0 merges.
+
+2004-08-20 cougar <liuspider@users.sourceforge.net>
+  0.9.6 released
+        Rewrote the config module support: now only reload settings when necessary;
+        New Korean Translation (thanks to Kitae);
+        New setup UI for scim-hangul;
+
+2004-08-11 cougar <liuspider@users.sourceforge.net>
+  0.9.5 released
+        Changed the actionlist name;
+        New option to only display the icon of current input method;
+        fixed compile issue under Slackware;
+        fixed other minor bugs.
+
+2004-08-02 cougar <liuspider@users.sourceforge.net>
+  0.9.4 released
+        Completed setup UI for smartpinyin and scim global settings;
+        Fixed Qt 3.2.x compile issue;
+        Fixed gcc 3.2.x + Qt 3.2.x compile issue (under Slackware hopefully);
+        Fixed FreeBSD compatible issue;
+        Fixed other minor bugs.
+
+2004-07-17 cougar <liuspider@users.sourceforge.net>
+  0.9.3 released
+        Fixed gcc 3.4.x compile issues;
+        New appearance of inputwindow and mainwindow (hopefully it's better now);
+        Fixed icon size issues in serveral UIs;
+        New setupUI for scim global settings;
+        New layout in Configure Dialog.
+2004-07-03 cougar <liuspider@users.sourceforge.net>
+  0.9.1 released, notable Changes:
+        NEW setupui for scim-lib, including generic table IMEngine and smartpinyin. Now most of the important settings of scim-lib can be configured in skim;
+        NEW script wrapper scim-panel-kde: it won't load scimlauncher plugin, so it can be used to replace scim-panel-gtk straightforward;
+        NEW options: -l, -n and --np to customize which plugins will be enabled/disabled;
+        fixed property support bugs;
+        fixed some issues in rendering text in inputwindow;
+        updated zh_CN translation;
+	other small improvement;
+2004-06-24 cougar <liuspider@users.sourceforge.net>
+  0.9.0 released, notable Changes:
+        the name is formally renamed to "skim" (the executable file is called skim now);
+        NEW SetupUI for IMEngines and X Window system of scim-lib;
+        Work with scim-lib >= 0.99;
+        NEW scim config module "kconfig", the settings used in skim (including scim's started by skim) are manipulated by this module;
+        Generic On-demand plugin support: the ones you do not need will not get loaded and some temparory plugins (now only including configure plugin) will only be loaded if the user activate their actions;
+        Aux string attribute support implemented;
+        NEW render engine dedicated to manipluating drawing of strings associating with attribute lists, this lead to more effecient input window;
+        Rewrite config module to honor the KDE config module principle;
+        NEW plugin system based upon standard KDE plugins;
+        A Quit action is added: if you want to debug skim this is what you would expect;
+        Improved performance in serveral components.
+        Serveral Bug fixes;
+
+2004-04-28 cougar <liuspider@users.sourceforge.net>
+	0.7.4 released, notable Changes:
+        enlarged the height of preedit area in inputwindow and some cleanup, also fixed a bug in preedit string area.
+        Added one option to inputwindow: highlight_Candidate, when disabled, you can gain some speedup, although current selected candidate in lookup table will not be highlighted;                                                  Fixed several bugs, including the problem of empty server list popup menu;                                     Qt >= 3.2.0 are all supported (not only Qt >= 3.3.0) (thanks for zliu[@linuxsir.org])
+2004-04-18 cougar <liuspider@users.sourceforge.net>
+        0.7.3 released
