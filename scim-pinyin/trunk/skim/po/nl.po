@@ -1,0 +1,171 @@
+# translation of nl.po to Nederlands
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Ronald Stroethoff <stroet43@zonnet.nl>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: nl\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-03-05 20:01+0000\n"
+"PO-Revision-Date: 2007-05-20 12:02+0200\n"
+"Last-Translator: Ronald Stroethoff <stroet43@zonnet.nl>\n"
+"Language-Team: Nederlands\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#: ../config/smartpinyinui.cpp:398
+msgid "Smart Pinyin"
+msgstr "Intelligent Pinyin"
+
+#: ../config/smartpinyinui.cpp:399
+msgid "Auto &combin phrase"
+msgstr "Uitdrukkingen automatisch &combineren"
+
+#: ../config/smartpinyinui.cpp:400
+msgid "Auto &fill preedit"
+msgstr "Automatisch &aanvullen"
+
+#: ../config/smartpinyinui.cpp:401
+msgid "&Match longer phrase"
+msgstr "&Langere uitdrukkingen kiezen"
+
+#: ../config/smartpinyinui.cpp:402
+msgid "Always show lookup &table"
+msgstr "&Opzoek-tabel altijd tonen"
+
+#: ../config/smartpinyinui.cpp:403
+msgid "Show all &keys"
+msgstr "Alle &toetscombinaties tonen"
+
+#: ../config/smartpinyinui.cpp:404
+msgid "&Dynamic adjust"
+msgstr "&Dynamisch aanpassen"
+
+#: ../config/smartpinyinui.cpp:405
+msgid "&Burst stack size"
+msgstr "&Grootte van tussengeheugen:"
+
+#: ../config/smartpinyinui.cpp:406
+msgid "Max &user phrase length"
+msgstr "Maximale lengte van de eigen gedefineerde pinyin uitdrukking:"
+
+#: ../config/smartpinyinui.cpp:407
+msgid "Max &preedit length"
+msgstr "Maximale &lengte in invoer-venster:"
+
+#: ../config/smartpinyinui.cpp:408
+msgid "D&ynamic sensitivity"
+msgstr "D&ynamische gevoeligheid:"
+
+#: ../config/smartpinyinui.cpp:409
+msgid "&Smart match level"
+msgstr "&Intelligentie nivo van vergelijken:"
+
+#: ../config/smartpinyinui.cpp:410
+msgid "Sa&ve period (sec)"
+msgstr "&Automatisch opslaan na (in sekondes):"
+
+#: ../config/smartpinyinui.cpp:411
+msgid "Save user data in binary &format"
+msgstr "Gebruikers-tabel in &binair-formaat opslaan"
+
+#: ../config/smartpinyinui.cpp:412
+msgid "&Advanced"
+msgstr "&Advanced"
+
+#: ../config/smartpinyinui.cpp:413
+msgid "General"
+msgstr "algemeen"
+
+#: ../config/smartpinyinui.cpp:414
+msgid "&Use tone"
+msgstr "&Tonen gebruiken"
+
+#: ../config/smartpinyinui.cpp:415
+msgid "Allow incomplete &pinyin"
+msgstr "Onvolledige &pinyin toestaan"
+
+#: ../config/smartpinyinui.cpp:416
+msgid "Enable A&mbiguities"
+msgstr "&Twijfelgevallen toestaan"
+
+#: ../config/smartpinyinui.cpp:417
+msgid "Ambiguities"
+msgstr "&Twijfelgevallen"
+
+#: ../config/smartpinyinui.cpp:418
+msgid "&N and L"
+msgstr "&N- en L-"
+
+#: ../config/smartpinyinui.cpp:419
+msgid "&L and R"
+msgstr "&L- en R-"
+
+#: ../config/smartpinyinui.cpp:420
+msgid "&F and H"
+msgstr "&F- en H-"
+
+#: ../config/smartpinyinui.cpp:421
+msgid "&Zh and Z"
+msgstr "&Zh- en Z-"
+
+#: ../config/smartpinyinui.cpp:422
+msgid "&Ch and C"
+msgstr "&Ch- en C-"
+
+#: ../config/smartpinyinui.cpp:423
+msgid "&Sh and S"
+msgstr "&Sh- en S-"
+
+#: ../config/smartpinyinui.cpp:424
+msgid "&In and Ing"
+msgstr "-&in en -ing"
+
+#: ../config/smartpinyinui.cpp:425
+msgid "&An and Ang"
+msgstr "-&an en -ang"
+
+#: ../config/smartpinyinui.cpp:426
+msgid "&En and Eng"
+msgstr "-&en en -eng"
+
+#: ../config/smartpinyinui.cpp:427
+msgid "Pinyin"
+msgstr "Pinyin"
+
+#: ../config/smartpinyinui.cpp:428
+msgid "Full width &letter"
+msgstr "&Letters in volle/halve breedte"
+
+#: ../config/smartpinyinui.cpp:429
+msgid "&Mode switch"
+msgstr "&Moduswissel:"
+
+#: ../config/smartpinyinui.cpp:430
+msgid "&Chinese mode switch"
+msgstr "&Chinese Modus:"
+
+#: ../config/smartpinyinui.cpp:431
+msgid "Full with &punctuation"
+msgstr "&Leesteken in volle breedte:"
+
+#: ../config/smartpinyinui.cpp:432
+msgid "&Disable phrase"
+msgstr "&Uitdrukking uitschakelen:"
+
+#: ../config/smartpinyinui.cpp:433
+msgid "Page &up"
+msgstr "Page &up"
+
+#: ../config/smartpinyinui.cpp:434
+msgid "Page dow&n"
+msgstr "Page dow&n"
+
+#: ../config/smartpinyinui.cpp:435
+msgid "Keyboard"
+msgstr "Toetsenbord"
+
