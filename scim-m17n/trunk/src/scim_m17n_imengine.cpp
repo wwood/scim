@@ -102,7 +102,7 @@ extern "C" {
                 const char *im_lang = msymbol_name (tag[1]);
                 const char *im_name = msymbol_name (tag[2]);
 
-                if (im_lang && strlen (im_lang) && im_name && strlen (im_name)) {
+                if (im_lang && im_lang[0] && im_name && im_name[0]) {
                     M17NInfo info;
 
                     SCIM_DEBUG_IMENGINE(1) << im_lang << "-" << im_name << "\n";
@@ -341,7 +341,7 @@ M17NInstance::m17n_process_key (MSymbol key)
     buf[__m17n_converter->nbytes] = 0;
     m17n_object_unref(produced);
 
-    if (strlen (buf)) {
+    if (buf[0]) {
         SCIM_DEBUG_IMENGINE(2) << "commit_string: " << buf << "\n";
         commit_string (utf8_mbstowcs (buf));
     }
@@ -824,6 +824,12 @@ __key_to_symbol (const KeyEvent &key)
             mask |= SCIM_KEY_ShiftMask;
     }
 
+    if (key.is_super_down ())
+        mask |= SCIM_KEY_SuperMask;
+
+    if (key.is_hyper_down ())
+        mask |= SCIM_KEY_HyperMask;
+
     if (key.is_meta_down ())
         mask |= SCIM_KEY_MetaMask;
 
@@ -832,18 +838,18 @@ __key_to_symbol (const KeyEvent &key)
 
     if (!keysym.length ()) return Mnil;
 
-    if (mask & SCIM_KEY_ShiftMask)
-        keysym = String ("S-") + keysym;
-    if (mask & SCIM_KEY_ControlMask)
-        keysym = String ("C-") + keysym;
-    if (mask & SCIM_KEY_MetaMask)
-        keysym = String ("M-") + keysym;
-    if (mask & SCIM_KEY_AltMask)
-        keysym = String ("A-") + keysym;
-    if (mask & SCIM_KEY_SuperMask)
-        keysym = String ("s-") + keysym;
     if (mask & SCIM_KEY_HyperMask)
         keysym = String ("H-") + keysym;
+    if (mask & SCIM_KEY_SuperMask)
+        keysym = String ("s-") + keysym;
+    if (mask & SCIM_KEY_AltMask)
+        keysym = String ("A-") + keysym;
+    if (mask & SCIM_KEY_MetaMask)
+        keysym = String ("M-") + keysym;
+    if (mask & SCIM_KEY_ControlMask)
+        keysym = String ("C-") + keysym;
+    if (mask & SCIM_KEY_ShiftMask)
+        keysym = String ("S-") + keysym;
 
     return msymbol (keysym.c_str ());
 }
