@@ -35,6 +35,7 @@
 
 #include <string.h>
 #include <scim.h>
+#include <string.h>
 #include "scim_m17n_imengine.h"
 
 #define scim_module_init m17n_LTX_scim_module_init
