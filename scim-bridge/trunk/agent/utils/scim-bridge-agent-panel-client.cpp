@@ -116,7 +116,7 @@ class ScimBridgeAgentPanelClientImpl: public ScimBridgeAgentPanelClient
 
         SocketClient socket_client;
         int socket_timeout;
-        uint32 socket_magic_key;
+        uint32_t socket_magic_key;
         Transaction sending_transaction;
         scim_bridge_imcontext_id_t prepared_imcontext_id;
 
@@ -292,14 +292,14 @@ retval_t ScimBridgeAgentPanelClientImpl::filter_event ()
     } else {
 
         // Check if there is a command for the specific IMContext.
-        uint32 imcontext_id;
+        uint32_t imcontext_id;
         if (!receiving_transaction.get_data (imcontext_id)) return RETVAL_SUCCEEDED;
 
         while (receiving_transaction.get_command (command)) {
             switch (command) {
                 case SCIM_TRANS_CMD_UPDATE_LOOKUP_TABLE_PAGE_SIZE:
                 {
-                    uint32 size;
+                    uint32_t size;
                     if (receiving_transaction.get_data (size)) signal_update_lookup_table_page_size (imcontext_id, (int) size);
                 }
                 break;
@@ -329,13 +329,13 @@ retval_t ScimBridgeAgentPanelClientImpl::filter_event ()
                 break;
                 case SCIM_TRANS_CMD_MOVE_PREEDIT_CARET:
                 {
-                    uint32 cursor_pos;
+                    uint32_t cursor_pos;
                     if (receiving_transaction.get_data (cursor_pos)) signal_move_preedit_caret (imcontext_id, cursor_pos);
                 }
                 break;
                 case SCIM_TRANS_CMD_SELECT_CANDIDATE:
                 {
-                    uint32 item;
+                    uint32_t item;
                     if (receiving_transaction.get_data (item)) signal_select_candidate (imcontext_id, item);
                 }
                 break;
@@ -393,10 +393,10 @@ retval_t ScimBridgeAgentPanelClientImpl::prepare (scim_bridge_imcontext_id_t imc
         sending_transaction.clear ();
         sending_transaction.put_command (SCIM_TRANS_CMD_REQUEST);
         sending_transaction.put_data (socket_magic_key);
-        sending_transaction.put_data ((uint32) imcontext_id);
+        sending_transaction.put_data ((uint32_t) imcontext_id);
 
         int command;
-        uint32 data;
+        uint32_t data;
         sending_transaction.get_command (command);
         sending_transaction.get_data (data);
         sending_transaction.get_data (data);
@@ -441,7 +441,7 @@ void ScimBridgeAgentPanelClientImpl::update_screen ()
 {
     if (prepared_imcontext_id != -1 && display != NULL) {
         sending_transaction.put_command (SCIM_TRANS_CMD_UPDATE_SCREEN);
-        sending_transaction.put_data ((uint32) scim_bridge_display_get_screen_number (display));
+        sending_transaction.put_data ((uint32_t) scim_bridge_display_get_screen_number (display));
     }
 }
 
@@ -500,8 +500,8 @@ void ScimBridgeAgentPanelClientImpl::update_spot_location (int x, int y)
 {
     if (prepared_imcontext_id != -1) {
         sending_transaction.put_command (SCIM_TRANS_CMD_UPDATE_SPOT_LOCATION);
-        sending_transaction.put_data ((uint32) x);
-        sending_transaction.put_data ((uint32) y);
+        sending_transaction.put_data ((uint32_t) x);
+        sending_transaction.put_data ((uint32_t) y);
     }
 }
 
@@ -556,7 +556,7 @@ void ScimBridgeAgentPanelClientImpl::update_preedit_caret (int caret)
 {
     if (prepared_imcontext_id != -1) {
         sending_transaction.put_command (SCIM_TRANS_CMD_UPDATE_PREEDIT_CARET);
-        sending_transaction.put_data ((uint32) caret);
+        sending_transaction.put_data ((uint32_t) caret);
     }
 }
 

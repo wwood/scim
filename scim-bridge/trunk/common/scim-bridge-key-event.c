@@ -18,7 +18,7 @@
  */
 
 #include <assert.h>
-#include <malloc.h>
+#include <stdlib.h>
 
 #include "scim-bridge-key-event.h"
 #include "scim-bridge-message-constant.h"

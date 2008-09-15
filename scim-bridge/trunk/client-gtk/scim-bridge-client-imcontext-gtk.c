@@ -17,10 +17,8 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  */
 
-#include <alloca.h>
 #include <assert.h>
 #include <errno.h>
-#include <malloc.h>
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>

@@ -17,7 +17,6 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  */
 
-#include <alloca.h>
 #include <pwd.h>
 #include <stdio.h>
 #include <stdlib.h>

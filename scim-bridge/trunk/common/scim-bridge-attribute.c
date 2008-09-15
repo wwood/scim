@@ -17,7 +17,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  */
 
-#include <malloc.h>
+#include <stdlib.h>
 #include <string.h>
 
 #include "scim-bridge-attribute.h"

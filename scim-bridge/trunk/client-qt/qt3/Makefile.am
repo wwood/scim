@@ -51,7 +51,9 @@ CLEANFILES = moc_scim-bridge-client-qt.cpp
 im-scim-bridge-qt.cpp: scim-bridge-client-qt.h
 
 scim-bridge-client-qt.h:
-	ln -sf $(top_srcdir)/client-qt/*.{h,cpp} .
+	@@for lfile in `ls $(top_srcdir)/client-qt/*.h $(top_srcdir)/client-qt/*.cpp`; do \
+	ln -sf $$lfile .; \
+	done;
 
 scim-bridge-client-qt.cpp: moc_scim-bridge-client-qt.cpp
 

@@ -41,7 +41,7 @@ extern "C"
     /**
      * The type for wide string.
      */
-    typedef uint32 wchar;
+    typedef uint32_t wchar;
 #else
     /**
      * The type for wide string.

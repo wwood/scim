@@ -1,3 +1,29 @@
+2008-09-15 02:10  yurivict
+	* client-qt/qt3/Makefile.am, ./client-qt/qt4/Makefile.am:
+	  - made symbolic link portable across systems
+
+2008-09-15 02:09  yurivict
+	* common/intl.h: - fixed include "libintl.h"
+
+2008-09-15 01:39  yurivict
+
+	* agent/utils/scim-bridge-agent-panel-client.cpp,
+	  agent/utils/scim-bridge-agent-panel-client.cpp,
+	  agent/scim-bridge-agent.cpp, common/scim-bridge-string.h:
+	  - replaced non-portable type uint32 to more portable one: uint32_t.
+
+
+2008-09-15 01:09  yurivict
+
+	* common/scim-bridge-attribute.c, common/scim-bridge-key-event.c,
+	  client-gtk/scim-bridge-client-imcontext-gtk.c,
+	  common/scim-bridge-display.c, agent/scim-bridge-agent-output.cpp,
+	  common/scim-bridge-message.c, client-common/scim-bridge-client.c,
+	  client-gtk/scim-bridge-client-imcontext-gtk.c,
+	  agent/scim-bridge-agent-output.cpp, common/scim-bridge-messenger.c:
+	  - replaced "#include <malloc.h>"
+	  with "#include <stdlib.h>" and removed some obsolete headers.
+
 2008-02-24 09:19  ryo-dairiki
 
 	* agent/scim-bridge-agent.cpp: - Add "--no-stay" option to launch

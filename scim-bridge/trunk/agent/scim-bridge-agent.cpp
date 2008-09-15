@@ -167,7 +167,7 @@ static bool is_socket_frontend_ready ()
         scim_bridge_pdebugln (8, "There is no socket frontend at all.");        
         return false;
     } else {
-        uint32 magic;
+        uint32_t magic;
         if (!scim_socket_open_connection (magic, "ConnectionTester", "SocketFrontEnd", socket_client, 1000)) {
             scim_bridge_pdebugln (8, "Failed to connect the socket fronent.");
             return false;
