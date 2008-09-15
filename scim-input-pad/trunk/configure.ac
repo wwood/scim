@@ -34,7 +34,7 @@ AM_INIT_AUTOMAKE
 AM_CONFIG_HEADER([config.h])
 
 # Init gettext
-ALL_LINGUAS="zh_CN zh_TW pa ja de fr it nl"
+ALL_LINGUAS="zh_CN zh_TW pa ja de fr it"
 AM_GNU_GETTEXT
 
 # Check intltool
