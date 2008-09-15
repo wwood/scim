@@ -1,0 +1,2 @@
+2008-09-15	04:34	Yuri Victorovich <yuri@tsoft.com>
+	* src/scim_uim_imengine.cpp: fixed compile with the modern uim-1.5.2 distribution

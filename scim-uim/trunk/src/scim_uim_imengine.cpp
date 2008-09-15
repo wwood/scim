@@ -34,7 +34,8 @@
 
 #include <scim.h>
 #include "scim_uim_imengine.h"
-#include <uim/uim-compat-scm.h>
+#include <uim/uim-util.h>
+#include <uim/uim-scm.h>
 
 #define scim_module_init uim_LTX_scim_module_init
 #define scim_module_exit uim_LTX_scim_module_exit
