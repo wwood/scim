@@ -134,7 +134,7 @@ PKG_CHECK_MODULES(SCIM_GTKUTILS,[scim-gtkutils >= $SCIM_VERSION],
 
 install_scim_version=`$PKG_CONFIG --modversion scim`
 
-if [test "x${install_scim_version:0:3}" = "x1.2"]; then
+if [ "x`echo ${install_scim_version} | sed -E 's/^(...).+$/\1/'`" = "x1.2" ]; then
   AC_DEFINE(SCIM_1_2_API,1,[Whether the current scim is 1.2.x])
 else
   AC_DEFINE(SCIM_1_2_API,0)

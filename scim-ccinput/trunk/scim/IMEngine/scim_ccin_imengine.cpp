@@ -57,6 +57,8 @@
 using namespace scim;
 using namespace std;
 
+#include <libintl.h>
+
 #include "scim_generic_table.h"
 #include "scim_ccin_imengine.h"
 

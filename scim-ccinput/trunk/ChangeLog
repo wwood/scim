@@ -10,6 +10,11 @@
 #
 #<TAB>* 事由2
 #...
+
+2008-09-15      yurivict yuri@tsoft.com
+	* configure.ac: portability fix
+	  scim/IMEngine/scim_ccin_imengine.cpp: libintl.h include added
+
 2003-10-22	ZHANG Qian
 	* make a basic simple file framework.
 	- changelog
