@@ -1,12 +1,10 @@
 #QTDIR=/usr scons debug=1 qtlibs=/usr/lib/qt4/ qtincludes=/usr/include/qt4
 if [ ! -d "bksys" ]; then
-  echo "Please press enter directly for the next question about the password"
-  cvs -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/scim login
-  cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/scim co -P -d bksys skim/bksys
+  svn co https://scim.svn.sourceforge.net/svnroot/scim/skim/trunk/bksys
 fi
 
 if [ ! -d "bksys" ]; then
-  echo -e "ERROR: missing bksys directory\n       please see README on how to bootstrap from CVS"
+  echo -e "ERROR: missing bksys directory\n       please see README on how to bootstrap from SVN"
   exit
 fi
 

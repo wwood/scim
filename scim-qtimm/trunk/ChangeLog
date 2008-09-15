@@ -1,3 +1,7 @@
+2008-08-15	15:13	Yuri Victorovich <yuri@tsoft.com>
+	Files:  bootstrap
+	Replaced old CVS access with SVN access
+
 2005-08-16	07:4	James Su <suzhe@tsinghua.org.cn>
 
 	Files:	configure.in.in (1.20) (+2 -2)
