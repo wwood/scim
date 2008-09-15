@@ -1,3 +1,9 @@
+2008-09-15 12:35 yurivict <yuri@tsoft.com>
+	Changed:
+		doc/nl/index.docbook
+
+	fixed build issue with &SKIM; tag in documentation
+
 2006-04-29 20:43  LiuCougar <liuspider@users.sourceforge.net>
 
 	Changed:

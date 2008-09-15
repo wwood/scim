@@ -147,12 +147,12 @@
       <emphasis>scim-hangul</emphasis> (een populaire Koreaanse invoer methode), <emphasis>scim-uim</emphasis> (bevat veel Japanse IMEngines) of <emphasis>scim-m17n</emphasis> (bevat meer dan 30 invoer methodes voor verschillende talen).</para></note>
       <sect2 id="binary_requirements" >
       <title>Het installeren van een (Binare) RPM</title>
-      <para>Als U &SKIM; direct wilt kunnen gebruiken, installeer dan RPM's 
+      <para>Als U &skim; direct wilt kunnen gebruiken, installeer dan RPM's 
       voor scim en skim.</para>
       </sect2>
       <sect2 id="compile_from_source_requirements" >
       <title>Compileren van Bronbestanden</title>
-      <para>Als het gewenst is om &SKIM; vanuit een bronbestand te compileren, moet er voor gezorgd zijn dat voor het compileren van &skim; in ieder geval de RPM's voor scim en scim-devel zijn geïnstalleerd.</para>
+      <para>Als het gewenst is om &skim; vanuit een bronbestand te compileren, moet er voor gezorgd zijn dat voor het compileren van &skim; in ieder geval de RPM's voor scim en scim-devel zijn geïnstalleerd.</para>
       <para>Maar als &scim; al eerder op deze computer is gecompileerd, zijn alle benodigde bestanden aanwezig.</para>
       <para>Indien de orginele op Gtk2 gebaseerde GUI van scim-lib niet gewenst zijn, kunnen deze uitgezet worden wanneer ze geconfigureerd worden: na het daaropvolgende compileren kan &skim; nog steeds geïnstalleerd worden;.
 	Kortom, &skim; is niet afhankelijk van de orginele op Gtk2 gebaseerde GUI.
