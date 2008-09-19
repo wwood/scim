@@ -1,3 +1,8 @@
+2008-09-19      13:57   Yuri Victorovich <yuri@tsoft.com>
+	Files: skim/bootstrap
+	Fixed build issue: admin/config.rpath is somehow required by bootstrap
+	but was missing in KDE svn repository
+
 2008-09-15      12:28   Yuri Victorovich <yuri@tsoft.com>
 	Files: skim/bootstrap
 	Replaced cvs->svn in admin directory checkout

@@ -15,6 +15,9 @@ if [ ! -d "admin" ]; then
   exit
 fi
 
+# XXX this file is somehow missing, so just create an empty file
+touch admin/config.rpath
+
 gmake -f admin/Makefile.common cvs
 #gmake -f Makefile.cvs
 if test "$1" = "release"; then
