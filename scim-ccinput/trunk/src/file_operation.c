@@ -39,11 +39,14 @@ extern "C"
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
+#include <errno.h>
 
 #include "ccinput.h"
 #include "file_operation.h"
 #include "glossary_adjust.h"
 #include "glossary_lookup.h"
+
+#define _(stmt...) stmt
 
 
 void ccin_load_system_glossary ();
@@ -1873,52 +1876,55 @@ init_SyllableFileSegmentHead ()
 void
 ccin_load_system_glossary ()
 {
+#define ON_ERROR(syscall) \
+  { frpintf(stderr, _("%s error: file=%s syscall '%s' failed: %s\n"), stderr, "ccin_load_system_glossary", gfname, syscall, strerror(errno)); exit (-1); }
 	FILE *fp;
 	int size;
-	char buf[4];
+	long off;
 
 	char *path;
-	char buf1[255];
+	char gfname[255];
 
 //   printf("%s\n",SYSTEM_FILE_PATH "" SYSTEM_GLOSSARY_FILE_NAME); 
 	path = getenv ("HOME");
-	bzero (buf1, 255);
-	strcat (buf1, path);
-	strcat (buf1, USER_FILE_PATH);
-	strcat (buf1, SYSTEM_GLOSSARY_FILE_NAME);
-	if ((fp = fopen (buf, "rb")) == NULL)
+	bzero (gfname, sizeof(gfname));
+	strcat (gfname, path);
+	strcat (gfname, USER_FILE_PATH);
+	strcat (gfname, SYSTEM_GLOSSARY_FILE_NAME);
+	if ((fp = fopen (gfname, "rb")) == NULL)
 	{
-		fp = fopen (SYSTEM_FILE_PATH "" SYSTEM_GLOSSARY_FILE_NAME, "rb");
-		if (!fp)
-		{
-			perror ("ccin_load_system_glossary function error");
-			exit (0);
-		}
+		strcat(gfname, SYSTEM_FILE_PATH "" SYSTEM_GLOSSARY_FILE_NAME);
+		fp = fopen (gfname, "rb");
+		if (!fp) ON_ERROR("fopen")
 	}
 
-	if (fseek (fp, -4, SEEK_END) == -1 ||
-		fread (&size, sizeof (int), 1, fp) != 1 || size != ftell (fp) - 4)
+	if (fseek (fp, -4, SEEK_END) == -1) ON_ERROR("fseek")
+	if (fread (&size, sizeof (int), 1, fp) != 1) ON_ERROR("fread")
+        if ((off = ftell (fp)) == -1) ON_ERROR("ftell")
+        if (size != off - 4)
 	{
-		perror ("ccin_load_system_glossary function error.");
-		exit (0);
+		fprintf(stderr, _("%s: unknown error"), "ccin_load_system_glossary");
+		exit(-1);
 	}
 
 	p = (char *) malloc (sizeof (char) * size);	//分配系统词库文件大小的内存区域
 
-	fseek (fp, 0, SEEK_SET);
-
-	fread (p, size, 1, fp);
+	if (fseek (fp, 0, SEEK_SET) == -1) ON_ERROR("fseek")
+	if (fread (p, size, 1, fp) != 1) ON_ERROR("fread")
 
 	init_GlossaryFileHead ();
 	init_SyllableFileSegmentHead ();
 	init_GlossarySyllableInfo ();
 
-	fclose (fp);
+	if (fclose (fp) == -1) ON_ERROR("fclose")
+#undef ON_ERROR
 };
 
 void
 ccin_load_user_frequency ()
 {
+#define ON_ERROR(syscall) \
+  { frpintf(stderr, _("%s: file=%s syscall '%s' failed: %s\n"), "ccin_load_user_frequency", buf, syscall, strerror(errno)); /*exit (-1);*/ }
 	FILE *fp;
 	int size;
 	int i = 0, j = 0;
@@ -1927,6 +1933,7 @@ ccin_load_user_frequency ()
 	u_short flag;
 	char *path;
 	char buf[255];
+	long off;
 
 	path = getenv ("HOME");
 	bzero (buf, 255);
@@ -1935,28 +1942,33 @@ ccin_load_user_frequency ()
 	strcat (buf, USER_FREQUENCY_FILE_NAME);
 	if ((fp = fopen (buf, "rb")) == NULL)
 	{
-		fp = fopen (SYSTEM_FILE_PATH "" USER_FREQUENCY_FILE_NAME, "rb");
+		strcat (buf, SYSTEM_FILE_PATH "" USER_FREQUENCY_FILE_NAME);
+		fp = fopen (buf, "rb");
 		if (!fp)
 		{
 //      perror("ccin_load_user_frequency function error");
+			ON_ERROR("fopen")
 			user_load_flags = 0;
 			return;
 		}
 	}
 
-	if (fseek (fp, -4, SEEK_END) == -1 ||
-		fread (&size, sizeof (int), 1, fp) != 1 || size != ftell (fp) - 4)
+	if (fseek (fp, -4, SEEK_END) == -1) ON_ERROR("fseek")
+	if (fread (&size, sizeof (int), 1, fp) != 1) ON_ERROR("fread")
+        if ((off = ftell (fp)) == -1) ON_ERROR("ftell")
+        if (size != off - 4)
 	{
 //    perror("ccin_load_user_frequency function error");
+		fprintf(stderr, _("%s: unknown error"), "ccin_load_user_frequency");
 		user_load_flags = 0;
 		return;
 	}
 
 	pUsrFreq = (char *) malloc (size);	//分配系统词频文件大小的内存区域
 
-	fseek (fp, 0, SEEK_SET);
+	if (fseek (fp, 0, SEEK_SET) == -1) ON_ERROR("fseek")
 
-	fread (pUsrFreq, size, 1, fp);
+	if (fread (pUsrFreq, size, 1, fp) != 1) ON_ERROR("ferror")
 
 	memcpy (&user_glossary_freq_file_head, pUsrFreq,
 			sizeof (ccinGlossaryFileHead_t));
@@ -2024,12 +2036,15 @@ ccin_load_user_frequency ()
 			}
 		}
 	}
-	fclose (fp);
+	if (fclose (fp) == -1) ON_ERROR("fclose")
+#undef ON_ERROR
 };
 
 void
 ccin_load_system_frequency ()
 {
+#define ON_ERROR(syscall) \
+  { frpintf(stderr, _("%s: file=%s syscall '%s' failed: %s\n"), "ccin_load_system_frequency", buf, syscall, strerror(errno)); exit (-1); }
 	FILE *fp;
 	int size;
 	int i = 0, j = 0;
@@ -2038,6 +2053,7 @@ ccin_load_system_frequency ()
 	u_short flag;
 	char *path;
 	char buf[255];
+	long off;
 
 	path = getenv ("HOME");
 	bzero (buf, 255);
@@ -2047,27 +2063,26 @@ ccin_load_system_frequency ()
 
 	if ((fp = fopen (buf, "rb")) == NULL)
 	{
-		fp = fopen (SYSTEM_FILE_PATH "" SYSTEM_FREQUENCY_FILE_NAME, "rb");
-		if (!fp)
-		{
-			perror ("ccin_load_system_frequency function error");
-			exit (0);
-		}
+		strcat (buf, SYSTEM_FILE_PATH "" SYSTEM_FREQUENCY_FILE_NAME);
+		fp = fopen (buf, "rb");
+		if (!fp) ON_ERROR("fopen")
 	}
 
-	if (fseek (fp, -4, SEEK_END) == -1 ||
-		fread (&size, sizeof (int), 1, fp) != 1 || size != ftell (fp) - 4)
+	if (fseek (fp, -4, SEEK_END) == -1) ON_ERROR("fseek")
+	if (fread (&size, sizeof (int), 1, fp) != 1) ON_ERROR("fread")
+        if ((off = ftell (fp)) == -1) ON_ERROR("ftell")
+        if (size != off - 4)
 	{
-		perror ("ccin_load_system_frequency function error");
+		fprintf(stderr, _("%s: unknown error"), "ccin_load_system_frequency");
 		exit (0);
 	}
 
 	sys_freq_file_size = size;
 	pFreq = (char *) malloc (size);	//分配系统词频文件大小的内存区域
 
-	fseek (fp, 0, SEEK_SET);
+	if (fseek (fp, 0, SEEK_SET) == -1) ON_ERROR("fseek")
 
-	fread (pFreq, size, 1, fp);
+	if (fread (pFreq, size, 1, fp) != 1) ON_ERROR("fread")
 
 	system_glossary_freq_file_head = (ccinGlossaryFileHead_t *) pFreq;
 
@@ -2144,8 +2159,9 @@ ccin_load_system_frequency ()
 			}
 		}
 	}
-	fclose (fp);
+	if (fclose (fp) == -1) ON_ERROR("fclose")
 	free (p);					//因为在此函数中还要用到system_syllable_segment_head,所以要在此处释放掉该指针.
+#undef ON_ERROR
 };
 
 void

@@ -12,6 +12,9 @@
 #...
 
 2008-09-15      12:28   yurivict
+	* src/file_operation.c: fixed error messages that cause confusion in PR#2164960 (SCIM crashes on startup)
+
+2008-09-15      12:28   yurivict
 	* skim/bootstrap: replaced cvs->svn in admin directory checkout
 
 2008-09-15      yurivict yuri@tsoft.com
