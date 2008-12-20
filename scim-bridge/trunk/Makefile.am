@@ -24,17 +24,14 @@ AUX_DIST                = $(ac_aux_dir)/config.guess \
 			$(ac_aux_dir)/missing \
 			$(ac_aux_dir)/depcomp
 
-EXTRA_DIST		= config.rpath m4/ChangeLog bootstrap intltool-extract.in intltool-merge.in intltool-update.in
-
+EXTRA_DIST		= m4/ChangeLog  config.rpath m4/ChangeLog bootstrap
 AUTOMAKE_OPTIONS 	= gnu
-SUBDIRS = po intl common client-common $(BUILD_DIR_GTK2_IMMODULE) $(BUILD_DIR_QT3_IMMODULE) $(BUILD_DIR_QT4_IMMODULE)  $(BUILD_DIR_AGENT) $(BUILD_DIR_TESTS) $(BUILD_DIR_DOCUMENTS)
+SUBDIRS = common client-common $(BUILD_DIR_GTK2_IMMODULE) $(BUILD_DIR_QT3_IMMODULE) $(BUILD_DIR_QT4_IMMODULE)  $(BUILD_DIR_AGENT) $(BUILD_DIR_TESTS) $(BUILD_DIR_DOCUMENTS)
 
 ## @start 1
 MAINTAINERCLEANFILES 	= Makefile.in aclocal.m4 configure config.h.in $(AUX_DIST)
 
-CLEANFILES		= *.bak src/*.bak 
-
-DISTCLEANFILES = intltool-extract intltool-merge intltool-update
+CLEANFILES		= *.bak src/*.bak
 
 ACLOCAL_AMFLAGS = -I m4 
 

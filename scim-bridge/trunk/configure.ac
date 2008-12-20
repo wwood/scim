@@ -42,7 +42,7 @@ AC_GNU_SOURCE
 # Init gettext
 #ALL_LINGUAS="zh_CN zh_TW ja ko de fr it cs pa fi sv nl"
 ALL_LINGUAS=""
-AM_GNU_GETTEXT
+#AM_GNU_GETTEXT
 
 # libtool option to control which symbols are exported
 # right now, symbols starting with _ are not exported
@@ -63,9 +63,6 @@ AC_LANG(C++)
 
 AM_CONDITIONAL(HAVE_DOCBOOK, test x$DOCBOOK_XSL != xno)
 AM_CONDITIONAL(BUILD_MANUAL, test x$XSLTPROC != xno -a x$DOCBOOK_XSL != xno)
-
-# Check intltool
-IT_PROG_INTLTOOL([0.33], [no-xml])
 
 # Check if we should build scim-bridge-gtk-immodule
 PKG_CHECK_MODULES(GTK2, [gtk+-2.0 >= 2.4.0 pango >= 1.1.0 gdk-pixbuf-2.0 >= 2.4.0],
@@ -268,9 +265,8 @@ AC_SUBST(SCIM_LOCALDIR)
 ##                      Output files.                    ##
 ###########################################################
 AC_SUBST(ac_aux_dir)
-AC_CONFIG_FILES([Makefile po/Makefile.in intl/Makefile
-         common/Makefile client-common/Makefile 
-         intltool-extract intltool-merge intltool-update])
+AC_CONFIG_FILES([Makefile
+         common/Makefile client-common/Makefile])
 if test "$enable_agent" = "yes"; then
   BUILD_DIR_AGENT=agent
   AC_SUBST(BUILD_DIR_AGENT)

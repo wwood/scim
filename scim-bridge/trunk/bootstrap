@@ -22,7 +22,7 @@
 set -x
 aclocal
 autoheader
-libtoolize -c --automake 
+#libtoolize -c --automake 
 automake --add-missing --copy --include-deps
 autoconf
 ## @end 1

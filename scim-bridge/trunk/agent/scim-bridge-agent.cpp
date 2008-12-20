@@ -196,8 +196,8 @@ running (true), noexit_enabled (false), standalone_enabled (false), client_app_c
 accept_listener (NULL), interruption_listener (NULL), panel_listener (NULL), signal_listener (NULL), display (NULL)
 {
     setlocale (LC_ALL, "");
-    bindtextdomain (GETTEXT_PACKAGE, SCIM_LOCALEDIR);
-    bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+//    bindtextdomain (GETTEXT_PACKAGE, SCIM_LOCALEDIR);
+//    bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
 }
 
 
