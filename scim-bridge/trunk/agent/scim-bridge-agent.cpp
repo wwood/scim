@@ -441,7 +441,10 @@ retval_t ScimBridgeAgentImpl::initialize_scim ()
         scim_bridge_perrorln ("There is no socket frontend of IMEngines for SCIM...");
         return RETVAL_FAILED;
     }
-
+    
+	imengine_module_names.clear();
+	imengine_module_names.push_back("socket");
+	
     // Get config modules
     vector<String> config_module_names;
     scim_get_config_module_list (config_module_names);

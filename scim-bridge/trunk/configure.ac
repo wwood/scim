@@ -1,5 +1,5 @@
 # Process this file with autoconf to produce a configure script
-AC_INIT(scim-bridge, 0.4.15, ryo-dairiki@users.sourceforge.net)
+AC_INIT(scim-bridge, 0.4.16, ryo-dairiki@users.sourceforge.net)
 AC_CONFIG_SRCDIR([common/scim-bridge.h])
 
 ###########################################################
@@ -8,7 +8,7 @@ AC_CONFIG_SRCDIR([common/scim-bridge.h])
 
 SCIM_BRIDGE_MAJOR_VERSION=0
 SCIM_BRIDGE_MINOR_VERSION=4
-SCIM_BRIDGE_MICRO_VERSION=15
+SCIM_BRIDGE_MICRO_VERSION=16
 
 SCIM_BRIDGE_VERSION=$SCIM_BRIDGE_MAJOR_VERSION.$SCIM_BRIDGE_MINOR_VERSION.$SCIM_BRIDGE_MICRO_VERSION
 
