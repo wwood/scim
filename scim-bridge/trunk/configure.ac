@@ -41,7 +41,6 @@ AC_GNU_SOURCE
 
 # Init gettext
 #ALL_LINGUAS="zh_CN zh_TW ja ko de fr it cs pa fi sv nl"
-ALL_LINGUAS=""
 #AM_GNU_GETTEXT
 
 # libtool option to control which symbols are exported

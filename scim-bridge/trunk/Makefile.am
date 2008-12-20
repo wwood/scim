@@ -24,12 +24,12 @@ AUX_DIST                = $(ac_aux_dir)/config.guess \
 			$(ac_aux_dir)/missing \
 			$(ac_aux_dir)/depcomp
 
-EXTRA_DIST		= m4/ChangeLog  config.rpath m4/ChangeLog bootstrap
+EXTRA_DIST		= config.rpath bootstrap
 AUTOMAKE_OPTIONS 	= gnu
 SUBDIRS = common client-common $(BUILD_DIR_GTK2_IMMODULE) $(BUILD_DIR_QT3_IMMODULE) $(BUILD_DIR_QT4_IMMODULE)  $(BUILD_DIR_AGENT) $(BUILD_DIR_TESTS) $(BUILD_DIR_DOCUMENTS)
 
 ## @start 1
-MAINTAINERCLEANFILES 	= Makefile.in aclocal.m4 configure config.h.in $(AUX_DIST)
+MAINTAINERCLEANFILES 	= Makefile.in configure config.h.in $(AUX_DIST)
 
 CLEANFILES		= *.bak src/*.bak
 
