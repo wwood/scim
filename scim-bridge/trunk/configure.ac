@@ -116,6 +116,10 @@ fi
 ###########################################################
 ##             Definiation of compile args.              ##
 ###########################################################
+AC_ARG_ENABLE(all,
+          [AS_HELP_STRING([--enable-all], [turn on all the features])], , 
+              enable_all=no)
+
 AC_ARG_ENABLE(debug,
 	      [AS_HELP_STRING([--enable-debug], [turn on debugging])], , 
               enable_debug=no)
@@ -204,6 +208,9 @@ else
   enable_qt4_immodule=no
 fi
 
+AM_CONDITIONAL(SCIM_BRIDGE_BUILD_ALL,
+        [test "$enable_all" = "yes"])
+
 AM_CONDITIONAL(SCIM_BRIDGE_BUILD_TESTS,
 		[test "$enable_tests" = "yes"])
 
@@ -266,6 +273,15 @@ AC_SUBST(SCIM_LOCALDIR)
 AC_SUBST(ac_aux_dir)
 AC_CONFIG_FILES([Makefile
          common/Makefile client-common/Makefile])
+if test "$enable_all" = "yes"; then
+  enable_agent="yes";
+  enable_gtk2_immodule="yes";
+  enable_qt3_immodule="yes";
+  enable_qt4_immodule="yes";
+  enable_tests="yes";
+  enable_documents="yes";
+  enable_debug="yes";
+fi
 if test "$enable_agent" = "yes"; then
   BUILD_DIR_AGENT=agent
   AC_SUBST(BUILD_DIR_AGENT)
